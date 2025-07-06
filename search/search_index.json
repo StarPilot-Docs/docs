@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to StarPilot","text":"<p>Hello World!</p>"},{"location":"#actual-info-coming-soon","title":"Actual info coming soon...","text":""}]}
