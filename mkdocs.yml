@@ -4,7 +4,54 @@ site_name: StarPilot Docs
 site_url: https://starpilot.sherloaf.com
 theme:
     name: material
+    palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: green
+      secondary: green
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: green
+      secondary: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      secondary: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+    logo: assets/images/starpilot_icon--small.png
+    
     icon:
         repo: fontawesome/brands/github
+        
+    features:
+        - navigation.instant
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - toc.follow
+        
+    plugin:
+      - search
+      - social
+      - git-revision-date-localized:
+            enable_creation_date: true
+
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
+
+extra:
+    social:
+      - icon: fontawesome/brands/discord
+        link: https://discord.gg/frogpilot
