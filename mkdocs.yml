@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: StarPilot Docs
+site_url: https://starpilot.sherloaf.com
+theme:
+    name: material
