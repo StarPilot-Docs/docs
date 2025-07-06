@@ -4,3 +4,7 @@ site_name: StarPilot Docs
 site_url: https://starpilot.sherloaf.com
 theme:
     name: material
+    icon:
+        repo: fontawesome/brands/github
+repo_url: https://github.com/firestar5683/StarPilot
+repo_name: firestar5683/StarPilot
