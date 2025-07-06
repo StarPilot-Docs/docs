@@ -47,6 +47,7 @@ theme:
       - social
       - git-revision-date-localized:
             enable_creation_date: true
+            type: date
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
