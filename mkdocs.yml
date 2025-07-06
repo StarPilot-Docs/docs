@@ -46,8 +46,11 @@ theme:
       - search
       - social
       - git-revision-date-localized:
-            enable_creation_date: true
-            type: date
+        enable_creation_date: true
+        type: date
+      - git-committers:
+        repository: StarPilot-Docs/docs
+        branch: main
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
