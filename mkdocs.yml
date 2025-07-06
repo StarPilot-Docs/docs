@@ -4,7 +4,8 @@ site_name: StarPilot Docs
 site_url: https://starpilot.sherloaf.com
 
 nav:
-  - Home: index.md
+  - Introduction: index.md
+  - Required Hardware: hardware.md
 
 theme:
     name: material
@@ -42,8 +43,6 @@ theme:
         
     features:
         - navigation.instant
-        - navigation.tabs
-        - navigation.tabs.sticky
         - toc.follow
         
     plugin:
@@ -55,6 +54,11 @@ theme:
       - git-committers:
         repository: StarPilot-Docs/docs
         branch: main
+
+markdown_extensions:
+          - admonition
+          - pymdownx.details
+          - pymdownx.superfences
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
