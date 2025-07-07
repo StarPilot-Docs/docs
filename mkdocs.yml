@@ -6,9 +6,9 @@ site_url: https://starpilot.sherloaf.com
 nav:
   - Introduction: index.md
   - Required Hardware: hardware.md
-  - Installation:
-    - Comma 3X: installation/comma.md
-    - Pedal: installation/pedal.md
+  - Hardware Installation:
+    - Comma 3X: hardware/comma.md
+    - Pedal: hardware/pedal.md
 
 theme:
     name: material
@@ -46,22 +46,26 @@ theme:
         
     features:
         - navigation.instant
+        - navigation.sections
+        - navigation.footer
         - toc.follow
         
     plugin:
       - search
       - social
-      - git-revision-date-localized:
-        enable_creation_date: true
-        type: date
-      - git-committers:
-        repository: StarPilot-Docs/docs
-        branch: main
 
 markdown_extensions:
           - admonition
           - pymdownx.details
           - pymdownx.superfences
+          
+plugins:
+    - git-revision-date-localized:
+        enable_creation_date: true
+        type: date
+    - git-committers:
+        repository: StarPilot-Docs/docs
+        branch: main
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
