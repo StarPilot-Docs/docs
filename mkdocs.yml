@@ -10,6 +10,9 @@ nav:
   - Hardware Installation:
     - Comma 3X: hardware/comma.md
     - Pedal: hardware/pedal.md
+  - Software Installation:
+    - Install StarPilot: software/starpilot.md
+    - Configure Toggles: software/toggles.md
 
 theme:
     name: material
@@ -54,6 +57,7 @@ theme:
 
 markdown_extensions:
           - admonition
+          - tables
           - pymdownx.details
           - pymdownx.superfences
           
