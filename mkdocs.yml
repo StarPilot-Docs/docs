@@ -6,6 +6,9 @@ site_url: https://starpilot.sherloaf.com
 nav:
   - Introduction: index.md
   - Required Hardware: hardware.md
+  - Installation:
+    - Comma 3X: installation/comma.md
+    - Pedal: installation/pedal.md
 
 theme:
     name: material

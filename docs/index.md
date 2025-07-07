@@ -1,3 +1,7 @@
+!!! warning "These Docs are a Work in Progress"
+
+    We've just started work on these docs. For any missing info, see [firestar.link/bolt](http://firestar.link/bolt) for a great guide by ayoba (which these docs are largely based on).
+
 # Introduction
 StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot), which itself is a fork of [openpilot](http://github.com/commaai/openpilot). StarPilot runs on the Comma 3 & 3X by [comma_ai](https://comma.ai/).
 
