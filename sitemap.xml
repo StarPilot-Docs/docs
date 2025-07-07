@@ -16,4 +16,12 @@
          <loc>https://starpilot.sherloaf.com/hardware/pedal/</loc>
          <lastmod>2025-07-07</lastmod>
     </url>
+    <url>
+         <loc>https://starpilot.sherloaf.com/software/starpilot/</loc>
+         <lastmod>2025-07-07</lastmod>
+    </url>
+    <url>
+         <loc>https://starpilot.sherloaf.com/software/toggles/</loc>
+         <lastmod>2025-07-07</lastmod>
+    </url>
 </urlset>
