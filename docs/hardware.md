@@ -1,3 +1,7 @@
+---
+description: How to pick the correct hardware for running StarPilot on a Bolt 
+---
+
 # Required Hardware
 Our current hardware recommendations are as follows:
 

@@ -2,6 +2,7 @@
 
 site_name: StarPilot Docs
 site_url: https://starpilot.sherloaf.com
+site_description: Documentation for the install and usage of StarPilot
 
 nav:
   - Introduction: index.md
@@ -50,9 +51,6 @@ theme:
         - navigation.footer
         - toc.follow
         
-    plugin:
-      - search
-      - social
 
 markdown_extensions:
           - admonition
@@ -60,6 +58,8 @@ markdown_extensions:
           - pymdownx.superfences
           
 plugins:
+    - search
+    - social
     - git-revision-date-localized:
         enable_creation_date: true
         type: date
