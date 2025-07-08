@@ -5,3 +5,19 @@
   <script data-goatcounter="https://starpilot-docs.goatcounter.com/count"
   async src="//gc.zgo.at/count.js"></script>
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Handle instant loading navigation
+      document.addEventListener('location-changed', function() {
+        if (window.goatcounter && window.goatcounter.count) {
+          window.goatcounter.count({
+            path: location.pathname + location.search + location.hash,
+          });
+        }
+      });
+    });
+  </script>
+{% endblock %}
