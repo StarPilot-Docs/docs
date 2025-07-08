@@ -1,24 +1,7 @@
 {% extends "base.html" %}
 
-{% block extrahead %}
+{% block content %}
   {{ super() }}
   <script data-goatcounter="https://starpilot-docs.goatcounter.com/count"
-  async src="//gc.zgo.at/count.js"></script>
-{% endblock %}
-
-{% block scripts %}
-  {{ super() }}
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof app !== 'undefined' && app.location$) {
-        app.location$.subscribe(function() {
-          if (window.goatcounter && window.goatcounter.count) {
-            window.goatcounter.count({
-              path: location.pathname + location.search + location.hash,
-            });
-          }
-        });
-      }
-    });
-  </script>
+          async src="//gc.zgo.at/count.js"></script>
 {% endblock %}
