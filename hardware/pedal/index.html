@@ -891,14 +891,15 @@
     
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Handle instant loading navigation
-      document.addEventListener('location-changed', function() {
-        if (window.goatcounter && window.goatcounter.count) {
-          window.goatcounter.count({
-            path: location.pathname + location.search + location.hash,
-          });
-        }
-      });
+      if (typeof app !== 'undefined' && app.location$) {
+        app.location$.subscribe(function() {
+          if (window.goatcounter && window.goatcounter.count) {
+            window.goatcounter.count({
+              path: location.pathname + location.search + location.hash,
+            });
+          }
+        });
+      }
     });
   </script>
 
