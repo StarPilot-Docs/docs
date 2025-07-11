@@ -1,6 +1,6 @@
-—
+---
 description: How to configure your settings for the best experience
-—
+—--
 
 # Configure Toggles & Settings
 
