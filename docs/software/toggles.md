@@ -1,6 +1,6 @@
 ---
 description: How to configure your settings for the best experience
-—--
+---
 
 # Configure Toggles & Settings
 
@@ -10,9 +10,9 @@ WIP
 
 Most toggles here are up to you.
 
-!!! note “ACC Bolts Only”
-    
-    Enable “openpilot Longitudinal Control (alpha)”. This will use the smoother, tuned experience vs. the Bolt’s stock ACC. It does not disable automatic emergency braking.
+!!! note "ACC Bolts Only"
+
+	Enable "openpilot Longitudinal Control (alpha)". This will use the smoother, tuned experience vs. the Bolt’s stock ACC. It does not disable automatic emergency braking.
     
 ## FrogPilot Settings
 
@@ -32,7 +32,7 @@ For best results on StarPilot, you’ll need to use the **Advanced** level.
 2. Disable **Automatic Fingerprint Detection**.
 3. Under **General Motors Toggles** DO NOT enable FrogsGoMoo’s experimental longitudinal tune or the Stop and Go hack. DO enable Smoothen Pedal Response While Going Downhill/Uphill.
 
-??? note “Fingerprinting Info”
+??? note "Fingerprinting Info"
 
     Fingerprinting is inconsistent on GM vehicles at the moment. As such, sometimes ACC bolts decide to fingerprint as Non-ACC which causes fun issues such as… not having Gas/Brake. So to be sure, it’s just always best to manually fingerprint.
 
@@ -46,7 +46,7 @@ These are optional changes. Some popular changes include:
 
 **Additional Organization In Progress**
 
-Under Driving Model, turn ON “Automatically download and update models”.
+Under Driving Model, turn ON "Automatically download and update models".
 
 !!! warning
 
