@@ -12,7 +12,6 @@ nav:
     - Pedal: hardware/pedal.md
   - Software Installation:
     - Install StarPilot: software/starpilot.md
-    - Configure Toggles: software/toggles.md
 
 theme:
     name: material
