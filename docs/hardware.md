@@ -37,11 +37,11 @@ This includes all 2017-2021 Bolts, as well as 2022-2023 Bolts without the Adapti
 
     Comma has changed the design of the harness box & harness they ship with the 3X, and they no longer have the RJ45 port required for pedal use. See the next section for more info.
     
-### From [BearTechWorkshop](https://www.etsy.com/shop/BearTechWorkshop) (aka tinybear):
+### From [BearTechWorkshop](https://shop.beartech.ca/) (aka tinybear):
 
-* [Comma Pedal](https://www.etsy.com/listing/952895642/openpilot-comma-pedal-non-customizable?variation0=4794307695)
-* [Harness set (Harness Cable + Harness Box)](https://www.etsy.com/listing/1067463521/harness-set-harness-harness-box-for-gm?variation0=4799333150)
-* Optional: [DFU Key](https://www.etsy.com/listing/1100070899/dfu-key-comma-device-firmware-flashing)
+* [Comma Pedal](https://shop.beartech.ca/products/comma-pedal)
+* [Harness set (Harness Cable + Harness Box)](https://shop.beartech.ca/products/harness-set-gm?variant=44665970688181)
+* Optional: [DFU Key](https://shop.beartech.ca/products/dfu-key)
     * tinybear is still making occasional updates to the pedal firmware for Bolts. This key is needed to apply those changes. Free shipping if purchased with your Pedal.
 
 ??? note "Already have a Harness Cable?"
