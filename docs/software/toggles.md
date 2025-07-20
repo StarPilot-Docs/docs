@@ -56,9 +56,10 @@ These are optional changes. Some popular changes include:
 Full info on models coming soon. For now, try the following:
 
 * **WD-40**: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.
-* ==**Vikander**==: A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out! 
-* **TR Models** "Tomb Raider" models. There's always a new version, TRX is decent, try the highest TR## available.
-* **Simple Plan (SP)**: A newer model than the above, still testing - seems to work pretty well overall!
+* ==**LeTR**==: Our current go to tinygrad model. Try this first! (as of 7/20/25)
+* **Vikander**: A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out! 
+* **TR Models** "Tomb Raider" models. There's always a new version, TRX is decent, higher numbers can be VERY hit or miss. Use with caution.
+* **Simple Plan (SP)**: Seems to be decent, some minor oscillations but better than Vikander. Most have switched over to LeTR.
     
 
 ### Gas / Brake
@@ -94,6 +95,9 @@ These have been tuned by firestar - if you wish to tune how they react, you can 
 
 * **Acceleration Profile:** ==Sport==
 * **Deceleration Profile:** ==Eco==
+
+The above profiles have been specially tuned to work better with the Bolt's accel & decel curve.
+
 * **Human Like Accel/Leads:** These do... things? This will change how the model acts. Sometimes quite significantly. Varies model to model. Test with on and off. 
 * **Taco Bell Run:** Just leave taco bell run stuff off.
 
@@ -104,17 +108,70 @@ These have been tuned by firestar - if you wish to tune how they react, you can 
     
 #### Quality of Life: ==Turn On==
 
-WIP - Sorry... still working. For now, see [firestar.link/bolt](http://firestar.link/bolt) for the rest. Thanks ayboa!
+* **Cruise Intervals:** These are up to you! I'm not sure the "long press" works on all vehicles. Some like to increase short press to 5mph for easier jumps in cruise speed.
+* **Force Keep openpilot in the Standstill State:** When this toggle is on, openpilot will require user input before it will resuem from a fully stopped state.
+* **Force Stop for "Detected" Stop Lights/Signs:** ==Recommend Turning On.== This will help prevent (but not eliminate!) the Comma from running red lights or stop signs. 
+
+!!! warning "Stop Light and Stop Sign Detection can be Inconsistent"
+
+    You should always be extremely alert and ready to take manual control at stop lights and stop signs. Every model is different, and although red light and stopped lead detection is getting very good, stop sign detection is still quite bad. Additionally, our reliance on regen-braking only in the Bolt means that openpilot will often not have enough stopping power to stop in time once it has detected a stopped lead or traffic light.
+    
+* **Increase Stopped Distance:** Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the [CEM](/software/toggles/#conditional-experimental-mode-turn-on) settings for help with this.
+
+* **Map Accell/Decel to Gears:** Gears? Where we're going, we don't need gears! But in all honesty... I don't think this does anything for us.
 
 ### Steering
 
+#### Advanced Lateral Tuning: Leave Off
+
+Section is WIP, features here are more for special cases & testing.
+
+#### Always on Lateral: ==Recommend Turning On==
+
+Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice & useful, so we generally reccomend having it on.
+
+With this on & the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control. 
+
+!!! warning "Does not work under 6mph"
+
+    The Bolt does not allow for lateral control under 6mph. This applies to AoL and standard modes. It will not steer for you under 6mph.
+    
+#### Lane Changes: ==Turn On==
+
+* **Automatic Lane Changes:** ==Turn Off==. With this off, you have to nudge the steering wheel before it changes lanes. This is ideal, since it lets you signal to other cars that you are changing lanes without actually starting the lane change.
+    * Due to a quirk with steering torque, human-initiated lane changes will also be smoother and more natural.
+
+!!! warning "Stay Aware while Changing Lanes"
+
+    The Comma won't change lanes if it detects a car in your blind spot, but you should ALWAYS check first. Neither your Bolt's blind spot monitors nor the Comma have 360 degree awareness.
+    
+* **One Lane Change Per Signal** ==Turn On== just to be safe.
+
+The remaining settings can be left at default.
+
+#### Lateral Tuning: ==Turn On==
+
+* **Force Turn Desires:** Leave off
+* **Smooth Curve Handling:** ==Turn On==
+
+If NNFF appears here, disable it. Upstream NNFF doesn't play well with the different gens of Bolt.
+
+#### Quality of Life Improvements: Optional
+
 ## Navigation
 
+Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your prefferred mapping app via CarPlay/Android Auto.
+
 ## System Management
+
+Optional. Provides options for adjusting the screen brightness and other device settings.
 
 ## Theme and Appearance
 
 ### Appearance
+
+* **Advanced UI Controls:** Optionally enable
+
 
 ### Theme
     
