@@ -24,7 +24,7 @@ This capability may extend at a later time with additional hardware (resume butt
 
 ???+ note
     
-    If you have any interest in trying the comma pedal now or in the future, you should not purchase the harness & harness box with your Comma, and instead get the [Harness set from tinybear](https://www.etsy.com/listing/1067463521/harness-set-harness-harness-box-for-gm). The newer harness boxes from Comma no longer include the RJ45 port necessary for pedal use.
+    If you have any interest in trying the comma pedal now or in the future, you should not purchase the harness & harness box with your Comma, and instead get the [Harness set from tinybear](https://shop.beartech.ca/products/harness-set-gm?variant=44665970688181). The newer harness boxes from Comma no longer include the RJ45 port necessary for pedal use.
     
 ## Chevy Bolt without ACC
 This includes all 2017-2021 Bolts, as well as 2022-2023 Bolts without the Adaptive Cruise Control Package. 
