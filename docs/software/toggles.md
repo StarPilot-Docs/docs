@@ -32,6 +32,9 @@ For best results on StarPilot, you’ll need to ==use the **Advanced** tuning le
 
     To learn more about any setting, tap the title to see a description
 
+!!! warning "Make Sure your Fingerprint is Correct"
+
+    If you ignore the rest of our suggestions here, at the very least, make sure you [set your correct fingerprint](#vehicle-controls) to avoid issues.
     
 ## Alerts and Sounds
 
