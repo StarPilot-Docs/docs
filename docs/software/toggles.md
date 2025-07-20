@@ -4,8 +4,6 @@ description: How to configure your settings for the best experience
 
 # Configure Toggles & Settings
 
-WIP
-
 ## Toggles
 
 Most toggles here are up to you.
