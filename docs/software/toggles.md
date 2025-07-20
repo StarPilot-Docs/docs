@@ -172,6 +172,7 @@ Optional. Provides options for adjusting the screen brightness and other device 
 
 * **Advanced UI Controls:** Optionally enable
 
+WIP! Working on this now, but wanted to push some important changes to above suggestions.
 
 ### Theme
     
