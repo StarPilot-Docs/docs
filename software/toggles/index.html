@@ -669,6 +669,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Steering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced-lateral-tuning-leave-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Lateral Tuning: Leave Off
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#always-on-lateral-recommend-turning-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Always on Lateral: Recommend Turning On
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lane-changes-turn-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lane Changes: Turn On
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lateral-tuning-turn-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lateral Tuning: Turn On
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-of-life-improvements-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality of Life Improvements: Optional
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -924,6 +975,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Steering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced-lateral-tuning-leave-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Lateral Tuning: Leave Off
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#always-on-lateral-recommend-turning-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Always on Lateral: Recommend Turning On
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lane-changes-turn-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lane Changes: Turn On
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lateral-tuning-turn-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lateral Tuning: Turn On
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-of-life-improvements-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality of Life Improvements: Optional
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1076,9 +1178,10 @@
 <p>Full info on models coming soon. For now, try the following:</p>
 <ul>
 <li><strong>WD-40</strong>: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.</li>
-<li><mark><strong>Vikander</strong></mark>: A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out! </li>
-<li><strong>TR Models</strong> "Tomb Raider" models. There's always a new version, TRX is decent, try the highest TR## available.</li>
-<li><strong>Simple Plan (SP)</strong>: A newer model than the above, still testing - seems to work pretty well overall!</li>
+<li><mark><strong>LeTR</strong></mark>: Our current go to tinygrad model. Try this first! (as of 7/20/25)</li>
+<li><strong>Vikander</strong>: A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out! </li>
+<li><strong>TR Models</strong> "Tomb Raider" models. There's always a new version, TRX is decent, higher numbers can be VERY hit or miss. Use with caution.</li>
+<li><strong>Simple Plan (SP)</strong>: Seems to be decent, some minor oscillations but better than Vikander. Most have switched over to LeTR.</li>
 </ul>
 <h3 id="gas-brake">Gas / Brake<a class="headerlink" href="#gas-brake" title="Permanent link">&para;</a></h3>
 <h4 id="conditional-experimental-mode-turn-on">Conditional Experimental Mode: <mark>Turn On</mark><a class="headerlink" href="#conditional-experimental-mode-turn-on" title="Permanent link">&para;</a></h4>
@@ -1101,6 +1204,9 @@
 <ul>
 <li><strong>Acceleration Profile:</strong> <mark>Sport</mark></li>
 <li><strong>Deceleration Profile:</strong> <mark>Eco</mark></li>
+</ul>
+<p>The above profiles have been specially tuned to work better with the Bolt's accel &amp; decel curve.</p>
+<ul>
 <li><strong>Human Like Accel/Leads:</strong> These do... things? This will change how the model acts. Sometimes quite significantly. Varies model to model. Test with on and off. </li>
 <li><strong>Taco Bell Run:</strong> Just leave taco bell run stuff off.</li>
 </ul>
@@ -1109,12 +1215,64 @@
 <p>Model trying to drive you into the back of leads? Model leaving a gap of 200 certified football fields? Try turning on or off the "Human Like" settings -  they often change quite a bit about a model's behavior.</p>
 </div>
 <h4 id="quality-of-life-turn-on">Quality of Life: <mark>Turn On</mark><a class="headerlink" href="#quality-of-life-turn-on" title="Permanent link">&para;</a></h4>
-<p>WIP - Sorry... still working. For now, see <a href="http://firestar.link/bolt">firestar.link/bolt</a> for the rest. Thanks ayboa!</p>
+<ul>
+<li><strong>Cruise Intervals:</strong> These are up to you! I'm not sure the "long press" works on all vehicles. Some like to increase short press to 5mph for easier jumps in cruise speed.</li>
+<li><strong>Force Keep openpilot in the Standstill State:</strong> When this toggle is on, openpilot will require user input before it will resuem from a fully stopped state.</li>
+<li><strong>Force Stop for "Detected" Stop Lights/Signs:</strong> <mark>Recommend Turning On.</mark> This will help prevent (but not eliminate!) the Comma from running red lights or stop signs. </li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Stop Light and Stop Sign Detection can be Inconsistent</p>
+<p>You should always be extremely alert and ready to take manual control at stop lights and stop signs. Every model is different, and although red light and stopped lead detection is getting very good, stop sign detection is still quite bad. Additionally, our reliance on regen-braking only in the Bolt means that openpilot will often not have enough stopping power to stop in time once it has detected a stopped lead or traffic light.</p>
+</div>
+<ul>
+<li>
+<p><strong>Increase Stopped Distance:</strong> Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the <a href="/software/toggles/#conditional-experimental-mode-turn-on">CEM</a> settings for help with this.</p>
+</li>
+<li>
+<p><strong>Map Accell/Decel to Gears:</strong> Gears? Where we're going, we don't need gears! But in all honesty... I don't think this does anything for us.</p>
+</li>
+</ul>
 <h3 id="steering">Steering<a class="headerlink" href="#steering" title="Permanent link">&para;</a></h3>
+<h4 id="advanced-lateral-tuning-leave-off">Advanced Lateral Tuning: Leave Off<a class="headerlink" href="#advanced-lateral-tuning-leave-off" title="Permanent link">&para;</a></h4>
+<p>Section is WIP, features here are more for special cases &amp; testing.</p>
+<h4 id="always-on-lateral-recommend-turning-on">Always on Lateral: <mark>Recommend Turning On</mark><a class="headerlink" href="#always-on-lateral-recommend-turning-on" title="Permanent link">&para;</a></h4>
+<p>Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice &amp; useful, so we generally reccomend having it on.</p>
+<p>With this on &amp; the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control. </p>
+<div class="admonition warning">
+<p class="admonition-title">Does not work under 6mph</p>
+<p>The Bolt does not allow for lateral control under 6mph. This applies to AoL and standard modes. It will not steer for you under 6mph.</p>
+</div>
+<h4 id="lane-changes-turn-on">Lane Changes: <mark>Turn On</mark><a class="headerlink" href="#lane-changes-turn-on" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Automatic Lane Changes:</strong> <mark>Turn Off</mark>. With this off, you have to nudge the steering wheel before it changes lanes. This is ideal, since it lets you signal to other cars that you are changing lanes without actually starting the lane change.<ul>
+<li>Due to a quirk with steering torque, human-initiated lane changes will also be smoother and more natural.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Stay Aware while Changing Lanes</p>
+<p>The Comma won't change lanes if it detects a car in your blind spot, but you should ALWAYS check first. Neither your Bolt's blind spot monitors nor the Comma have 360 degree awareness.</p>
+</div>
+<ul>
+<li><strong>One Lane Change Per Signal</strong> <mark>Turn On</mark> just to be safe.</li>
+</ul>
+<p>The remaining settings can be left at default.</p>
+<h4 id="lateral-tuning-turn-on">Lateral Tuning: <mark>Turn On</mark><a class="headerlink" href="#lateral-tuning-turn-on" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Force Turn Desires:</strong> Leave off</li>
+<li><strong>Smooth Curve Handling:</strong> <mark>Turn On</mark></li>
+</ul>
+<p>If NNFF appears here, disable it. Upstream NNFF doesn't play well with the different gens of Bolt.</p>
+<h4 id="quality-of-life-improvements-optional">Quality of Life Improvements: Optional<a class="headerlink" href="#quality-of-life-improvements-optional" title="Permanent link">&para;</a></h4>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
+<p>Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your prefferred mapping app via CarPlay/Android Auto.</p>
 <h2 id="system-management">System Management<a class="headerlink" href="#system-management" title="Permanent link">&para;</a></h2>
+<p>Optional. Provides options for adjusting the screen brightness and other device settings.</p>
 <h2 id="theme-and-appearance">Theme and Appearance<a class="headerlink" href="#theme-and-appearance" title="Permanent link">&para;</a></h2>
 <h3 id="appearance">Appearance<a class="headerlink" href="#appearance" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Advanced UI Controls:</strong> Optionally enable</li>
+</ul>
 <h3 id="theme">Theme<a class="headerlink" href="#theme" title="Permanent link">&para;</a></h3>
 <h2 id="vehicle-controls">Vehicle Controls<a class="headerlink" href="#vehicle-controls" title="Permanent link">&para;</a></h2>
 <h3 id="vehicle-settings">Vehicle Settings<a class="headerlink" href="#vehicle-settings" title="Permanent link">&para;</a></h3>
@@ -1150,7 +1308,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 18, 2025 02:35:25 UTC">July 18, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 20, 2025 22:43:19 UTC">July 20, 2025</span>
   </span>
 
     
