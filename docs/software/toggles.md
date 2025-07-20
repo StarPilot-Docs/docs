@@ -171,10 +171,27 @@ Optional. Provides options for adjusting the screen brightness and other device 
 ### Appearance
 
 * **Advanced UI Controls:** Optionally enable
+    * Some prefer to hide Current Speed and Lead Marker for a cleaner look. I like leaving them on. Lead marker can be useful when testing new models. All personal preference. 
+    
+* **Developer UI**: Leave off, unless you have a specific reason to turn this on. Gives stats and things that are useful for troubleshooting & development purposes, but not useful for day-to-day driving. 
 
-WIP! Working on this now, but wanted to push some important changes to above suggestions.
+* **Driving Screen Widgets**: ==Turn On==
+    * Enabling Acceleration Path, Blind Spot Path, and Rotating Steering Wheel can be nice, but is optional
+    * **Driving Personality Button:** ==Turn On for Gen 0 and Gen 1.== In StarPilot, the driving personalities mostly handle follow distance. Gen 2 is able to control this using the steering wheel button. Gen 0 and Gen 1 need to use the on screen button for this.
+    * All other options are optional.
+    
+* **Navigation Widgets:** Optional
+
+* **Quality of Life:** Optional
+    * Can adjust camera views, standby mode, and other optional settings 
 
 ### Theme
+
+If you prefer a more *professional* look, you can disable all toggles here and set the startup alert to stock.
+
+The frogpilot startup alert & various frog themed things can sometimes be concerning to passengers who have not encountered the Comma before.
+
+* **Custom Theme**: ==Optionally disable frog noises.== Although I'm personally generally fine with the more fun frog-themed stuff, I do always change the sound pack to default to disable the frog noises on activation/deactivation, as I find them to be a bit much.
     
 ## Vehicle Controls
 
@@ -182,10 +199,9 @@ WIP! Working on this now, but wanted to push some important changes to above sug
     
 1. Select your car model.
 2. Disable **Automatic Fingerprint Detection**.
-3. Under **General Motors Toggles** DO NOT enable FrogsGoMoo’s experimental longitudinal tune or the Stop and Go hack. DO enable Smoothen Pedal Response While Going Downhill/Uphill.
+3. Under **General Motors Toggles** DO NOT enable FrogsGoMoo’s experimental longitudinal tune. ==DO enable== Smooth Pedal Response on Hills.
 
 ??? note "Fingerprinting Info"
 
     Fingerprinting is inconsistent on GM vehicles at the moment. As such, sometimes ACC bolts decide to fingerprint as Non-ACC which causes fun issues such as… not having Gas/Brake. So to be sure, it’s just always best to manually fingerprint.
-    
-### Wheel Controls
+
