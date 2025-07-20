@@ -17,3 +17,9 @@ These docs were created by Sherloaf Holmes. They are largely based off of the wo
 
 ## Community, & Development
 StarPilot is developed by firestar4430 and thrives on the testing and feedback of our discord community. If you have questions, bug reports, or want to help test new improvements, join us in the #general-motors channel of the [FrogPilot discord](https://discord.gg/frogpilot)!
+
+## Have the right expectations and ==be safe==
+
+The Comma is best used as a hands-free lane centering and adaptive cruise control device on the highway. It is not capable of safely doing Full Self-Driving (despite Comma’s promotional “Taco Bell run” video) in most scenarios. Using it in complex driving environments is a recipe for a bad time.
+
+In normal chill highway driving, the Comma is quite reliable, but like any driver assistance system, always pay full attention to what’s going on and be ready to take over.
