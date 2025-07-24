@@ -10,9 +10,11 @@ nav:
   - Hardware Installation:
     - Comma 3X: hardware/comma.md
     - Pedal: hardware/pedal.md
+    - Car Config: hardware/car.md
   - Software Installation:
     - Install StarPilot: software/starpilot.md
     - Configure Toggles: software/toggles.md
+  - Pedal Firmware Flash: pedal-firmware.md
 
 theme:
     name: material
@@ -68,6 +70,7 @@ markdown_extensions:
           - pymdownx.keys
           - pymdownx.mark
           - pymdownx.tilde
+          - attr_list
           
 plugins:
     - search

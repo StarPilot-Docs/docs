@@ -72,7 +72,7 @@ These settings control Conditional Experimental Mode, often called "CEM". Experi
 Experimental Mode has a tendency to slow down/speed up weirdly, and overall just behave strangely, so we recommend conditionally enabling it only when necessary. 
 
 * **Curve Detected Ahead:** Can be useful if you regularly take tight corners above the speed limit. Activates when a tight curve is detected. Most leave this off. Likely to be superseded by a fancy new curve speed control FrogsGoMoo is working on.
-* **Lead Detected Ahead:** ==Non-ACC - Turn on both Slower Lead and Stopped Lead==, to help the model better slow when using VOACC (Visual Only ACC). 
+* **Lead Detected Ahead:** ==Turn on both Slower Lead and Stopped Lead==, to help the model better slow when using VOACC (Visual Only ACC). 
 * **Navigation Data:** Recommend leaving off.
 * **openpilot Wants to Stop In:** Helps with slowing to a stop at lights, in traffic, etc. ==Default is 8 seconds==. Increase this number if your car is not slowing down in time for leads/lights. Decrease this number if you're getting lots of false activations and the car is going in and out of CEM when it shouldn't.
 * **Status Widget:** Up to you. Recommend leaving on. Shows an icon that displays if CEM is active, and if so, why.
@@ -91,6 +91,11 @@ Manage lets you set the follow distance to your preference.
 
 These have been tuned by firestar - if you wish to tune how they react, you can unlock additional settings by switching to the *developer* tuning level. Be careful though! 
 
+See [Appearance -> Driving Screen Widgets](#appearance) to enable an on screen button for switching personalities. 
+
+Optional: [A macropad accessory](https://github.com/nelsonjchen/c3-faux-touch-keyboard) is available to adjust driving personality without touching the screen. It costs around $25 and requires minor tinkering. 
+
+![An image of a small macropad in a Bolt](/assets/images/macropad.png){ width="300" }
 
 #### Longitudinal Tuning: ==Turn On==
 
@@ -119,7 +124,7 @@ The above profiles have been specially tuned to work better with the Bolt's acce
     
 * **Increase Stopped Distance:** Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the [CEM](/software/toggles/#conditional-experimental-mode-turn-on) settings for help with this.
 
-* **Map Accell/Decel to Gears:** Gears? Where we're going, we don't need gears! But in all honesty... I don't think this does anything for us.
+* **Map Accell/Decel to Gears:** Allows sport mode to increase to the next accel profile. Reccomended to keep **off** as sport mode changes the lateral response for gen2 cars (gives them less torque).
 
 ### Steering
 

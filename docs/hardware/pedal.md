@@ -1,5 +1,9 @@
 # Installing the Pedal Interceptor
 
+!!! warning "Gen1 Bolt Pedal Firmware"
+
+    If you have a Gen1 Bolt (2017-2021) and you bought your pedal before June 2025, you will need to flash the firmware of your pedal with a DFU key for proper functionality. See the [Pedal Firmware Flashing](/pedal-firmware/) guide for more info.
+
 To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable from the harness box down to the drivers side footwell. Here, the Pedal will be inserted in series with your accelerator, and connect up to the Comma via the Cat5e cable. You should not need to remove any panels for install. A flat cable is recommended for easier hiding.
 
 ## Steps:
