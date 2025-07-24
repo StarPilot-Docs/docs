@@ -16,6 +16,8 @@
         <link rel="prev" href="../starpilot/">
       
       
+        <link rel="next" href="../../pedal-firmware/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
@@ -406,6 +408,29 @@
   
   <span class="md-ellipsis">
     Pedal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/car/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Car Config
     
   </span>
   
@@ -818,6 +843,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pedal-firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pedal Firmware Flash
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1174,7 +1221,7 @@
 <p>Experimental Mode has a tendency to slow down/speed up weirdly, and overall just behave strangely, so we recommend conditionally enabling it only when necessary. </p>
 <ul>
 <li><strong>Curve Detected Ahead:</strong> Can be useful if you regularly take tight corners above the speed limit. Activates when a tight curve is detected. Most leave this off. Likely to be superseded by a fancy new curve speed control FrogsGoMoo is working on.</li>
-<li><strong>Lead Detected Ahead:</strong> <mark>Non-ACC - Turn on both Slower Lead and Stopped Lead</mark>, to help the model better slow when using VOACC (Visual Only ACC). </li>
+<li><strong>Lead Detected Ahead:</strong> <mark>Turn on both Slower Lead and Stopped Lead</mark>, to help the model better slow when using VOACC (Visual Only ACC). </li>
 <li><strong>Navigation Data:</strong> Recommend leaving off.</li>
 <li><strong>openpilot Wants to Stop In:</strong> Helps with slowing to a stop at lights, in traffic, etc. <mark>Default is 8 seconds</mark>. Increase this number if your car is not slowing down in time for leads/lights. Decrease this number if you're getting lots of false activations and the car is going in and out of CEM when it shouldn't.</li>
 <li><strong>Status Widget:</strong> Up to you. Recommend leaving on. Shows an icon that displays if CEM is active, and if so, why.</li>
@@ -1185,6 +1232,9 @@
 <p>Allows you to enable or disable certain personalities.</p>
 <p>Manage lets you set the follow distance to your preference.</p>
 <p>These have been tuned by firestar - if you wish to tune how they react, you can unlock additional settings by switching to the <em>developer</em> tuning level. Be careful though! </p>
+<p>See <a href="#appearance">Appearance -&gt; Driving Screen Widgets</a> to enable an on screen button for switching personalities. </p>
+<p>Optional: <a href="https://github.com/nelsonjchen/c3-faux-touch-keyboard">A macropad accessory</a> is available to adjust driving personality without touching the screen. It costs around $25 and requires minor tinkering. </p>
+<p><img alt="An image of a small macropad in a Bolt" src="/assets/images/macropad.png" width="300" /></p>
 <h4 id="longitudinal-tuning-turn-on">Longitudinal Tuning: <mark>Turn On</mark><a class="headerlink" href="#longitudinal-tuning-turn-on" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Acceleration Profile:</strong> <mark>Sport</mark></li>
@@ -1214,7 +1264,7 @@
 <p><strong>Increase Stopped Distance:</strong> Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the <a href="/software/toggles/#conditional-experimental-mode-turn-on">CEM</a> settings for help with this.</p>
 </li>
 <li>
-<p><strong>Map Accell/Decel to Gears:</strong> Gears? Where we're going, we don't need gears! But in all honesty... I don't think this does anything for us.</p>
+<p><strong>Map Accell/Decel to Gears:</strong> Allows sport mode to increase to the next accel profile. Reccomended to keep <strong>off</strong> as sport mode changes the lateral response for gen2 cars (gives them less torque).</p>
 </li>
 </ul>
 <h3 id="steering">Steering<a class="headerlink" href="#steering" title="Permanent link">&para;</a></h3>
@@ -1322,7 +1372,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 20, 2025 23:24:04 UTC">July 20, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 24, 2025 01:28:52 UTC">July 24, 2025</span>
   </span>
 
     
@@ -1402,6 +1452,22 @@
             </div>
           </a>
         
+        
+          
+          <a href="../../pedal-firmware/" class="md-footer__link md-footer__link--next" aria-label="Next: Pedal Firmware Flash">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Pedal Firmware Flash
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
