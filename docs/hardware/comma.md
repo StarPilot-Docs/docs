@@ -1,6 +1,6 @@
 # Installing your Comma 3X
 
-Installing a Comma unit in a Bolt closely matches the guide on [Comma's website](https://comma.ai/setup/comma-3x?harness=Chevrolet%2520Bolt%2520EV%25202022-23). Note that the Comma Power is not needed for the Bolt, so any mention of it can be safely ignored. The Bolt provides sufficient power through it's camera harness. 
+When installing a Comma unit in a Bolt, follow the [Comma website's guide](https://comma.ai/setup/comma-3x?harness=Chevrolet%2520Bolt%2520EV%25202022-23), but **disregard the optional step for the Comma Power** (OBD-II power). The Bolt's camera harness provides sufficient power, fulfilling the benefits listed for Comma Power. To preserve your car's 12V battery, the Comma unit will automatically shut off after 6 hours in the off road state.
 
 !!! note
 
