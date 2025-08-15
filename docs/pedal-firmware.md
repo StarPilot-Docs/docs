@@ -14,6 +14,10 @@ The firmware released in October 2024 ran at twice the speed it should have. Thi
 * [bootstub.pedal.bin](/assets/pedal-firmware/gen1-bolt/bootstub.pedal.bin){:download="bootstub.pedal.bin"}
 * [pedal.bin](/assets/pedal-firmware/gen1-bolt/pedal.bin){:download="pedal.bin"}
 
+!!! note
+
+    This firmware is different than that listed as "new" on the Bear Tech GitHub (as of 8/15/2025). Please use the above firmware. Feel free to ask us questions in the GM channel of the [FrogPilot Discord](https://discord.gg/frogpilot) if you have any questions. 
+
 ## Flashing Instructions
 
 [Flash Comma Pedal in DFU Mode Tutorial from TinyBear](https://www.youtube.com/watch?v=DNf0OGwXUUQ)
