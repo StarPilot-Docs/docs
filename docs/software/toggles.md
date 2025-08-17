@@ -54,6 +54,10 @@ These are optional changes. Some popular changes include:
 
     This is a departure from previous advice - we used to advise against this due to the potential for incomplete models. But with the new tinygrad model switcher, having this on helps ensure all pieces of the model have been downloaded correctly.
 
+!!! info "This info is out of date"
+
+    A whole bunch of new models have been releasing recently, so these suggestions are a bit out of date at the moment. Join us in the GM channel of the [FrogPilot Discord](https://discord.gg/frogpilot) for more up to date recommendations, while we improve this section of the docs. 
+
 Full info on models coming soon. For now, try the following:
 
 * **WD-40**: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.
