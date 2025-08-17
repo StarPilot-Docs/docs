@@ -12,7 +12,7 @@ ASCM & SDGM give the comma control over steering, and it will use your cars buil
 ## Recommended Config per Car Model
 * 2017-2018 Chevy Volt with Factory ACC: [ASCM Harness & SASCM](#ascm-harness-sascm)
 * 2019 Chevy Volt with Factory ACC: [SDGM Harness & SASCM](#sdgm-harness-sascm)
-* Flashed Volts (With no windshield camera): [OBD + L&P Harnesses](#obd-lp-harnesses)
+* Flashed Volts (With no windshield camera): [OBD-II Harness](#obd-ii-harness)
 * Non-Volt Car with ASCM: [ASCM Harness & SASCM](#ascm-harness-sascm)
 * Non-Volt Car with SDGM: [SDGM Harness & SASCM](#sdgm-harness-sascm)
 
@@ -68,17 +68,9 @@ ASCM & SDGM give the comma control over steering, and it will use your cars buil
 * Optional: If buying a Comma Pedal Only: Flat Cat5e cable, at least 10ft long
 
 
-## OBD + L&P Harnesses
+## OBD-II Harness
 
 ### From comma_ai:
 
 * [Comma 3X (or 3)](https://comma.ai/shop/comma-3x)
-
-??? warning "Do not purchase a harness from Comma"
-
-    Comma has changed the design of the harness box & harness they ship with the 3X, and they no longer have the RJ45 port required for pedal use. See the next section for more info.
-    
-### From [BearTechWorkshop](https://shop.beartech.ca/) (aka tinybear) & [L&P](https://leepauldinginc.square.site):
-
-* [OBD Power](https://shop.beartech.ca/products/obd-and-splitter?variant=45069621625013)
-* [L&P Harness](https://leepauldinginc.square.site/product/gm-volt-malibu-harness-for-open-pilot/20)
+* [OBD-II Harness](https://comma.ai/shop/car-harness?harness=OBD-II) - Can be purchased with your Comma if buying a new one. 
