@@ -1,5 +1,5 @@
 ---
-description: How to pick the correct hardware for running StarPilot on a Bolt 
+description: How to pick the correct hardware for running StarPilot on a Bolt EV
 ---
 
 # Required Hardware

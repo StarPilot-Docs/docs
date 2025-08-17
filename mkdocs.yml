@@ -6,7 +6,8 @@ site_description: Documentation for the install and usage of StarPilot
 
 nav:
   - Introduction: index.md
-  - Required Hardware: hardware.md
+  - Required Hardware: 
+    - Bolt EV: hardware/bolt.md
   - Hardware Installation:
     - Comma 3X: install/comma.md
     - Pedal: install/pedal.md
