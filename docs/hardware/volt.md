@@ -10,7 +10,7 @@ There are two parts to OpenPilot control: Lateral Control (Steering) & Longitudi
 ASCM & SDGM give the comma control over steering, and it will use your cars built in ACC. SASCM allows you to override the built in ACC and use OpenPilot Longitudinal control. If you have stock ACC and do not wish to use OpenPilot Long, you can just purchase the ASCM/SDGM portion of the suggestions. 
 
 ## Recommended Config per Car Model
-* 2016-2018 Chevy Volt with Factory ACC: [ASCM Harness & SASCM](#ascm-harness-sascm)
+* 2017-2018 Chevy Volt with Factory ACC: [ASCM Harness & SASCM](#ascm-harness-sascm)
 * 2019 Chevy Volt with Factory ACC: [SDGM Harness & SASCM](#sdgm-harness-sascm)
 * Flashed Volts (With no windshield camera): [OBD + L&P Harnesses](#obd-lp-harnesses)
 * Non-Volt Car with ASCM: [ASCM Harness & SASCM](#ascm-harness-sascm)
