@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://starpilot.sherloaf.com/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
          <loc>https://starpilot.sherloaf.com/hardware/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
          <loc>https://starpilot.sherloaf.com/pedal-firmware/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://starpilot.sherloaf.com/hardware/car/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <loc>https://starpilot.sherloaf.com/install/car/</loc>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://starpilot.sherloaf.com/hardware/comma/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <loc>https://starpilot.sherloaf.com/install/comma/</loc>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://starpilot.sherloaf.com/hardware/pedal/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <loc>https://starpilot.sherloaf.com/install/pedal/</loc>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
          <loc>https://starpilot.sherloaf.com/software/starpilot/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <lastmod>2025-08-17</lastmod>
     </url>
     <url>
          <loc>https://starpilot.sherloaf.com/software/toggles/</loc>
-         <lastmod>2025-08-15</lastmod>
+         <lastmod>2025-08-17</lastmod>
     </url>
 </urlset>
