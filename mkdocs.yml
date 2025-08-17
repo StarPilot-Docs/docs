@@ -8,9 +8,9 @@ nav:
   - Introduction: index.md
   - Required Hardware: hardware.md
   - Hardware Installation:
-    - Comma 3X: hardware/comma.md
-    - Pedal: hardware/pedal.md
-    - Car Config: hardware/car.md
+    - Comma 3X: install/comma.md
+    - Pedal: install/pedal.md
+    - Car Config: install/car.md
   - Software Installation:
     - Install StarPilot: software/starpilot.md
     - Configure Toggles: software/toggles.md
