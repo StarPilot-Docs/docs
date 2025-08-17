@@ -2,7 +2,7 @@
 description: How to pick the correct hardware for running StarPilot on a Volt 
 ---
 
-# Required Hardware
+# Required Hardware - Volt & Other ASCM/SDGM Cars
 The Volt has a number of possible configurations. This page lists the recommended method per car type, and all possible methods. 
 
 There are two parts to OpenPilot control: Lateral Control (Steering) & Longitudinal Control (Gas/Brake).

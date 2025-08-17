@@ -2,7 +2,7 @@
 description: How to pick the correct hardware for running StarPilot on a Bolt EV
 ---
 
-# Required Hardware
+# Required Hardware - Bolt
 Our current hardware recommendations are as follows:
 
 ## Chevy Bolt with ACC
