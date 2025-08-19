@@ -8,6 +8,7 @@ nav:
   - Introduction: index.md
   - Required Hardware: 
     - Bolt EV: hardware/bolt.md
+    - Volt & Other ASCM/SDGM Cars: hardware/volt.md
   - Hardware Installation:
     - Comma 3X: install/comma.md
     - Pedal: install/pedal.md
