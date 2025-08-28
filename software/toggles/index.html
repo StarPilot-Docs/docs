@@ -699,6 +699,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Driving Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Selection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1018,6 +1033,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Driving Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Selection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1253,11 +1283,11 @@
 <p>In general, FrogPilot settings should remain between fork installs and branch switches.</p>
 <div class="admonition note">
 <p class="admonition-title">TL;DR?</p>
-<p>Just look for all the <mark>blue highlights</mark> - they will tell you any settings you need to turn off or on for best experience. </p>
+<p>Just look for all the <mark>blue highlights</mark> - they will tell you any settings you need to turn off or on for best experience.</p>
 </div>
 <h2 id="tuning-level">Tuning Level<a class="headerlink" href="#tuning-level" title="Permanent link">&para;</a></h2>
 <p>There are multiple tuning levels in the FrogPilot settings - these will enable or disable more advanced tuning parameters.</p>
-<p>For best results on StarPilot, you’ll need to <mark>use the <strong>Advanced</strong> tuning level</mark>. </p>
+<p>For best results on StarPilot, you’ll need to <mark>use the <strong>Advanced</strong> tuning level</mark>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To learn more about any setting, tap the title to see a description</p>
@@ -1281,37 +1311,37 @@
 <p class="admonition-title">Warning</p>
 <p>This is a departure from previous advice - we used to advise against this due to the potential for incomplete models. But with the new tinygrad model switcher, having this on helps ensure all pieces of the model have been downloaded correctly.</p>
 </div>
+<h4 id="model-selection">Model Selection<a class="headerlink" href="#model-selection" title="Permanent link">&para;</a></h4>
 <div class="admonition info">
-<p class="admonition-title">This info is out of date</p>
-<p>A whole bunch of new models have been releasing recently, so these suggestions are a bit out of date at the moment. Join us in the GM channel of the <a href="https://discord.gg/frogpilot">FrogPilot Discord</a> for more up to date recommendations, while we improve this section of the docs. </p>
+<p class="admonition-title">This info goes out of date quickly!</p>
+<p>Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the GM channel of the <a href="https://discord.gg/frogpilot">FrogPilot Discord</a> for more model info.</p>
 </div>
-<p>Full info on models coming soon. For now, try the following:</p>
 <ul>
-<li><strong>WD-40</strong>: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.</li>
-<li><mark><strong>LeTR</strong></mark>: Our current go to tinygrad model. Try this first! (as of 7/20/25)</li>
-<li><strong>Vikander</strong>: A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out! </li>
-<li><strong>TR Models</strong> "Tomb Raider" models. There's always a new version, TRX is decent, higher numbers can be VERY hit or miss. Use with caution.</li>
-<li><strong>Simple Plan (SP)</strong>: Seems to be decent, some minor oscillations but better than Vikander. Most have switched over to LeTR.</li>
+<li><mark><strong>Steam Powered v2</strong></mark>: The current best all around experience, and the default on stock OpenPilot. Try this first! (as of 8/27/25)</li>
+<li><strong>Space Lab 1 v2</strong>: A well liked model, better than Space Lab 2 or 3 it seems? The naming is confusing.</li>
+<li><strong>WD-40</strong>: An old clasic: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.</li>
+<li><strong>Vikander</strong>: Increasingly outdated. A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out!</li>
+<li><strong>TR Models</strong> "Tomb Raider" models. There's always a new version, TRX is decent, LeTR is well liked by some. Higher numbers can be VERY hit or miss. Use with caution.</li>
 </ul>
 <h3 id="gas-brake">Gas / Brake<a class="headerlink" href="#gas-brake" title="Permanent link">&para;</a></h3>
 <h4 id="conditional-experimental-mode-turn-on">Conditional Experimental Mode: <mark>Turn On</mark><a class="headerlink" href="#conditional-experimental-mode-turn-on" title="Permanent link">&para;</a></h4>
 <p>These settings control Conditional Experimental Mode, often called "CEM". Experimental Mode (vs "Chill Mode") is not yet good enough to handle all driving. But it can handle traffic lights &amp; stop signs, and is better in some situations. So we automatically enable it in certain conditions where it is better than Chill.</p>
-<p>Experimental Mode has a tendency to slow down/speed up weirdly, and overall just behave strangely, so we recommend conditionally enabling it only when necessary. </p>
+<p>Experimental Mode has a tendency to slow down/speed up weirdly, and overall just behave strangely, so we recommend conditionally enabling it only when necessary.</p>
 <ul>
 <li><strong>Curve Detected Ahead:</strong> Can be useful if you regularly take tight corners above the speed limit. Activates when a tight curve is detected. Most leave this off. Likely to be superseded by a fancy new curve speed control FrogsGoMoo is working on.</li>
-<li><strong>Lead Detected Ahead:</strong> <mark>Turn on both Slower Lead and Stopped Lead</mark>, to help the model better slow when using VOACC (Visual Only ACC). </li>
+<li><strong>Lead Detected Ahead:</strong> <mark>Turn on both Slower Lead and Stopped Lead</mark>, to help the model better slow when using VOACC (Visual Only ACC).</li>
 <li><strong>Navigation Data:</strong> Recommend leaving off.</li>
 <li><strong>openpilot Wants to Stop In:</strong> Helps with slowing to a stop at lights, in traffic, etc. <mark>Default is 8 seconds</mark>. Increase this number if your car is not slowing down in time for leads/lights. Decrease this number if you're getting lots of false activations and the car is going in and out of CEM when it shouldn't.</li>
 <li><strong>Status Widget:</strong> Up to you. Recommend leaving on. Shows an icon that displays if CEM is active, and if so, why.</li>
 </ul>
 <h4 id="curve-speed-control-personal-preference">Curve Speed Control: Personal Preference<a class="headerlink" href="#curve-speed-control-personal-preference" title="Permanent link">&para;</a></h4>
-<p>Relatively privative currently. Slows down for curves. Advanced CSC coming soon. </p>
+<p>Relatively privative currently. Slows down for curves. Advanced CSC coming soon.</p>
 <h4 id="customize-driving-personalities-personal-preference">Customize Driving Personalities: Personal Preference<a class="headerlink" href="#customize-driving-personalities-personal-preference" title="Permanent link">&para;</a></h4>
 <p>Allows you to enable or disable certain personalities.</p>
 <p>Manage lets you set the follow distance to your preference.</p>
-<p>These have been tuned by firestar - if you wish to tune how they react, you can unlock additional settings by switching to the <em>developer</em> tuning level. Be careful though! </p>
-<p>See <a href="#appearance">Appearance -&gt; Driving Screen Widgets</a> to enable an on screen button for switching personalities. </p>
-<p>Optional: <a href="https://github.com/nelsonjchen/c3-faux-touch-keyboard">A macropad accessory</a> is available to adjust driving personality without touching the screen. It costs around $25 and requires minor tinkering. </p>
+<p>These have been tuned by firestar - if you wish to tune how they react, you can unlock additional settings by switching to the <em>developer</em> tuning level. Be careful though!</p>
+<p>See <a href="#appearance">Appearance -&gt; Driving Screen Widgets</a> to enable an on screen button for switching personalities.</p>
+<p>Optional: <a href="https://github.com/nelsonjchen/c3-faux-touch-keyboard">A macropad accessory</a> is available to adjust driving personality without touching the screen. It costs around $25 and requires minor tinkering.</p>
 <p><img alt="An image of a small macropad in a Bolt" src="/assets/images/macropad.png" width="300" /></p>
 <h4 id="longitudinal-tuning-turn-on">Longitudinal Tuning: <mark>Turn On</mark><a class="headerlink" href="#longitudinal-tuning-turn-on" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1320,7 +1350,7 @@
 </ul>
 <p>The above profiles have been specially tuned to work better with the Bolt's accel &amp; decel curve.</p>
 <ul>
-<li><strong>Human Like Accel/Leads:</strong> These do... things? This will change how the model acts. Sometimes quite significantly. Varies model to model. Test with on and off. </li>
+<li><strong>Human Like Accel/Leads:</strong> These do... things? This will change how the model acts. Sometimes quite significantly. Varies model to model. Test with on and off.</li>
 <li><strong>Taco Bell Run:</strong> Just leave taco bell run stuff off.</li>
 </ul>
 <div class="admonition note">
@@ -1331,7 +1361,7 @@
 <ul>
 <li><strong>Cruise Intervals:</strong> These are up to you! I'm not sure the "long press" works on all vehicles. Some like to increase short press to 5mph for easier jumps in cruise speed.</li>
 <li><strong>Force Keep openpilot in the Standstill State:</strong> When this toggle is on, openpilot will require user input before it will resuem from a fully stopped state.</li>
-<li><strong>Force Stop for "Detected" Stop Lights/Signs:</strong> <mark>Recommend Turning On.</mark> This will help prevent (but not eliminate!) the Comma from running red lights or stop signs. </li>
+<li><strong>Force Stop for "Detected" Stop Lights/Signs:</strong> <mark>Recommend Turning On.</mark> This will help prevent (but not eliminate!) the Comma from running red lights or stop signs.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Stop Light and Stop Sign Detection can be Inconsistent</p>
@@ -1350,7 +1380,7 @@
 <p>Section is WIP, features here are more for special cases &amp; testing.</p>
 <h4 id="always-on-lateral-recommend-turning-on">Always on Lateral: <mark>Recommend Turning On</mark><a class="headerlink" href="#always-on-lateral-recommend-turning-on" title="Permanent link">&para;</a></h4>
 <p>Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice &amp; useful, so we generally reccomend having it on.</p>
-<p>With this on &amp; the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control. </p>
+<p>With this on &amp; the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control.</p>
 <div class="admonition warning">
 <p class="admonition-title">Does not work under 6mph</p>
 <p>The Bolt does not allow for lateral control under 6mph. This applies to AoL and standard modes. It will not steer for you under 6mph.</p>
@@ -1387,11 +1417,11 @@
 <li>
 <p><strong>Advanced UI Controls:</strong> Optionally enable</p>
 <ul>
-<li>Some prefer to hide Current Speed and Lead Marker for a cleaner look. I like leaving them on. Lead marker can be useful when testing new models. All personal preference. </li>
+<li>Some prefer to hide Current Speed and Lead Marker for a cleaner look. I like leaving them on. Lead marker can be useful when testing new models. All personal preference.</li>
 </ul>
 </li>
 <li>
-<p><strong>Developer UI</strong>: Leave off, unless you have a specific reason to turn this on. Gives stats and things that are useful for troubleshooting &amp; development purposes, but not useful for day-to-day driving. </p>
+<p><strong>Developer UI</strong>: Leave off, unless you have a specific reason to turn this on. Gives stats and things that are useful for troubleshooting &amp; development purposes, but not useful for day-to-day driving.</p>
 </li>
 <li>
 <p><strong>Driving Screen Widgets</strong>: <mark>Turn On</mark></p>
@@ -1407,7 +1437,7 @@
 <li>
 <p><strong>Quality of Life:</strong> Optional</p>
 <ul>
-<li>Can adjust camera views, standby mode, and other optional settings </li>
+<li>Can adjust camera views, standby mode, and other optional settings</li>
 </ul>
 </li>
 </ul>
@@ -1450,7 +1480,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 17, 2025 03:50:44 UTC">August 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 28, 2025 00:34:40 UTC">August 28, 2025</span>
   </span>
 
     

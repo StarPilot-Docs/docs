@@ -965,9 +965,9 @@
 
 
 <h1 id="required-hardware-volt-other-ascmsdgm-cars">Required Hardware - Volt &amp; Other ASCM/SDGM Cars<a class="headerlink" href="#required-hardware-volt-other-ascmsdgm-cars" title="Permanent link">&para;</a></h1>
-<p>The Volt has a number of possible configurations. This page lists the recommended method per car type, and all possible methods. </p>
+<p>The Volt has a number of possible configurations. This page lists the recommended method per car type, and all possible methods.</p>
 <p>There are two parts to OpenPilot control: Lateral Control (Steering) &amp; Longitudinal Control (Gas/Brake).</p>
-<p>ASCM &amp; SDGM give the comma control over steering, and it will use your cars built in ACC. SASCM allows you to override the built in ACC and use OpenPilot Longitudinal control. If you have stock ACC and do not wish to use OpenPilot Long, you can just purchase the ASCM/SDGM portion of the suggestions. </p>
+<p>ASCM &amp; SDGM give the comma control over steering, and it will use your cars built in ACC. SASCM allows you to override the built in ACC and use OpenPilot Longitudinal control. If you have stock ACC and do not wish to use OpenPilot Long, you can just purchase the ASCM/SDGM portion of the suggestions.</p>
 <h2 id="recommended-config-per-car-model">Recommended Config per Car Model<a class="headerlink" href="#recommended-config-per-car-model" title="Permanent link">&para;</a></h2>
 <ul>
 <li>2017-2018 Chevy Volt with Factory ACC: <a href="#ascm-harness-sascm">ASCM Harness &amp; SASCM</a></li>
@@ -976,10 +976,14 @@
 <li>Non-Volt Car with ASCM: <a href="#ascm-harness-sascm">ASCM Harness &amp; SASCM</a></li>
 <li>Non-Volt Car with SDGM: <a href="#sdgm-harness-sascm">SDGM Harness &amp; SASCM</a></li>
 </ul>
+<details class="info">
+<summary>Comma 3 End of Life (and Continued Support)</summary>
+<p>On 8/26/2025 Comma announced that they are dropping support for the Comma 3 to focus on the Comma 3X. As such, if you are purchasing a new or used Comma, it's probably best to go with a 3X if possible. That being said - there are not currently any technical limitations that prevent the 3 from running the current versions of OpenPilot, as it has the same processor as the 3X. We expect to be able to support the 3 in StarPilot for the forseeable future.</p>
+</details>
 <h2 id="ascm-harness-sascm">ASCM Harness &amp; SASCM<a class="headerlink" href="#ascm-harness-sascm" title="Permanent link">&para;</a></h2>
 <h3 id="from-comma_ai">From comma_ai:<a class="headerlink" href="#from-comma_ai" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://comma.ai/shop/comma-3x">Comma 3X (or 3)</a></li>
+<li><a href="https://comma.ai/shop/comma-3x">Comma 3X</a></li>
 </ul>
 <details class="warning">
 <summary>Do not purchase a harness from Comma</summary>
@@ -989,7 +993,7 @@
 <ul>
 <li><a href="https://shop.beartech.ca/products/ascm-harness?variant=44900990124213">ASCM Harness Plus + Harness Box</a></li>
 <li><a href="https://shop.beartech.ca/products/sascm-for-gm-vehicles">SASCM</a></li>
-<li>Optional: <a href="https://shop.beartech.ca/products/comma-pedal">Comma Pedal</a> for ability to start from a stop on 2018 or newer. </li>
+<li>Optional: <a href="https://shop.beartech.ca/products/comma-pedal">Comma Pedal</a> for ability to start from a stop on 2018 or newer.</li>
 </ul>
 <details class="note">
 <summary>Already have a Harness Cable?</summary>
@@ -1002,7 +1006,7 @@
 <h2 id="sdgm-harness-sascm">SDGM Harness &amp; SASCM<a class="headerlink" href="#sdgm-harness-sascm" title="Permanent link">&para;</a></h2>
 <h3 id="from-comma_ai_1">From comma_ai:<a class="headerlink" href="#from-comma_ai_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://comma.ai/shop/comma-3x">Comma 3X (or 3)</a></li>
+<li><a href="https://comma.ai/shop/comma-3x">Comma 3X</a></li>
 </ul>
 <details class="warning">
 <summary>Do not purchase a harness from Comma</summary>
@@ -1025,8 +1029,10 @@
 <h2 id="obd-ii-harness">OBD-II Harness<a class="headerlink" href="#obd-ii-harness" title="Permanent link">&para;</a></h2>
 <h3 id="from-comma_ai_2">From comma_ai:<a class="headerlink" href="#from-comma_ai_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://comma.ai/shop/comma-3x">Comma 3X (or 3)</a></li>
-<li><a href="https://comma.ai/shop/car-harness?harness=OBD-II">OBD-II Harness</a> - Can be purchased with your Comma if buying a new one. </li>
+<li><a href="https://comma.ai/shop/comma-3x">Comma 3X</a></li>
+<li>One of the following two OBD Harnesses:</li>
+<li><a href="https://comma.ai/shop/car-harness?harness=OBD-II">OBD-II Harness</a> - Can be purchased with your Comma if buying a new one.</li>
+<li><a href="https://konik.ai/shop/obd2c-connector/">Konik OBD2C connector</a> - Cheaper option. Confirmed by a community member to work as an OBD harness for Volts that need it. Note that this does not come with a USB-C cable, so you will need to supply your own cabling.</li>
 </ul>
 
 
@@ -1050,7 +1056,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 17, 2025 20:17:04 UTC">August 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 28, 2025 00:34:40 UTC">August 28, 2025</span>
   </span>
 
     
