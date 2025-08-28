@@ -23,3 +23,14 @@ StarPilot is developed by firestar4430 and thrives on the testing and feedback o
 The Comma is best used as a hands-free lane centering and adaptive cruise control device on the highway. It is not capable of safely doing Full Self-Driving (despite Comma’s promotional “Taco Bell run” video) in most scenarios. Using it in complex driving environments is a recipe for a bad time.
 
 In normal chill highway driving, the Comma is quite reliable, but like any driver assistance system, always pay full attention to what’s going on and be ready to take over.
+
+## Changelog
+
+### 8/27/2025
+* Added a changelog
+* Added info about Comma discontinuing support for the Comma 3
+* Updated model recommendations
+    * Now suggesting Steam Powered v2 as starter model
+* Added Konik OBD2C harness to Volt docs
+* Clarified Gen1 Bolt pedal firmware update notices
+* Cleaned up formatting

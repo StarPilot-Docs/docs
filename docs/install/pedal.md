@@ -1,6 +1,6 @@
 # Installing the Pedal Interceptor
 
-!!! warning "Gen1 Bolt Pedal Firmware"
+??? warning "Gen1 Bolt ONLY - Pedal Firmware Update"
 
     If you have a Gen1 Bolt (2017-2021) and you bought your pedal before June 2025, you will need to flash the firmware of your pedal with a DFU key for proper functionality. See the [Pedal Firmware Flashing](/pedal-firmware/) guide for more info.
 
@@ -31,4 +31,4 @@ To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable f
 
 ### Button things up
 
-You can now re-attach the cover behind the mirror, ensuring no cables get pinched or caught, and replace the small plastic peice at the front. There should be enough space remaining for the USB C for the comma & the ethernet for the pedal to come out. 
+You can now re-attach the cover behind the mirror, ensuring no cables get pinched or caught, and replace the small plastic peice at the front. There should be enough space remaining for the USB C for the comma & the ethernet for the pedal to come out.
