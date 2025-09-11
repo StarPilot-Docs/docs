@@ -61,8 +61,9 @@ These are optional changes. Some popular changes include:
     Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the GM channel of the [FrogPilot Discord](https://discord.gg/frogpilot) for more model info.
 
 * ==**Steam Powered v2**==: The current best all around experience, and the default on stock OpenPilot. Try this first! (as of 8/27/25)
-* **Space Lab 1 v2**: A well liked model, better than Space Lab 2 or 3 it seems? The naming is confusing.
-* **WD-40**: An old clasic: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.
+* ==**Green Watermelon v5**==: Newer model than Steam Powered v2. A favorite of many, definitely worth a try. 
+* ==**Firehose**==: Newer model than Steam Powered v2, first model using firehose data from user devices. A favorite of many, definitely worth a try.
+* **WD-40**: An old classic: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.
 * **Vikander**: Increasingly outdated. A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out!
 * **TR Models** "Tomb Raider" models. There's always a new version, TRX is decent, LeTR is well liked by some. Higher numbers can be VERY hit or miss. Use with caution.
 
@@ -108,7 +109,7 @@ Optional: [A macropad accessory](https://github.com/nelsonjchen/c3-faux-touch-ke
 
 The above profiles have been specially tuned to work better with the Bolt's accel & decel curve.
 
-* **Human Like Accel/Leads:** These do... things? This will change how the model acts. Sometimes quite significantly. Varies model to model. Test with on and off.
+* **Human Like Accel/Leads:** ==Turn OFF==. Recent tuning improvements have made these settings act erratically. They should be turned off.  
 * **Taco Bell Run:** Just leave taco bell run stuff off.
 
 !!! note "Hate a model?"

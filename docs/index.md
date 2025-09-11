@@ -26,6 +26,10 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ## Changelog
 
+### 9/10/2025
+* Updated Human Like recommendations to ==OFF== due to new tuning improvements
+* Added Green Watermelon v5 & Firehose to the recommended models
+
 ### 8/27/2025
 * Added a changelog
 * Added info about Comma discontinuing support for the Comma 3
