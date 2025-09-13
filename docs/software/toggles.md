@@ -58,7 +58,7 @@ These are optional changes. Some popular changes include:
 
 !!! info "This info goes out of date quickly!"
 
-    Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the GM channel of the [FrogPilot Discord](https://discord.gg/frogpilot) for more model info.
+    Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [#starpilot-discussion](https://discord.com/channels/1137853399715549214/1415794762312581222) channel of the [FrogPilot Discord](https://discord.gg/frogpilot) for more model info.
 
 * ==**Steam Powered v2**==: The current best all around experience, and the default on stock OpenPilot. Try this first! (as of 8/27/25)
 * ==**Green Watermelon v5**==: Newer model than Steam Powered v2. A favorite of many, definitely worth a try. 
@@ -109,7 +109,7 @@ Optional: [A macropad accessory](https://github.com/nelsonjchen/c3-faux-touch-ke
 
 The above profiles have been specially tuned to work better with the Bolt's accel & decel curve.
 
-* **Human Like Accel/Leads:** ==Turn OFF==. Recent tuning improvements have made these settings act erratically. They should be turned off.  
+* **Human Like Accel/Leads:** ==Turn OFF==. Recent tuning improvements have made these settings act erratically. They should be turned off. 
 * **Taco Bell Run:** Just leave taco bell run stuff off.
 
 !!! note "Hate a model?"
