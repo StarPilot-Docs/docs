@@ -58,7 +58,7 @@ These are optional changes. Some popular changes include:
 
 !!! info "This info goes out of date quickly!"
 
-    Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the GM channel of the [FrogPilot Discord](https://discord.gg/frogpilot) for more model info.
+    Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [FrogPilot Discord](https://discord.gg/sN7HwDyxn8) for more model info.
 
 * ==**Steam Powered v2**==: The current best all around experience, and the default on stock OpenPilot. Try this first! (as of 8/27/25)
 * ==**Green Watermelon v5**==: Newer model than Steam Powered v2. A favorite of many, definitely worth a try. 

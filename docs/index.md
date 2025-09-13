@@ -9,14 +9,14 @@ StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot), which i
 
 !!! note "Questions?"
 
-    Join us in the #general-motors channel of the [FrogPilot discord](https://discord.gg/frogpilot). The pinned messages will lead you to the StarPilot threads. (Unfortunately, we can't link directly to threads).
+    Join us in the [FrogPilot discord](https://discord.gg/sN7HwDyxn8). The pinned messages will lead you to the StarPilot threads. (Unfortunately, we can't link directly to threads).
 
 ## Credits
 
 These docs were created by Sherloaf Holmes. They are largely based off of the wonderful work of ==ayoba== who created our previous documentation. Shoutout to ==Nik== for always being there to help & answer questions in Discord. And of course, none of this would be possible without ==firestar4430==, who created StarPilot and spends an unadvisable amount of his personal time fixing bugs, creating new features, and answering questions in Discord.
 
 ## Community, & Development
-StarPilot is developed by firestar4430 and thrives on the testing and feedback of our discord community. If you have questions, bug reports, or want to help test new improvements, join us in the #general-motors channel of the [FrogPilot discord](https://discord.gg/frogpilot)!
+StarPilot is developed by firestar4430 and thrives on the testing and feedback of our discord community. If you have questions, bug reports, or want to help test new improvements, join us in the [FrogPilot discord](https://discord.gg/sN7HwDyxn8)!
 
 ## Have the right expectations and ==be safe==
 
@@ -25,6 +25,10 @@ The Comma is best used as a hands-free lane centering and adaptive cruise contro
 In normal chill highway driving, the Comma is quite reliable, but like any driver assistance system, always pay full attention to what’s going on and be ready to take over.
 
 ## Changelog
+
+### 9/13/2025
+* Added TRX branch (for non-GM cars) to the Install StarPilot page
+* Updated Discord links to new StarPilot channel
 
 ### 9/10/2025
 * Updated Human Like recommendations to ==OFF== due to new tuning improvements
