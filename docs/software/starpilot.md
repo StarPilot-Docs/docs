@@ -23,10 +23,15 @@ This will give you an input box to type in an install link. Find the correct ins
 | Chevy Bolt 2017                            | Gen 0 | StarPilot-2017 | [firestar.link/2017](https://firestar.link/2017)           |
 | Non-Volt/Bolt GM w/ACC                     | N/A   | TorqueTune     | [firestar.link/torque](https://firestar.link/torque)       |
 | Volt (All Generations) & Other ASCM/SDGM   | N/A   | Kaofui         | [firestar.link/kaofui](https://firestar.link/kaofui)       |
+| All Non-GM Cars                            | N/A   | TRX            | [firestar.link/trx](https://firestar.link/trx)             |
 
 ??? note "Why does the 2017 have its own branch?"
 
     While testing, we discovered that the 2017 has vastly different values for steering torque. This means that, on any other branch of openpilot, 2017 Bolts experience a huge lack of steering ability, when in actuality, they have MORE steering torque than the other gens. This lead us down a long rabbit hole of discovering that lots of things about the 2017 is just... weird and different. Hence the "Gen 0" moniker.
+    
+!!! info "TRX Branch"
+
+    The TRX branch includes the StarPilot custom model switcher and Visual Only ACC (VOACC) improvements without the Bolt specific things present on other branches. It should be used by any non-GM cars. Check with us in Discord for more specifics
 
 ## Dev, Testing, and Other Branches
 
