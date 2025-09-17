@@ -44,6 +44,9 @@ ASCM & SDGM give the comma control over steering, and it will use your cars buil
 
 * Optional: If buying a Comma Pedal Only: Flat Cat5e cable, at least 10ft long
 
+### Reference Connection Diagram
+
+![Reference diagram](/assets/images/hardware/volt/ASCM_SASCM_connection_diagram_final.png)
 
 
 ## SDGM Harness & SASCM
