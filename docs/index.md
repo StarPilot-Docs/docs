@@ -26,6 +26,10 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ## Changelog
 
+### 9/23/2025
+* Update hardware requirements for LKAS
+* Re-organize hardware requirements to reduce duplicated sections
+
 ### 9/13/2025
 * Added TRX branch (for non-GM cars) to the Install StarPilot page
 * Updated Discord links to new StarPilot channel

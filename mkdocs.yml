@@ -83,6 +83,7 @@ plugins:
     - git-committers:
         repository: StarPilot-Docs/docs
         branch: main
+    - callouts
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
