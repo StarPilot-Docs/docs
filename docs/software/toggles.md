@@ -58,11 +58,11 @@ These are optional changes. Some popular changes include:
 
 !!! info "This info goes out of date quickly!"
 
-    Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [FrogPilot Discord](https://discord.gg/sN7HwDyxn8) for more model info.
+    Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [FrogPilot Discord](https://discord.com/channels/1137853399715549214/1415794762312581222) for more model info.
 
-* ==**Steam Powered v2**==: The current best all around experience, and the default on stock OpenPilot. Try this first! (as of 8/27/25)
+* ==**Steam Powered v2**==: The default on stock OpenPilot. Try this first! (as of 8/27/25)
 * ==**Green Watermelon v5**==: Newer model than Steam Powered v2. A favorite of many, definitely worth a try. 
-* ==**Firehose**==: Newer model than Steam Powered v2, first model using firehose data from user devices. A favorite of many, definitely worth a try.
+* ==**Firehose**==: The current best all around experience. Newer model than Steam Powered v2, first model using firehose data from user devices. A favorite of many, definitely worth a try.
 * **WD-40**: An old classic: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.
 * **Vikander**: Increasingly outdated. A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out!
 * **TR Models** "Tomb Raider" models. There's always a new version, TRX is decent, LeTR is well liked by some. Higher numbers can be VERY hit or miss. Use with caution.
