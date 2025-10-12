@@ -26,6 +26,14 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ## Changelog
 
+### 10/12/2025
+* Updated recommended models: Green Watermelon v8 as primary favorite, Steam Powered v2 as secondary, Firehose as default in frogpilot; removed WD-40, Vikander, and TR suggestions
+* Changed Curve Detected Ahead to leave off in lieu of new Curve Speed Controller
+* Updated Curve Speed Control description to explain learning user preferences and training icon
+* Replaced "Hate a model?" note with warning to always turn off Human Like Accel/Leads
+* Fixed spelling of "Accell" to "Accel"
+* Removed outdated Vik/Vicky branch note from install page
+
 ### 10/2/2025
 * Fix broken Discord links
 * Update model suggestion to Firehose

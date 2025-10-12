@@ -60,12 +60,9 @@ These are optional changes. Some popular changes include:
 
     Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [FrogPilot Discord](https://discord.com/channels/1137853399715549214/1415794762312581222) for more model info.
 
-* ==**Steam Powered v2**==: The default on stock OpenPilot. Try this first! (as of 8/27/25)
-* ==**Green Watermelon v5**==: Newer model than Steam Powered v2. A favorite of many, definitely worth a try. 
-* ==**Firehose**==: The current best all around experience. Newer model than Steam Powered v2, first model using firehose data from user devices. A favorite of many, definitely worth a try.
-* **WD-40**: An old classic: A smooth, but outdated experience. It'll be like 75% good for lateral and longitudinal control.
-* **Vikander**: Increasingly outdated. A custom model by the venerable chubbs. Great long, decent lat. Some users experience bad oscillations, but it varies by environment, so try it out!
-* **TR Models** "Tomb Raider" models. There's always a new version, TRX is decent, LeTR is well liked by some. Higher numbers can be VERY hit or miss. Use with caution.
+* ==**Green Watermelon v8**==: It has very impressive longitudinal and conditional experimental mode and stays well planted in the lane. It is the current favorite among nearly every bolt driver.
+* **Steam Powered v2**: It's not quite up to the long performance of GWMv8, but some users prefer its lateral.
+* **Firehose**: Currently the default model in frogpilot. A good all rounder.
 
 
 ### Gas / Brake
@@ -76,16 +73,16 @@ These settings control Conditional Experimental Mode, often called "CEM". Experi
 
 Experimental Mode has a tendency to slow down/speed up weirdly, and overall just behave strangely, so we recommend conditionally enabling it only when necessary.
 
-* **Curve Detected Ahead:** Can be useful if you regularly take tight corners above the speed limit. Activates when a tight curve is detected. Most leave this off. Likely to be superseded by a fancy new curve speed control FrogsGoMoo is working on.
+* **Curve Detected Ahead:** Turn off and instead rely on the "Curve Speed Controller" 
 * **Lead Detected Ahead:** ==Turn on both Slower Lead and Stopped Lead==, to help the model better slow when using VOACC (Visual Only ACC).
 * **Navigation Data:** Recommend leaving off.
 * **openpilot Wants to Stop In:** Helps with slowing to a stop at lights, in traffic, etc. ==Default is 8 seconds==. Increase this number if your car is not slowing down in time for leads/lights. Decrease this number if you're getting lots of false activations and the car is going in and out of CEM when it shouldn't.
 * **Status Widget:** Up to you. Recommend leaving on. Shows an icon that displays if CEM is active, and if so, why.
 
 
-#### Curve Speed Control: Personal Preference
+#### Curve Speed Control: ==Turn On==
 
-Relatively privative currently. Slows down for curves. Advanced CSC coming soon.
+The new Curve Speed Controller from upstream FrogPilot now learns how fast you like to take certain curves at different speeds. When approaching a curve, you will see an icon appear in the top left of the screen notifying you that the smart curve controller is "training." It will adapt to your preferences over time. This training will take place regardless of openpilot engagement.
 
 
 #### Customize Driving Personalities: Personal Preference
@@ -109,12 +106,11 @@ Optional: [A macropad accessory](https://github.com/nelsonjchen/c3-faux-touch-ke
 
 The above profiles have been specially tuned to work better with the Bolt's accel & decel curve.
 
-* **Human Like Accel/Leads:** ==Turn OFF==. Recent tuning improvements have made these settings act erratically. They should be turned off.  
 * **Taco Bell Run:** Just leave taco bell run stuff off.
 
-!!! note "Hate a model?"
+!!! warning "Always Turn Off Human Like Accel/Leads as they interfere with the StarPilot VoACC tuning"
 
-    Model trying to drive you into the back of leads? Model leaving a gap of 200 certified football fields? Try turning on or off the "Human Like" settings -  they often change quite a bit about a model's behavior.
+    Human Like Accel and Leads should always be turned off. Recent tuning improvements have made these settings act erratically.
 
 
 #### Quality of Life: ==Turn On==
@@ -129,7 +125,7 @@ The above profiles have been specially tuned to work better with the Bolt's acce
 
 * **Increase Stopped Distance:** Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the [CEM](/software/toggles/#conditional-experimental-mode-turn-on) settings for help with this.
 
-* **Map Accell/Decel to Gears:** Allows sport mode to increase to the next accel profile. Reccomended to keep **off** as sport mode changes the lateral response for gen2 cars (gives them less torque).
+* **Map Accel/Decel to Gears:** Allows sport mode to increase to the next accel profile. Reccomended to keep **off** as sport mode changes the lateral response for gen2 cars (gives them less torque).
 
 ### Steering
 

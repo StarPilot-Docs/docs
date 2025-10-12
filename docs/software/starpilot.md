@@ -36,7 +36,3 @@ This will give you an input box to type in an install link. Find the correct ins
 ## Dev, Testing, and Other Branches
 
 WIP - More info coming soon.
-
-!!! note
-
-    If you were recently using one of the Vik/Vicky branches to get Vikander back, you can now switch back to a mainline branch, as firestar has implemented a lovely new switcher that allows switching between tinygrad models (such as Vikander & TRX) now. If you don't know what this means, don't worry about it 🙂
