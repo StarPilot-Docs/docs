@@ -26,6 +26,10 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ## Changelog
 
+### 10/16/2025
+* Update hardware requirements for LKAS
+* Re-organize hardware requirements to reduce duplicated sections
+
 ### 10/12/2025
 * Updated recommended models: Green Watermelon v8 as primary favorite, Steam Powered v2 as secondary, Firehose as default in frogpilot; removed WD-40, Vikander, and TR suggestions
 * Changed Curve Detected Ahead to leave off in lieu of new Curve Speed Controller
