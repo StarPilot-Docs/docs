@@ -159,7 +159,7 @@ The remaining settings can be left at default.
 #### Lateral Tuning: ==Turn On==
 
 * **Force Turn Desires:** Leave off
-* **Smooth Curve Handling:** ==Turn On==
+* **Smooth Curve Handling:** Leave off. It seems to interfere with the new comma torque controller. If the logic is updated at a later date, we will update here.
 
 If NNFF appears here, disable it. Upstream NNFF doesn't play well with the different gens of Bolt.
 
