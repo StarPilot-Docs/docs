@@ -80,6 +80,7 @@ Redneck ACC is able to handle small speed variations while following a lead on t
 However, it is unable to change speed fast enough to 
 handle slowing or stopped leads or operate below 24 mph (due to GM limitations),
 so you will be experiencing a small fraction of what openpilot is capable of.
+It is also quite jerky.
 
 Do not expect it to stop for cars or react quickly. As always, be ready to intervene.
 

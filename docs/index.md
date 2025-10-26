@@ -26,9 +26,13 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ## Changelog
 
+### 11/8/2025
+* Add more volt non-ACC information
+
 ### 10/26/2025
 * Add FAQ section
 * Add docker compose file for local dev
+* Update non-ACC volt section for with and without flashing.
 
 ### 10/16/2025
 * Update hardware requirements for LKAS
