@@ -28,6 +28,7 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ### 10/26/2025
 * Add FAQ section
+* Add docker compose file for local dev
 
 ### 10/16/2025
 * Update hardware requirements for LKAS
