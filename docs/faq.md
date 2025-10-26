@@ -37,6 +37,14 @@ How do I clear the "Cruise Fault: Restart the car" error?
 6. If your error is cleared, you are done. 
 If the error is still present, go back to step 1. This can take 6 or more tries.
 
+## Controls Mismatch
+
+How do I clear the "Controls Mismatch" error?
+
+1. Turn car off
+2. Wait 5 seconds
+3. Turn car on
+
 ## Upload Route Logs
 
 How do I upload route logs for troubleshooting?
