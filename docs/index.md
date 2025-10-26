@@ -26,6 +26,9 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ## Changelog
 
+### 10/26/2025
+* Add FAQ section
+
 ### 10/16/2025
 * Update hardware requirements for LKAS
 * Re-organize hardware requirements to reduce duplicated sections

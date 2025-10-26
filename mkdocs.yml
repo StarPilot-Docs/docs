@@ -17,6 +17,8 @@ nav:
     - Install StarPilot: software/starpilot.md
     - Configure Toggles: software/toggles.md
   - Pedal Firmware Flash: pedal-firmware.md
+  - Troubleshooting & FAQ:
+    - FAQ: faq.md
 
 theme:
     name: material
