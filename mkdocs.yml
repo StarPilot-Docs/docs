@@ -6,7 +6,7 @@ site_description: Documentation for the install and usage of StarPilot
 
 nav:
   - Introduction: index.md
-  - Required Hardware: 
+  - Required Hardware by Car: 
     - Bolt EV: hardware/bolt.md
     - Volt & Other ASCM/SDGM Cars: hardware/volt.md
   - Hardware Installation:
