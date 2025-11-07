@@ -25,6 +25,9 @@ This will give you an input box to type in an install link. Find the correct ins
 | Volt (All Generations) & Other ASCM/SDGM   | N/A   | Kaofui         | [firestar.link/kaofui](https://firestar.link/kaofui)       |
 | All Non-GM Cars                            | N/A   | TRX            | [firestar.link/trx](https://firestar.link/trx)             |
 
+> [!WARNING] Stuck on the boot logo after installing?
+> See [the faq](../faq.md)
+
 ??? note "Why does the 2017 have its own branch?"
 
     While testing, we discovered that the 2017 has vastly different values for steering torque. This means that, on any other branch of openpilot, 2017 Bolts experience a huge lack of steering ability, when in actuality, they have MORE steering torque than the other gens. This lead us down a long rabbit hole of discovering that lots of things about the 2017 is just... weird and different. Hence the "Gen 0" moniker.

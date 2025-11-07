@@ -82,3 +82,28 @@ handle slowing or stopped leads or operate below 24 mph (due to GM limitations),
 so you will be experiencing a small fraction of what openpilot is capable of.
 
 Do not expect it to stop for cars or react quickly. As always, be ready to intervene.
+
+## I'm stuck on the boot logo screen. How do I fix it?
+
+1. Unplug the device
+2. Wait 60 seconds
+3. Plug it back in
+4. Tap the center of the screen over and over until the reset prompt comes up
+5. Reset 
+6. Reinstall [your desired version](./software/starpilot.md)
+7. If this happens again, go back to step 1 and reinstall from `firestar.link/saveme`
+and then swap to your intended branch (or uninstall and install your intended fork).
+
+## How do I fix "Process Not Running dmonitoringmodeld"?
+
+This occurs on upstream FrogPilot on relatively new comma devices (after September 2025)
+as a result of upstream comma provisioning changes. Installing StarPilot will make the
+device appear similar to before the provisioning changes. A single install of StarPilot will
+fix it so you can go back to FrogPilot after.
+
+1. Uninstall FrogPilot (Settings > Software > Uninstall)
+2. Install StarPilot from `firestar.link/trx`
+3. If you are staying on StarPilot, change to your desired branch and stop here. 
+Otherwise, proceed.
+4. Uninstall StarPilot
+5. Reinstall FrogPilot
