@@ -26,7 +26,7 @@ This will give you an input box to type in an install link. Find the correct ins
 | All Non-GM Cars                            | N/A   | TRX            | [firestar.link/trx](https://firestar.link/trx)             |
 
 > [!WARNING] Stuck on the boot logo after installing?
-> See [the faq](../faq.md)
+> See [the faq](../faq.md#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it)
 
 ??? note "Why does the 2017 have its own branch?"
 
