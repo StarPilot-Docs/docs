@@ -4,9 +4,7 @@ description: Frequently asked questions
 
 # Frequently Asked Questions
 
-## LKAS Fault
-
-How do I clear the "LKAS Fault: Restart the car" error?
+## How do I clear the "LKAS Fault: Restart the car" error?
 
 1. Turn your car off
 2. Open your car door
@@ -14,7 +12,7 @@ How do I clear the "LKAS Fault: Restart the car" error?
 4. Turn car on
 5. Done. LKAS fault should have cleared.
 
-How to avoid LKAS faults?
+## How do I avoid LKAS faults?
 
 1. Never reboot, unplug, or power off the comma while your car is on. 
 This **will** cause an LKAS fault.
@@ -25,9 +23,7 @@ GM harness, OBD-C, pedal ethernet, etc. While reseating connectors, you can brea
 into the connector (like fogging up a window, not blowing out a candle) to help clear dust
 and dissipate static buildup.
 
-## Cruise Fault
-
-How do I clear the "Cruise Fault: Restart the car" error?
+## How do I clear the "Cruise Fault: Restart the car" error?
 
 1. Turn car off
 2. Open car door
@@ -37,17 +33,16 @@ How do I clear the "Cruise Fault: Restart the car" error?
 6. If your error is cleared, you are done. 
 If the error is still present, go back to step 1. This can take 6 or more tries.
 
-## Controls Mismatch
-
-How do I clear the "Controls Mismatch" error?
+## How do I clear the "Controls Mismatch" error?
 
 1. Turn car off
 2. Wait 5 seconds
 3. Turn car on
 
-## Upload Route Logs
+## How do I upload logs for troubleshooting?
 
-How do I upload route logs for troubleshooting?
+Logs are sent as routes. A route is a single drive (from car on to car off), 
+with 1 minute segments. Log data contains all Openpilot data: video, comms, gps, etc.
 
 > [!TIP] Logs never hurt, but are generally only needed when requested.
 
@@ -55,7 +50,8 @@ How do I upload route logs for troubleshooting?
 2. Find the route your issue happened on and click on it. 
 3. Click and drag the video slider over the section where the error happened.
 The video will loop over this selected section, make sure the error is within. 
-To undo your last selection, click the back arrow just above the video slider.
+To undo your last selection, click the back arrow just above the video slider. 
+Once you are happy with the segments selected, proceed to the next step.
 4. Click `Files`, then next to `All logs`, click `(upload ## logs)`
 5. Wait for data to be uploaded (you can check the progress using `Files` > `View Upload Queue`)
 6. Click `More info`, then enable `Public access` and 
@@ -73,3 +69,16 @@ send it in DM to @firestar4430 and/or whomever is helping you
 > To make it easier to find the error, you can force the log to end early using:
 > Settings > Utilities > Force offroad. This will make sure the error is near the end of
 > the log. 
+
+## What is redneck ACC (aka CC Long)?
+
+This feature emulates a very basic ACC system 
+by using the built-in cruise control system and then 
+spamming virtual presses of the + and - buttons to control speed. 
+
+Redneck ACC is able to handle small speed variations while following a lead on the highway. 
+However, it is unable to change speed fast enough to 
+handle slowing or stopped leads or operate below 24 mph (due to GM limitations),
+so you will be experiencing a small fraction of what openpilot is capable of.
+
+Do not expect it to stop for cars or react quickly. As always, be ready to intervene.
