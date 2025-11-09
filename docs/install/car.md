@@ -1,5 +1,8 @@
 # Car Configuration Considerations
 
+> [!WARNING]
+> This page was designed for the Bolt and has not yet been refactored for other cars.
+
 ## Tires
 
 * Keep your tires at the recommended ==38psi==

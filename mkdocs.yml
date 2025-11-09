@@ -6,9 +6,15 @@ site_description: Documentation for the install and usage of StarPilot
 
 nav:
   - Introduction: index.md
-  - Required Hardware by Car: 
-    - Bolt EV: hardware/bolt.md
-    - Volt & Other ASCM/SDGM Cars: hardware/volt.md
+  - Car Hardware Guides:
+    - Bolt EV: cars/bolt.md
+    - Volt & Other ASCM/SDGM Cars: cars/volt.md
+  - Openpilot Hardware Info:
+    - Comma 3X: hardware/comma-3x.md
+    - Comma Pedal: hardware/comma-pedal.md
+    - GM Harness: hardware/gm-harness.md
+    - OBD-C Cable: hardware/obd-c.md
+    - OBD Harness: hardware/obd-harness.md
   - Hardware Installation:
     - Comma 3X: install/comma.md
     - Pedal: install/pedal.md
@@ -86,6 +92,7 @@ plugins:
         repository: StarPilot-Docs/docs
         branch: main
     - callouts
+    - include-markdown
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
