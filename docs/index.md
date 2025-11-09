@@ -11,6 +11,13 @@ StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot), which i
 
     Join us in the [FrogPilot discord](https://discord.com/channels/1137853399715549214/1415794762312581222).
 
+## New to StarPilot? Start Here.
+
+1. [Get necessary hardware for your car using our car guides](./cars/all.md). 
+If you are already running with stock openpilot or FrogPilot, 
+you can skip this step for now as extra accessories are optional.
+1. [Install StarPilot](./software/starpilot.md)
+
 ## Credits
 
 These docs were created by Sherloaf Holmes. They are largely based off of the wonderful work of ==ayoba== who created our previous documentation. Shoutout to ==Nik== for always being there to help & answer questions in Discord. And of course, none of this would be possible without ==firestar4430==, who created StarPilot and spends an unadvisable amount of his personal time fixing bugs, creating new features, and answering questions in Discord.
@@ -28,6 +35,7 @@ In normal chill highway driving, the Comma is quite reliable, but like any drive
 
 ### 11/8/2025
 * Add more volt non-ACC information
+* Add start here to homepage
 
 ### 10/26/2025
 * Add FAQ section
