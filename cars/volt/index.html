@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to pick the correct branch and install StarPilot">
+        <meta name="description" content="How to pick the correct hardware for running StarPilot on a Volt">
       
       
       
-        <link rel="canonical" href="https://starpilot.sherloaf.com/software/starpilot/">
+        <link rel="canonical" href="https://starpilot.sherloaf.com/cars/volt/">
       
       
-        <link rel="prev" href="../../install/car/">
+        <link rel="prev" href="../bolt/">
       
       
-        <link rel="next" href="../toggles/">
+        <link rel="next" href="../../hardware/comma-3x/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Install StarPilot - StarPilot Docs</title>
+        <title>Volt & Other ASCM/SDGM Cars - StarPilot Docs</title>
       
     
     
@@ -59,11 +59,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Install StarPilot - StarPilot Docs" >
+        <meta  property="og:title"  content="Volt & Other ASCM/SDGM Cars - StarPilot Docs" >
       
-        <meta  property="og:description"  content="How to pick the correct branch and install StarPilot" >
+        <meta  property="og:description"  content="How to pick the correct hardware for running StarPilot on a Volt" >
       
-        <meta  property="og:image"  content="https://starpilot.sherloaf.com/assets/images/social/software/starpilot.png" >
+        <meta  property="og:image"  content="https://starpilot.sherloaf.com/assets/images/social/cars/volt.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -71,15 +71,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://starpilot.sherloaf.com/software/starpilot/" >
+        <meta  property="og:url"  content="https://starpilot.sherloaf.com/cars/volt/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Install StarPilot - StarPilot Docs" >
+        <meta  name="twitter:title"  content="Volt & Other ASCM/SDGM Cars - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="How to pick the correct branch and install StarPilot" >
+        <meta  name="twitter:description"  content="How to pick the correct hardware for running StarPilot on a Volt" >
       
-        <meta  name="twitter:image"  content="https://starpilot.sherloaf.com/assets/images/social/software/starpilot.png" >
+        <meta  name="twitter:image"  content="https://starpilot.sherloaf.com/assets/images/social/cars/volt.png" >
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-starpilot" class="md-skip">
+        <a href="#required-hardware-volt-other-ascmsdgm-cars" class="md-skip">
           Skip to content
         </a>
       
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Install StarPilot
+              Volt & Other ASCM/SDGM Cars
             
           </span>
         </div>
@@ -311,8 +311,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -323,11 +325,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -343,7 +345,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Car Hardware Guides
@@ -357,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cars/bolt/" class="md-nav__link">
+      <a href="../bolt/" class="md-nav__link">
         
   
   
@@ -377,10 +379,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../cars/volt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Volt & Other ASCM/SDGM Cars
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -391,6 +415,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-config-per-car-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Config per Car Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ascm-harness-sascm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASCM Harness &amp; SASCM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ASCM Harness &amp; SASCM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purchase-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purchase List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-connection-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Connection Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdgm-harness-sascm" class="md-nav__link">
+    <span class="md-ellipsis">
+      SDGM Harness &amp; SASCM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDGM Harness &amp; SASCM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purchase-list_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purchase List
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volts-without-acc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volts without ACC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Volts without ACC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purchase-list_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purchase List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing-volt-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Volt Firmware
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -691,8 +834,6 @@
       
   
   
-    
-  
   
   
     
@@ -705,11 +846,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -725,7 +866,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Software Installation
@@ -736,32 +877,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Install StarPilot
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../software/starpilot/" class="md-nav__link">
         
   
   
@@ -772,44 +891,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#starpilot-branches-and-install-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      StarPilot Branches and Install Links
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-testing-and-other-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev, Testing, and Other Branches
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -822,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../toggles/" class="md-nav__link">
+      <a href="../../software/toggles/" class="md-nav__link">
         
   
   
@@ -967,20 +1048,101 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#starpilot-branches-and-install-links" class="md-nav__link">
+  <a href="#recommended-config-per-car-model" class="md-nav__link">
     <span class="md-ellipsis">
-      StarPilot Branches and Install Links
+      Recommended Config per Car Model
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dev-testing-and-other-branches" class="md-nav__link">
+  <a href="#ascm-harness-sascm" class="md-nav__link">
     <span class="md-ellipsis">
-      Dev, Testing, and Other Branches
+      ASCM Harness &amp; SASCM
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="ASCM Harness &amp; SASCM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purchase-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purchase List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-connection-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Connection Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdgm-harness-sascm" class="md-nav__link">
+    <span class="md-ellipsis">
+      SDGM Harness &amp; SASCM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDGM Harness &amp; SASCM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purchase-list_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purchase List
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volts-without-acc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volts without ACC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Volts without ACC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purchase-list_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purchase List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing-volt-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Volt Firmware
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1004,77 +1166,86 @@
   
 
 
-<h1 id="install-starpilot">Install StarPilot<a class="headerlink" href="#install-starpilot" title="Permanent link">&para;</a></h1>
-<p>With your car off, plug in your Comma unit. If this is the first time you are booting your Comma, it will first ask for a WiFi connection. If you do not have a stable WiFi connection where your car is, we'd recommend bringing your Comma inside and plugging it in via USB-C to install closer to your WiFi router.</p>
-<p>Once your Comma connects to a network, you'll see a screen prompting you to choose software to install. Select <strong>Custom Software</strong>.</p>
-<p>This will give you an input box to type in an install link. Find the correct install link for your car below, type it in, and hit continue. StarPilot will then begin installation.</p>
-<details>
-<summary>Already have openpilot (or another fork) installed?</summary>
-<p>Reboot your Comma. When you see the comma logo, tap the screen until you see a prompt. This will allow you to reset your Comma and get back to the install screen. Some custom forks have a may have a switcher that will allow you to jump straight to StarPilot. If you are already on StarPilot, there is a switcher to change between branches as needed.</p>
-</details>
-<h2 id="starpilot-branches-and-install-links">StarPilot Branches and Install Links<a class="headerlink" href="#starpilot-branches-and-install-links" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Car</th>
-<th>Gen</th>
-<th>Branch Name</th>
-<th>Install Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Chevy Bolt 2022 and later (ACC or non-ACC)</td>
-<td>Gen 2</td>
-<td>TorqueTune</td>
-<td><a href="https://firestar.link/torque">firestar.link/torque</a></td>
-</tr>
-<tr>
-<td>Chevy Bolt 2018 - 2021</td>
-<td>Gen 1</td>
-<td>StarPilot</td>
-<td><a href="https://firestar.link/starpilot">firestar.link/starpilot</a></td>
-</tr>
-<tr>
-<td>Chevy Bolt 2017</td>
-<td>Gen 0</td>
-<td>StarPilot-2017</td>
-<td><a href="https://firestar.link/2017">firestar.link/2017</a></td>
-</tr>
-<tr>
-<td>Non-Volt/Bolt GM w/ACC</td>
-<td>N/A</td>
-<td>TorqueTune</td>
-<td><a href="https://firestar.link/torque">firestar.link/torque</a></td>
-</tr>
-<tr>
-<td>Volt (All Generations) &amp; Other ASCM/SDGM</td>
-<td>N/A</td>
-<td>Kaofui</td>
-<td><a href="https://firestar.link/kaofui">firestar.link/kaofui</a></td>
-</tr>
-<tr>
-<td>All Non-GM Cars</td>
-<td>N/A</td>
-<td>TRX</td>
-<td><a href="https://firestar.link/trx">firestar.link/trx</a></td>
-</tr>
-</tbody>
-</table>
+<h1 id="required-hardware-volt-other-ascmsdgm-cars">Required Hardware - Volt &amp; Other ASCM/SDGM Cars<a class="headerlink" href="#required-hardware-volt-other-ascmsdgm-cars" title="Permanent link">&para;</a></h1>
+<p>The Volt has a number of possible configurations. 
+This page lists the recommended method per car type, and all possible methods.</p>
+<p>There are two parts to OpenPilot control: Lateral Control (Steering) &amp; Longitudinal Control (Gas/Brake).</p>
+<p>ASCM &amp; SDGM give the comma control over steering. Your car's ACC will function as normal. </p>
+<p>SASCM allows you to override the built in ACC and use OpenPilot Longitudinal control. 
+If you have stock ACC and do not wish to use OpenPilot Long, 
+you can just purchase the ASCM/SDGM portion of the suggestions.</p>
+<h2 id="recommended-config-per-car-model">Recommended Config per Car Model<a class="headerlink" href="#recommended-config-per-car-model" title="Permanent link">&para;</a></h2>
+<ul>
+<li>2017-2018 Chevy Volt with Factory ACC: <a href="#ascm-harness-sascm">ASCM Harness &amp; SASCM</a></li>
+<li>2019 Chevy Volt with Factory ACC: <a href="#sdgm-harness-sascm">SDGM Harness &amp; SASCM</a></li>
+<li>Volts without Factory ACC: <a href="#volts-without-acc">Volts without ACC</a></li>
+<li>Non-Volt Car with ASCM: <a href="#ascm-harness-sascm">ASCM Harness &amp; SASCM</a></li>
+<li>Non-Volt Car with SDGM: <a href="#sdgm-harness-sascm">SDGM Harness &amp; SASCM</a></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend purchasing from <a href="https://shop.beartech.ca/">BearTechWorkshop</a> (aka 
+tinybear) whenever possible. They are a small business providing the openpilot community 
+with high quality products and excellent customer support.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Comma Power is not needed</p>
+<p>The <a href="https://comma.ai/shop/comma-power">Comma Power</a> cable is not needed for 
+most GM vehicles (eg. bolt and volt).</p>
+<p>The 12V power is provided by the camera harness (or OBD for non-LKAS vehicles)
+and remains on while the car is powered off.</p>
+</div>
+<h2 id="ascm-harness-sascm">ASCM Harness &amp; SASCM<a class="headerlink" href="#ascm-harness-sascm" title="Permanent link">&para;</a></h2>
+<h3 id="purchase-list">Purchase List<a class="headerlink" href="#purchase-list" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="../../hardware/comma-3x/">Comma 3X</a></li>
+<li><a href="https://shop.beartech.ca/products/ascm-harness?variant=44900990124213">ASCM Harness Plus + Harness Box</a></li>
+<li><a href="https://shop.beartech.ca/products/sascm-for-gm-vehicles">SASCM</a></li>
+<li><a href="../../hardware/obd-c/">OBD-C Cable</a> - 15 ft </li>
+<li>Optional: <a href="../../hardware/comma-pedal/">Comma Pedal</a> for the ability to start from a stop in 2018 and up Volts</li>
+</ol>
+<h3 id="reference-connection-diagram">Reference Connection Diagram<a class="headerlink" href="#reference-connection-diagram" title="Permanent link">&para;</a></h3>
+<p><img alt="Reference diagram" src="/assets/images/hardware/volt/ASCM_SASCM_connection_diagram_final.png" /></p>
+<h2 id="sdgm-harness-sascm">SDGM Harness &amp; SASCM<a class="headerlink" href="#sdgm-harness-sascm" title="Permanent link">&para;</a></h2>
+<h3 id="purchase-list_1">Purchase List<a class="headerlink" href="#purchase-list_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="../../hardware/comma-3x/">Comma 3X</a></li>
+<li><a href="https://shop.beartech.ca/products/sdgm-harness">SDGM Harness + Harness Box</a></li>
+<li><a href="https://shop.beartech.ca/products/sascm-for-gm-vehicles">SASCM</a></li>
+<li><a href="../../hardware/obd-c/">OBD-C Cable</a> - 10 ft </li>
+<li>Optional: <a href="../../hardware/comma-pedal/">Comma Pedal</a> for the ability to start from a stop </li>
+</ol>
+<h2 id="volts-without-acc">Volts without ACC<a class="headerlink" href="#volts-without-acc" title="Permanent link">&para;</a></h2>
+<h3 id="purchase-list_2">Purchase List<a class="headerlink" href="#purchase-list_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="../../hardware/comma-3x/">Comma 3X</a></li>
+<li>Choose a harness:</li>
+<li><a href="../../hardware/obd-harness/">OBD-II Harness</a></li>
+<li><a href="../../hardware/gm-harness/">GM Harness/Harness box (only for Volts with stock LKAS)</a></li>
+<li>Optional: <a href="../../hardware/comma-pedal/">Comma Pedal</a> for the ability to start from a stop in 2018 and up Volts</li>
+</ol>
+<p>Lateral (steering) control:</p>
+<ol>
+<li>If you have stock LKAS, your volt is capable of openpilot lateral control.</li>
+<li>If not, you need to <a href="#flashing-volt-firmware">flash LKAS firmware</a></li>
+</ol>
+<p>Longitudinal (gas/brake) control:</p>
+<ol>
+<li><a href="#flashing-volt-firmware">Flashing your Volt firmware for ACC</a>.
+<strong>This will give you the best openpilot experience.</strong></li>
+<li><a href="../../faq/#what-is-redneck-acc-aka-cc-long">Redneck ACC</a></li>
+<li>A potential option is the <a href="../../hardware/comma-pedal/">Comma Pedal</a>
+, but you will be limited to L mode regen.
+This is completely untested and undeveloped in the Volt. Feel free to contribute!</li>
+</ol>
+<h3 id="flashing-volt-firmware">Flashing Volt Firmware<a class="headerlink" href="#flashing-volt-firmware" title="Permanent link">&para;</a></h3>
+<p>pinballben is the resident expert on flashing Volt firmware, who will provide the instructions and hardware
+for a fee. DM on discord (through the member list of the frogpilot discord).</p>
 <div class="admonition warning">
-<p class="admonition-title">Stuck on the boot logo after installing?</p>
-<p>See <a href="../../faq/#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it">the faq</a></p>
+<p class="admonition-title">Flashing ACC</p>
+<p>Flashing ACC will remove stock CC. 
+This can be restored by re-flashing stock firmware. </p>
 </div>
-<details class="note">
-<summary>Why does the 2017 have its own branch?</summary>
-<p>While testing, we discovered that the 2017 has vastly different values for steering torque. This means that, on any other branch of openpilot, 2017 Bolts experience a huge lack of steering ability, when in actuality, they have MORE steering torque than the other gens. This lead us down a long rabbit hole of discovering that lots of things about the 2017 is just... weird and different. Hence the "Gen 0" moniker.</p>
-</details>
-<div class="admonition info">
-<p class="admonition-title">TRX Branch</p>
-<p>The TRX branch includes the StarPilot custom model switcher and Visual Only ACC (VOACC) improvements without the Bolt specific things present on other branches. It should be used by any non-GM cars. Check with us in Discord for more specifics</p>
-</div>
-<h2 id="dev-testing-and-other-branches">Dev, Testing, and Other Branches<a class="headerlink" href="#dev-testing-and-other-branches" title="Permanent link">&para;</a></h2>
-<p>WIP - More info coming soon.</p>
 
 
 
@@ -1097,7 +1268,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 7, 2025 03:16:30 UTC">November 7, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2025 05:07:52 UTC">November 9, 2025</span>
   </span>
 
     
@@ -1107,7 +1278,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 7, 2025 23:27:57 UTC">July 7, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2025 05:07:52 UTC">November 9, 2025</span>
   </span>
 
     
@@ -1128,16 +1299,6 @@
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
           <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
-        </a>
-      
-        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
-          
-          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
-        </a>
-      
-        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
-          
-          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
         </a>
       
       
@@ -1172,7 +1333,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../install/car/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Car Config">
+          <a href="../bolt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bolt EV">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1182,20 +1343,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Car Config
+                Bolt EV
               </div>
             </div>
           </a>
         
         
           
-          <a href="../toggles/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure Toggles">
+          <a href="../../hardware/comma-3x/" class="md-footer__link md-footer__link--next" aria-label="Next: Comma 3X">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Configure Toggles
+                Comma 3X
               </div>
             </div>
             <div class="md-footer__button md-icon">

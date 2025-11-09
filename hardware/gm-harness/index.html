@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to pick the correct hardware for running StarPilot on a Bolt EV">
+        <meta name="description" content="Documentation for the install and usage of StarPilot">
       
       
       
-        <link rel="canonical" href="https://starpilot.sherloaf.com/hardware/bolt/">
+        <link rel="canonical" href="https://starpilot.sherloaf.com/hardware/gm-harness/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../comma-pedal/">
       
       
-        <link rel="next" href="../volt/">
+        <link rel="next" href="../obd-c/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Bolt EV - StarPilot Docs</title>
+        <title>GM Harness - StarPilot Docs</title>
       
     
     
@@ -59,11 +59,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Bolt EV - StarPilot Docs" >
+        <meta  property="og:title"  content="GM Harness - StarPilot Docs" >
       
-        <meta  property="og:description"  content="How to pick the correct hardware for running StarPilot on a Bolt EV" >
+        <meta  property="og:description"  content="Documentation for the install and usage of StarPilot" >
       
-        <meta  property="og:image"  content="https://starpilot.sherloaf.com/assets/images/social/hardware/bolt.png" >
+        <meta  property="og:image"  content="https://starpilot.sherloaf.com/assets/images/social/hardware/gm-harness.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -71,15 +71,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://starpilot.sherloaf.com/hardware/bolt/" >
+        <meta  property="og:url"  content="https://starpilot.sherloaf.com/hardware/gm-harness/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Bolt EV - StarPilot Docs" >
+        <meta  name="twitter:title"  content="GM Harness - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="How to pick the correct hardware for running StarPilot on a Bolt EV" >
+        <meta  name="twitter:description"  content="Documentation for the install and usage of StarPilot" >
       
-        <meta  name="twitter:image"  content="https://starpilot.sherloaf.com/assets/images/social/hardware/bolt.png" >
+        <meta  name="twitter:image"  content="https://starpilot.sherloaf.com/assets/images/social/hardware/gm-harness.png" >
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vehicle-requirements" class="md-skip">
+        <a href="#gm-harness-and-harness-box" class="md-skip">
           Skip to content
         </a>
       
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bolt EV
+              GM Harness
             
           </span>
         </div>
@@ -311,6 +311,102 @@
       
   
   
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Car Hardware Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Car Hardware Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/bolt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bolt EV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/volt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Volt & Other ASCM/SDGM Cars
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -329,15 +425,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    Required Hardware
+    Openpilot Hardware Info
     
   </span>
   
@@ -345,12 +441,58 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Required Hardware
+            Openpilot Hardware Info
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comma-3x/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comma 3X
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comma-pedal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comma Pedal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -368,97 +510,17 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Bolt EV
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Bolt EV
+    GM Harness
     
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lane-keep-assist-system-lkas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lane Keep Assist System (LKAS)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lane Keep Assist System (LKAS)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trim-levels-with-lkas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Trim Levels with LKAS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#does-your-bolt-have-adaptive-cruise-control-acc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Does your Bolt have Adaptive Cruise Control (ACC)?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Does your Bolt have Adaptive Cruise Control (ACC)?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trim-levels-with-acc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Trim Levels with ACC
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -472,12 +534,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../volt/" class="md-nav__link">
+      <a href="../obd-c/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Volt & Other ASCM/SDGM Cars
+    OBD-C Cable
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obd-harness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OBD Harness
     
   </span>
   
@@ -515,10 +600,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -531,8 +616,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Hardware Installation
           </label>
@@ -634,10 +719,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -650,8 +735,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Software Installation
           </label>
@@ -752,10 +837,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -768,8 +853,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting & FAQ
           </label>
@@ -825,62 +910,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lane-keep-assist-system-lkas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lane Keep Assist System (LKAS)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lane Keep Assist System (LKAS)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trim-levels-with-lkas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Trim Levels with LKAS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#does-your-bolt-have-adaptive-cruise-control-acc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Does your Bolt have Adaptive Cruise Control (ACC)?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Does your Bolt have Adaptive Cruise Control (ACC)?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trim-levels-with-acc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Trim Levels with ACC
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -899,138 +928,22 @@
   
 
 
-<h1 id="vehicle-requirements">Vehicle Requirements<a class="headerlink" href="#vehicle-requirements" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">SuperCruise Bolts Not Supported</p>
-<p>If your Bolt EUV is equipped with SuperCruise, it is not compatible with the Comma or 
-any fork of openpilot at the moment (and likely never will be, sorry).</p>
-</div>
-<h2 id="lane-keep-assist-system-lkas">Lane Keep Assist System (LKAS)<a class="headerlink" href="#lane-keep-assist-system-lkas" title="Permanent link">&para;</a></h2>
-<p>As with most openpilot compatible cars, the Bolt must be equipped with LKAS (Lane Keep 
-Assist System) in order for openpilot to send steering commands. </p>
-<h3 id="trim-levels-with-lkas">Trim Levels with LKAS<a class="headerlink" href="#trim-levels-with-lkas" title="Permanent link">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Unofficial list</p>
-<p>Just a guide to help new users. Please do your own research.</p>
-</div>
-<ul>
-<li>2017-18 EV: Premier trim with Driver Confidence II package <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2018-bolt.pdf">^1</a></li>
-<li>2019-21 EV: Any trim with Driver Confidence II package <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2020-boltev.pdf">^3</a> <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2021-boltev.pdf">^5</a></li>
-<li>2022-23 EV: All trim levels <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-boltev.pdf">^6</a></li>
-<li>2022-23 EUV: All trim levels <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-bolteuv.pdf">^7</a></li>
-</ul>
-<h2 id="does-your-bolt-have-adaptive-cruise-control-acc">Does your Bolt have Adaptive Cruise Control (ACC)?<a class="headerlink" href="#does-your-bolt-have-adaptive-cruise-control-acc" title="Permanent link">&para;</a></h2>
-<p>Both ACC and non-ACC are compatible with StarPilot, 
-but vary slightly in hardware recommendations.</p>
-<h3 id="trim-levels-with-acc">Trim Levels with ACC<a class="headerlink" href="#trim-levels-with-acc" title="Permanent link">&para;</a></h3>
-<ul>
-<li>2022-23 EV: 2LT trim level with Adaptive Cruise Control package <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-bolteuv.pdf">^7</a></li>
-<li>2022-23 EUV: Premier trim level <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-boltev.pdf">^6</a></li>
-</ul>
-<h1 id="openpilot-hardware-list-for-bolt">Openpilot Hardware List for Bolt<a class="headerlink" href="#openpilot-hardware-list-for-bolt" title="Permanent link">&para;</a></h1>
-<ol>
-<li><a href="https://comma.ai/shop/comma-3x">Comma 3X</a></li>
-<li><a href="#gm-harness-and-harness-box">GM Harness and Harness Box</a></li>
-<li><a href="#comma-pedal">Comma Pedal</a> (optional, but <strong><em>strongly recommended for non-ACC cars</em></strong>)</li>
-</ol>
+<h1 id="gm-harness-and-harness-box">GM Harness and Harness Box<a class="headerlink" href="#gm-harness-and-harness-box" title="Permanent link">&para;</a></h1>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>We recommend purchasing from <a href="https://shop.beartech.ca/">BearTechWorkshop</a> (aka 
-tinybear) whenever possible. They are a small business providing the openpilot community 
-with high quality products and excellent customer support.</p>
+<p class="admonition-title">Important</p>
+<p>This hardware is only necessary if indicated by your <a href="../../cars/all/">car setup guide</a></p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Comma Power is not needed</p>
-<p>The <a href="https://comma.ai/shop/comma-power">Comma Power</a> cable is not needed for Bolts. 
-The 12V power is provided by the camera harness 
-and remains on while the car is powered off.</p>
-</div>
-<h2 id="comma-3x">Comma 3X<a class="headerlink" href="#comma-3x" title="Permanent link">&para;</a></h2>
-<p>Purchase from comma.ai: <a href="https://comma.ai/shop/comma-3x">Comma 3X</a></p>
-<div class="admonition note">
-<p class="admonition-title">Comma 3 End of Life (and Continued Support)</p>
-<p>On 8/26/2025 Comma announced that they are dropping support for the Comma 3 to focus on 
-the Comma 3X. As such, if you are purchasing a new or used Comma, it's probably best to 
-go with a 3X if possible. That being said - there are not currently any technical 
-limitations that prevent the 3 from running the current versions of OpenPilot, as it has 
-the same processor as the 3X. We expect to be able to support the 3 in StarPilot for the 
-foreseeable future.</p>
-</div>
-<h2 id="gm-harness-and-harness-box">GM Harness and Harness Box<a class="headerlink" href="#gm-harness-and-harness-box" title="Permanent link">&para;</a></h2>
-<p>The harness and harness box are required for openpilot to communicate with your car.</p>
+<p>The GM harness and harness box are used for openpilot to communicate with your car.</p>
 <p>Purchase from tinybear: <a href="https://shop.beartech.ca/products/harness-set-gm?variant=44665970688181">Harness set (Harness Cable + Harness Box)</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Purchasing a harness from Comma</p>
 <p>While you could purchase a harness from Comma, we do not recommend it as it is more 
 expensive and BearTechWorkshop's customer support is better should you run into the rare 
 occurrence of product issues.</p>
+<p>If you need a pedal (or potentially want one in the future), 
+do not purchase the harness box from Comma 
+as it no longer has the RJ45 port needed by the Comma Pedal.</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Do not purchase a harness box from Comma</p>
-<p>Comma has changed the design of the harness box they sell. It no longer has the RJ45 port 
-and so <em>cannot</em> be used with the Comma Pedal.</p>
-</div>
-<h2 id="comma-pedal">Comma Pedal<a class="headerlink" href="#comma-pedal" title="Permanent link">&para;</a></h2>
-<p>The Comma Pedal is an interceptor that sits between your throttle pedal and the car.<br />
-When openpilot is disengaged, your throttle pedal is normal.
-When openpilot is engaged, openpilot can send its own throttle pedal commands to control
-your speed, but will immediately stop sending its own commands when you override or 
-disengage.</p>
-<p>You always have control, so you can input your own throttle commands at any time, 
-overriding openpilot control if it is engaged.
-Openpilot will also disengage in the same way as stock CC: when you press the brake pedal, 
-throttle pedal, regen paddle, CC cancel button, or CC off button.</p>
-<p>Our recommendation for whether or not to purchase the pedal depends on if your car is
-<a href="#acc-bolts">ACC</a> or <a href="#non-acc-bolts">Non-ACC</a>.</p>
-<h3 id="pedal-purchase-list">Pedal Purchase List<a class="headerlink" href="#pedal-purchase-list" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="https://shop.beartech.ca/products/comma-pedal">Comma Pedal</a></li>
-<li>Ethernet cable<ul>
-<li>At least 10ft long</li>
-<li>Cat5e is sufficient (higher ratings will be thicker and harder to route under the car's headliner)</li>
-<li>Flat cables can be easier to route, but quality can be more variable than round cables.</li>
-</ul>
-</li>
-<li>Optional: <a href="https://shop.beartech.ca/products/dfu-key">DFU Key</a><ul>
-<li>tinybear is still making occasional updates to the pedal firmware for Bolts. 
-This key is needed to apply those changes. 
-See <a href="../../pedal-firmware/">the pedal firmware page</a> for details.</li>
-</ul>
-</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Already have a Harness Cable? Bundle your pedal with a harness box.</p>
-<p>If you already have a Harness Cable, but your Harness Box does not have an RJ45 port, 
-you can bundle your Pedal with a 2x9 or 2x13 pin Harness Box - check your specific cable to 
-ensure you purchase the correct box. </p>
-</div>
-<h3 id="non-acc-bolts">Non-ACC Bolts<a class="headerlink" href="#non-acc-bolts" title="Permanent link">&para;</a></h3>
-<p>In non-ACC bolts, the Comma Pedal is <strong><em>strongly recommended</em></strong>.
-It allows openpilot to accelerate and decelerate using regen braking and one pedal
-driving mode (the L gear). It is also capable of stop-and-go (the main reason for comma 
-pedal on other vehicles).</p>
-<p>The only reasons to not use a pedal interceptor with your non-ACC Bolt are cost or if you 
-are uncomfortable with the idea of installing the pedal interceptor.</p>
-<p>Without the pedal, openpilot is <em>very</em> limited in its ability to control the speed of your 
-vehicle. It will operate using a workaround we call "CCLong" or "Redneck ACC". This feature 
-emulates a very basic ACC system by using the built-in cruise control system and then 
-spamming virtual presses of the + and - buttons to control speed. </p>
-<p>Redneck ACC is able to handle small speed variations while 
-following a lead on the highway. However, it is unable to change speed fast enough to 
-handle slowing or stopped leads or operate below 24 mph (due to GM limitations), so you 
-will be experiencing a small fraction of what openpilot is capable of.</p>
-<h3 id="acc-bolts">ACC Bolts<a class="headerlink" href="#acc-bolts" title="Permanent link">&para;</a></h3>
-<p>In ACC bolts, openpilot can request gas and brake commands through ACC commands. 
-However, due to GM limitations, brake commands only use the friction brakes to slow down 
-and regen braking is limited to 10kW (same as coasting in D mode). It also cannot stop-and-go. </p>
-<p>If you'd like 
-to use regen &amp; stop-and-go, you can switch your car to CC and install a comma pedal. 
-Keep in mind that you lose the ability for openpilot to use the friction brakes if you 
-do this. It will be limited to the same deceleration rate as L mode + regen paddle press
-(70 kW), the same as non-ACC bolts.</p>
-<p>The pedal's capability may extend at a later time with additional hardware or software
-changes (resume button harness, virtual pedal tap to just get the car going again with ACC,
-etc).</p>
 
 
 
@@ -1053,7 +966,7 @@ etc).</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 24, 2025 01:21:24 UTC">September 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2025 05:07:52 UTC">November 9, 2025</span>
   </span>
 
     
@@ -1063,7 +976,7 @@ etc).</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 6, 2025 23:24:19 UTC">July 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2025 05:07:52 UTC">November 9, 2025</span>
   </span>
 
     
@@ -1084,11 +997,6 @@ etc).</p>
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
           <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
-        </a>
-      
-        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
-          
-          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
         </a>
       
       
@@ -1123,7 +1031,7 @@ etc).</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+          <a href="../comma-pedal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Comma Pedal">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1133,20 +1041,20 @@ etc).</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Comma Pedal
               </div>
             </div>
           </a>
         
         
           
-          <a href="../volt/" class="md-footer__link md-footer__link--next" aria-label="Next: Volt &amp; Other ASCM/SDGM Cars">
+          <a href="../obd-c/" class="md-footer__link md-footer__link--next" aria-label="Next: OBD-C Cable">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Volt & Other ASCM/SDGM Cars
+                OBD-C Cable
               </div>
             </div>
             <div class="md-footer__button md-icon">
