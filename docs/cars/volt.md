@@ -56,8 +56,8 @@ you can just purchase the ASCM/SDGM portion of the suggestions.
 
 1. [Comma 3X](../hardware/comma-3x.md)
 2. Choose a harness:
-   1. [OBD-II Harness](../hardware/obd-harness.md)
-   2. [GM Harness/Harness box (only for Volts with stock LKAS)](../hardware/gm-harness.md)
+    1. [OBD-II Harness](../hardware/obd-harness.md)
+    2. [GM Harness/Harness box (only for Volts with stock LKAS)](../hardware/gm-harness.md)
 3. Optional: [Comma Pedal](../hardware/comma-pedal.md) for the ability to start from a stop in 2018 and up Volts
 
 Lateral (steering) control:
