@@ -104,7 +104,23 @@ fix it so you can go back to FrogPilot after.
 
 1. Uninstall FrogPilot (Settings > Software > Uninstall)
 2. Install StarPilot from `firestar.link/trx`
-3. If you are staying on StarPilot, change to your desired branch and stop here. 
+3. If you are staying on StarPilot, 
+change to your desired branch in the Software tab and stop here. 
 Otherwise, proceed.
 4. Uninstall StarPilot
 5. Reinstall FrogPilot
+
+## How do I fix the "Propulsion Power Reduced" Error on my dash and regen not working? (for Bolts with Comma Pedal)
+
+Your Bolt may have had a momentary issue communicating with the throttle pedal,
+causing it to enter a limp mode. 
+To clear any potential thermal expansion shifting or static buildup issues:
+
+1. Turn off the car.
+2. Unplug all connectors for the Comma Pedal.
+3. Breathe hot "sultry" air into the connector ends.
+This includes the two connectors coming out of the Comma Pedal box and the car side (if possible). 
+This is hot breath like fogging up a window, not blowing out a candle.
+4. Re-connect all connectors. 
+
+If the issue still presents, post in the troubleshooting thread.
