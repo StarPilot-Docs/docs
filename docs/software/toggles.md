@@ -205,7 +205,7 @@ The frogpilot startup alert & various frog themed things can sometimes be concer
 ### Vehicle Settings
 
 1. Select your car model.
-2. Disable **Automatic Fingerprint Detection**.
+2. Enable the toggle for **Disable Automatic Fingerprint Detection**.
 3. Under **General Motors Toggles** DO NOT enable FrogsGoMoo’s experimental longitudinal tune. ==DO enable== Smooth Pedal Response on Hills.
 
 ??? note "Fingerprinting Info"
