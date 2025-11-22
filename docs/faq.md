@@ -124,3 +124,9 @@ This is hot breath like fogging up a window, not blowing out a candle.
 4. Re-connect all connectors. 
 
 If the issue still presents, post in the troubleshooting thread.
+
+## How do I fix the "CAN bus disconnected" Error?
+
+Openpilot had an issue communicating on the CAN bus. 
+Reseat (unplug and plug back in) all of your openpilot connections 
+(harnesses, OBD-C, pedal, etc).
