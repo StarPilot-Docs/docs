@@ -21,8 +21,8 @@ This will give you an input box to type in an install link. Find the correct ins
 | Chevy Bolt 2022 and later (ACC or non-ACC) | Gen 2 | TorqueTune     | [firestar.link/torque](https://firestar.link/torque)       |
 | Chevy Bolt 2018 - 2021                     | Gen 1 | StarPilot      | [firestar.link/starpilot](https://firestar.link/starpilot) |
 | Chevy Bolt 2017                            | Gen 0 | StarPilot-2017 | [firestar.link/2017](https://firestar.link/2017)           |
-| Non-Volt/Bolt GM w/ACC                     | N/A   | TorqueTune     | [firestar.link/torque](https://firestar.link/torque)       |
-| Volt (All Generations) & Other ASCM/SDGM   | N/A   | Kaofui         | [firestar.link/kaofui](https://firestar.link/kaofui)       |
+| GM Vehicles with ACC (except Volt)         | N/A   | TorqueTune     | [firestar.link/torque](https://firestar.link/torque)       |
+| Volt                                       | N/A   | Kaofui         | [firestar.link/kaofui](https://firestar.link/kaofui)       |
 | All Non-GM Cars                            | N/A   | TRX            | [firestar.link/trx](https://firestar.link/trx)             |
 
 > [!WARNING] Stuck on the boot logo after installing?
