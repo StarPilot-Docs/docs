@@ -60,9 +60,18 @@ These are optional changes. Some popular changes include:
 
     Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [FrogPilot Discord](https://discord.com/channels/1137853399715549214/1415794762312581222) for more model info.
 
-* ==**Green Watermelon v8**==: It has very impressive longitudinal and conditional experimental mode and stays well planted in the lane. It is the current favorite among nearly every bolt driver.
-* **Steam Powered v2**: It's not quite up to the long performance of GWMv8, but some users prefer its lateral.
-* **Firehose**: Currently the default model in frogpilot. A good all rounder.
+* ==**Dark Souls**==: The current favorite and default in upstream openpilot.
+
+##### Previous Favorites (newest to oldest)
+
+Older models that aren't completely out of date yet. 
+Could be worth trying depending on your environment/region/preferences.
+
+* Cool Green Watermelon
+* Green Watermelon v8
+* Green Watermelon v7
+* The Cool People v3
+* Firehose
 
 
 ### Gas / Brake
