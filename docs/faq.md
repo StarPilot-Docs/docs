@@ -39,6 +39,10 @@ If the error is still present, go back to step 1. This can take 6 or more tries.
 2. Wait 5 seconds
 3. Turn car on
 
+> [!NOTE] Remote Start Issues
+> If you use remote start, to avoid issues, you should cycle the car off and then back on
+> again after you get in. Otherwise, you might get the Controls Mismatch error.
+
 ## How do I upload logs for troubleshooting?
 
 Logs are sent as routes. A route is a single drive (from car on to car off), 
