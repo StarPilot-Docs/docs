@@ -4,23 +4,33 @@ description: How to configure your settings for the best experience
 
 # Configure Toggles & Settings
 
-## Toggles
+Most settings aim to have a good default value.
+To learn more about any setting, tap the title to see a description.
+These settings will generally persist across branches and forks unless you wipe/reset.
 
-Most toggles here are up to you.
+> [!TIP] TL;DR?
+> Just look for all the ==blue highlights== - 
+> they will tell you any settings you need to turn off or on for best experience.
 
-<!-- Pulled the below note from the old guide - not sure where this setting is? -->
+> [!WARNING] Make Sure your Fingerprint is Correct
+> If you ignore the rest of our suggestions here, at the very least, make sure you 
+> [set your correct fingerprint](#vehicle-controls) to avoid issues.
 
-!!! note "ACC Bolts Only"
+## Openpilot Toggles
 
-	Enable "openpilot Longitudinal Control (alpha)". This will use the smoother, tuned experience vs. the Bolt’s stock ACC. It does not disable automatic emergency braking.
+* Openpilot: ==Enabled==
+* Openpilot Longitudinal Control (Alpha): ==Enabled==
+    * *If this toggle is not present for you, ignore.*
+    * If you want to use stock ACC, disable. 
+You will lose all openpilot long control 
+(eg. stop sign and traffic light stopping, Curve Speed Control, Speed Limit Control)
+* Experimental Mode: ==Disabled==
+    * Frogpilot/Starpilot use Conditional Experimental Mode (CEM) 
+instead to switch into experimental when it makes sense to (eg. traffic lights).
 
 ## FrogPilot Settings
 
-In general, FrogPilot settings should remain between fork installs and branch switches.
-
-!!! note "TL;DR?"
-
-    Just look for all the ==blue highlights== - they will tell you any settings you need to turn off or on for best experience.
+The rest of the settings below are in the FrogPilot section of settings.
 
 ## Tuning Level
 
@@ -28,13 +38,6 @@ There are multiple tuning levels in the FrogPilot settings - these will enable o
 
 For best results on StarPilot, you’ll need to ==use the **Advanced** tuning level==.
 
-!!! note
-
-    To learn more about any setting, tap the title to see a description
-
-!!! warning "Make Sure your Fingerprint is Correct"
-
-    If you ignore the rest of our suggestions here, at the very least, make sure you [set your correct fingerprint](#vehicle-controls) to avoid issues.
 
 ## Alerts and Sounds
 
@@ -49,10 +52,6 @@ These are optional changes. Some popular changes include:
 ### Driving Model
 
 * Automatically download and update models: ==Turn On==
-
-!!! warning
-
-    This is a departure from previous advice - we used to advise against this due to the potential for incomplete models. But with the new tinygrad model switcher, having this on helps ensure all pieces of the model have been downloaded correctly.
 
 #### Model Selection
 
@@ -117,7 +116,7 @@ The above profiles have been specially tuned to work better with the Bolt's acce
 
 * **Taco Bell Run:** Just leave taco bell run stuff off.
 
-!!! warning "Always Turn Off Human Like Accel/Leads as they interfere with the StarPilot VoACC tuning"
+!!! warning "Always Turn Off Human Like Acceleration/Following as they interfere with the StarPilot VoACC tuning"
 
     Human Like Accel and Leads should always be turned off. Recent tuning improvements have made these settings act erratically.
 
@@ -134,7 +133,7 @@ The above profiles have been specially tuned to work better with the Bolt's acce
 
 * **Increase Stopped Distance:** Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the [CEM](/software/toggles/#conditional-experimental-mode-turn-on) settings for help with this.
 
-* **Map Accel/Decel to Gears:** Allows sport mode to increase to the next accel profile. Reccomended to keep **off** as sport mode changes the lateral response for gen2 cars (gives them less torque).
+* **Map Accel/Decel to Gears:** Allows sport mode to increase to the next accel profile. Recommended to keep **off** as sport mode changes the lateral response for gen2 cars (gives them less torque).
 
 ### Steering
 
@@ -144,7 +143,7 @@ Section is WIP, features here are more for special cases & testing.
 
 #### Always on Lateral: ==Recommend Turning On==
 
-Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice & useful, so we generally reccomend having it on.
+Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice & useful, so we generally recommend having it on.
 
 With this on & the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control.
 
@@ -176,7 +175,7 @@ If NNFF appears here, disable it. Upstream NNFF doesn't play well with the diffe
 
 ## Navigation
 
-Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your prefferred mapping app via CarPlay/Android Auto.
+Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your preferred mapping app via CarPlay/Android Auto.
 
 ## System Management
 
@@ -213,10 +212,18 @@ The frogpilot startup alert & various frog themed things can sometimes be concer
 
 ### Vehicle Settings
 
-1. Select your car model.
-2. Enable the toggle for **Disable Automatic Fingerprint Detection**.
-3. Under **General Motors Toggles** DO NOT enable FrogsGoMoo’s experimental longitudinal tune. ==DO enable== Smooth Pedal Response on Hills.
+* ==Select your car model==
+* Disable Automatic Fingerprint Detection: ==Enabled==
+* Disable openpilot Longitudinal Control: ==Disabled==
+    * *If this toggle is not present for you, ignore.*
 
-??? note "Fingerprinting Info"
+> [!NOTE] Fingerprinting Info
+> Fingerprinting is inconsistent on GM vehicles. 
+> As such, sometimes ACC bolts decide to fingerprint as Non-ACC which causes fun issues 
+> such as… not having Gas/Brake. 
+> So to be sure, it’s just always best to manually fingerprint by disabling auto fingerprint.
 
-    Fingerprinting is inconsistent on GM vehicles at the moment. As such, sometimes ACC bolts decide to fingerprint as Non-ACC which causes fun issues such as… not having Gas/Brake. So to be sure, it’s just always best to manually fingerprint.
+### General Motors Settings
+
+* FrogsGoMoo’s experimental longitudinal tune: ==Disabled==
+* Smooth Pedal Response on Hills: ==Enabled==
