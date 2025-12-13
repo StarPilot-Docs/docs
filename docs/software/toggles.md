@@ -59,13 +59,14 @@ These are optional changes. Some popular changes include:
 
     Models are constantly being added and improved. Due to the nature of how the training works for these models, they perform differently for every car, environment, and driving style preference. As such, it's difficult to give objective reviews. Join us in the [FrogPilot Discord](https://discord.com/channels/1137853399715549214/1415794762312581222) for more model info.
 
-* ==**Dark Souls**==: The current favorite and default in upstream openpilot.
+* ==**Dark Souls v2**==: The current favorite and default in upstream openpilot.
 
 ##### Previous Favorites (newest to oldest)
 
 Older models that aren't completely out of date yet. 
 Could be worth trying depending on your environment/region/preferences.
 
+* Dark Souls
 * Cool Green Watermelon
 * Green Watermelon v8
 * Green Watermelon v7

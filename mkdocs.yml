@@ -7,28 +7,28 @@ site_description: Documentation for the install and usage of StarPilot
 nav:
   - Introduction: index.md
   - Car Hardware Guides:
-    - Bolt EV: cars/bolt.md
-    - Volt & Other ASCM/SDGM Cars: cars/volt.md
+      - Bolt EV: cars/bolt.md
+      - Volt & Other ASCM/SDGM Cars: cars/volt.md
   - Openpilot Hardware Info:
-    - Comma 3X: hardware/comma-3x.md
-    - Comma Pedal: hardware/comma-pedal.md
-    - GM Harness: hardware/gm-harness.md
-    - OBD-C Cable: hardware/obd-c.md
-    - OBD Harness: hardware/obd-harness.md
+      - Comma 3X: hardware/comma-3x.md
+      - Comma Pedal: hardware/comma-pedal.md
+      - GM Harness: hardware/gm-harness.md
+      - OBD-C Cable: hardware/obd-c.md
+      - OBD Harness: hardware/obd-harness.md
   - Hardware Installation:
-    - Comma 3X: install/comma.md
-    - Pedal: install/pedal.md
-    - Car Config: install/car.md
+      - Comma 3X: install/comma.md
+      - Pedal: install/pedal.md
+      - Car Config: install/car.md
   - Software Installation:
-    - Install StarPilot: software/starpilot.md
-    - Configure Toggles: software/toggles.md
+      - Install StarPilot: software/starpilot.md
+      - Configure Toggles: software/toggles.md
   - Pedal Firmware Flash: pedal-firmware.md
   - Troubleshooting & FAQ: faq.md
 
 theme:
-    name: material
-    custom_dir: overrides
-    palette:
+  name: material
+  custom_dir: overrides
+  palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       primary: green
@@ -36,16 +36,16 @@ theme:
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-    
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       primary: green
       secondary: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    
+
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -55,48 +55,47 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-    logo: assets/images/starpilot_icon--small.png
-    
-    icon:
-        repo: fontawesome/brands/github
-        
-    features:
-        - navigation.instant
-        - navigation.sections
-        - navigation.footer
-        - toc.follow
-        
+  logo: assets/images/starpilot_icon--small.png
+
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.footer
+    - toc.follow
 
 markdown_extensions:
-          - admonition
-          - tables
-          - toc:
-              permalink: true
-          - pymdownx.details
-          - pymdownx.superfences
-          - pymdownx.critic
-          - pymdownx.caret
-          - pymdownx.keys
-          - pymdownx.mark
-          - pymdownx.tilde
-          - attr_list
-          
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+
 plugins:
-    - search
-    - social
-    - git-revision-date-localized:
-        enable_creation_date: true
-        type: date
-    - git-committers:
-        repository: StarPilot-Docs/docs
-        branch: main
-    - callouts
-    - include-markdown
+  - search
+  - social
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - git-committers:
+      repository: StarPilot-Docs/docs
+      branch: main
+  - callouts
+  - include-markdown
 
 repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
 
 extra:
-    social:
-      - icon: fontawesome/brands/discord
-        link: https://discord.com/channels/1137853399715549214/1415794762312581222
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/channels/1137853399715549214/1415794762312581222
