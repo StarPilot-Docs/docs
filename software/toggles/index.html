@@ -812,9 +812,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#toggles" class="md-nav__link">
+  <a href="#openpilot-toggles" class="md-nav__link">
     <span class="md-ellipsis">
-      Toggles
+      Openpilot Toggles
     </span>
   </a>
   
@@ -1086,6 +1086,15 @@
   <a href="#vehicle-settings" class="md-nav__link">
     <span class="md-ellipsis">
       Vehicle Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-motors-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Motors Settings
     </span>
   </a>
   
@@ -1183,9 +1192,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#toggles" class="md-nav__link">
+  <a href="#openpilot-toggles" class="md-nav__link">
     <span class="md-ellipsis">
-      Toggles
+      Openpilot Toggles
     </span>
   </a>
   
@@ -1462,6 +1471,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#general-motors-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Motors Settings
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1488,31 +1506,40 @@
 
 
 <h1 id="configure-toggles-settings">Configure Toggles &amp; Settings<a class="headerlink" href="#configure-toggles-settings" title="Permanent link">&para;</a></h1>
-<h2 id="toggles">Toggles<a class="headerlink" href="#toggles" title="Permanent link">&para;</a></h2>
-<p>Most toggles here are up to you.</p>
-<!-- Pulled the below note from the old guide - not sure where this setting is? -->
-
-<div class="admonition note">
-<p class="admonition-title">ACC Bolts Only</p>
-<p>Enable "openpilot Longitudinal Control (alpha)". This will use the smoother, tuned experience vs. the Bolt’s stock ACC. It does not disable automatic emergency braking.</p>
-</div>
-<h2 id="frogpilot-settings">FrogPilot Settings<a class="headerlink" href="#frogpilot-settings" title="Permanent link">&para;</a></h2>
-<p>In general, FrogPilot settings should remain between fork installs and branch switches.</p>
-<div class="admonition note">
+<p>Most settings aim to have a good default value.
+To learn more about any setting, tap the title to see a description.
+These settings will generally persist across branches and forks unless you wipe/reset.</p>
+<div class="admonition tip">
 <p class="admonition-title">TL;DR?</p>
-<p>Just look for all the <mark>blue highlights</mark> - they will tell you any settings you need to turn off or on for best experience.</p>
-</div>
-<h2 id="tuning-level">Tuning Level<a class="headerlink" href="#tuning-level" title="Permanent link">&para;</a></h2>
-<p>There are multiple tuning levels in the FrogPilot settings - these will enable or disable more advanced tuning parameters.</p>
-<p>For best results on StarPilot, you’ll need to <mark>use the <strong>Advanced</strong> tuning level</mark>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To learn more about any setting, tap the title to see a description</p>
+<p>Just look for all the <mark>blue highlights</mark> - 
+they will tell you any settings you need to turn off or on for best experience.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Make Sure your Fingerprint is Correct</p>
-<p>If you ignore the rest of our suggestions here, at the very least, make sure you <a href="#vehicle-controls">set your correct fingerprint</a> to avoid issues.</p>
+<p>If you ignore the rest of our suggestions here, at the very least, make sure you 
+<a href="#vehicle-controls">set your correct fingerprint</a> to avoid issues.</p>
 </div>
+<h2 id="openpilot-toggles">Openpilot Toggles<a class="headerlink" href="#openpilot-toggles" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Openpilot: <mark>Enabled</mark></li>
+<li>Openpilot Longitudinal Control (Alpha): <mark>Enabled</mark><ul>
+<li><em>If this toggle is not present for you, ignore.</em></li>
+<li>If you want to use stock ACC, disable. 
+You will lose all openpilot long control 
+(eg. stop sign and traffic light stopping, Curve Speed Control, Speed Limit Control)</li>
+</ul>
+</li>
+<li>Experimental Mode: <mark>Disabled</mark><ul>
+<li>Frogpilot/Starpilot use Conditional Experimental Mode (CEM) 
+instead to switch into experimental when it makes sense to (eg. traffic lights).</li>
+</ul>
+</li>
+</ul>
+<h2 id="frogpilot-settings">FrogPilot Settings<a class="headerlink" href="#frogpilot-settings" title="Permanent link">&para;</a></h2>
+<p>The rest of the settings below are in the FrogPilot section of settings.</p>
+<h2 id="tuning-level">Tuning Level<a class="headerlink" href="#tuning-level" title="Permanent link">&para;</a></h2>
+<p>There are multiple tuning levels in the FrogPilot settings - these will enable or disable more advanced tuning parameters.</p>
+<p>For best results on StarPilot, you’ll need to <mark>use the <strong>Advanced</strong> tuning level</mark>.</p>
 <h2 id="alerts-and-sounds">Alerts and Sounds<a class="headerlink" href="#alerts-and-sounds" title="Permanent link">&para;</a></h2>
 <p>These are optional changes. Some popular changes include:</p>
 <ul>
@@ -1524,10 +1551,6 @@
 <ul>
 <li>Automatically download and update models: <mark>Turn On</mark></li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This is a departure from previous advice - we used to advise against this due to the potential for incomplete models. But with the new tinygrad model switcher, having this on helps ensure all pieces of the model have been downloaded correctly.</p>
-</div>
 <h4 id="model-selection">Model Selection<a class="headerlink" href="#model-selection" title="Permanent link">&para;</a></h4>
 <div class="admonition info">
 <p class="admonition-title">This info goes out of date quickly!</p>
@@ -1576,7 +1599,7 @@ Could be worth trying depending on your environment/region/preferences.</p>
 <li><strong>Taco Bell Run:</strong> Just leave taco bell run stuff off.</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">Always Turn Off Human Like Accel/Leads as they interfere with the StarPilot VoACC tuning</p>
+<p class="admonition-title">Always Turn Off Human Like Acceleration/Following as they interfere with the StarPilot VoACC tuning</p>
 <p>Human Like Accel and Leads should always be turned off. Recent tuning improvements have made these settings act erratically.</p>
 </div>
 <h4 id="quality-of-life-turn-on">Quality of Life: <mark>Turn On</mark><a class="headerlink" href="#quality-of-life-turn-on" title="Permanent link">&para;</a></h4>
@@ -1594,14 +1617,14 @@ Could be worth trying depending on your environment/region/preferences.</p>
 <p><strong>Increase Stopped Distance:</strong> Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the <a href="/software/toggles/#conditional-experimental-mode-turn-on">CEM</a> settings for help with this.</p>
 </li>
 <li>
-<p><strong>Map Accel/Decel to Gears:</strong> Allows sport mode to increase to the next accel profile. Reccomended to keep <strong>off</strong> as sport mode changes the lateral response for gen2 cars (gives them less torque).</p>
+<p><strong>Map Accel/Decel to Gears:</strong> Allows sport mode to increase to the next accel profile. Recommended to keep <strong>off</strong> as sport mode changes the lateral response for gen2 cars (gives them less torque).</p>
 </li>
 </ul>
 <h3 id="steering">Steering<a class="headerlink" href="#steering" title="Permanent link">&para;</a></h3>
 <h4 id="advanced-lateral-tuning-leave-off">Advanced Lateral Tuning: Leave Off<a class="headerlink" href="#advanced-lateral-tuning-leave-off" title="Permanent link">&para;</a></h4>
 <p>Section is WIP, features here are more for special cases &amp; testing.</p>
 <h4 id="always-on-lateral-recommend-turning-on">Always on Lateral: <mark>Recommend Turning On</mark><a class="headerlink" href="#always-on-lateral-recommend-turning-on" title="Permanent link">&para;</a></h4>
-<p>Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice &amp; useful, so we generally reccomend having it on.</p>
+<p>Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice &amp; useful, so we generally recommend having it on.</p>
 <p>With this on &amp; the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control.</p>
 <div class="admonition warning">
 <p class="admonition-title">Does not work under 6mph</p>
@@ -1630,7 +1653,7 @@ Could be worth trying depending on your environment/region/preferences.</p>
 <p>If NNFF appears here, disable it. Upstream NNFF doesn't play well with the different gens of Bolt.</p>
 <h4 id="quality-of-life-improvements-optional">Quality of Life Improvements: Optional<a class="headerlink" href="#quality-of-life-improvements-optional" title="Permanent link">&para;</a></h4>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
-<p>Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your prefferred mapping app via CarPlay/Android Auto.</p>
+<p>Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your preferred mapping app via CarPlay/Android Auto.</p>
 <h2 id="system-management">System Management<a class="headerlink" href="#system-management" title="Permanent link">&para;</a></h2>
 <p>Optional. Provides options for adjusting the screen brightness and other device settings.</p>
 <h2 id="theme-and-appearance">Theme and Appearance<a class="headerlink" href="#theme-and-appearance" title="Permanent link">&para;</a></h2>
@@ -1671,15 +1694,26 @@ Could be worth trying depending on your environment/region/preferences.</p>
 </ul>
 <h2 id="vehicle-controls">Vehicle Controls<a class="headerlink" href="#vehicle-controls" title="Permanent link">&para;</a></h2>
 <h3 id="vehicle-settings">Vehicle Settings<a class="headerlink" href="#vehicle-settings" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Select your car model.</li>
-<li>Enable the toggle for <strong>Disable Automatic Fingerprint Detection</strong>.</li>
-<li>Under <strong>General Motors Toggles</strong> DO NOT enable FrogsGoMoo’s experimental longitudinal tune. <mark>DO enable</mark> Smooth Pedal Response on Hills.</li>
-</ol>
-<details class="note">
-<summary>Fingerprinting Info</summary>
-<p>Fingerprinting is inconsistent on GM vehicles at the moment. As such, sometimes ACC bolts decide to fingerprint as Non-ACC which causes fun issues such as… not having Gas/Brake. So to be sure, it’s just always best to manually fingerprint.</p>
-</details>
+<ul>
+<li><mark>Select your car model</mark></li>
+<li>Disable Automatic Fingerprint Detection: <mark>Enabled</mark></li>
+<li>Disable openpilot Longitudinal Control: <mark>Disabled</mark><ul>
+<li><em>If this toggle is not present for you, ignore.</em></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Fingerprinting Info</p>
+<p>Fingerprinting is inconsistent on GM vehicles. 
+As such, sometimes ACC bolts decide to fingerprint as Non-ACC which causes fun issues 
+such as… not having Gas/Brake. 
+So to be sure, it’s just always best to manually fingerprint by disabling auto fingerprint.</p>
+</div>
+<h3 id="general-motors-settings">General Motors Settings<a class="headerlink" href="#general-motors-settings" title="Permanent link">&para;</a></h3>
+<ul>
+<li>FrogsGoMoo’s experimental longitudinal tune: <mark>Disabled</mark></li>
+<li>Smooth Pedal Response on Hills: <mark>Enabled</mark></li>
+</ul>
 
 
 
@@ -1702,7 +1736,7 @@ Could be worth trying depending on your environment/region/preferences.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 11, 2025 08:03:35 UTC">December 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 13, 2025 17:10:25 UTC">December 13, 2025</span>
   </span>
 
     
