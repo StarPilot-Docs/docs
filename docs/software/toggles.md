@@ -66,6 +66,8 @@ These are optional changes. Some popular changes include:
 Older models that aren't completely out of date yet. 
 Could be worth trying depending on your environment/region/preferences.
 
+* Plan Plus (1 or 2)
+    * Make sure to start with 'Recovery Power' at 0.6 if in a GM vehicle, and adjust from there.
 * Dark Souls
 * Cool Green Watermelon
 * Green Watermelon v8
