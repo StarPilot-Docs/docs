@@ -21,8 +21,10 @@ nav:
       - Car Config: install/car.md
   - Software Installation:
       - Install StarPilot: software/starpilot.md
-      - Configure Toggles: software/toggles.md
-  - Pedal Firmware Flash: pedal-firmware.md
+      - Pedal Firmware Flash: software/pedal-firmware.md
+  - Usage:
+      - Operation: usage/operation.md
+      - Settings: usage/settings.md
   - Troubleshooting & FAQ: faq.md
 
 theme:

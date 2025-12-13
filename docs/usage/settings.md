@@ -2,7 +2,7 @@
 description: How to configure your settings for the best experience
 ---
 
-# Configure Toggles & Settings
+# Configure Settings
 
 Most settings aim to have a good default value.
 To learn more about any setting, tap the title to see a description.
@@ -17,6 +17,8 @@ These settings will generally persist across branches and forks unless you wipe/
 > [set your correct fingerprint](#vehicle-controls) to avoid issues.
 
 ## Openpilot Toggles
+
+This is the upstream openpilot settings window.
 
 * Openpilot: ==Enabled==
 * Openpilot Longitudinal Control (Alpha): ==Enabled==

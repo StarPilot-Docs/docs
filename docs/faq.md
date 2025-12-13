@@ -4,6 +4,9 @@ description: Frequently asked questions
 
 # Frequently Asked Questions
 
+Can't find an answer to your question? Post in 
+[Discord](https://discord.com/channels/1137853399715549214/1415794762312581222)
+
 ## How do I clear the "LKAS Fault: Restart the car" error?
 
 1. Turn your car off
