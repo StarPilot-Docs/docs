@@ -12,7 +12,7 @@ To enable, turn the CC system on. To disable, turn CC system off.
 4. To engage openpilot (ie. to make it control your speed), 
 engage your CC system as normal by pressing SET/-. 
 5. To disengage openpilot, it should be the same as your CC system. 
-Press CC cancel or hit the brakes.
+Press CC cancel or hit the brakes. GM Volts/Bolts can use the regen paddle.
 6. To adjust openpilot max speed, use the CC +/- buttons. 
 Depending on the car, your car's dash may not reflect the max speed, 
 so instead use the openpilot UI's max speed shown.
@@ -21,11 +21,12 @@ so instead use the openpilot UI's max speed shown.
 
 ### Border Colors
 
-1. Grey - openpilot is disabled
-2. Blue - openpilot is controlling steering with AOL
+1. None - openpilot is not engaged
+2. Blue - openpilot is controlling only steering (AOL)
 3. Green - openpilot is engaged
-4. Orange - openpilot is engaged, in [CEM](#conditional-experimental-mode)
-5. Red - openpilot is engaged, personality set to Traffic Mode
+4. Grey - openpilot is engaged, but overridden (manually steering or pressing throttle pedal)
+5. Orange - openpilot is engaged, [CEM](#conditional-experimental-mode) is active
+6. Red - openpilot is engaged, personality set to Traffic Mode
 
 ### Max Speed
 
