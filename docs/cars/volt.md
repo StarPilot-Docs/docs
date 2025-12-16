@@ -38,7 +38,7 @@ you can just purchase the ASCM/SDGM portion of the suggestions.
 
 ### Reference Connection Diagram
 
-![Reference diagram](/assets/images/hardware/volt/ASCM_SASCM_connection_diagram_final.png)
+![Reference diagram](../assets/images/hardware/volt/ASCM_SASCM_connection_diagram_final.png)
 
 ## SDGM Harness & SASCM
 

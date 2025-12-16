@@ -91,7 +91,7 @@ See [Appearance -> Driving Screen Widgets](#appearance) to enable an on screen b
 
 Optional: [A macropad accessory](https://github.com/nelsonjchen/c3-faux-touch-keyboard) is available to adjust driving personality without touching the screen. It costs around $25 and requires minor tinkering.
 
-![An image of a small macropad in a Bolt](/assets/images/macropad.png){ width="300" }
+![An image of a small macropad in a Bolt](../assets/images/macropad.png){ width="300" }
 
 #### Longitudinal Tuning: ==Turn On==
 
@@ -117,7 +117,7 @@ The above profiles have been specially tuned to work better with the Bolt's acce
 
     You should always be extremely alert and ready to take manual control at stop lights and stop signs. Every model is different, and although red light and stopped lead detection is getting very good, stop sign detection is still quite bad. Additionally, our reliance on regen-braking only in the Bolt means that openpilot will often not have enough stopping power to stop in time once it has detected a stopped lead or traffic light.
 
-* **Increase Stopped Distance:** Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the [CEM](/software/toggles/#conditional-experimental-mode-turn-on) settings for help with this.
+* **Increase Stopped Distance:** Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the [CEM](../usage/settings.md#conditional-experimental-mode-turn-on) settings for help with this.
 
 * **Map Accel/Decel to Gears:** Allows sport mode to increase to the next accel profile. Recommended to keep **off** as sport mode changes the lateral response for gen2 cars (gives them less torque).
 

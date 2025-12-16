@@ -32,7 +32,7 @@ This will give you an input box to type in an install link. Find the correct ins
 > Use installer.comma.ai/firestar5683/BranchNameHere
 
 > [!WARNING] Other install issues
-> Message us in discord or [flash your comma](flash.comma.ai) and retry.
+> Message us in discord or [flash your comma](https://flash.comma.ai) and retry.
 
 ??? note "Why does the 2017 have its own branch?"
 

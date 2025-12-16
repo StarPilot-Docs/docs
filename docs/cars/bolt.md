@@ -59,7 +59,7 @@ are uncomfortable with the idea of installing the pedal interceptor.
 
 Without the pedal, openpilot is *very* limited in its ability to control the speed of your 
 vehicle. It will operate 
-[using a workaround we call "CCLong" or "Redneck ACC"](../faq.md#redneck-acc). 
+[using a workaround we call "CCLong" or "Redneck ACC"](../faq.md#what-is-redneck-acc-aka-cc-long). 
 
 #### ACC Bolts
 

@@ -2,7 +2,7 @@
 
 ??? warning "Gen1 Bolt ONLY - Pedal Firmware Update"
 
-    If you have a Gen1 Bolt (2017-2021) and you bought your pedal before June 2025, you will need to flash the firmware of your pedal with a DFU key for proper functionality. See the [Pedal Firmware Flashing](/pedal-firmware/) guide for more info.
+    If you have a Gen1 Bolt (2017-2021) and you bought your pedal before June 2025, you will need to flash the firmware of your pedal with a DFU key for proper functionality. See the [Pedal Firmware Flashing](../software/pedal-firmware.md) guide for more info.
 
 To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable from the harness box down to the drivers side footwell. Here, the Pedal will be inserted in series with your accelerator, and connect up to the Comma via the Cat5e cable. You should not need to remove any panels for install. A flat cable is recommended for easier hiding.
 
@@ -15,15 +15,15 @@ To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable f
 4. At the other side of this trim, you can tuck the cable inside the black door gasket, all the way down to the floor, or bottom of the dashboard.
 5. Route the cable along behind the pedals, or attach up behind the dashboard. It is important to ensure the pedals are unobstructed and the cable will not interfere with the operation of your car! Alternatively, if you have weathertech or similar rubber floor mats, you can route the cable under the mats. It's probably less advisable to route under the carpet mats, as they don't cover up as high and may allow the cable to tangle with the pedals.
 
-![Image of cable route along windshield](/assets/images/hardware/pedal/bolt_cable-route-1.jpg)
-![Image of cable route under dashboard](/assets/images/hardware/pedal/bolt_cable-route-2.jpg)
+![Image of cable route along windshield](../assets/images/hardware/pedal/bolt_cable-route-1.jpg)
+![Image of cable route under dashboard](../assets/images/hardware/pedal/bolt_cable-route-2.jpg)
 
 
 ### Install the Pedal
-1. The accelerator has a single cable connected to it. This cable has a red tab that must be pulled back. Then, you can squeeze the connecter to unlatch it, and pull it off. ![Image of the connector](/assets/images/hardware/pedal/bolt_pedal-connector.jpg)
+1. The accelerator has a single cable connected to it. This cable has a red tab that must be pulled back. Then, you can squeeze the connecter to unlatch it, and pull it off. ![Image of the connector](../assets/images/hardware/pedal/bolt_pedal-connector.jpg)
 2. Connect this cable to the pedal, and push back in the red tab.
 3. Connect the pedal to the accelerator, and push that red tab back in as well.
-4. On most bolts, there is a plastic piece next to the accelerator - the pedal can be tucked up inside this area safely, and this will keep it well out of the way of the accelerator. Alternatively, use a strong adhesive or similar to secure the pedal somewhere safe, where it will not interfere with your pedals. ![Image of where the pedal can be tucked behind the plastic](/assets/images/hardware/pedal/bolt_pedal-hiding-location.jpg)
+4. On most bolts, there is a plastic piece next to the accelerator - the pedal can be tucked up inside this area safely, and this will keep it well out of the way of the accelerator. Alternatively, use a strong adhesive or similar to secure the pedal somewhere safe, where it will not interfere with your pedals. ![Image of where the pedal can be tucked behind the plastic](../assets/images/hardware/pedal/bolt_pedal-hiding-location.jpg)
 
 !!! warning
 
