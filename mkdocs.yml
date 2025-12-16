@@ -25,6 +25,7 @@ nav:
   - Usage:
       - Operation: usage/operation.md
       - Settings: usage/settings.md
+      - Driving Model: usage/driving-model.md
   - Troubleshooting & FAQ: faq.md
 
 theme:
