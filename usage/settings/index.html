@@ -908,6 +908,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#starpilot-essential-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      StarPilot Essential Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#openpilot-toggles" class="md-nav__link">
     <span class="md-ellipsis">
       Openpilot Toggles
@@ -1006,9 +1015,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#customize-driving-personalities-personal-preference" class="md-nav__link">
+  <a href="#customize-driving-personalities" class="md-nav__link">
     <span class="md-ellipsis">
-      Customize Driving Personalities: Personal Preference
+      Customize Driving Personalities
     </span>
   </a>
   
@@ -1274,6 +1283,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#starpilot-essential-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      StarPilot Essential Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#openpilot-toggles" class="md-nav__link">
     <span class="md-ellipsis">
       Openpilot Toggles
@@ -1372,9 +1390,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#customize-driving-personalities-personal-preference" class="md-nav__link">
+  <a href="#customize-driving-personalities" class="md-nav__link">
     <span class="md-ellipsis">
-      Customize Driving Personalities: Personal Preference
+      Customize Driving Personalities
     </span>
   </a>
   
@@ -1576,22 +1594,22 @@
 <p>Most settings aim to have a good default value.
 To learn more about any setting, tap the title to see a description.
 These settings will generally persist across branches and forks unless you wipe/reset.</p>
-<div class="admonition tip">
-<p class="admonition-title">TL;DR?</p>
-<p>Just look for all the <mark>blue highlights</mark> - 
-they will tell you any settings you need to turn off or on for best experience.</p>
-</div>
+<h2 id="starpilot-essential-settings">StarPilot Essential Settings<a class="headerlink" href="#starpilot-essential-settings" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Make Sure your Fingerprint is Correct</p>
-<p>If you ignore the rest of our suggestions here, at the very least, make sure you 
-<a href="#vehicle-controls">set your correct fingerprint</a> to avoid issues.</p>
+<p class="admonition-title">Do not skip these settings</p>
 </div>
+<ul>
+<li>Turn off <a href="#longitudinal-tuning-turn-on">Human Like Following and Acceleration</a></li>
+<li><a href="#vehicle-controls">Manually set your correct vehicle fingerprint</a></li>
+<li>Radar-less cars (aka VoACC), especially Bolts without ACC: 
+<a href="#conditional-experimental-mode-turn-on">Enable CEM</a></li>
+</ul>
 <h2 id="openpilot-toggles">Openpilot Toggles<a class="headerlink" href="#openpilot-toggles" title="Permanent link">&para;</a></h2>
 <p>This is the upstream openpilot settings window.</p>
 <ul>
 <li>Openpilot: <mark>Enabled</mark></li>
 <li>Openpilot Longitudinal Control (Alpha): <mark>Enabled</mark><ul>
-<li><em>If this toggle is not present for you, ignore.</em></li>
+<li><em>If this toggle is not present for you, ignore.</em>  </li>
 <li>If you want to use stock ACC, disable. 
 You will lose all openpilot long control 
 (eg. stop sign and traffic light stopping, Curve Speed Control, Speed Limit Control)</li>
@@ -1606,13 +1624,22 @@ instead to switch into experimental when it makes sense to (eg. traffic lights).
 <h2 id="frogpilot-settings">FrogPilot Settings<a class="headerlink" href="#frogpilot-settings" title="Permanent link">&para;</a></h2>
 <p>The rest of the settings below are in the FrogPilot section of settings.</p>
 <h2 id="tuning-level">Tuning Level<a class="headerlink" href="#tuning-level" title="Permanent link">&para;</a></h2>
-<p>There are multiple tuning levels in the FrogPilot settings - these will enable or disable more advanced tuning parameters.</p>
+<p>There are multiple tuning levels in the FrogPilot settings - 
+these will enable or disable more advanced tuning parameters.</p>
 <p>For best results on StarPilot, you’ll need to <mark>use the <strong>Advanced</strong> tuning level</mark>.</p>
 <h2 id="alerts-and-sounds">Alerts and Sounds<a class="headerlink" href="#alerts-and-sounds" title="Permanent link">&para;</a></h2>
 <p>These are optional changes. Some popular changes include:</p>
 <ul>
-<li>Under <strong>Alert Volume Control</strong>, you can adjust or mute the disengage and engage sounds. We DON’T recommend changing the volume of any important alerts.</li>
-<li>Under <strong>FrogPilot Alerts</strong>, you can enable the Green Light Alert and Lead Departing Alert to get gentle nudges when a traffic light has turned green or the car in front of you has started moving.</li>
+<li><strong>Alert Volume Control</strong><ul>
+<li>You can adjust or mute the disengage and engage sounds</li>
+<li>We DON’T recommend changing the volume of any important alerts.</li>
+</ul>
+</li>
+<li><strong>FrogPilot Alerts</strong><ul>
+<li>Green Light Alert </li>
+<li>Lead Departing Alert</li>
+</ul>
+</li>
 </ul>
 <h2 id="driving-controls">Driving Controls<a class="headerlink" href="#driving-controls" title="Permanent link">&para;</a></h2>
 <h3 id="driving-model">Driving Model<a class="headerlink" href="#driving-model" title="Permanent link">&para;</a></h3>
@@ -1623,108 +1650,159 @@ instead to switch into experimental when it makes sense to (eg. traffic lights).
 <p>See <a href="../driving-model/">the driving model guide</a>.</p>
 <h3 id="gas-brake">Gas / Brake<a class="headerlink" href="#gas-brake" title="Permanent link">&para;</a></h3>
 <h4 id="conditional-experimental-mode-turn-on">Conditional Experimental Mode: <mark>Turn On</mark><a class="headerlink" href="#conditional-experimental-mode-turn-on" title="Permanent link">&para;</a></h4>
-<p>These settings control Conditional Experimental Mode, often called "CEM". Experimental Mode (vs "Chill Mode") is not yet good enough to handle all driving. But it can handle traffic lights &amp; stop signs, and is better in some situations. So we automatically enable it in certain conditions where it is better than Chill.</p>
-<p>Experimental Mode has a tendency to slow down/speed up weirdly, and overall just behave strangely, so we recommend conditionally enabling it only when necessary.</p>
+<p>Read more about CEM <a href="../operation/#conditional-experimental-mode">in the operation guide</a></p>
 <ul>
-<li><strong>Curve Detected Ahead:</strong> Turn off and instead rely on the "Curve Speed Controller" </li>
-<li><strong>Lead Detected Ahead:</strong> <mark>Turn on both Slower Lead and Stopped Lead</mark>, to help the model better slow when using VOACC (Visual Only ACC).</li>
-<li><strong>Navigation Data:</strong> Recommend leaving off.</li>
-<li><strong>openpilot Wants to Stop In:</strong> Helps with slowing to a stop at lights, in traffic, etc. <mark>Default is 8 seconds</mark>. Increase this number if your car is not slowing down in time for leads/lights. Decrease this number if you're getting lots of false activations and the car is going in and out of CEM when it shouldn't.</li>
-<li><strong>Status Widget:</strong> Up to you. Recommend leaving on. Shows an icon that displays if CEM is active, and if so, why.</li>
+<li><strong>Curve Detected Ahead</strong>: Turn off <ul>
+<li>Use the <a href="../operation/#curve-speed-controller">Curve Speed Controller</a> instead</li>
+</ul>
+</li>
+<li><strong>Lead Detected Ahead</strong>: <ul>
+<li>Slower Lead: <mark>Turn On</mark> if your car has no radar (eg. Bolts)</li>
+<li>Stopped Lead: <mark>Turn On</mark> if your car has no radar (eg. Bolts)</li>
+</ul>
+</li>
+<li><strong>Navigation Data</strong>: Turn off</li>
+<li><strong>openpilot Wants to Stop In</strong>: <mark>8 seconds</mark> <ul>
+<li>Helps with slowing to a stop at lights, in traffic, etc. <mark>Default is 8 seconds</mark>. </li>
+<li>Increase this number if your car is not slowing down in time for leads/lights. </li>
+<li>Decrease this number if you're getting lots of false activations 
+and the car is going in and out of CEM when it shouldn't.</li>
+</ul>
+</li>
+<li><strong>Status Widget</strong>: <mark>Recommend leaving on</mark>. <ul>
+<li>Shows an icon that displays if CEM is active, and if so, why.</li>
+</ul>
+</li>
 </ul>
 <h4 id="curve-speed-control-turn-on">Curve Speed Control: <mark>Turn On</mark><a class="headerlink" href="#curve-speed-control-turn-on" title="Permanent link">&para;</a></h4>
-<p>The new Curve Speed Controller from upstream FrogPilot now learns how fast you like to take certain curves at different speeds. When approaching a curve, you will see an icon appear in the top left of the screen notifying you that the smart curve controller is "training." It will adapt to your preferences over time. This training will take place regardless of openpilot engagement.</p>
-<h4 id="customize-driving-personalities-personal-preference">Customize Driving Personalities: Personal Preference<a class="headerlink" href="#customize-driving-personalities-personal-preference" title="Permanent link">&para;</a></h4>
-<p>Allows you to enable or disable certain personalities.</p>
-<p>Manage lets you set the follow distance to your preference.</p>
-<p>These have been tuned by firestar - if you wish to tune how they react, you can unlock additional settings by switching to the <em>developer</em> tuning level. Be careful though!</p>
-<p>See <a href="#appearance">Appearance -&gt; Driving Screen Widgets</a> to enable an on screen button for switching personalities.</p>
-<p>Optional: <a href="https://github.com/nelsonjchen/c3-faux-touch-keyboard">A macropad accessory</a> is available to adjust driving personality without touching the screen. It costs around $25 and requires minor tinkering.</p>
+<p>Read more about CSC <a href="../operation/#curve-speed-controller">in the operation guide</a></p>
+<h4 id="customize-driving-personalities">Customize Driving Personalities<a class="headerlink" href="#customize-driving-personalities" title="Permanent link">&para;</a></h4>
+<p>Enabling allows you to customize personalities to your preference.</p>
+<p>These have been tuned by firestar - if you wish to tune how they react, 
+you can unlock additional settings by switching to the <em>developer</em> tuning level. 
+Be careful though!</p>
+<p>See <a href="#appearance">Appearance -&gt; Driving Screen Widgets</a> 
+to enable an on screen button for switching personalities. 
+This is helpful for cars without a following distance button.</p>
+<p>Optional: <a href="https://github.com/nelsonjchen/c3-faux-touch-keyboard">A macropad accessory</a> 
+is available to adjust driving personality without touching the screen. 
+It costs around $25 and requires minor tinkering.</p>
 <p><img alt="An image of a small macropad in a Bolt" src="../../assets/images/macropad.png" width="300" /></p>
 <h4 id="longitudinal-tuning-turn-on">Longitudinal Tuning: <mark>Turn On</mark><a class="headerlink" href="#longitudinal-tuning-turn-on" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Acceleration Profile:</strong> <mark>Sport</mark></li>
 <li><strong>Deceleration Profile:</strong> <mark>Eco</mark></li>
-</ul>
-<p>The above profiles have been specially tuned to work better with the Bolt's accel &amp; decel curve.</p>
-<ul>
-<li><strong>Taco Bell Run:</strong> Just leave taco bell run stuff off.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Always Turn Off Human Like Acceleration/Following as they interfere with the StarPilot VoACC tuning</p>
-<p>Human Like Accel and Leads should always be turned off. Recent tuning improvements have made these settings act erratically.</p>
-</div>
-<h4 id="quality-of-life-turn-on">Quality of Life: <mark>Turn On</mark><a class="headerlink" href="#quality-of-life-turn-on" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>Cruise Intervals:</strong> These are up to you! I'm not sure the "long press" works on all vehicles. Some like to increase short press to 5mph for easier jumps in cruise speed.</li>
-<li><strong>Force Keep openpilot in the Standstill State:</strong> When this toggle is on, openpilot will require user input before it will resuem from a fully stopped state.</li>
-<li><strong>Force Stop for "Detected" Stop Lights/Signs:</strong> <mark>Recommend Turning On.</mark> This will help prevent (but not eliminate!) the Comma from running red lights or stop signs.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Stop Light and Stop Sign Detection can be Inconsistent</p>
-<p>You should always be extremely alert and ready to take manual control at stop lights and stop signs. Every model is different, and although red light and stopped lead detection is getting very good, stop sign detection is still quite bad. Additionally, our reliance on regen-braking only in the Bolt means that openpilot will often not have enough stopping power to stop in time once it has detected a stopped lead or traffic light.</p>
-</div>
-<ul>
 <li>
-<p><strong>Increase Stopped Distance:</strong> Only applies when coming to a complete stop. If your car is regularly stopping too late when coming to a complete stop, increase this number to your preference. This will not help in cases where openpilot did not start slowing in time. See "openpilot Wants to Stop In" in the <a href="./#conditional-experimental-mode-turn-on">CEM</a> settings for help with this.</p>
+<p><strong>Taco Bell Run</strong>: <mark>Turn Off</mark></p>
 </li>
 <li>
-<p><strong>Map Accel/Decel to Gears:</strong> Allows sport mode to increase to the next accel profile. Recommended to keep <strong>off</strong> as sport mode changes the lateral response for gen2 cars (gives them less torque).</p>
+<p><strong>Human Like Following</strong>: <mark>Turn Off</mark></p>
+</li>
+<li><strong>Human Like Acceleration</strong>: <mark>Turn Off</mark></li>
+</ul>
+<h4 id="quality-of-life-turn-on">Quality of Life: <mark>Turn On</mark><a class="headerlink" href="#quality-of-life-turn-on" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Reverse Cruise Increase</strong>: <mark>Turn On</mark> <ul>
+<li>Short press of CC + will increase speed by 5 mph/kph and long press will increase by 1</li>
+</ul>
+</li>
+<li><strong>Force Keep openpilot in the Standstill State</strong>: <ul>
+<li>Enabling will require user input to resume from a fully stopped state.</li>
+</ul>
+</li>
+<li><strong>Force Stop for "Detected" Stop Lights/Signs</strong>: <ul>
+<li>Enabling might help with Comma running stop signs and traffic lights</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Traffic Light and Stop Sign Detection can be Inconsistent</p>
+<p>You should always be extremely alert and ready to take manual control at stop lights and stop signs. 
+Every model is different, and although red light and stopped lead detection is getting very good, 
+stop sign detection is still quite bad. Models also tend to do rolling stops at stop signs.</p>
+</div>
+<ul>
+<li><strong>Increase Stopped Distance</strong>: <ul>
+<li>Only applies when coming to a complete stop. 
+If your car is regularly stopping too late when coming to a complete stop, 
+increase this number to your preference. 
+This will not help in cases where openpilot did not start slowing in time. 
+See "openpilot Wants to Stop In" in the <a href="#conditional-experimental-mode-turn-on">CEM</a> 
+settings for help with this.</li>
+</ul>
+</li>
+<li><strong>Map Accel/Decel to Gears</strong>: <ul>
+<li>Allows sport mode to increase to the next accel profile. </li>
+</ul>
 </li>
 </ul>
 <h3 id="steering">Steering<a class="headerlink" href="#steering" title="Permanent link">&para;</a></h3>
 <h4 id="advanced-lateral-tuning-leave-off">Advanced Lateral Tuning: Leave Off<a class="headerlink" href="#advanced-lateral-tuning-leave-off" title="Permanent link">&para;</a></h4>
 <p>Section is WIP, features here are more for special cases &amp; testing.</p>
 <h4 id="always-on-lateral-recommend-turning-on">Always on Lateral: <mark>Recommend Turning On</mark><a class="headerlink" href="#always-on-lateral-recommend-turning-on" title="Permanent link">&para;</a></h4>
-<p>Always on Lateral, also known as AoL (or mads in sunnypilot) allows you to turn on just the steering control (lateral) without the pedal control (longitudinal). This can be quite nice &amp; useful, so we generally recommend having it on.</p>
-<p>With this on &amp; the default settings, the cruise control main button (the one that turns all of cruise control on or off) will enable/disable Lateral control. Then, with cc main (and therefore AoL) on, hitting set or resume will enable longitudinal control. Cancelling with paddle or brake will keep AoL enabled but turn off longitudinal control.</p>
-<div class="admonition warning">
-<p class="admonition-title">Does not work under 6mph</p>
-<p>The Bolt does not allow for lateral control under 6mph. This applies to AoL and standard modes. It will not steer for you under 6mph.</p>
-</div>
+<p>Read more about AoL <a href="../operation/#always-on-lateral">in the operation guide</a></p>
 <h4 id="lane-changes-turn-on">Lane Changes: <mark>Turn On</mark><a class="headerlink" href="#lane-changes-turn-on" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>Automatic Lane Changes:</strong> <mark>Turn Off</mark>. With this off, you have to nudge the steering wheel before it changes lanes. This is ideal, since it lets you signal to other cars that you are changing lanes without actually starting the lane change.<ul>
-<li>Due to a quirk with steering torque, human-initiated lane changes will also be smoother and more natural.</li>
+<li><strong>Automatic Lane Changes:</strong> <mark>Turn Off</mark>. <ul>
+<li>With this off, you have to nudge the steering wheel before it changes lanes. 
+This is ideal, since it lets you signal to other cars that you are changing lanes 
+without actually starting the lane change.</li>
+<li>Due to a quirk with steering torque, 
+nudge-initiated lane changes will also be smoother and more natural.</li>
 </ul>
 </li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Stay Aware while Changing Lanes</p>
-<p>The Comma won't change lanes if it detects a car in your blind spot, but you should ALWAYS check first. Neither your Bolt's blind spot monitors nor the Comma have 360 degree awareness.</p>
+<p>The Comma won't change lanes if it detects a car in your blind spot, 
+but you should ALWAYS check first. 
+Your blind spot monitors cannot see everything.</p>
 </div>
 <ul>
-<li><strong>One Lane Change Per Signal</strong> <mark>Turn On</mark> just to be safe.</li>
+<li><strong>One Lane Change Per Signal</strong>: <mark>Turn On</mark> just to be safe.</li>
 </ul>
 <p>The remaining settings can be left at default.</p>
 <h4 id="lateral-tuning-turn-on">Lateral Tuning: <mark>Turn On</mark><a class="headerlink" href="#lateral-tuning-turn-on" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>Force Turn Desires:</strong> Leave off</li>
-<li><strong>Smooth Curve Handling:</strong> Leave off. It seems to interfere with the new comma torque controller. If the logic is updated at a later date, we will update here.</li>
+<li><strong>Force Turn Desires</strong>: Leave off</li>
+<li><strong>Smooth Curve Handling</strong>: Leave off.<ul>
+<li>Also known as NNFFLite.</li>
+<li>If this is on, the old torque controller will be used.</li>
 </ul>
-<p>If NNFF appears here, disable it. Upstream NNFF doesn't play well with the different gens of Bolt.</p>
+</li>
+<li><strong>NNFF</strong>: Neural Network Feed Forward<ul>
+<li>Can be smoother but can also lack peak torque.</li>
+<li>Do not use with Bolts.</li>
+</ul>
+</li>
+</ul>
 <h4 id="quality-of-life-improvements-optional">Quality of Life Improvements: Optional<a class="headerlink" href="#quality-of-life-improvements-optional" title="Permanent link">&para;</a></h4>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
-<p>Ignore Navigation. It's not supported very well by Comma and it's a pain to set up. It's not able to, say, drive you to your destination without your intervention. Just use your preferred mapping app via CarPlay/Android Auto.</p>
+<p>Ignore all navigation options. Recent models do not have the nav capability.</p>
 <h2 id="system-management">System Management<a class="headerlink" href="#system-management" title="Permanent link">&para;</a></h2>
 <p>Optional. Provides options for adjusting the screen brightness and other device settings.</p>
 <h2 id="theme-and-appearance">Theme and Appearance<a class="headerlink" href="#theme-and-appearance" title="Permanent link">&para;</a></h2>
 <h3 id="appearance">Appearance<a class="headerlink" href="#appearance" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p><strong>Advanced UI Controls:</strong> Optionally enable</p>
-<ul>
-<li>Some prefer to hide Current Speed and Lead Marker for a cleaner look. I like leaving them on. Lead marker can be useful when testing new models. All personal preference.</li>
-</ul>
+<p><strong>Advanced UI Controls</strong>: Optionally enable, these settings are all personal preference</p>
 </li>
 <li>
-<p><strong>Developer UI</strong>: Leave off, unless you have a specific reason to turn this on. Gives stats and things that are useful for troubleshooting &amp; development purposes, but not useful for day-to-day driving.</p>
+<p><strong>Developer UI</strong>: Leave off</p>
+<ul>
+<li>Gives stats and things that are useful for troubleshooting &amp; development purposes, 
+but not useful for day-to-day driving.</li>
+</ul>
 </li>
 <li>
 <p><strong>Driving Screen Widgets</strong>: <mark>Turn On</mark></p>
 <ul>
-<li>Enabling Acceleration Path, Blind Spot Path, and Rotating Steering Wheel can be nice, but is optional</li>
-<li><strong>Driving Personality Button:</strong> <mark>Turn On for Gen 0 and Gen 1.</mark> In StarPilot, the driving personalities mostly handle follow distance. Gen 2 is able to control this using the steering wheel button. Gen 0 and Gen 1 need to use the on screen button for this.</li>
+<li><strong>Driving Personality Button</strong>: <mark>Turn On for 2017-2021 Bolts</mark>, rest optional<ul>
+<li>In StarPilot, the driving personalities mostly handle follow distance. </li>
+<li>2017-21 Bolts must use the button to change personality, 
+while most other cars can change personality using the steering wheel distance button. </li>
+</ul>
+</li>
 <li>All other options are optional.</li>
 </ul>
 </li>
@@ -1739,11 +1817,10 @@ instead to switch into experimental when it makes sense to (eg. traffic lights).
 </li>
 </ul>
 <h3 id="theme">Theme<a class="headerlink" href="#theme" title="Permanent link">&para;</a></h3>
-<p>If you prefer a more <em>professional</em> look, you can disable all toggles here and set the startup alert to stock.</p>
-<p>The frogpilot startup alert &amp; various frog themed things can sometimes be concerning to passengers who have not encountered the Comma before.</p>
-<ul>
-<li><strong>Custom Theme</strong>: <mark>Optionally disable frog noises.</mark> Although I'm personally generally fine with the more fun frog-themed stuff, I do always change the sound pack to default to disable the frog noises on activation/deactivation, as I find them to be a bit much.</li>
-</ul>
+<p>If you prefer a more <em>professional</em> look, 
+you can disable all toggles here and set the startup alert to stock.</p>
+<p>The frogpilot startup alert &amp; various frog themed things can sometimes be 
+concerning to passengers who have not encountered the Comma before.</p>
 <h2 id="vehicle-controls">Vehicle Controls<a class="headerlink" href="#vehicle-controls" title="Permanent link">&para;</a></h2>
 <h3 id="vehicle-settings">Vehicle Settings<a class="headerlink" href="#vehicle-settings" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1788,7 +1865,7 @@ So to be sure, it’s just always best to manually fingerprint by disabling auto
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 16, 2025 02:13:56 UTC">December 16, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 20, 2025 01:25:59 UTC">December 20, 2025</span>
   </span>
 
     
