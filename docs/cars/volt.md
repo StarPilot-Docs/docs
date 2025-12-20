@@ -77,7 +77,7 @@ This is completely untested and undeveloped in the Volt. Feel free to contribute
 ### Flashing Volt Firmware
 
 pinballben is the resident expert on flashing Volt firmware, who will provide the instructions and hardware
-for a fee. DM on discord (through the member list of the frogpilot discord).
+for a fee. DM on [Discord](https://firestar.link/discord) (through the member list).
 
 > [!CAUTION] Flashing ACC 
 > Flashing ACC will remove stock CC. 

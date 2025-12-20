@@ -32,15 +32,21 @@ This will give you an input box to type in an install link. Find the correct ins
 > Use installer.comma.ai/firestar5683/BranchNameHere
 
 > [!WARNING] Other install issues
-> Message us in discord or [flash your comma](https://flash.comma.ai) and retry.
+> Message us in [Discord](https://firestar.link/discord) 
+> or [flash your comma](https://flash.comma.ai) and retry.
 
-??? note "Why does the 2017 have its own branch?"
-
-    While testing, we discovered that the 2017 has vastly different values for steering torque. This means that, on any other branch of openpilot, 2017 Bolts experience a huge lack of steering ability, when in actuality, they have MORE steering torque than the other gens. This lead us down a long rabbit hole of discovering that lots of things about the 2017 is just... weird and different. Hence the "Gen 0" moniker.
+> [!NOTE] Why does the 2017 have its own branch?
+> While testing, we discovered that the 2017 has vastly different values for steering torque. 
+> This means that, on any other branch of openpilot, 2017 Bolts experience a huge lack of 
+> steering ability, when in actuality, they have MORE steering torque than the other gens. 
+> This lead us down a long rabbit hole of discovering that lots of things about the 2017 is just... 
+> weird and different. Hence the "Gen 0" moniker.
     
-!!! info "TRX Branch"
-
-    The TRX branch includes the StarPilot custom model switcher and Visual Only ACC (VOACC) improvements without the Bolt specific things present on other branches. It should be used by any non-GM cars. Check with us in Discord for more specifics
+> [!NOTE] TRX Branch
+> The TRX branch includes the StarPilot custom model switcher and Visual Only ACC (VOACC) 
+> improvements without the Bolt specific things present on other branches. 
+> It should be used by any non-GM cars. 
+> Check with us in [Discord](https://firestar.link/discord) for more specifics.
 
 ## Dev, Testing, and Other Branches
 
