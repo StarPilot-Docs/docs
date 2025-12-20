@@ -3,14 +3,16 @@
 ## Capabilities
 
 Openpilot is driver assistance, not self driving.
-It performs adaptive cruise control and lane centering. 
+It shines on the highway, providing a (mostly) hands-free experience.
+
+It performs adaptive cruise control and automated lane centering. 
 It will stop at most traffic lights and rolling stop for some stop signs.
 It can handle most curves, especially at the recommended curve speed limit. 
 It will attempt to do low speed turns (expect to take manual control), 
 but is limited by available steering torque, which depends on the vehicle.
 
 It is not full self driving. 
-It is mostly hands free, but requires your eyes on the road.
+It requires you to pay attention using a driver monitoring camera instead of wheel nags.
 
 It is being actively developed so it should improve (eg. the rolling stops),
 but this is a snapshot of what it currently does.
