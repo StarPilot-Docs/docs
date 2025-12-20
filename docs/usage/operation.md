@@ -1,21 +1,58 @@
 # Openpilot Operation
 
+## Capabilities
+
+Openpilot is driver assistance, not self driving.
+It performs adaptive cruise control and lane centering. 
+It will stop at most traffic lights and rolling stop for some stop signs.
+It can handle most curves, especially at the recommended curve speed limit. 
+It will attempt to do low speed turns (expect to take manual control), 
+but is limited by available steering torque, which depends on the vehicle.
+
+It is not full self driving. 
+It is mostly hands free, but requires your eyes on the road.
+
+It is being actively developed so it should improve (eg. the rolling stops),
+but this is a snapshot of what it currently does.
+
 ## Basic Operation
 
 1. Pay attention at all times. You are responsible for your vehicle's operation.
 2. You can manually override or disengage openpilot at any time. 
 Steering, throttle, and brakes can be used at any time.
-3. With Always on Lateral (AOL) - lane centering stays active at all times, 
-even when Cruise Control (CC) is disengaged or pressing throttle/brake pedal. 
-This does not change #2, you can always override it by manually steering.
-To enable, turn the CC system on. To disable, turn CC system off.
-4. To engage openpilot (ie. to make it control your speed), 
+3. To engage openpilot (ie. to make it control your speed and steering), 
 engage your CC system as normal by pressing SET/-. 
-5. To disengage openpilot, it should be the same as your CC system. 
+4. To disengage openpilot, it should be the same as your CC system. 
 Press CC cancel or hit the brakes. GM Volts/Bolts can use the regen paddle.
-6. To adjust openpilot max speed, use the CC +/- buttons. 
+5. To adjust openpilot max speed, use the CC +/- buttons. 
 Depending on the car, your car's dash may not reflect the max speed, 
 so instead use the openpilot UI's max speed shown.
+
+## Always On Lateral
+
+With Always on Lateral (AOL), steering (lane centering) stays active at all times, 
+even when Cruise Control (CC) is disengaged or pressing throttle/brake pedal. 
+This does not change the manual override safety protocols, 
+you can always override it by manually steering.
+
+To enable, turn the CC system on. 
+To disable, turn CC system off.
+
+To permanently disable, [see settings](./settings.md#always-on-lateral-recommend-turning-on)
+
+## Lane Changes
+
+1. Verify it is safe to change lanes.
+2. Turn on blinker.
+3. Nudge the steering wheel to initiate the lane change.
+
+> [!WARNING] Check your blind spot!
+> Openpilot will attempt to use your blind spot monitors on supported cars, 
+> but you should always check yourself.
+
+> [!WARNING] Nudge-less lane changes
+> Step 3 can be skipped if nudge-less lane changes are enabled in settings.
+> Be careful if you use this non-recommended setting.
 
 ## UI Basics
 
@@ -50,7 +87,9 @@ If your max speed is *orange*, your max speed is still active but approaching th
 If you see an incorrect or missing speed limit, go to OSM and submit an edit. 
 Your openpilot speed limit data will update in about a week.
 
-## Curve Speed Controller ![curve speed controller icon](../assets/images/curve_speed.png){: style="height:50px;width:50px"} 
+## Curve Speed Controller 
+
+![curve speed controller icon](../assets/images/curve_speed.png){: style="height:50px;width:50px"} 
 
 The Curve Speed Controller (CSC) will limit your max speed in order to match how you take curves.
 If you see the curve speed icon next to your max speed, 
@@ -66,6 +105,7 @@ Normal openpilot operation is known as *chill mode*.
 
 Experimental mode, also known as end-to-end longitudinal (e2e long), 
 gives the driving model full control of the gas/brake. 
+Experimental mode does not affect steering.
 It is not recommended at the moment. 
 It may brake or accelerate erratically.
 

@@ -16,7 +16,8 @@ StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot), which i
 1. [Get necessary hardware for your car using our car guides](./cars/all.md). 
 If you are already running with stock openpilot or FrogPilot, 
 you can skip this step for now as extra accessories are optional.
-1. [Install StarPilot](./software/starpilot.md)
+1. [Install StarPilot](./software/starpilot.md).
+1. Read the [Operation Guide](./usage/operation.md).
 
 ## Credits
 

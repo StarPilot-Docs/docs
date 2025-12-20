@@ -3,6 +3,19 @@ description: How to pick the correct hardware for running StarPilot on a Bolt EV
 ---
 # Bolt Hardware
 
+## Vehicle Quirks
+
+Things to be aware of for your vehicle relating to openpilot:
+
+* Openpilot cannot steer below 7 mph.
+* Non-ACC Bolts are limited to regen-only braking using a [Comma Pedal](../hardware/comma-pedal.md). 
+This means a max 70kW of deceleration meaning no emergency stops 
+and poor low speed slowing performance. 
+You will occasionally need to brake manually.
+* ACC Bolts are limited to 10kW of regen 
+(but unlike non-ACC, openpilot can control your friction brakes).
+* *22-23 Bolts only*: Sport mode will decrease available steering torque.
+
 ## Vehicle Requirements
 
 > [!WARNING] SuperCruise Bolts Not Supported
