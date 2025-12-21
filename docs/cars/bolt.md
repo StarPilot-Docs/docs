@@ -14,6 +14,8 @@ and poor low speed slowing performance.
 You will occasionally need to brake manually.
 * ACC Bolts are limited to 10kW of regen 
 (but unlike non-ACC, openpilot can control your friction brakes).
+* ACC Bolts do not have stop and go support (press accelerator pedal or press CC resume).
+    * Non-ACC bolts with Comma Pedal do have stop-and-go support.
 * *22-23 Bolts only*: Sport mode will decrease available steering torque.
 
 ## Vehicle Requirements
