@@ -7,6 +7,20 @@ description: Frequently asked questions
 Can't find an answer to your question? Post in 
 [Discord](https://firestar.link/discord)
 
+## Will installing openpilot void my warranty?
+
+<https://comma.ai/support#will-installing-a-comma-device-void-my-warranty>
+
+## Is the openpilot install reversible?
+
+Yes. The openpilot hardware install is fully reversible. 
+There are no car modifications, just custom harnesses that intercept at the existing harnesses.
+
+When the comma USB-C is unplugged, your car can't tell the difference.
+
+When the openpilot hardware (camera harnesses, pedal, ASCM, SASCM, SDSU, SDGM, etc.) are removed,
+the car returns to stock.
+
 ## Will openpilot navigate on its own?
 
 Navigate-on-openpilot support has been dropped by comma, 

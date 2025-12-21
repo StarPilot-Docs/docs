@@ -76,6 +76,11 @@ This is completely untested and undeveloped in the Volt. Feel free to contribute
 
 ### Flashing Volt Firmware
 
+> [!CAUTION] 
+> Flashing your car's firmware is at your own risk.
+> Unlike the custom harness installs, 
+> flashing is not reversible by simply unplugging hardware.
+
 pinballben is the resident expert on flashing Volt firmware, who will provide the instructions and hardware
 for a fee. DM on [Discord](https://firestar.link/discord) (through the member list).
 
