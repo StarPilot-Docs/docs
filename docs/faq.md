@@ -7,6 +7,14 @@ description: Frequently asked questions
 Can't find an answer to your question? Post in 
 [Discord](https://firestar.link/discord)
 
+## Will openpilot navigate on its own?
+
+Navigate-on-openpilot support has been dropped by comma, 
+so the models that support navigation are old and not recommended.
+The feature will probably come back in the future, 
+but keep in mind that with the limitations of most cars (especially steering torque) 
+and openpilot hardware will never be like Tesla FSD.
+
 ## How do I clear the "LKAS Fault: Restart the car" error?
 
 1. Turn your car off
