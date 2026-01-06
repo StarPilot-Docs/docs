@@ -37,6 +37,11 @@ and openpilot hardware will never be like Tesla FSD.
 4. Turn car on
 5. Done. LKAS fault should have cleared.
 
+> [!TIP] 
+> On 2017-2021 Bolts, when the comma is plugged in: the steering wheel LKAS button does nothing 
+> and the light above it will always be off. 
+> LKAS faults also only show on the comma UI, not on car dash.
+
 ## How do I avoid LKAS faults?
 
 1. Never reboot, unplug, or power off the comma while your car is on. 
