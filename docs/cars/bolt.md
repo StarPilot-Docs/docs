@@ -17,6 +17,10 @@ You will occasionally need to brake manually.
 * ACC Bolts do not have stop and go support (press accelerator pedal or press CC resume).
     * Non-ACC bolts with Comma Pedal do have stop-and-go support.
 * *22-23 Bolts only*: Sport mode will decrease available steering torque.
+* Steering wheel LKAS button and light do not work when comma is connected (purely a cosmetic issue).
+    * If pressed, the dash will display "LKAS is unavailable" but op steering will still work.
+    * The button also cannot be used with the openpilot custom button actions 
+(ACC models can still use the distance button).
 
 ## Vehicle Requirements
 

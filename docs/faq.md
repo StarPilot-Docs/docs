@@ -38,8 +38,10 @@ and openpilot hardware will never be like Tesla FSD.
 5. Done. LKAS fault should have cleared.
 
 > [!TIP] 
-> On 2017-2021 Bolts, when the comma is plugged in: the steering wheel LKAS button does nothing 
+> On Bolts, when the comma is plugged in: the steering wheel LKAS button does nothing 
 > and the light above it will always be off. 
+> If the button is pressed, it will display "LKAS unavailable", 
+> but openpilot steering will still work.
 > LKAS faults also only show on the comma UI, not on car dash.
 
 ## How do I avoid LKAS faults?
