@@ -1057,9 +1057,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#advanced-lateral-tuning-leave-off" class="md-nav__link">
+  <a href="#advanced-lateral-tuning-turn-on" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Lateral Tuning: Leave Off
+      Advanced Lateral Tuning: Turn On
     </span>
   </a>
   
@@ -1432,9 +1432,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#advanced-lateral-tuning-leave-off" class="md-nav__link">
+  <a href="#advanced-lateral-tuning-turn-on" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Lateral Tuning: Leave Off
+      Advanced Lateral Tuning: Turn On
     </span>
   </a>
   
@@ -1591,9 +1591,14 @@
 
 
 <h1 id="configure-settings">Configure Settings<a class="headerlink" href="#configure-settings" title="Permanent link">&para;</a></h1>
-<p>Most settings aim to have a good default value.
+<p>Most settings are preselected and shouldn't need changing, but use the notes below as general guidelines.
 To learn more about any setting, tap the title to see a description.
+If something feels off or the car is driving weird, try resetting your toggles to default.
 These settings will generally persist across branches and forks unless you wipe/reset.</p>
+<div class="admonition warning">
+<p class="admonition-title">Golden Safety Rule</p>
+<p>If you're going to change a value, change it by no more than 10% at a time.</p>
+</div>
 <h2 id="starpilot-essential-settings">StarPilot Essential Settings<a class="headerlink" href="#starpilot-essential-settings" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Do not skip these settings</p>
@@ -1737,8 +1742,20 @@ settings for help with this.</li>
 </li>
 </ul>
 <h3 id="steering">Steering<a class="headerlink" href="#steering" title="Permanent link">&para;</a></h3>
-<h4 id="advanced-lateral-tuning-leave-off">Advanced Lateral Tuning: Leave Off<a class="headerlink" href="#advanced-lateral-tuning-leave-off" title="Permanent link">&para;</a></h4>
-<p>Section is WIP, features here are more for special cases &amp; testing.</p>
+<h4 id="advanced-lateral-tuning-turn-on">Advanced Lateral Tuning: <mark>Turn On</mark><a class="headerlink" href="#advanced-lateral-tuning-turn-on" title="Permanent link">&para;</a></h4>
+<p>Leave all values inside this panel at default.
+* <strong>Force Auto Tune Off</strong>: <mark>Turn On</mark>
+* <strong>Force Auto Tune On</strong>: <mark>Turn Off</mark></p>
+<p>Friction and actuator delay will auto-learn based on your vehicle and conditions.
+Auto-learn is enabled only when their default values are left unchanged.
+If you adjust the defaults (0.2 actuator delay and 0.05 friction for the Bolt),
+auto-learn turns off and it falls back to your manual selection.</p>
+<div class="admonition warning">
+<p class="admonition-title">Developer Sidebar</p>
+<p>Using the developer sidebar and noticing steer ratio or lateral accel changing?
+That display is informational only.
+For GM vehicles, the only auto-learned parameters are actuator delay and friction.</p>
+</div>
 <h4 id="always-on-lateral-recommend-turning-on">Always on Lateral: <mark>Recommend Turning On</mark><a class="headerlink" href="#always-on-lateral-recommend-turning-on" title="Permanent link">&para;</a></h4>
 <p>Read more about AoL <a href="../operation/#always-on-lateral">in the operation guide</a></p>
 <h4 id="lane-changes-turn-on">Lane Changes: <mark>Turn On</mark><a class="headerlink" href="#lane-changes-turn-on" title="Permanent link">&para;</a></h4>
@@ -1763,6 +1780,14 @@ Your blind spot monitors cannot see everything.</p>
 </ul>
 <p>The remaining settings can be left at default.</p>
 <h4 id="lateral-tuning-turn-on">Lateral Tuning: <mark>Turn On</mark><a class="headerlink" href="#lateral-tuning-turn-on" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Custom Torque Controller</p>
+<p>We use a custom torque controller that generally works well with most GM vehicles.
+For that controller to work, BOTH Smooth Curve Handling and NNFF must be off.
+If either are on, it reverts to an older version of the torque controller.
+This might be better for certain cars with good NNFF tunes (like the Volt),
+but we recommend leaving both off for now.</p>
+</div>
 <ul>
 <li><strong>Force Turn Desires</strong>: Leave off</li>
 <li><strong>Smooth Curve Handling</strong>: Leave off.<ul>
@@ -1865,7 +1890,7 @@ So to be sure, it’s just always best to manually fingerprint by disabling auto
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 20, 2025 01:25:59 UTC">December 20, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 13, 2026 04:36:42 UTC">January 13, 2026</span>
   </span>
 
     
@@ -1892,6 +1917,11 @@ So to be sure, it’s just always best to manually fingerprint by disabling auto
 
     
     <nav>
+      
+        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
+          
+          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
+        </a>
       
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
