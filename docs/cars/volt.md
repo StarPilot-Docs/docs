@@ -70,8 +70,7 @@ Longitudinal (gas/brake) control:
 1. [Flashing your Volt firmware for ACC](#flashing-volt-firmware).
 **This will give you the best openpilot experience.**
 1. [Redneck ACC](../faq.md#what-is-redneck-acc-aka-cc-long)
-1. A potential option is the [Comma Pedal](../hardware/comma-pedal.md)
-, but you will be limited to L mode regen.
+1. A potential option is the [Comma Pedal](../hardware/comma-pedal.md), but you will be limited to L mode regen.
 This is completely untested and undeveloped in the Volt. Feel free to contribute!
 
 ### Flashing Volt Firmware

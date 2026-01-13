@@ -27,7 +27,9 @@ Navigate-on-openpilot support has been dropped by comma,
 so the models that support navigation are old and not recommended.
 The feature will probably come back in the future, 
 but keep in mind that with the limitations of most cars (especially steering torque) 
-and openpilot hardware will never be like Tesla FSD.
+and openpilot hardware, do not expect Tesla-style full autonomy.
+Openpilot remains a driver-assistance system and continues to improve; lateral control is typically strong,
+while longitudinal behavior requires more caution and attention.
 
 ## How do I clear the "LKAS Fault: Restart the car" error?
 
@@ -57,6 +59,8 @@ and dissipate static buildup.
 
 ## How do I clear the "Cruise Fault: Restart the car" error?
 
+This error applies only to vehicles with adaptive cruise control (ACC).
+
 1. Turn car off
 2. Open car door
 3. Close car door
@@ -70,6 +74,8 @@ If the error is still present, go back to step 1. This can take 6 or more tries.
 1. Turn car off
 2. Wait 5 seconds
 3. Turn car on
+
+If the error persists, restart the comma device with the car off.
 
 > [!NOTE] Remote Start Issues
 > If you use remote start, to avoid issues, you should cycle the car off and then back on
@@ -122,27 +128,28 @@ Do not expect it to stop for cars or react quickly. As always, be ready to inter
 
 ## I'm stuck on the boot logo screen. How do I fix it?
 
+This is usually caused by a sticky param, especially when coming from another FrogPilot-based fork.
+
 1. Unplug the device
 2. Wait 60 seconds
 3. Plug it back in
 4. Tap the center of the screen over and over until the reset prompt comes up
-5. Reset 
-6. Reinstall [your desired version](./software/starpilot.md)
-7. If this happens again, go back to step 1 and reinstall from `firestar.link/saveme`
-and then swap to your intended branch (or uninstall and install your intended fork).
+5. Reset
+6. Install `firestar.link/saveme` to manually clear old parameters
+7. Use the Software tab in FrogPilot to switch to your intended branch
+
+If issues persist, reach out in [Discord](https://firestar.link/discord).
 
 ## How do I fix "Process Not Running dmonitoringmodeld"?
 
-This occurs on upstream FrogPilot on relatively new comma devices (after September 2025)
-as a result of upstream comma provisioning changes. Installing StarPilot will make the
-device appear similar to before the provisioning changes. A single install of StarPilot will
-fix it so you can go back to FrogPilot after.
+This is seen on upstream FrogPilot builds on newer comma devices (post‑September 2025)
+due to upstream provisioning changes. A one‑time install of StarPilot resets the device
+state to a pre‑change baseline so FrogPilot can be reinstalled cleanly afterward.
 
 1. Uninstall FrogPilot (Settings > Software > Uninstall)
 2. Install StarPilot from `firestar.link/trx`
-3. If you are staying on StarPilot, 
-change to your desired branch in the Software tab and stop here. 
-Otherwise, proceed.
+3. If you are staying on StarPilot, change to your desired branch in the Software tab and stop here.
+   Otherwise, proceed.
 4. Uninstall StarPilot
 5. Reinstall FrogPilot
 
@@ -159,7 +166,7 @@ This includes the two connectors coming out of the Comma Pedal box and the car s
 This is hot breath like fogging up a window, not blowing out a candle.
 4. Re-connect all connectors. 
 
-If the issue still presents, post in the troubleshooting thread.
+If the issue still persists, post in the troubleshooting thread.
 
 ## How do I fix the "CAN bus disconnected" Error?
 

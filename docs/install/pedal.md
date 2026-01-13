@@ -2,18 +2,18 @@
 
 ??? warning "Gen1 Bolt ONLY - Pedal Firmware Update"
 
-    If you have a Gen1 Bolt (2017-2021) and you bought your pedal before June 2025, you will need to flash the firmware of your pedal with a DFU key for proper functionality. See the [Pedal Firmware Flashing](../software/pedal-firmware.md) guide for more info.
+    If you have a Gen1 Bolt (2017-2021) and you bought your pedal before June 2025, you will need to flash the firmware of your pedal with a DFU key for proper operation. See the [Pedal Firmware Flashing](../software/pedal-firmware.md) guide for more info.
 
-To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable from the harness box down to the drivers side footwell. Here, the Pedal will be inserted in series with your accelerator, and connect up to the Comma via the Cat5e cable. You should not need to remove any panels for install. A flat cable is recommended for easier hiding.
+To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable from the harness box down to the drivers side footwell. Here, the Pedal will be inserted in series with your accelerator, and connect up to the Comma via the Cat5e cable. Panel removal is typically unnecessary. A flat cable is recommended for easier hiding.
 
-## Steps:
+## Steps
 
-### Route The Cable
+### Route the Cable
 1. Plug the Cat5e cable into the harness box behind the mirror (or, at the very least, ensure you have enough length to do so). Make sure you leave just enough slack for the cable to make its way out of the cover once that is reinstalled.
 2. Route the cable towards the drivers door along the top of the windshield. You should be able to tuck it up under the trim with your fingers or a rubber pry tool.
 3. At the A pillar, route the cable into the trim. The side curtain airbag is inside the A pillar trim, and it is best to try to feed the cable up over the top of the airbag, as to avoid interfering with its operation.
 4. At the other side of this trim, you can tuck the cable inside the black door gasket, all the way down to the floor, or bottom of the dashboard.
-5. Route the cable along behind the pedals, or attach up behind the dashboard. It is important to ensure the pedals are unobstructed and the cable will not interfere with the operation of your car! Alternatively, if you have weathertech or similar rubber floor mats, you can route the cable under the mats. It's probably less advisable to route under the carpet mats, as they don't cover up as high and may allow the cable to tangle with the pedals.
+5. Route the cable along behind the pedals, or attach it up behind the dashboard. Ensure the pedals are unobstructed and the cable cannot interfere with your car's operation. Alternatively, if you have WeatherTech or similar rubber floor mats, you can route the cable under the mats. Routing under carpet mats is less advisable, as they do not cover as high and may allow the cable to tangle with the pedals.
 
 ![Image of cable route along windshield](../assets/images/hardware/pedal/bolt_cable-route-1.jpg)
 ![Image of cable route under dashboard](../assets/images/hardware/pedal/bolt_cable-route-2.jpg)
@@ -29,6 +29,6 @@ To install the Pedal Interceptor, you will need to run a Cat5e (or Cat6) cable f
 
     It is essential that none of the cable routing or the pedal itself interfere with the normal operation of your brake and accelerator pedals. Ensure that there is no way for these items to tangle, jam, or otherwise block your pedals.
 
-### Button things up
+### Reassembly
 
-You can now re-attach the cover behind the mirror, ensuring no cables get pinched or caught, and replace the small plastic peice at the front. There should be enough space remaining for the USB C for the comma & the ethernet for the pedal to come out.
+You can now re-attach the cover behind the mirror, ensuring no cables get pinched or caught, and replace the small plastic piece at the front. There should be enough space remaining for the USB-C for the comma device and the Ethernet for the pedal to come out.

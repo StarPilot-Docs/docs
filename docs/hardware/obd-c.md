@@ -1,6 +1,6 @@
 # OBD-C Cable
 
-The Comma 3x comes with a short OBD-C cable. If you need another one for setups like 
+The Comma 3X comes with a short OBD-C cable. If you need another one for setups like 
 SASCM, ASCM, SDGM, OBD harness:
 
 Any USB-C 3.2 cable will work to meet the 

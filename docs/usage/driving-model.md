@@ -1,20 +1,23 @@
 # Driving Model
 
-The driving model is the "brains" behind openpilot. 
+The driving model is the core perception and planning system behind openpilot. 
 It processes video and outputs the desired steering and acceleration/braking.
 
 Model preferences are personal; 
 they can vary based upon vehicle, region, environment, and preferences.
-This page is just a guide -- try a few models and search for feedback in the Discord.
+This page is a guide; try a few models and search for feedback in the Discord.
 
 > [!TIP]
 > Models are released often, so this page can go out of date quickly.
-> Discord will generally have the most up to date info.
+> The model manager in FrogPilot > Driving Model is kept current with StarPilot favorites.
+> Refer to that list for model recommendations when unsure.
 > This page was last updated on: {{ git_revision_date_localized }}
 
 ## Current Recommendation(s)
 
-* **Dark Souls v2**: The current favorite and default in upstream openpilot.
+* **SC Driving (South Carolina)**
+* **Dark Souls v2**
+* **Green Watermelon v7**
 
 ## Previous Favorites (newest to oldest)
 
@@ -26,6 +29,5 @@ Older models that aren't completely out of date yet.
 * Dark Souls
 * Cool Green Watermelon
 * Green Watermelon v8
-* Green Watermelon v7
 * The Cool People v3
 * Firehose

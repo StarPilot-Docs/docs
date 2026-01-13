@@ -4,9 +4,9 @@
 
 !!! warning
 
-    If you purchased your pedal before June 2025 and have not updated the firmware, you will encounter issues with the current version of Starpilot
+    If you purchased your pedal before June 2025 and have not updated the firmware, you will encounter issues with the current version of StarPilot.
 
-The Gen1 Bolt firmware released in October 2024 ran at twice the speed it should have. This was corrected in June 2025. Firmware prior to October 2024 will run okay, but the newer firmware is better, so it's best to just update anyway.
+The Gen1 Bolt firmware released in October 2024 ran at twice the speed it should have. This was corrected in June 2025. Firmware prior to October 2024 will run okay, but the newer firmware is better, so it is best to update.
 
 ## Required Resources
 
@@ -21,4 +21,4 @@ The Gen1 Bolt firmware released in October 2024 ran at twice the speed it should
 
 ## Other Firmwares
 
-The full list of available pedal firmwares for other cars is available at tinybear's github repo [here.](https://github.com/fraserxiong/panda_firmware/tree/master)
+The full list of available pedal firmwares for other cars is available at tinybear's GitHub repo [here.](https://github.com/fraserxiong/panda_firmware/tree/master)

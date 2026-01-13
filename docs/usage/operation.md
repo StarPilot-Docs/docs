@@ -2,19 +2,19 @@
 
 ## Capabilities
 
-Openpilot is driver assistance, not self driving.
-It shines on the highway, providing a (mostly) hands-free experience.
+Openpilot is driver assistance, not self-driving.
+It performs best on highways, providing a (mostly) hands-free experience.
 
 It performs adaptive cruise control and automated lane centering. 
 It will stop at most traffic lights and rolling stop for some stop signs.
 It can handle most curves, especially at the recommended curve speed limit. 
-It will attempt to do low speed turns (expect to take manual control), 
+It will attempt to do low-speed turns (be prepared to take manual control), 
 but is limited by available steering torque, which depends on the vehicle.
 
-It is not full self driving. 
+It is not full self-driving. 
 It requires you to pay attention using a driver monitoring camera instead of wheel nags.
 
-It is being actively developed so it should improve (eg. the rolling stops),
+It is actively developed and continues to improve (eg. the rolling stops),
 but this is a snapshot of what it currently does.
 
 ## Basic Operation
@@ -28,7 +28,7 @@ engage your CC system as normal by turning CC ON, then pressing SET/-.
 Press CC cancel, CC OFF, or hit the brakes. 
 GM Volts/Bolts can use the regen paddle.
 5. To adjust openpilot max speed, use the CC +/- buttons. 
-Depending on the car, your car's dash may not reflect the max speed, 
+Depending on the car, your dash may not reflect the max speed, 
 so instead use the openpilot UI's max speed shown.
 
 ## Always On Lateral
@@ -74,7 +74,7 @@ Your max speed is shown in the top left of the UI.
 
 ## Speed Limit Controller 
 
-The Speed Limit Controller (SLC) will use map data from [Open Street Map (OSM)](https://openstreetmap.org) 
+The Speed Limit Controller (SLC) will use map data from [OpenStreetMap (OSM)](https://openstreetmap.org) 
 to limit your max speed based upon speed limit data for your vehicle location.
 
 Speed limit for your current location is shown below your max speed. 

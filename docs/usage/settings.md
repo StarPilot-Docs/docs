@@ -4,9 +4,13 @@ description: How to configure your settings for the best experience
 
 # Configure Settings
 
-Most settings aim to have a good default value.
+Most settings are preselected and shouldn't need changing, but use the notes below as general guidelines.
 To learn more about any setting, tap the title to see a description.
+If behavior feels off or the car drives unexpectedly, try resetting your toggles to default.
 These settings will generally persist across branches and forks unless you wipe/reset.
+
+> [!WARNING] Golden Safety Rule
+> If you're going to change a value, change it by no more than 10% at a time.
 
 ## StarPilot Essential Settings
 
@@ -50,7 +54,7 @@ These are optional changes. Some popular changes include:
 
 * **Alert Volume Control**
     * You can adjust or mute the disengage and engage sounds
-    * We DON’T recommend changing the volume of any important alerts.
+    * We do not recommend changing the volume of any important alerts.
 * **FrogPilot Alerts**
     * Green Light Alert 
     * Lead Departing Alert
@@ -82,8 +86,8 @@ Read more about CEM [in the operation guide](./operation.md#conditional-experime
     * Helps with slowing to a stop at lights, in traffic, etc. ==Default is 8 seconds==. 
     * Increase this number if your car is not slowing down in time for leads/lights. 
     * Decrease this number if you're getting lots of false activations 
-and the car is going in and out of CEM when it shouldn't.
-* **Status Widget**: ==Recommend leaving on==. 
+and the car is entering or exiting CEM unexpectedly.
+* **Status Widget**: ==Recommended: On==. 
     * Shows an icon that displays if CEM is active, and if so, why.
 
 #### Curve Speed Control: ==Turn On==
@@ -94,12 +98,12 @@ Read more about CSC [in the operation guide](./operation.md#curve-speed-controll
 
 Enabling allows you to customize personalities to your preference.
 
-These have been tuned by firestar - if you wish to tune how they react, 
+These are tuned for StarPilot - if you wish to tune how they react, 
 you can unlock additional settings by switching to the *developer* tuning level. 
-Be careful though!
+Use caution when changing advanced parameters.
 
 See [Appearance -> Driving Screen Widgets](#appearance) 
-to enable an on screen button for switching personalities. 
+to enable an on-screen button for switching personalities. 
 This is helpful for cars without a following distance button.
 
 Optional: [A macropad accessory](https://github.com/nelsonjchen/c3-faux-touch-keyboard) 
@@ -143,9 +147,21 @@ settings for help with this.
 
 ### Steering
 
-#### Advanced Lateral Tuning: Leave Off
+#### Advanced Lateral Tuning: ==Turn On==
 
-Section is WIP, features here are more for special cases & testing.
+Leave all values inside this panel at default.
+* **Force Auto Tune Off**: ==Turn On==
+* **Force Auto Tune On**: ==Turn Off==
+
+Friction and actuator delay will auto-learn based on your vehicle and conditions.
+Auto-learn is enabled only when their default values are left unchanged.
+If you adjust the defaults (0.2 actuator delay and 0.05 friction for the Bolt),
+auto-learn turns off and it falls back to your manual selection.
+
+> [!WARNING] Developer Sidebar
+> Using the developer sidebar and noticing steer ratio or lateral accel changing?
+> That display is informational only.
+> For GM vehicles, the only auto-learned parameters are actuator delay and friction.
 
 #### Always on Lateral: ==Recommend Turning On==
 
@@ -170,6 +186,13 @@ nudge-initiated lane changes will also be smoother and more natural.
 The remaining settings can be left at default.
 
 #### Lateral Tuning: ==Turn On==
+
+> [!WARNING] Custom Torque Controller
+> We use a custom torque controller that generally works well with most GM vehicles.
+> For that controller to work, BOTH Smooth Curve Handling and NNFF must be off.
+> If either are on, it reverts to an older version of the torque controller.
+> This might be better for certain cars with good NNFF tunes (like the Volt),
+> but we recommend leaving both off for now.
 
 * **Force Turn Desires**: Leave off
 * **Smooth Curve Handling**: Leave off.
