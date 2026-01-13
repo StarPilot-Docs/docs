@@ -1354,27 +1354,26 @@ so you will be experiencing a small fraction of what openpilot is capable of.
 It is also quite jerky.</p>
 <p>Do not expect it to stop for cars or react quickly. As always, be ready to intervene.</p>
 <h2 id="im-stuck-on-the-boot-logo-screen-how-do-i-fix-it">I'm stuck on the boot logo screen. How do I fix it?<a class="headerlink" href="#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it" title="Permanent link">&para;</a></h2>
+<p>This is usually caused by a sticky param, especially when coming from another FrogPilot-based fork.</p>
 <ol>
 <li>Unplug the device</li>
 <li>Wait 60 seconds</li>
 <li>Plug it back in</li>
 <li>Tap the center of the screen over and over until the reset prompt comes up</li>
-<li>Reset </li>
-<li>Reinstall <a href="../software/starpilot/">your desired version</a></li>
-<li>If this happens again, go back to step 1 and reinstall from <code>firestar.link/saveme</code>
-and then swap to your intended branch (or uninstall and install your intended fork).</li>
+<li>Reset</li>
+<li>Install <code>firestar.link/saveme</code> to manually clear old parameters</li>
+<li>Use the Software tab in FrogPilot to switch to your intended branch</li>
 </ol>
+<p>If issues persist, reach out in <a href="https://firestar.link/discord">Discord</a>.</p>
 <h2 id="how-do-i-fix-process-not-running-dmonitoringmodeld">How do I fix "Process Not Running dmonitoringmodeld"?<a class="headerlink" href="#how-do-i-fix-process-not-running-dmonitoringmodeld" title="Permanent link">&para;</a></h2>
-<p>This occurs on upstream FrogPilot on relatively new comma devices (after September 2025)
-as a result of upstream comma provisioning changes. Installing StarPilot will make the
-device appear similar to before the provisioning changes. A single install of StarPilot will
-fix it so you can go back to FrogPilot after.</p>
+<p>This is seen on upstream FrogPilot builds on newer comma devices (post‑September 2025)
+due to upstream provisioning changes. A one‑time install of StarPilot resets the device
+state to a pre‑change baseline so FrogPilot can be reinstalled cleanly afterward.</p>
 <ol>
 <li>Uninstall FrogPilot (Settings &gt; Software &gt; Uninstall)</li>
 <li>Install StarPilot from <code>firestar.link/trx</code></li>
-<li>If you are staying on StarPilot, 
-change to your desired branch in the Software tab and stop here. 
-Otherwise, proceed.</li>
+<li>If you are staying on StarPilot, change to your desired branch in the Software tab and stop here.
+   Otherwise, proceed.</li>
 <li>Uninstall StarPilot</li>
 <li>Reinstall FrogPilot</li>
 </ol>
@@ -1390,7 +1389,7 @@ This includes the two connectors coming out of the Comma Pedal box and the car s
 This is hot breath like fogging up a window, not blowing out a candle.</li>
 <li>Re-connect all connectors. </li>
 </ol>
-<p>If the issue still presents, post in the troubleshooting thread.</p>
+<p>If the issue still persists, post in the troubleshooting thread.</p>
 <h2 id="how-do-i-fix-the-can-bus-disconnected-error">How do I fix the "CAN bus disconnected" Error?<a class="headerlink" href="#how-do-i-fix-the-can-bus-disconnected-error" title="Permanent link">&para;</a></h2>
 <p>Openpilot had an issue communicating on the CAN bus. 
 Reseat (unplug and plug back in) all of your openpilot connections 
