@@ -358,9 +358,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#community-development" class="md-nav__link">
+  <a href="#community-and-development" class="md-nav__link">
     <span class="md-ellipsis">
-      Community, &amp; Development
+      Community and Development
     </span>
   </a>
   
@@ -378,6 +378,15 @@
         
           <li class="md-nav__item">
   <a href="#1122026" class="md-nav__link">
+    <span class="md-ellipsis">
+      1/12/2026
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1122026_1" class="md-nav__link">
     <span class="md-ellipsis">
       1/12/2026
     </span>
@@ -1132,9 +1141,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#community-development" class="md-nav__link">
+  <a href="#community-and-development" class="md-nav__link">
     <span class="md-ellipsis">
-      Community, &amp; Development
+      Community and Development
     </span>
   </a>
   
@@ -1152,6 +1161,15 @@
         
           <li class="md-nav__item">
   <a href="#1122026" class="md-nav__link">
+    <span class="md-ellipsis">
+      1/12/2026
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1122026_1" class="md-nav__link">
     <span class="md-ellipsis">
       1/12/2026
     </span>
@@ -1259,11 +1277,21 @@
 <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
 <p>StarPilot is a fork of <a href="https://github.com/FrogAi/FrogPilot">FrogPilot</a>, 
 which itself is a fork of <a href="http://github.com/commaai/openpilot">openpilot</a>. 
-StarPilot runs on the Comma 3 &amp; 3X by <a href="https://comma.ai/">comma_ai</a>.</p>
-<p><strong>openpilot</strong> is an open source driver assistance system. 
+StarPilot runs on the Comma 3 and 3X by <a href="https://comma.ai/">comma.ai</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Comma 4 Support</p>
+<p>Comma has released the Comma 4, but StarPilot depends on FrogPilot's base for new device support.
+Once FrogPilot rebases and adds Comma 4 support, we will begin the StarPilot migration.
+In the meantime, we maintain a SunnyPilot testing branch (<code>firestar.link/sunnypedal</code>) with full GM lateral and pedal support.
+It does not include StarPilot's advanced features (e.g., paddle integration and VoACC tuning),
+but it can get you running on a pedal interceptor or a non‑adaptive‑cruise GM vehicle.
+This branch is functional and intended to get pedal interceptor and non‑ACC GM vehicles up and running.
+It is not a primary focus and is not actively monitored, so if anything seems off, please reach out in <a href="https://firestar.link/discord">Discord</a>.</p>
+</div>
+<p><strong>openpilot</strong> is an open-source driver assistance system. 
 Currently, openpilot performs the functions of Adaptive Cruise Control (ACC), 
 Automated Lane Centering (ALC), and Lane Departure Warning (LDW). 
-If you are here, you likely already know what openpilot is.</p>
+If you are here, you likely already know openpilot.</p>
 <p><strong>FrogPilot</strong> is a fully open-sourced fork of openpilot with a very active 
 and collaborative community. FrogPilot adds features and car support 
 that are not present in stock openpilot.</p>
@@ -1288,12 +1316,17 @@ Shoutout to <mark>Nik</mark> for always being there to help &amp; answer questio
 And of course, none of this would be possible without <mark>firestar4430</mark>, 
 who created StarPilot and spends an unadvisable amount of his personal time fixing bugs, 
 creating new features, and answering questions in Discord.</p>
-<h2 id="community-development">Community, &amp; Development<a class="headerlink" href="#community-development" title="Permanent link">&para;</a></h2>
-<p>StarPilot is developed by firestar4430 and thrives on the testing and feedback of our discord community. 
+<h2 id="community-and-development">Community and Development<a class="headerlink" href="#community-and-development" title="Permanent link">&para;</a></h2>
+<p>StarPilot is developed by firestar4430 and thrives on the testing and feedback of our Discord community. 
 If you have questions, bug reports, or want to help test new improvements, 
 join us in the <a href="https://firestar.link/discord">Discord</a>!</p>
 <h2 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h2>
 <h3 id="1122026">1/12/2026<a class="headerlink" href="#1122026" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add Comma 4 notice with SunnyPilot interim branch info</li>
+<li>General Rewrites &amp; Cleanup</li>
+</ul>
+<h3 id="1122026_1">1/12/2026<a class="headerlink" href="#1122026_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Update settings guidance, including Golden Safety Rule, advanced lateral tuning defaults, and custom torque controller notes</li>
 <li>Refresh driving model recommendations and point users to StarPilot favorites for current picks</li>
