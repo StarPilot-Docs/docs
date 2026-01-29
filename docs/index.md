@@ -53,6 +53,9 @@ join us in the [Discord](https://firestar.link/discord)!
 
 ## Changelog
 
+### 1/29/2026
+* Note USB-A requirement for pedal firmware flashing
+
 ### 1/12/2026
 * Add Comma 4 notice with SunnyPilot interim branch info
 * General Rewrites & Cleanup

@@ -14,6 +14,11 @@ The Gen1 Bolt firmware released in October 2024 ran at twice the speed it should
 * [bootstub.pedal.bin](../assets/pedal-firmware/gen1-bolt/bootstub.pedal.bin){:download="bootstub.pedal.bin"}
 * [pedal.bin](../assets/pedal-firmware/gen1-bolt/pedal.bin){:download="pedal.bin"}
 
+!!! note "USB cable requirement"
+
+    USB-C to USB-C does not work for DFU flashing. There must be a USB-A port somewhere in the chain (for example, USB-A to USB-C or USB-A to micro-USB).
+    The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a C-to-C cable often will not provide VBUS or enumerate the device.
+
 
 ## Flashing Instructions
 
