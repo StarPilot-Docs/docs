@@ -7,7 +7,7 @@ StarPilot runs on the Comma 3 and 3X by [comma.ai](https://comma.ai/).
 > [!WARNING] Comma 4 Support
 > Comma has released the Comma 4, but StarPilot depends on FrogPilot's base for new device support.
 > Once FrogPilot rebases and adds Comma 4 support, we will begin the StarPilot migration.
-> In the meantime, we maintain a SunnyPilot testing branch (`firestar.link/sunnypedal`) with full GM lateral and pedal support.
+> In the meantime, we maintain a SunnyPilot testing branch; the install link is `firestar5683/SunnyPedalUpdate` with full GM lateral and pedal support.
 > It does not include StarPilot's advanced features (e.g., paddle integration and VoACC tuning),
 > but it can get you running on a pedal interceptor or a non‑adaptive‑cruise GM vehicle.
 > This branch is functional and intended to get pedal interceptor and non‑ACC GM vehicles up and running.
