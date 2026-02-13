@@ -100,7 +100,8 @@ Once you are happy with the segments selected, proceed to the next step.
 copy the Route info using the Copy button: ![Copy button](./assets/images/copy_clipboard.png)
 7. Create a post in 
 [#starpilot-troubleshooting](https://discord.com/channels/1137853399715549214/1415794830965080155). 
-Be as descriptive as possible. Make sure to include software version and branch. 
+Be as descriptive as possible. Make sure to include software version
+(and special branch name only if you intentionally selected one). 
 Also include the approximate minute(s) in the route it happened. 
 8. Paste the route info into the troubleshooting post. 
 It contains the video and GPS data for your route, so if you'd rather not post it publicly, 
@@ -135,8 +136,8 @@ This is usually caused by a sticky param, especially when coming from another Fr
 3. Plug it back in
 4. Tap the center of the screen over and over until the reset prompt comes up
 5. Reset
-6. Install `firestar.link/saveme` to manually clear old parameters
-7. Use the Software tab in FrogPilot to switch to your intended branch
+6. Go to `install.firestar.link` and run `Deep Nuke Params` to clear old parameters
+7. Reinstall StarPilot from `install.firestar.link` using `Install`
 
 If issues persist, reach out in [Discord](https://firestar.link/discord).
 
@@ -147,9 +148,8 @@ due to upstream provisioning changes. A one‑time install of StarPilot resets t
 state to a pre‑change baseline so FrogPilot can be reinstalled cleanly afterward.
 
 1. Uninstall FrogPilot (Settings > Software > Uninstall)
-2. Install StarPilot from `firestar.link/trx`
-3. If you are staying on StarPilot, change to your desired branch in the Software tab and stop here.
-   Otherwise, proceed.
+2. Install StarPilot from `install.firestar.link` using `Install`
+3. If you are staying on StarPilot, stop here. Otherwise, proceed.
 4. Uninstall StarPilot
 5. Reinstall FrogPilot
 

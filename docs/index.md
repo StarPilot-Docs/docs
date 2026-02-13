@@ -7,11 +7,12 @@ StarPilot runs on the Comma 3 and 3X by [comma.ai](https://comma.ai/).
 > [!WARNING] Comma 4 Support
 > Comma has released the Comma 4, but StarPilot depends on FrogPilot's base for new device support.
 > Once FrogPilot rebases and adds Comma 4 support, we will begin the StarPilot migration.
-> In the meantime, we maintain a SunnyPilot testing branch; the install link is `firestar5683/SunnyPedalUpdate` with full GM lateral and pedal support.
-> It does not include StarPilot's advanced features (e.g., paddle integration and VoACC tuning),
-> but it can get you running on a pedal interceptor or a non‑adaptive‑cruise GM vehicle.
-> This branch is functional and intended to get pedal interceptor and non‑ACC GM vehicles up and running.
-> It is not a primary focus and is not actively monitored, so if anything seems off, please reach out in [Discord](https://firestar.link/discord).
+> Comma 4 support for StarPilot is not available yet.
+> If you need an interim Comma 4 path, we maintain a SunnyPilot testing branch at
+> `firestar5683/SunnyPedalUpdate` with GM lateral and pedal support.
+> StarPilot now uses a single main install path at `install.firestar.link`.
+> If you are on an older branch, you can now update directly to StarPilot from there.
+> The installer also includes advanced `Choose a special branch` and `Deep Nuke Params` options.
 
 **openpilot** is an open-source driver assistance system. 
 Currently, openpilot performs the functions of Adaptive Cruise Control (ACC), 
@@ -52,6 +53,15 @@ If you have questions, bug reports, or want to help test new improvements,
 join us in the [Discord](https://firestar.link/discord)!
 
 ## Changelog
+
+### 2/13/2026
+* Consolidate install guidance around `install.firestar.link` and remove outdated per-car install links
+* Document new installer options: `Install`, `Choose a special branch`, and `Deep Nuke Params` (replaces old SaveMe flow)
+* Refresh FAQ recovery steps to use `Deep Nuke Params` and reinstall via `install.firestar.link`
+* Restore Comma 4 note with SunnyPilot interim branch path
+* Add 2017 Bolt install note for 4.5Nm support and fingerprint verification
+* Add Bolt guidance to verify correct model year fingerprint since each year has different lateral tuning
+* Replace installer demo video with updated flow showing the First Aid/Deep Nuke option
 
 ### 1/29/2026
 * Note USB-A requirement for pedal firmware flashing
