@@ -10,13 +10,6 @@ StarPilot runs on the Comma 3 and 3X by [comma.ai](https://comma.ai/).
 > Comma 4 support for StarPilot is not available yet.
 > If you need an interim Comma 4 path, we maintain a SunnyPilot testing branch at
 > `firestar5683/SunnyPedalUpdate` with GM lateral and pedal support.
->
-> If you would like to help expedite Comma 4 support, you can support our development team here.
-> Contributions made through these links are used directly to help fund the purchase of a Comma 4 development unit:
-> [Patreon](https://firestar.link/patreon) |
-> [Cash App](https://firestar.link/cashapp) |
-> [Venmo](https://firestar.link/venmo) |
-> [PayPal](https://firestar.link/paypal)
 
 > [!NOTE] The Great Merge
 > StarPilot now uses a single main install path at `install.firestar.link`.
