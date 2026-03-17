@@ -48,6 +48,9 @@ If you are currently on an older or special branch, you can use `install.firesta
 > Message us in [Discord](https://firestar.link/discord)
 > or [flash your comma](https://flash.comma.ai) and retry.
 
+> [!TIP] Want to change settings from your phone?
+> Use [the Galaxy](../usage/galaxy.md)
+
 ## Dev, Testing, and Other Branches
 
 WIP - More info coming soon.
