@@ -11,6 +11,10 @@ Can't find an answer to your question? Post in
 
 [Yes.](./usage/galaxy.md)
 
+## Does StarPilot support Comma 4?
+
+[Yes, in a testing branch](./software/rebase-testing.md).
+
 ## Will installing openpilot void my warranty?
 
 <https://comma.ai/support#will-installing-a-comma-device-void-my-warranty>

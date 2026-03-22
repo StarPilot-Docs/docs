@@ -4,13 +4,6 @@ StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot),
 which itself is a fork of [openpilot](http://github.com/commaai/openpilot). 
 StarPilot runs on the Comma 3 and 3X by [comma.ai](https://comma.ai/).
 
-> [!WARNING] Comma 4 Support
-> Comma has released the Comma 4, but StarPilot depends on FrogPilot's base for new device support.
-> Once FrogPilot rebases and adds Comma 4 support, we will begin the StarPilot migration.
-> Comma 4 support for StarPilot is not available yet.
-> If you need an interim Comma 4 path, we maintain a SunnyPilot testing branch at
-> `firestar5683/SunnyPedalUpdate` with GM lateral and pedal support.
-
 > [!NOTE] The Great Merge
 > StarPilot now uses a single main install path at `install.firestar.link`.
 > If you are on an older branch, you can now update directly to StarPilot from there.
