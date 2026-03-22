@@ -7,6 +7,10 @@ description: Frequently asked questions
 Can't find an answer to your question? Post in 
 [Discord](https://firestar.link/discord)
 
+## What is the Galaxy? Can I change settings from my phone?
+
+[Yes.](./usage/galaxy.md)
+
 ## Will installing openpilot void my warranty?
 
 <https://comma.ai/support#will-installing-a-comma-device-void-my-warranty>
