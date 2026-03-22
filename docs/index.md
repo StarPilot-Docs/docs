@@ -2,7 +2,7 @@
 
 StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot), 
 which itself is a fork of [openpilot](http://github.com/commaai/openpilot). 
-StarPilot runs on the Comma 3 and 3X by [comma.ai](https://comma.ai/).
+StarPilot runs on the Comma 3, 3X, and 4 by [comma.ai](https://comma.ai/).
 
 > [!NOTE] The Great Merge
 > StarPilot now uses a single main install path at `install.firestar.link`.

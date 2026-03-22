@@ -10,13 +10,13 @@ nav:
       - Bolt EV: cars/bolt.md
       - Volt & Other ASCM/SDGM Cars: cars/volt.md
   - Openpilot Hardware Info:
-      - Comma 3X: hardware/comma-3x.md
+      - Comma 4: hardware/comma.md
       - Comma Pedal: hardware/comma-pedal.md
       - GM Harness: hardware/gm-harness.md
       - OBD-C Cable: hardware/obd-c.md
       - OBD Harness: hardware/obd-harness.md
   - Hardware Installation:
-      - Comma 3X: install/comma.md
+      - Comma: install/comma.md
       - Pedal: install/pedal.md
       - Car Config: install/car.md
   - Software Installation:

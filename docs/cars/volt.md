@@ -30,7 +30,7 @@ you can just purchase the ASCM/SDGM portion of the suggestions.
 
 ### Purchase List
 
-1. [Comma 3X](../hardware/comma-3x.md)
+1. [Comma 4](../hardware/comma.md)
 2. [ASCM Harness Plus + Harness Box](https://shop.beartech.ca/products/ascm-harness?variant=44900990124213)
 3. [SASCM](https://shop.beartech.ca/products/sascm-for-gm-vehicles)
 4. [OBD-C Cable](../hardware/obd-c.md) - 15 ft 
@@ -44,7 +44,7 @@ you can just purchase the ASCM/SDGM portion of the suggestions.
 
 ### Purchase List
 
-1. [Comma 3X](../hardware/comma-3x.md)
+1. [Comma](../hardware/comma.md)
 2. [SDGM Harness + Harness Box](https://shop.beartech.ca/products/sdgm-harness)
 3. [SASCM](https://shop.beartech.ca/products/sascm-for-gm-vehicles)
 4. [OBD-C Cable](../hardware/obd-c.md) - 10 ft 
@@ -54,7 +54,7 @@ you can just purchase the ASCM/SDGM portion of the suggestions.
 
 ### Purchase List
 
-1. [Comma 3X](../hardware/comma-3x.md)
+1. [Comma](../hardware/comma.md)
 2. Choose a harness:
     1. [OBD-II Harness](../hardware/obd-harness.md)
     2. [GM Harness/Harness box (only for Volts with stock LKAS)](../hardware/gm-harness.md)

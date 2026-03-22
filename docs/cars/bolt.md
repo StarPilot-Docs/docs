@@ -54,7 +54,7 @@ but vary slightly in hardware recommendations.
 
 ## Openpilot Hardware List for Bolt
 
-1. [Comma 3X](../hardware/comma-3x.md)
+1. [Comma 4](../hardware/comma.md)
 2. [GM Harness and Harness Box](../hardware/gm-harness.md)
 3. [Comma Pedal](../hardware/comma-pedal.md) (optional, but ***strongly recommended for non-ACC cars***)
 
