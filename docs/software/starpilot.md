@@ -42,7 +42,8 @@ If you are currently on an older or special branch, you can use `install.firesta
 > See [the faq](../faq.md#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it)
 
 > [!WARNING] Install failing and taking you back to the same install screen?
-> Retry `install.firestar.link`. If it still loops, [flash your comma](https://flash.comma.ai) and retry.
+> Retry the install using `firestar.link/starpilotx`. 
+> If it still loops, [flash your comma](https://flash.comma.ai) and retry.
 
 > [!WARNING] Other install issues
 > Message us in [Discord](https://firestar.link/discord)
