@@ -20,6 +20,10 @@ The installer now has three options:
 
 If you are currently on an older or special branch, you can use `install.firestar.link` and pick `Install` to move to the main StarPilot branch.
 
+> [!WARNING] C4 Users
+> The C4 is not currently supported on the main branch, `StarPilot`. 
+> Please use `StarPilot-Development`. See [the new rebase testing branch](./rebase-testing.md)
+
 > [!NOTE] Bolt fingerprint year matters
 > Make sure your Bolt fingerprint has the correct model year selected.
 > Each Bolt year has its own lateral tuning.
