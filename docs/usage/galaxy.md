@@ -8,12 +8,15 @@ It is free and will remain free for as long as possible.
 
 ## Pairing
 
-Pairing must be completed once. 
-Your device will remain paired until unpaired.
+Once your device is paired, your device will remain paired until unpaired.
 
 1. On your comma device, open Settings > Device > Galaxy (Pair).
 2. Enter your desired passcode.
 3. Scan the QR code that appears. Save this URL to access the galaxy in the future.
+
+> [!IMPORTANT] Save the URL from the QR code
+> The QR code's URL is unique to your device. Save it for future use.
+> It will also change if you re-pair.
 
 ## Unpairing
 
