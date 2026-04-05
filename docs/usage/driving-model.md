@@ -15,19 +15,15 @@ This page is a guide; try a few models and search for feedback in the Discord.
 
 ## Current Recommendation(s)
 
-* **SC Driving (South Carolina)**
-* **Dark Souls v2**
-* **Green Watermelon v7**
+* Pop v2
+* SC Driving (South Carolina)
 
 ## Previous Favorites (newest to oldest)
 
 Older models that aren't completely out of date yet. 
 
-* Plan Plus (1 or 2)
-    * This model adds 'Recovery Power' which adds a centering ability to the model.
-    * Make sure to start with 'Recovery Power' at 0.6 if in a GM vehicle and adjust from there.
-* Dark Souls
+* Watermelon Indigo (WMI) 11
+* Dark Souls v2
 * Cool Green Watermelon
 * Green Watermelon v8
-* The Cool People v3
-* Firehose
+* Green Watermelon v7
