@@ -15,6 +15,12 @@ Can't find an answer to your question? Post in
 
 Yes.
 
+## Why is my car driving terribly?
+
+It may be a bad setting. Try enabling safe mode to revert to all defaults.
+If that fixes it, reset your toggles to defaults. 
+If not, create a troubleshooting thread in the discord.
+
 ## Will installing openpilot void my warranty?
 
 <https://comma.ai/support#will-installing-a-comma-device-void-my-warranty>

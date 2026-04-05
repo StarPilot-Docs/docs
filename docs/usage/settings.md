@@ -24,6 +24,10 @@ These settings will generally persist across branches and forks unless you wipe/
 * Radar-less cars (aka VoACC), especially Bolts without ACC: 
 [Enable CEM](#conditional-experimental-mode-turn-on)
 
+## Safe Mode
+
+> [!TIP] Use safe mode to temporarily force all tuning settings to default
+> This allows you to see if a setting is possibly causing bad car behavior.
 
 ## Openpilot Toggles
 
