@@ -21,7 +21,6 @@ nav:
       - Car Config: install/car.md
   - Software Installation:
       - Install StarPilot: software/starpilot.md
-      - StarPilot Rebase Testing: software/rebase-testing.md
       - Pedal Firmware Flash: software/pedal-firmware.md
   - Usage:
       - Operation: usage/operation.md

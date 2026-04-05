@@ -4,11 +4,6 @@ StarPilot is a fork of [FrogPilot](https://github.com/FrogAi/FrogPilot),
 which itself is a fork of [openpilot](http://github.com/commaai/openpilot). 
 StarPilot runs on the Comma 3, 3X, and 4 by [comma.ai](https://comma.ai/).
 
-> [!NOTE] The Great Merge
-> StarPilot now uses a single main install path at `install.firestar.link`.
-> If you are on an older branch, you can now update directly to StarPilot from there.
-> The installer also includes advanced `Choose a special branch` and `Deep Nuke Params` options.
-
 **openpilot** is an open-source driver assistance system. 
 Currently, openpilot performs the functions of Adaptive Cruise Control (ACC), 
 Automated Lane Centering (ALC), and Lane Departure Warning (LDW). 

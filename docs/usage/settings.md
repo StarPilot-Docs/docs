@@ -12,6 +12,9 @@ These settings will generally persist across branches and forks unless you wipe/
 > [!WARNING] Golden Safety Rule
 > If you're going to change a value, change it by no more than 10% at a time.
 
+> [!TIP] Want to change settings from your phone?
+> Use [the Galaxy](./galaxy.md)
+
 ## StarPilot Essential Settings
 
 > [!WARNING] Do not skip these settings

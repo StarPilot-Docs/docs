@@ -13,7 +13,7 @@ Can't find an answer to your question? Post in
 
 ## Does StarPilot support Comma 4?
 
-[Yes, in a testing branch](./software/rebase-testing.md).
+Yes.
 
 ## Will installing openpilot void my warranty?
 
@@ -144,8 +144,8 @@ This is usually caused by a sticky param, especially when coming from another Fr
 3. Plug it back in
 4. Tap the center of the screen over and over until the reset prompt comes up
 5. Reset
-6. Go to `install.firestar.link` and run `Deep Nuke Params` to clear old parameters
-7. Reinstall StarPilot from `install.firestar.link` using `Install`
+7. Install using link: `firestar5683/newsaveme`
+8. After the device boots, use the branch switcher to go back to `StarPilot`
 
 If issues persist, reach out in [Discord](https://firestar.link/discord).
 
@@ -155,11 +155,10 @@ This is seen on upstream FrogPilot builds on newer comma devices (post‑Septemb
 due to upstream provisioning changes. A one‑time install of StarPilot resets the device
 state to a pre‑change baseline so FrogPilot can be reinstalled cleanly afterward.
 
-1. Uninstall FrogPilot (Settings > Software > Uninstall)
-2. Install StarPilot from `install.firestar.link` using `Install`
-3. If you are staying on StarPilot, stop here. Otherwise, proceed.
-4. Uninstall StarPilot
-5. Reinstall FrogPilot
+1. Install StarPilot by [following the install instructions](./software/starpilot.md)
+2. If you are staying on StarPilot, stop here. Otherwise, proceed.
+3. Uninstall StarPilot
+4. Reinstall FrogPilot
 
 ## How do I fix the "Propulsion Power Reduced" Error on my dash and regen not working? (for Bolts with Comma Pedal)
 

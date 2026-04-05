@@ -2,9 +2,6 @@
 
 Purchase from comma.ai: [Comma 4](https://comma.ai/shop/comma-four)
 
-> [!NOTE] Comma 4 Support is in testing
-> See [the rebase branch](../software/rebase-testing.md)
-
 # Comma 3X and 3
 
 Purchase used from the comma.ai community discord server.
