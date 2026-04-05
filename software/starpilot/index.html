@@ -16,7 +16,7 @@
         <link rel="prev" href="../../install/car/">
       
       
-        <link rel="next" href="../rebase-testing/">
+        <link rel="next" href="../pedal-firmware/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -748,19 +748,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Install StarPilot
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -773,66 +760,6 @@
 
       </a>
       
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-installer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommended Installer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-testing-and-other-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev, Testing, and Other Branches
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rebase-testing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    StarPilot Rebase Testing
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1052,32 +979,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-installer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommended Installer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-testing-and-other-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev, Testing, and Other Branches
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1097,21 +998,41 @@
 
 
 <h1 id="install-starpilot">Install StarPilot<a class="headerlink" href="#install-starpilot" title="Permanent link">&para;</a></h1>
-<p>With your car off, plug in your Comma unit. If this is the first time you are booting your Comma, it will ask for a WiFi connection. If you do not have a stable WiFi connection where your car is, we'd recommend bringing your Comma inside and plugging it in via USB-C to install closer to your WiFi router.</p>
-<p>Once your Comma connects to a network, you'll see a screen prompting you to choose software to install. Select <strong>Custom Software</strong>.</p>
-<h2 id="recommended-installer">Recommended Installer<a class="headerlink" href="#recommended-installer" title="Permanent link">&para;</a></h2>
-<p>Use <code>install.firestar.link</code> for all vehicles.</p>
-<p>The installer now has three options:</p>
+<p>With your car off, plug in your Comma unit. 
+You may instead plug it in using a USB-C adapter while in your home 
+(this may be a better option if Wi-Fi signal is poor in your car).</p>
+<p>Immediately after plugging it in, tap on the screen repeatedly until you see a reset screen.
+If you miss the reset screen, unplug it, wait 60 seconds, then try again.</p>
+<h1 id="comma-4">Comma 4<a class="headerlink" href="#comma-4" title="Permanent link">&para;</a></h1>
 <ol>
-<li><code>Install</code> (recommended for almost everyone)</li>
-<li><code>Choose a special branch</code> (advanced users/testing only)</li>
-<li><code>Deep Nuke Params</code> (if you're coming from FrogPilot or an older setup and get stuck on the boot logo, use this to wipe old stuck parameters)</li>
+<li>Swipe to reset.</li>
+<li>Connect to Wi-Fi.</li>
+<li>Install custom software.</li>
+<li>Enter the link <code>firestar5683/StarPilot</code></li>
 </ol>
-<p>If you are currently on an older or special branch, you can use <code>install.firestar.link</code> and pick <code>Install</code> to move to the main StarPilot branch.</p>
+<h1 id="comma-33x">Comma 3/3x<a class="headerlink" href="#comma-33x" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Tap reset.</li>
+<li>Connect to Wi-Fi.</li>
+<li>Install custom software.</li>
+<li>When prompted for an install link:</li>
+<li>If coming from openpilot or sunnypilot, use <code>firestar5683/StarPilot</code>.</li>
+<li>If coming from a different fork, use <code>install.firestar.link</code>. 
+Choose the default <code>Install</code> option.
+See <a href="#custom-starpilot-installer">Custom StarPilot Installer</a> for more details if you have trouble.</li>
+</ol>
 <div class="admonition warning">
-<p class="admonition-title">C4 Users</p>
-<p>The C4 is not currently supported on the main branch, <code>StarPilot</code>. 
-Please use <code>StarPilot-Development</code>. See <a href="../rebase-testing/">the new rebase testing branch</a></p>
+<p class="admonition-title">Stuck on the boot logo after installing?</p>
+<p>See <a href="../../faq/#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it">the faq</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Other install issues</p>
+<p>Message us in <a href="https://firestar.link/discord">Discord</a>
+or <a href="https://flash.comma.ai">flash your comma</a> and retry.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Want to change settings from your phone?</p>
+<p>Use <a href="../../usage/galaxy/">the Galaxy</a></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Bolt fingerprint year matters</p>
@@ -1123,35 +1044,24 @@ but will prevent you from getting proper steering safety alerts.
 Auto fingerprint usually gets this right, but if steering behavior looks wrong, verify your
 fingerprint in <a href="../../usage/settings/#vehicle-controls">Vehicle Controls</a>.</p>
 </div>
+<h2 id="custom-starpilot-installer">Custom StarPilot Installer<a class="headerlink" href="#custom-starpilot-installer" title="Permanent link">&para;</a></h2>
+<p><code>install.firestar.link</code> is StarPilot's custom installer. </p>
+<div class="admonition warning">
+<p class="admonition-title">This installer currently has some limitations</p>
+<p>Only works for Comma 3/3x and on older AGNOS forks. 
+Do not use if coming from openpilot or sunnypilot.</p>
+</div>
+<p>The installer now has three options:</p>
+<ol>
+<li><code>Install</code> (recommended for almost everyone)</li>
+<li><code>Choose a special branch</code> (advanced users/testing only)</li>
+<li><code>Deep Nuke Params</code> (if you're coming from FrogPilot or an older setup and get stuck on the boot logo, use this to wipe old stuck parameters)</li>
+</ol>
+<p>If you are currently on an older or special branch, you can use <code>install.firestar.link</code> and pick <code>Install</code> to move to the main StarPilot branch.</p>
 <video controls width="100%">
   <source src="/assets/videos/install.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-<details>
-<summary>Already have openpilot (or another fork) installed?</summary>
-<p>Reboot your Comma. When you see the comma logo, tap the screen until you see a prompt. This will allow you to reset your Comma and get back to the install screen. Some custom forks include a switcher that allows you to jump straight to StarPilot.</p>
-</details>
-<div class="admonition warning">
-<p class="admonition-title">Stuck on the boot logo after installing?</p>
-<p>See <a href="../../faq/#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it">the faq</a></p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Install failing and taking you back to the same install screen?</p>
-<p>Retry the install using <code>firestar.link/starpilotx</code>. 
-If it still loops, <a href="https://flash.comma.ai">flash your comma</a> and retry.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Other install issues</p>
-<p>Message us in <a href="https://firestar.link/discord">Discord</a>
-or <a href="https://flash.comma.ai">flash your comma</a> and retry.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Want to change settings from your phone?</p>
-<p>Use <a href="../../usage/galaxy/">the Galaxy</a></p>
-</div>
-<h2 id="dev-testing-and-other-branches">Dev, Testing, and Other Branches<a class="headerlink" href="#dev-testing-and-other-branches" title="Permanent link">&para;</a></h2>
-<p>WIP - More info coming soon.</p>
 
 
 
@@ -1174,7 +1084,7 @@ or <a href="https://flash.comma.ai">flash your comma</a> and retry.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 22, 2026 16:58:50 UTC">March 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 5, 2026 06:32:50 UTC">April 5, 2026</span>
   </span>
 
     
@@ -1266,13 +1176,13 @@ or <a href="https://flash.comma.ai">flash your comma</a> and retry.</p>
         
         
           
-          <a href="../rebase-testing/" class="md-footer__link md-footer__link--next" aria-label="Next: StarPilot Rebase Testing">
+          <a href="../pedal-firmware/" class="md-footer__link md-footer__link--next" aria-label="Next: Pedal Firmware Flash">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                StarPilot Rebase Testing
+                Pedal Firmware Flash
               </div>
             </div>
             <div class="md-footer__button md-icon">
