@@ -24,7 +24,7 @@ If you miss the reset screen, unplug it, wait 60 seconds, then try again.
 2. Connect to Wi-Fi.
 3. Install custom software.
 4. When prompted for an install link:
-   1. If coming from openpilot or sunnypilot, use `firestar5683/StarPilot`.
+   1. If your comma is new or you are coming from openpilot or sunnypilot, use `firestar5683/StarPilot`.
    2. If coming from a different fork, use `install.firestar.link`. 
 Choose the default `Install` option.
 See [Custom StarPilot Installer](#custom-starpilot-installer) for more details if you have trouble.
