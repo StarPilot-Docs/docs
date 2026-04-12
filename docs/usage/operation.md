@@ -63,10 +63,11 @@ To permanently disable, [see settings](./settings.md#always-on-lateral-recommend
 
 1. None - openpilot is not engaged
 2. Blue - openpilot is controlling only steering (AOL)
-3. Green - openpilot is engaged
+3. Green - openpilot is engaged in chill mode
 4. Grey - openpilot is engaged, but overridden (manually steering or pressing throttle pedal)
 5. Orange - openpilot is engaged, [CEM](#conditional-experimental-mode) is active
 6. Red - openpilot is engaged, personality set to Traffic Mode
+7. Purple - switchback mode is enabled, which limits the frequency of "Steer limit exceeded" warnings
 
 ### Max Speed
 
