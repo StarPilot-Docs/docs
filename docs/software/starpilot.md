@@ -4,28 +4,33 @@ description: How to install StarPilot
 
 # Install StarPilot
 
-With your car off, plug in your Comma unit. 
+## Comma 4
+
+1. With your car off, plug in your Comma unit. 
 You may instead plug it in using a USB-C adapter while in your home 
 (this may be a better option if Wi-Fi signal is poor in your car).
-
-Immediately after plugging it in, tap on the screen repeatedly until you see a reset screen.
+1. Immediately after plugging it in, 
+tap on the screen repeatedly until you see a reset screen.
 If you miss the reset screen, unplug it, wait 60 seconds, then try again.
-
-# Comma 4
-
 1. Swipe to reset.
-2. Connect to Wi-Fi.
-3. Install custom software.
-4. Enter the link `firestar5683/StarPilot`
+1. Connect to Wi-Fi.
+1. Install custom software.
+1. Enter the link: `firestar5683/StarPilot`
 
-# Comma 3/3x
+## Comma 3/3x
 
+1. With your car off, plug in your Comma unit. 
+You may instead plug it in using a USB-C adapter while in your home 
+(this may be a better option if Wi-Fi signal is poor in your car).
+1. Immediately after plugging it in, 
+tap on the screen repeatedly until you see a reset screen.
+If you miss the reset screen, unplug it, wait 60 seconds, then try again.
 1. Tap reset.
-2. Connect to Wi-Fi.
-3. Install custom software.
-4. When prompted for an install link:
+1. Connect to Wi-Fi.
+1. Install custom software.
+1. When prompted for an install link:
    1. If your comma is new or you are coming from openpilot or sunnypilot, use `firestar5683/StarPilot`.
-   2. If coming from a different fork, use `install.firestar.link`. 
+   1. If coming from a different fork, use `install.firestar.link`. 
 Choose the default `Install` option.
 See [Custom StarPilot Installer](#custom-starpilot-installer) for more details if you have trouble.
 
