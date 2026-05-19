@@ -100,8 +100,6 @@ If the error persists, restart the comma device with the car off.
 Logs are sent as routes. A route is a single drive (from car on to car off), 
 with 1 minute segments. Log data contains all Openpilot data: video, comms, gps, etc.
 
-> [!TIP] Logs never hurt, but are generally only needed when requested.
-
 1. Navigate to [connect.comma.ai](https://connect.comma.ai)
 2. Find the route your issue happened on and click on it. 
 3. Click and drag the video slider over the section where the error happened.
@@ -119,8 +117,9 @@ Be as descriptive as possible. Make sure to include software version
 Also include the approximate minute(s) in the route it happened. 
 8. Paste the route info into the troubleshooting post. 
 It contains the video and GPS data for your route, so if you'd rather not post it publicly, 
-send it in DM to @firestar4430 and/or whomever is helping you 
-(including a link to the troubleshooting post is helpful for context).
+send it in DM to @firestar4430 and/or whomever is helping you.
+9. Right click the DM with the route id, click copy link. Send the link in the troubleshooting post. It will remain private. This step is to make it easier to cross reference.
+
 
 > [!TIP] Ending a route log early
 > To make it easier to find the error, you can force the log to end early using:
