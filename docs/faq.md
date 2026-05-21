@@ -92,7 +92,8 @@ If the error is still present, go back to step 1. This can take 6 or more tries.
 If the error persists, restart the comma device with the car off.
 
 > [!NOTE] Remote Start Issues
-> If you use remote start, to avoid issues, you should cycle the car off and then back on
+> If you use remote start and the "boot comma with remote start" setting is enabled,
+> to avoid issues, you should cycle the car off and then back on
 > again after you get in. Otherwise, you might get the Controls Mismatch error.
 
 ## How do I upload logs for troubleshooting?
@@ -110,15 +111,10 @@ Once you are happy with the segments selected, proceed to the next step.
 5. Wait for data to be uploaded (you can check the progress using `Files` > `View Upload Queue`)
 6. Click `More info`, then enable `Public access` and 
 copy the Route info using the Copy button: ![Copy button](./assets/images/copy_clipboard.png)
-7. Create a post in 
-[#starpilot-troubleshooting](https://discord.com/channels/1137853399715549214/1415794830965080155). 
+7. Create a post in [the #submit-feedback-and-reports channel of the discord server](https://firestar.link/discord). 
 Be as descriptive as possible. Make sure to include software version
 (and special branch name only if you intentionally selected one). 
 Also include the approximate minute(s) in the route it happened. 
-8. Paste the route info into the troubleshooting post. 
-It contains the video and GPS data for your route, so if you'd rather not post it publicly, 
-send it in DM to @firestar4430 and/or whomever is helping you.
-9. Right click the DM with the route id, click copy link. Send the link in the troubleshooting post. It will remain private. This step is to make it easier to cross reference.
 
 
 > [!TIP] Ending a route log early
