@@ -17,7 +17,7 @@ that are not present in stock openpilot.
 and GM cars.
 
 > [!TIP] Questions? 
-> Join us in the [FrogPilot Discord](https://firestar.link/discord)
+> Join us in the [Discord](https://firestar.link/discord)
 
 ## New to StarPilot? Start Here.
 
