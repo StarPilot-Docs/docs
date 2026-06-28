@@ -3,6 +3,6 @@ services:
     build:
       context: .
     volumes:
-      - .:/docs
+      - .:/docs:z
     ports:
       - 8000:8000

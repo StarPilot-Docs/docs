@@ -12,10 +12,12 @@ Things to be aware of for your vehicle relating to openpilot:
 This means a max 70kW of deceleration meaning no emergency stops 
 and poor low-speed slowing performance. 
 You will occasionally need to brake manually.
-* ACC Bolts are limited to 10kW of regen 
+* ACC Bolts without a pedal are limited to 10kW of regen 
 (but unlike non-ACC, openpilot can control your friction brakes).
-* ACC Bolts do not have stop and go support (press accelerator pedal or press CC resume).
-    * Non-ACC bolts with Comma Pedal do have stop-and-go support.
+    * With a [Comma Pedal](../hardware/comma-pedal.md), openpilot blends friction braking 
+with up to 70kW of regen. See [ACC Bolts](#acc-bolts).
+* ACC Bolts without a pedal do not have stop and go support (press accelerator pedal or press CC resume).
+    * ACC and non-ACC Bolts with a Comma Pedal do have stop-and-go support.
 * *22-23 Bolts only*: Sport mode will decrease available steering torque.
 * Steering wheel LKAS button and light do not work when comma is connected (purely a cosmetic issue).
     * If pressed, the dash will display "LKAS is unavailable" but op steering will still work.
@@ -83,18 +85,16 @@ vehicle. It will operate
 #### ACC Bolts
 
 In ACC bolts, openpilot can request gas and brake commands through ACC commands. 
-However, due to GM limitations, brake commands only use the friction brakes to slow down 
-and regen braking is limited to 10kW (same as coasting in D mode). It also cannot stop-and-go. 
+**Without a pedal**, brake commands only use the friction brakes to slow down 
+and regen braking is limited to 10kW (same as coasting in D mode), and it cannot stop-and-go. 
 
-If you'd like 
-to use regen & stop-and-go, you can switch your car to CC and install a comma pedal. 
-Keep in mind that you lose the ability for openpilot to use the friction brakes if you 
-do this. It will be limited to the same deceleration rate as L mode + regen paddle press
-(70 kW), the same as non-ACC bolts.
+**Adding a comma pedal** is now the best of both worlds. StarPilot blends your friction 
+brakes with regen, so an ACC Bolt with a pedal gets **both** full friction braking **and** 
+up to 70 kW of regen, plus stop-and-go support. This removes the old tradeoff where adding 
+a pedal meant giving up openpilot's access to the friction brakes.
 
-The pedal's capability may extend at a later time with additional hardware or software
-changes (resume button harness, virtual pedal tap to just get the car going again with ACC,
-etc).
+For ACC Bolts, a pedal is optional but recommended if you want stronger regen-based 
+slowing and stop-and-go, with no downside to your friction braking.
 
 
 [^1]: https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2017-bolt.pdf

@@ -89,13 +89,23 @@ Read more about CEM [in the operation guide](./operation.md#conditional-experime
     * Slower Lead: ==Turn On== if your car has no radar (eg. Bolts)
     * Stopped Lead: ==Turn On== if your car has no radar (eg. Bolts)
 * **Navigation Data**: Turn off
-* **openpilot Wants to Stop In**: ==8 seconds== 
-    * Helps with slowing to a stop at lights, in traffic, etc. ==Default is 8 seconds==. 
+* **openpilot Wants to Stop In**: ==7 seconds== 
+    * Helps with slowing to a stop at lights, in traffic, etc. ==Default is 7 seconds==. 
     * Increase this number if your car is not slowing down in time for leads/lights. 
     * Decrease this number if you're getting lots of false activations 
 and the car is entering or exiting CEM unexpectedly.
 * **Status Widget**: ==Recommended: On==. 
     * Shows an icon that displays if CEM is active, and if so, why.
+
+#### Conditional Chill Mode
+
+The inverse of CEM: instead of switching *into* experimental mode for tricky scenes, 
+it keeps experimental mode on by default and drops back to chill mode in simple cruising. 
+Read more about CCM [in the operation guide](./operation.md#conditional-chill-mode).
+
+> [!INFO] Mutually exclusive with CEM
+> CCM and [CEM](#conditional-experimental-mode-turn-on) cannot both be active. 
+> If both are enabled, CEM takes precedence.
 
 #### Curve Speed Control: ==Turn On==
 
@@ -213,7 +223,21 @@ The remaining settings can be left at default.
 
 ## Navigation
 
-Ignore all navigation options. Recent models do not have the nav capability.
+StarPilot can inject turn desires into any driving model to assist through turns and exits.
+Set a destination from [the Galaxy](./galaxy.md) to use it.
+See [the operation guide](./operation.md#navigation) for what to expect — 
+it is a driving aid, not point-to-point autonomy.
+
+> [!IMPORTANT] Required setup for navigation
+> Navigation will not do anything until these are set:
+>
+> * **Add a Mapbox key.** A Mapbox API key is required for navigation/maps to work.
+> * **Enable Use Route Desires.** Under **Toggles -> Lateral -> Lateral Tuning**, 
+> turn on **Use Route Desires**. This is what injects turn desires into the model 
+> (the steering side of navigation).
+> * **Enable Use Route Speed Control.** Under **Toggles -> Longitudinal -> Longitudinal Tuning**, 
+> turn on **Use Route Speed Control**. This is what slows the vehicle down for upcoming turns 
+> (the longitudinal side of navigation).
 
 ## System Management
 

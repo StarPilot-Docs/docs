@@ -37,10 +37,17 @@ the car returns to stock.
 
 ## Will openpilot navigate on its own?
 
-Navigate-on-openpilot support has been dropped by comma, 
-so the models that support navigation are old and not recommended.
-The feature will probably come back in the future, 
-but keep in mind that with the limitations of most cars (especially steering torque) 
+No — not in the "take me home" sense. But StarPilot does use navigation as a *driving aid*.
+
+You can set a destination from [the Galaxy](./usage/galaxy.md) and StarPilot will inject 
+turn desires into the driving model (even models that don't natively support navigation) 
+and attempt to slow down for upcoming turns. In practice this means the model 
+won't fight you when you make a turn because it knows you're turning, and on highways 
+it can keep right to take an exit with *some* consistency depending on the model. 
+Anything beyond that is iffy. See [the operation guide](./usage/operation.md#navigation) for details.
+
+Comma dropped the original navigate-on-openpilot feature, so it is not a full self-driving 
+or point-to-point routing system. With the limitations of most cars (especially steering torque) 
 and openpilot hardware, do not expect Tesla-style full autonomy.
 Openpilot remains a driver-assistance system and continues to improve; lateral control is typically strong,
 while longitudinal behavior requires more caution and attention.
@@ -146,7 +153,7 @@ This is usually caused by a sticky param, especially when coming from another Fr
 4. Tap the center of the screen over and over until the reset prompt comes up
 5. Reset
 7. Install using link: `firestar5683/saveme`
-8. After the device boots, use the branch switcher to go back to `StarPilot`
+8. After the device boots, use the [branch switcher](./software/starpilot.md#changing-branches) to go back to `StarPilot`
 
 If issues persist, reach out in [Discord](https://firestar.link/discord).
 
