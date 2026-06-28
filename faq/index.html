@@ -355,6 +355,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../cars/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Car Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../cars/bolt/" class="md-nav__link">
         
   
@@ -1341,10 +1364,15 @@ There are no car modifications, just custom harnesses that intercept at the exis
 <p>When the openpilot hardware (camera harnesses, pedal, ASCM, SASCM, SDSU, SDGM, etc.) are removed,
 the car returns to stock.</p>
 <h2 id="will-openpilot-navigate-on-its-own">Will openpilot navigate on its own?<a class="headerlink" href="#will-openpilot-navigate-on-its-own" title="Permanent link">&para;</a></h2>
-<p>Navigate-on-openpilot support has been dropped by comma, 
-so the models that support navigation are old and not recommended.
-The feature will probably come back in the future, 
-but keep in mind that with the limitations of most cars (especially steering torque) 
+<p>No — not in the "take me home" sense. But StarPilot does use navigation as a <em>driving aid</em>.</p>
+<p>You can set a destination from <a href="../usage/galaxy/">the Galaxy</a> and StarPilot will inject 
+turn desires into the driving model (even models that don't natively support navigation) 
+and attempt to slow down for upcoming turns. In practice this means the model 
+won't fight you when you make a turn because it knows you're turning, and on highways 
+it can keep right to take an exit with <em>some</em> consistency depending on the model. 
+Anything beyond that is iffy. See <a href="../usage/operation/#navigation">the operation guide</a> for details.</p>
+<p>Comma dropped the original navigate-on-openpilot feature, so it is not a full self-driving 
+or point-to-point routing system. With the limitations of most cars (especially steering torque) 
 and openpilot hardware, do not expect Tesla-style full autonomy.
 Openpilot remains a driver-assistance system and continues to improve; lateral control is typically strong,
 while longitudinal behavior requires more caution and attention.</p>
@@ -1443,7 +1471,7 @@ It is also quite jerky.</p>
 <li>Tap the center of the screen over and over until the reset prompt comes up</li>
 <li>Reset</li>
 <li>Install using link: <code>firestar5683/saveme</code></li>
-<li>After the device boots, use the branch switcher to go back to <code>StarPilot</code></li>
+<li>After the device boots, use the <a href="../software/starpilot/#changing-branches">branch switcher</a> to go back to <code>StarPilot</code></li>
 </ol>
 <p>If issues persist, reach out in <a href="https://firestar.link/discord">Discord</a>.</p>
 <h2 id="how-do-i-fix-process-not-running-dmonitoringmodeld">How do I fix "Process Not Running dmonitoringmodeld"?<a class="headerlink" href="#how-do-i-fix-process-not-running-dmonitoringmodeld" title="Permanent link">&para;</a></h2>
@@ -1495,7 +1523,7 @@ Reseat (unplug and plug back in) all of your openpilot connections
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 22, 2026 12:30:07 UTC">May 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 28, 2026 18:52:21 UTC">June 28, 2026</span>
   </span>
 
     
@@ -1522,6 +1550,11 @@ Reseat (unplug and plug back in) all of your openpilot connections
 
     
     <nav>
+      
+        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
+          
+          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
+        </a>
       
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           

@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://wiki.firestar.link/cars/bolt/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../support/">
       
       
         <link rel="next" href="../volt/">
@@ -351,6 +351,29 @@
             Car Hardware Guides
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Car Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1286,10 +1309,14 @@
 This means a max 70kW of deceleration meaning no emergency stops 
 and poor low-speed slowing performance. 
 You will occasionally need to brake manually.</li>
-<li>ACC Bolts are limited to 10kW of regen 
-(but unlike non-ACC, openpilot can control your friction brakes).</li>
-<li>ACC Bolts do not have stop and go support (press accelerator pedal or press CC resume).<ul>
-<li>Non-ACC bolts with Comma Pedal do have stop-and-go support.</li>
+<li>ACC Bolts without a pedal are limited to 10kW of regen 
+(but unlike non-ACC, openpilot can control your friction brakes).<ul>
+<li>With a <a href="../../hardware/comma-pedal/">Comma Pedal</a>, openpilot blends friction braking 
+with up to 70kW of regen. See <a href="#acc-bolts">ACC Bolts</a>.</li>
+</ul>
+</li>
+<li>ACC Bolts without a pedal do not have stop and go support (press accelerator pedal or press CC resume).<ul>
+<li>ACC and non-ACC Bolts with a Comma Pedal do have stop-and-go support.</li>
 </ul>
 </li>
 <li><em>22-23 Bolts only</em>: Sport mode will decrease available steering torque.</li>
@@ -1362,16 +1389,14 @@ vehicle. It will operate
 <a href="../../faq/#what-is-redneck-acc-aka-cc-long">using a workaround we call "CCLong" or "Redneck ACC"</a>. </p>
 <h4 id="acc-bolts">ACC Bolts<a class="headerlink" href="#acc-bolts" title="Permanent link">&para;</a></h4>
 <p>In ACC bolts, openpilot can request gas and brake commands through ACC commands. 
-However, due to GM limitations, brake commands only use the friction brakes to slow down 
-and regen braking is limited to 10kW (same as coasting in D mode). It also cannot stop-and-go. </p>
-<p>If you'd like 
-to use regen &amp; stop-and-go, you can switch your car to CC and install a comma pedal. 
-Keep in mind that you lose the ability for openpilot to use the friction brakes if you 
-do this. It will be limited to the same deceleration rate as L mode + regen paddle press
-(70 kW), the same as non-ACC bolts.</p>
-<p>The pedal's capability may extend at a later time with additional hardware or software
-changes (resume button harness, virtual pedal tap to just get the car going again with ACC,
-etc).</p>
+<strong>Without a pedal</strong>, brake commands only use the friction brakes to slow down 
+and regen braking is limited to 10kW (same as coasting in D mode), and it cannot stop-and-go. </p>
+<p><strong>Adding a comma pedal</strong> is now the best of both worlds. StarPilot blends your friction 
+brakes with regen, so an ACC Bolt with a pedal gets <strong>both</strong> full friction braking <strong>and</strong> 
+up to 70 kW of regen, plus stop-and-go support. This removes the old tradeoff where adding 
+a pedal meant giving up openpilot's access to the friction brakes.</p>
+<p>For ACC Bolts, a pedal is optional but recommended if you want stronger regen-based 
+slowing and stop-and-go, with no downside to your friction braking.</p>
 
 
 
@@ -1394,7 +1419,7 @@ etc).</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 22, 2026 19:19:35 UTC">March 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 28, 2026 22:05:53 UTC">June 28, 2026</span>
   </span>
 
     
@@ -1421,6 +1446,11 @@ etc).</p>
 
     
     <nav>
+      
+        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
+          
+          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
+        </a>
       
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
@@ -1464,7 +1494,7 @@ etc).</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+          <a href="../support/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Car Support">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1474,7 +1504,7 @@ etc).</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Car Support
               </div>
             </div>
           </a>

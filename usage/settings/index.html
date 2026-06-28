@@ -357,6 +357,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../cars/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Car Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../cars/bolt/" class="md-nav__link">
         
   
@@ -1015,6 +1038,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#conditional-chill-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Chill Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#curve-speed-control-turn-on" class="md-nav__link">
     <span class="md-ellipsis">
       Curve Speed Control: Turn On
@@ -1422,6 +1454,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#conditional-chill-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Chill Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#curve-speed-control-turn-on" class="md-nav__link">
     <span class="md-ellipsis">
       Curve Speed Control: Turn On
@@ -1717,8 +1758,8 @@ these will enable or disable more advanced tuning parameters.</p>
 </ul>
 </li>
 <li><strong>Navigation Data</strong>: Turn off</li>
-<li><strong>openpilot Wants to Stop In</strong>: <mark>8 seconds</mark> <ul>
-<li>Helps with slowing to a stop at lights, in traffic, etc. <mark>Default is 8 seconds</mark>. </li>
+<li><strong>openpilot Wants to Stop In</strong>: <mark>7 seconds</mark> <ul>
+<li>Helps with slowing to a stop at lights, in traffic, etc. <mark>Default is 7 seconds</mark>. </li>
 <li>Increase this number if your car is not slowing down in time for leads/lights. </li>
 <li>Decrease this number if you're getting lots of false activations 
 and the car is entering or exiting CEM unexpectedly.</li>
@@ -1729,6 +1770,15 @@ and the car is entering or exiting CEM unexpectedly.</li>
 </ul>
 </li>
 </ul>
+<h4 id="conditional-chill-mode">Conditional Chill Mode<a class="headerlink" href="#conditional-chill-mode" title="Permanent link">&para;</a></h4>
+<p>The inverse of CEM: instead of switching <em>into</em> experimental mode for tricky scenes, 
+it keeps experimental mode on by default and drops back to chill mode in simple cruising. 
+Read more about CCM <a href="../operation/#conditional-chill-mode">in the operation guide</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Mutually exclusive with CEM</p>
+<p>CCM and <a href="#conditional-experimental-mode-turn-on">CEM</a> cannot both be active. 
+If both are enabled, CEM takes precedence.</p>
+</div>
 <h4 id="curve-speed-control-turn-on">Curve Speed Control: <mark>Turn On</mark><a class="headerlink" href="#curve-speed-control-turn-on" title="Permanent link">&para;</a></h4>
 <p>Read more about CSC <a href="../operation/#curve-speed-controller">in the operation guide</a></p>
 <h4 id="customize-driving-personalities">Customize Driving Personalities<a class="headerlink" href="#customize-driving-personalities" title="Permanent link">&para;</a></h4>
@@ -1853,7 +1903,27 @@ but we recommend leaving both off for now.</p>
 </ul>
 <h4 id="quality-of-life-improvements-optional">Quality of Life Improvements: Optional<a class="headerlink" href="#quality-of-life-improvements-optional" title="Permanent link">&para;</a></h4>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
-<p>Ignore all navigation options. Recent models do not have the nav capability.</p>
+<p>StarPilot can inject turn desires into any driving model to assist through turns and exits.
+Set a destination from <a href="../galaxy/">the Galaxy</a> to use it.
+See <a href="../operation/#navigation">the operation guide</a> for what to expect — 
+it is a driving aid, not point-to-point autonomy.</p>
+<div class="admonition tip">
+<p class="admonition-title">Required setup for navigation</p>
+<p>Navigation will not do anything until these are set:</p>
+<ul>
+<li><strong>Add a Mapbox key.</strong> A Mapbox API key is required for navigation/maps to work.</li>
+<li>
+<p><strong>Enable Use Route Desires.</strong> Under <strong>Toggles -&gt; Lateral -&gt; Lateral Tuning</strong>, 
+turn on <strong>Use Route Desires</strong>. This is what injects turn desires into the model 
+(the steering side of navigation).</p>
+</li>
+<li>
+<p><strong>Enable Use Route Speed Control.</strong> Under <strong>Toggles -&gt; Longitudinal -&gt; Longitudinal Tuning</strong>, 
+turn on <strong>Use Route Speed Control</strong>. This is what slows the vehicle down for upcoming turns 
+(the longitudinal side of navigation).</p>
+</li>
+</ul>
+</div>
 <h2 id="system-management">System Management<a class="headerlink" href="#system-management" title="Permanent link">&para;</a></h2>
 <p>Optional. Provides options for adjusting the screen brightness and other device settings.</p>
 <h2 id="theme-and-appearance">Theme and Appearance<a class="headerlink" href="#theme-and-appearance" title="Permanent link">&para;</a></h2>
@@ -1940,7 +2010,7 @@ So to be sure, it’s just always best to manually fingerprint by disabling auto
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 5, 2026 06:41:09 UTC">April 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 28, 2026 22:05:53 UTC">June 28, 2026</span>
   </span>
 
     
@@ -1967,6 +2037,11 @@ So to be sure, it’s just always best to manually fingerprint by disabling auto
 
     
     <nav>
+      
+        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
+          
+          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
+        </a>
       
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
