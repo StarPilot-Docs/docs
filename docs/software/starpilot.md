@@ -73,3 +73,31 @@ If you are currently on an older or special branch, you can use `install.firesta
   <source src="/assets/videos/install.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+## Branches
+
+StarPilot has two main branches you can install:
+
+| Branch | Purpose | Stability |
+| --- | --- | --- |
+| `StarPilot` | The default branch. Use this unless you have a specific reason not to. | Stable. Recommended for everyone. |
+| `Dom` | The active development branch. Changes are made to it regularly and it may break at any time. Commonly used by users who want to test new features or fixes that are still in development. | Unstable. Use at your own risk. |
+
+### Changing branches
+
+On the **Comma 3/3x** interface:
+
+1. Go to **Settings**.
+1. Open **Software**.
+1. Tap **Target Branch** and pick the branch.
+1. Click **Select**.
+1. Select **Yes** to download.
+1. Wait for the download to finish.
+1. Install the update.
+
+On the **Comma 4** or the **Galaxy**:
+
+1. Go to **Software**.
+1. Turn on **Show advanced options**.
+1. Select the branch.
+1. Select **Switch + Update**.

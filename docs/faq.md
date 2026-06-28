@@ -146,7 +146,7 @@ This is usually caused by a sticky param, especially when coming from another Fr
 4. Tap the center of the screen over and over until the reset prompt comes up
 5. Reset
 7. Install using link: `firestar5683/saveme`
-8. After the device boots, use the branch switcher to go back to `StarPilot`
+8. After the device boots, use the [branch switcher](./software/starpilot.md#changing-branches) to go back to `StarPilot`
 
 If issues persist, reach out in [Discord](https://firestar.link/discord).
 
