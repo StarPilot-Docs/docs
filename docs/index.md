@@ -47,6 +47,7 @@ join us in the [Discord](https://firestar.link/discord)!
 ### 6/28/2026
 * Document Navigation as a driving aid (turn desires injected into any model, slows for turns, highway exit keep-right)
 * Correct the FAQ and Settings pages that previously stated navigation was unavailable
+* Document the `StarPilot` and `Dom` branches and how to switch branches on Comma 3/3x, Comma 4, and the Galaxy
 
 ### 2/13/2026
 * Consolidate install guidance around `install.firestar.link` and remove outdated per-car install links
