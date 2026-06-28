@@ -44,12 +44,11 @@ join us in the [Discord](https://firestar.link/discord)!
 ## Changelog
 
 ### 6/28/2026
-* Document Navigation as a driving aid (turn desires injected into any model, slows for turns, highway exit keep-right)
-* Correct the FAQ and Settings pages that previously stated navigation was unavailable
-* Document the `StarPilot` and `Dom` branches and how to switch branches on Comma 3/3x, Comma 4, and the Galaxy
-* Add a Car Support page listing cars added over stock and cars with improved tuning, and broaden the intro to reflect non-GM support
+* Document Navigation, update various references to navigation being unavailable
+* Document the `StarPilot` and `Dom` branches and how to switch branches
+* Add a Car Support page listing cars added/with improved tuning, broaden the intro to reflect non-GM support
 * Document Conditional Chill Mode (CCM)
-* Note the new ACC Bolt + pedal friction/regen blend (in testing on the `Dom` branch)
+* Note the new ACC Bolt + pedal friction/regen blend
 * Document Vision Speed Limit Detection and how to contribute training data to improve it
 
 ### 2/13/2026
