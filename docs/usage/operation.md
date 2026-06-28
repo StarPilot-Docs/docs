@@ -133,3 +133,27 @@ The condition that caused the mode swap is indicated by a widget.
 * Speedometer - CEM activated by being below speed threshold
 * Steering wheel - Turn signal is on, speed is below threshold, and no detected lane
 * Map - Navigation
+
+## Navigation
+
+StarPilot can use a destination you set to *assist* the driving model through turns. 
+You set a destination from [the Galaxy](./galaxy.md), and StarPilot injects turn desires 
+into the driving model — even models that don't natively support navigation. 
+It will also attempt to slow the vehicle down for upcoming turns.
+
+> [!IMPORTANT] Navigation requires setup first
+> A Mapbox key and the **Use Route Desires** toggle are required before navigation does anything.
+> See [the settings guide](./settings.md#navigation) for setup.
+
+> [!WARNING] This is a driving aid, not point-to-point autonomy
+> This is **not** "the model will take you home." 
+> It's closer to "the model won't fight you when you're making a turn, 
+> because it knows you're turning." 
+> On highways it can keep right to take an exit with *some* consistency 
+> (how reliably depends on the model), but anything beyond that is iffy. 
+> Always stay alert and be ready to steer yourself, especially at intersections and forks.
+
+> [!NOTE] Works on any model
+> Because turn desires are injected into the model, navigation guidance works 
+> regardless of whether the driving model itself supports navigation. 
+> See [the FAQ](../faq.md#will-openpilot-navigate-on-its-own) for more context.

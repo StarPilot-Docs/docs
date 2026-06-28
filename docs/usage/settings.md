@@ -213,7 +213,18 @@ The remaining settings can be left at default.
 
 ## Navigation
 
-Ignore all navigation options. Recent models do not have the nav capability.
+StarPilot can inject turn desires into any driving model to assist through turns and exits.
+Set a destination from [the Galaxy](./galaxy.md) to use it.
+See [the operation guide](./operation.md#navigation) for what to expect — 
+it is a driving aid, not point-to-point autonomy.
+
+> [!IMPORTANT] Required setup for navigation
+> Navigation will not do anything until both of these are set:
+>
+> * **Add a Mapbox key.** A Mapbox API key is required for navigation/maps to work.
+> * **Enable Use Route Desires.** In the Galaxy, go to 
+> **Toggles -> Lateral -> Lateral Tuning** and turn on **Use Route Desires**. 
+> Without this toggle, StarPilot will not inject turn desires into the model.
 
 ## System Management
 

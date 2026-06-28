@@ -44,6 +44,10 @@ join us in the [Discord](https://firestar.link/discord)!
 
 ## Changelog
 
+### 6/28/2026
+* Document Navigation as a driving aid (turn desires injected into any model, slows for turns, highway exit keep-right)
+* Correct the FAQ and Settings pages that previously stated navigation was unavailable
+
 ### 2/13/2026
 * Consolidate install guidance around `install.firestar.link` and remove outdated per-car install links
 * Document new installer options: `Install`, `Choose a special branch`, and `Deep Nuke Params` (replaces old SaveMe flow)
