@@ -89,8 +89,8 @@ Read more about CEM [in the operation guide](./operation.md#conditional-experime
     * Slower Lead: ==Turn On== if your car has no radar (eg. Bolts)
     * Stopped Lead: ==Turn On== if your car has no radar (eg. Bolts)
 * **Navigation Data**: Turn off
-* **openpilot Wants to Stop In**: ==8 seconds== 
-    * Helps with slowing to a stop at lights, in traffic, etc. ==Default is 8 seconds==. 
+* **openpilot Wants to Stop In**: ==7 seconds== 
+    * Helps with slowing to a stop at lights, in traffic, etc. ==Default is 7 seconds==. 
     * Increase this number if your car is not slowing down in time for leads/lights. 
     * Decrease this number if you're getting lots of false activations 
 and the car is entering or exiting CEM unexpectedly.
