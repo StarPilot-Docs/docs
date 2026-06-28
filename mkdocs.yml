@@ -7,6 +7,7 @@ site_description: Documentation for the install and usage of StarPilot
 nav:
   - Introduction: index.md
   - Car Hardware Guides:
+      - Car Support: cars/support.md
       - Bolt EV: cars/bolt.md
       - Volt & Other ASCM/SDGM Cars: cars/volt.md
   - Openpilot Hardware Info:

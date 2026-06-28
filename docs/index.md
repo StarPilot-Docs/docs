@@ -13,8 +13,7 @@ If you are here, you likely already know openpilot.
 and collaborative community. FrogPilot adds features and car support 
 that are not present in stock openpilot.
 
-**StarPilot** is a fork of FrogPilot that provides better tuning for radar-less/VoACC cars
-and GM cars.
+**StarPilot** is a fork of FrogPilot with a focus on better tuning for radar-less/VoACC cars, GM cars, and Hyundai/Kia/Genesis (HKG) cars, while also adding support and improved tuning for many Honda, Acura, and other vehicles. See [Car Support](./cars/support.md) for the full list.
 
 > [!TIP] Questions? 
 > Join us in the [Discord](https://firestar.link/discord)
@@ -48,6 +47,7 @@ join us in the [Discord](https://firestar.link/discord)!
 * Document Navigation as a driving aid (turn desires injected into any model, slows for turns, highway exit keep-right)
 * Correct the FAQ and Settings pages that previously stated navigation was unavailable
 * Document the `StarPilot` and `Dom` branches and how to switch branches on Comma 3/3x, Comma 4, and the Galaxy
+* Add a Car Support page listing cars added over stock and cars with improved tuning, and broaden the intro to reflect non-GM support
 
 ### 2/13/2026
 * Consolidate install guidance around `install.firestar.link` and remove outdated per-car install links
