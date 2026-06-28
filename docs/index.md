@@ -48,6 +48,8 @@ join us in the [Discord](https://firestar.link/discord)!
 * Correct the FAQ and Settings pages that previously stated navigation was unavailable
 * Document the `StarPilot` and `Dom` branches and how to switch branches on Comma 3/3x, Comma 4, and the Galaxy
 * Add a Car Support page listing cars added over stock and cars with improved tuning, and broaden the intro to reflect non-GM support
+* Document Conditional Chill Mode (CCM)
+* Note the new ACC Bolt + pedal friction/regen blend (in testing on the `Dom` branch)
 
 ### 2/13/2026
 * Consolidate install guidance around `install.firestar.link` and remove outdated per-car install links
