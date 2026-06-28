@@ -48,7 +48,7 @@ join us in the [Discord](https://firestar.link/discord)!
 * Document the `StarPilot` and `Dom` branches and how to switch branches
 * Add a Car Support page listing cars added/with improved tuning, broaden the intro to reflect non-GM support
 * Document Conditional Chill Mode (CCM)
-* Note the new ACC Bolt + pedal friction/regen blend
+* Document the ACC Bolt + pedal friction/regen blend
 * Document Vision Speed Limit Detection and how to contribute training data to improve it
 
 ### 2/13/2026

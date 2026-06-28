@@ -194,8 +194,9 @@ into the driving model — even models that don't natively support navigation.
 It will also attempt to slow the vehicle down for upcoming turns.
 
 > [!IMPORTANT] Navigation requires setup first
-> A Mapbox key and the **Use Route Desires** toggle are required before navigation does anything.
-> See [the settings guide](./settings.md#navigation) for setup.
+> A Mapbox key, the **Use Route Desires** toggle (steering), and the 
+> **Use Route Speed Control** toggle (slowing for turns) are required before navigation 
+> does anything. See [the settings guide](./settings.md#navigation) for setup.
 
 > [!WARNING] This is a driving aid, not point-to-point autonomy
 > This is **not** "the model will take you home." 

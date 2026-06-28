@@ -229,12 +229,15 @@ See [the operation guide](./operation.md#navigation) for what to expect —
 it is a driving aid, not point-to-point autonomy.
 
 > [!IMPORTANT] Required setup for navigation
-> Navigation will not do anything until both of these are set:
+> Navigation will not do anything until these are set:
 >
 > * **Add a Mapbox key.** A Mapbox API key is required for navigation/maps to work.
-> * **Enable Use Route Desires.** In the Galaxy, go to 
-> **Toggles -> Lateral -> Lateral Tuning** and turn on **Use Route Desires**. 
-> Without this toggle, StarPilot will not inject turn desires into the model.
+> * **Enable Use Route Desires.** Under **Toggles -> Lateral -> Lateral Tuning**, 
+> turn on **Use Route Desires**. This is what injects turn desires into the model 
+> (the steering side of navigation).
+> * **Enable Use Route Speed Control.** Under **Toggles -> Longitudinal -> Longitudinal Tuning**, 
+> turn on **Use Route Speed Control**. This is what slows the vehicle down for upcoming turns 
+> (the longitudinal side of navigation).
 
 ## System Management
 

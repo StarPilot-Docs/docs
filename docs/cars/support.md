@@ -14,7 +14,10 @@ of cars that *are* supported by stock so they drive better.
 
 > [!NOTE] This is a snapshot
 > Car support changes often. If your car isn't listed,
-> ask in the [Discord](https://firestar.link/discord) — it may have been added since, or we may be able to add it with your help.
+> ask in the [Discord](https://firestar.link/discord) — it may have been added since.
+
+> [!INFO] Want special tuning for your vehicle?
+> With your help, we can improve your vehicle's tune. Ask in the  [Discord](https://firestar.link/discord)
 
 ## Supported & improved cars
 
