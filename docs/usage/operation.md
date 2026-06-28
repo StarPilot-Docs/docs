@@ -134,6 +134,29 @@ The condition that caused the mode swap is indicated by a widget.
 * Steering wheel - Turn signal is on, speed is below threshold, and no detected lane
 * Map - Navigation
 
+## Conditional Chill Mode
+
+Conditional Chill Mode (CCM) is essentially the inverse of CEM:
+
+* **Conditional Experimental Mode (CEM)** — keeps you in chill mode by default, 
+and automatically switches *to* experimental mode when set conditions are met, 
+so the model can handle challenging situations with smarter decision making.
+* **Conditional Chill Mode (CCM)** — keeps experimental mode on by default, 
+and temporarily switches *to* chill mode in simple cruising scenes 
+where holding speed is usually better.
+
+The idea: experimental mode is better at stopping and recognizing the key parts of a 
+complex scene, so why not leave it on as long as it's holding speed? 
+CCM keeps experimental on unless it hits very specific conditions — including a configurable 
+maximum "under set speed", which tells the model "you're fired" 
+and drops back to chill mode if it's bleeding off too much speed.
+
+Like CEM, an on-screen indicator shows when CCM is active. 
+Settings for CCM are available in both the C3 UI and [the Galaxy](./galaxy.md).
+
+> [!IMPORTANT] CCM and CEM are mutually exclusive
+> Only one can be active at a time. If both are enabled, **CEM takes precedence**.
+
 ## Navigation
 
 StarPilot can use a destination you set to *assist* the driving model through turns. 

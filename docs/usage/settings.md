@@ -97,6 +97,16 @@ and the car is entering or exiting CEM unexpectedly.
 * **Status Widget**: ==Recommended: On==. 
     * Shows an icon that displays if CEM is active, and if so, why.
 
+#### Conditional Chill Mode
+
+The inverse of CEM: instead of switching *into* experimental mode for tricky scenes, 
+it keeps experimental mode on by default and drops back to chill mode in simple cruising. 
+Read more about CCM [in the operation guide](./operation.md#conditional-chill-mode).
+
+> [!INFO] Mutually exclusive with CEM
+> CCM and [CEM](#conditional-experimental-mode-turn-on) cannot both be active. 
+> If both are enabled, CEM takes precedence.
+
 #### Curve Speed Control: ==Turn On==
 
 Read more about CSC [in the operation guide](./operation.md#curve-speed-controller)
