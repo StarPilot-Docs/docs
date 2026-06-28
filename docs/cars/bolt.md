@@ -92,6 +92,16 @@ Keep in mind that you lose the ability for openpilot to use the friction brakes 
 do this. It will be limited to the same deceleration rate as L mode + regen paddle press
 (70 kW), the same as non-ACC bolts.
 
+> [!NOTE] New: friction + regen blend (in testing on Dom)
+> We've figured out how to send friction brake commands on an ACC Bolt *with a pedal* 
+> interceptor. This means ACC Bolt users can choose to get a pedal interceptor and have 
+> **both** 70 kW of regen **and** full access to their friction brakes — removing the 
+> tradeoff described above.
+>
+> This is currently a test tune on the [`Dom` branch](../software/starpilot.md#branches) 
+> only, which is unstable and may break at any time. 
+> ACC Bolt users with a pedal interceptor who want to help test it can switch to `Dom`.
+
 The pedal's capability may extend at a later time with additional hardware or software
 changes (resume button harness, virtual pedal tap to just get the car going again with ACC,
 etc).
