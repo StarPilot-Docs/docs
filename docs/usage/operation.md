@@ -91,6 +91,35 @@ If your max speed is *orange*, your max speed is still active but approaching th
 If you see an incorrect or missing speed limit, go to OSM and submit an edit. 
 Your openpilot speed limit data will update in about a week.
 
+### Vision Speed Limit Detection
+
+In addition to OSM map data, StarPilot can read speed limit signs directly from the 
+camera to feed the Speed Limit Controller. It is enabled under 
+**Toggles -> Longitudinal -> Speed Limit Controller**.
+
+> [!WARNING] Accuracy is currently poor
+> Vision speed limit detection is early and its accuracy is currently quite bad.
+
+#### Help us improve it
+
+The model gets better with more real-world driving data. If you'd like to help:
+
+1. Enable **Vision Speed Limit Detection** and **Auto-Bookmark Vision Signs** 
+under **Toggles -> Longitudinal -> Speed Limit Controller**.
+2. Under **Maps**, select the regions you'll be driving in, 
+then **Save Selection** and **Download Maps**.
+3. Drive as normal.
+4. In [Comma Connect](https://connect.comma.ai), open the route, 
+choose **Files -> Upload All Files**, then under **More Info** enable **Public Access** 
+and copy the route ID.
+5. Submit the route through the 
+[vision speed limit submission form](https://forms.gle/TBptqMNbNaW27u7g9).
+
+> [!TIP] Let your uploads finish
+> Make sure all files finish uploading before turning the device off or disconnecting 
+> from Wi-Fi/hotspot. You can confirm in Comma Connect that `rlog.zst` and `fcamera.hevc` 
+> are present for every segment.
+
 ## Curve Speed Controller 
 
 ![curve speed controller icon](../assets/images/curve_speed.png){: style="height:50px;width:50px"} 

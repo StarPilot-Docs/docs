@@ -50,6 +50,7 @@ join us in the [Discord](https://firestar.link/discord)!
 * Add a Car Support page listing cars added over stock and cars with improved tuning, and broaden the intro to reflect non-GM support
 * Document Conditional Chill Mode (CCM)
 * Note the new ACC Bolt + pedal friction/regen blend (in testing on the `Dom` branch)
+* Document Vision Speed Limit Detection and how to contribute training data to improve it
 
 ### 2/13/2026
 * Consolidate install guidance around `install.firestar.link` and remove outdated per-car install links
