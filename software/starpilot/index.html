@@ -830,15 +830,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-starpilot-installer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom StarPilot Installer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#branches" class="md-nav__link">
     <span class="md-ellipsis">
       Branches
@@ -854,6 +845,30 @@
       Changing branches
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Changing branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-galaxy-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Galaxy (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-on-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct on device
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1110,15 +1125,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-starpilot-installer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom StarPilot Installer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#branches" class="md-nav__link">
     <span class="md-ellipsis">
       Branches
@@ -1134,6 +1140,30 @@
       Changing branches
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Changing branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-galaxy-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Galaxy (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-on-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct on device
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1187,12 +1217,12 @@ If you miss the reset screen, unplug it, wait 60 seconds, then try again.</li>
 <li>Tap reset.</li>
 <li>Connect to Wi-Fi.</li>
 <li>Install custom software.</li>
-<li>When prompted for an install link:</li>
-<li>If your comma is new or you are coming from openpilot or sunnypilot, use <code>firestar5683/StarPilot</code>.</li>
-<li>If coming from a different fork, use <code>install.firestar.link</code>. 
-Choose the default <code>Install</code> option.
-See <a href="#custom-starpilot-installer">Custom StarPilot Installer</a> for more details if you have trouble.</li>
+<li>When prompted for an install link: <code>firestar5683/StarPilot</code></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Recommended settings page</p>
+<p>See <a href="../../usage/settings/">the settings page</a></p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Stuck on the boot logo after installing?</p>
 <p>See <a href="../../faq/#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it">the faq</a></p>
@@ -1200,41 +1230,13 @@ See <a href="#custom-starpilot-installer">Custom StarPilot Installer</a> for mor
 <div class="admonition warning">
 <p class="admonition-title">Other install issues</p>
 <p>Message us in <a href="https://firestar.link/discord">Discord</a>
-or <a href="https://flash.comma.ai">flash your comma</a> and retry.</p>
+or [flash your comma (make sure you try the above multiple times before resorting to flashing)]
+(https://flash.comma.ai) and retry.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Want to change settings from your phone?</p>
 <p>Use <a href="../../usage/galaxy/">the Galaxy</a></p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Bolt fingerprint year matters</p>
-<p>Make sure your Bolt fingerprint has the correct model year selected.
-Each Bolt year has its own lateral tuning.
-Only the 2017 Bolt fingerprint supports the higher 4.5Nm torque limits.
-Do not select the 2017 fingerprint on other model years. It will not give more steering torque,
-but will prevent you from getting proper steering safety alerts.
-Auto fingerprint usually gets this right, but if steering behavior looks wrong, verify your
-fingerprint in <a href="../../usage/settings/#vehicle-controls">Vehicle Controls</a>.</p>
-</div>
-<h2 id="custom-starpilot-installer">Custom StarPilot Installer<a class="headerlink" href="#custom-starpilot-installer" title="Permanent link">&para;</a></h2>
-<p><code>install.firestar.link</code> is StarPilot's custom installer. </p>
-<div class="admonition warning">
-<p class="admonition-title">This installer currently has some limitations</p>
-<p>Only works for Comma 3/3x and on older AGNOS forks. 
-Do not use if coming from openpilot or sunnypilot.</p>
-</div>
-<p>The installer now has three options:</p>
-<ol>
-<li><code>Install</code> (recommended for almost everyone)</li>
-<li><code>Choose a special branch</code> (advanced users/testing only)</li>
-<li><code>Deep Nuke Params</code> (if you're coming from FrogPilot or an older setup and get stuck on the boot logo, use this to wipe old stuck parameters)</li>
-</ol>
-<p>If you are currently on an older or special branch, you can use <code>install.firestar.link</code> and pick <code>Install</code> to move to the main StarPilot branch.</p>
-<video controls width="100%">
-  <source src="/assets/videos/install.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 <h2 id="branches">Branches<a class="headerlink" href="#branches" title="Permanent link">&para;</a></h2>
 <p>StarPilot has two main branches you can install:</p>
 <table>
@@ -1259,6 +1261,14 @@ Do not use if coming from openpilot or sunnypilot.</p>
 </tbody>
 </table>
 <h3 id="changing-branches">Changing branches<a class="headerlink" href="#changing-branches" title="Permanent link">&para;</a></h3>
+<h4 id="using-galaxy-recommended">Using <a href="../../usage/galaxy/">Galaxy</a> (Recommended)<a class="headerlink" href="#using-galaxy-recommended" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Click Software in the sidebar</li>
+<li>Show advanced options</li>
+<li>Select the new branch</li>
+<li>Click Switch + Update</li>
+</ol>
+<h4 id="direct-on-device">Direct on device<a class="headerlink" href="#direct-on-device" title="Permanent link">&para;</a></h4>
 <p>On the <strong>Comma 3/3x</strong> interface:</p>
 <ol>
 <li>Go to <strong>Settings</strong>.</li>
@@ -1298,7 +1308,7 @@ Do not use if coming from openpilot or sunnypilot.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 28, 2026 18:12:21 UTC">June 28, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 25, 2026 06:59:30 UTC">July 25, 2026</span>
   </span>
 
     
@@ -1313,39 +1323,6 @@ Do not use if coming from openpilot or sunnypilot.</p>
 
     
     
-    
-      
-  <span class="md-source-file__fact">
-    
-      
-  <span class="md-icon" title="Contributors">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
-  </span>
-  <span>GitHub</span>
-
-    
-    <nav>
-      
-        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
-          
-          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
-        </a>
-      
-        <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
-          
-          <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
-        </a>
-      
-        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
-          
-          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
-        </a>
-      
-      
-      
-    </nav>
-  </span>
-
     
   </aside>
 
