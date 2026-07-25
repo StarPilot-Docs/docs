@@ -18,6 +18,9 @@ Once your device is paired, your device will remain paired until unpaired.
 > The QR code's URL is unique to your device. Save it for future use.
 > It will also change if you re-pair.
 
+> [!IMPORTANT] Be patient when first pairing.
+> It may take few minutes for the tunnel between your device and the galaxy server to establish.
+
 ## Unpairing
 
 1. On your comma device, open Settings > Device > Galaxy (Unpair).

@@ -118,10 +118,10 @@ Once you are happy with the segments selected, proceed to the next step.
 5. Wait for data to be uploaded (you can check the progress using `Files` > `View Upload Queue`)
 6. Click `More info`, then enable `Public access` and 
 copy the Route info using the Copy button: ![Copy button](./assets/images/copy_clipboard.png)
-7. Create a post in [the #submit-feedback-and-reports channel of the discord server](https://firestar.link/discord). 
-Be as descriptive as possible. Make sure to include software version
-(and special branch name only if you intentionally selected one). 
-Also include the approximate minute(s) in the route it happened. 
+7. Create a post using the buttons in 
+[the #submit-feedback-and-reports channel of the discord server](https://firestar.link/discord). 
+Be as descriptive as possible. 
+Also include the approximate minute(s) in the route it happened.
 
 
 > [!TIP] Ending a route log early

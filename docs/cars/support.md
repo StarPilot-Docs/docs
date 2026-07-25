@@ -17,7 +17,8 @@ of cars that *are* supported by stock so they drive better.
 > ask in the [Discord](https://firestar.link/discord) — it may have been added since.
 
 > [!INFO] Want special tuning for your vehicle?
-> With your help, we can improve your vehicle's tune. Ask in the  [Discord](https://firestar.link/discord)
+> With your help, we can improve your vehicle's tune. Ask in the
+> [Discord](https://firestar.link/discord)
 
 ## Supported & improved cars
 

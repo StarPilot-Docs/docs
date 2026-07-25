@@ -9,7 +9,7 @@ This page is a guide; try a few models and search for feedback in the Discord.
 
 > [!TIP]
 > Models are released often, so this page can go out of date quickly.
-> The model manager in FrogPilot > Driving Model is kept current with StarPilot favorites.
+> The model manager is kept current with StarPilot favorites.
 > Refer to that list for model recommendations when unsure.
 > This page was last updated on: {{ git_revision_date_localized }}
 
