@@ -23,7 +23,8 @@ try resetting your toggles to default or using safe mode.
 
 > [!WARNING] Do not skip these settings
 
-* [If in a GM vehicle, set your correct vehicle fingerprint](#vehicle-controls)
+* If in a GM vehicle, enable "Disable automatic fingerprint detection" 
+and select your vehicle make/model.
 
 > [!NOTE] Fingerprinting Info
 > Fingerprinting is inconsistent on GM vehicles. 

@@ -157,6 +157,12 @@ This is usually caused by a sticky param, especially when coming from another Fr
 
 If issues persist, reach out in [Discord](https://firestar.link/discord).
 
+> [!IMPORTANT] Do **not** use this if you can access Galaxy!
+> If you can access [Galaxy](./usage/galaxy.md), 
+> open "Backup and Restore" and click "SAVE ME" instead of using this branch.
+> It is faster and safer, the branch is not always up to date with latest AGNOS 
+> and you avoid the need to swap branches back after.
+
 ## How do I fix "Process Not Running dmonitoringmodeld"?
 
 This is seen on upstream FrogPilot builds on newer comma devices (post‑September 2025)
