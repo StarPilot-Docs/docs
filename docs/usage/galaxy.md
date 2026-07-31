@@ -31,6 +31,10 @@ Once your device is paired, your device will remain paired until unpaired.
 1. On your comma device, open Settings > Device > Galaxy (Unpair).
 2. Your device should now be unpaired.
 
+## Local Access
+
+For the tech savvy, galaxy is reachable locally at comma-ip:8082 if you wish to avoid the relay server.
+
 ## Features
 
 The most notable features include:
