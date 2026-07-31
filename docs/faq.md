@@ -163,6 +163,14 @@ If issues persist, reach out in [Discord](https://firestar.link/discord).
 > It is faster and safer, the branch is not always up to date with latest AGNOS 
 > and you avoid the need to swap branches back after.
 
+## My device is behaving oddly. What is a "saveme"?
+
+Sometimes the device can get into a bad state due to a bad setting or conflicts during updates 
+(especially if you went a long time without updating). 
+A "saveme" will reset all settings and return to near new state (without require a flash).
+
+Go to [Galaxy](./usage/galaxy.md), open "Backup and Restore" and click "SAVE ME".
+
 ## How do I fix "Process Not Running dmonitoringmodeld"?
 
 This is seen on upstream FrogPilot builds on newer comma devices (post‑September 2025)
