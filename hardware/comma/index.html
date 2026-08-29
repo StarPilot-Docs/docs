@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the install and usage of StarPilot">
+        <meta name="description" content="Choosing and using a comma device with StarPilot">
       
       
       
@@ -19,7 +19,7 @@
         <link rel="next" href="../chestnut/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/galaxy_frog.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
@@ -29,9 +29,6 @@
     
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -61,7 +58,7 @@
       
         <meta  property="og:title"  content="Comma Devices - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Documentation for the install and usage of StarPilot" >
+        <meta  property="og:description"  content="Choosing and using a comma device with StarPilot" >
       
         <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/hardware/comma.png" >
       
@@ -77,23 +74,20 @@
       
         <meta  name="twitter:title"  content="Comma Devices - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Documentation for the install and usage of StarPilot" >
+        <meta  name="twitter:description"  content="Choosing and using a comma device with StarPilot" >
       
         <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/hardware/comma.png" >
       
     
     
+  
+  <link rel="stylesheet" href="../../assets/theme-ui.css">
+  <script src="../../assets/theme-loader.js"></script>
+
   </head>
   
   
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -102,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comma-4" class="md-skip">
+        <a href="#comma-devices" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +114,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="StarPilot Docs" class="md-header__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="../../assets/images/starpilot_icon--small.png" alt="logo">
+  <img src="../../assets/images/galaxy_frog.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -143,42 +137,6 @@
         </div>
       </div>
     </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-</form>
-      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -252,12 +210,13 @@
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+  
+  
+  <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        
+
 
 
 
@@ -265,7 +224,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="StarPilot Docs" class="md-nav__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="../../assets/images/starpilot_icon--small.png" alt="logo">
+  <img src="../../assets/images/galaxy_frog.png" alt="logo">
 
     </a>
     StarPilot Docs
@@ -487,6 +446,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Comma Devices
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -498,6 +470,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comma-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comma 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comma-3x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comma 3X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comma-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comma 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-else-do-i-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      What else do I need?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buying-a-used-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buying a used device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-hardware-and-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional hardware and services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-one-should-i-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which one should I choose?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -675,9 +738,22 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../install/comma/" class="md-nav__link">
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -686,7 +762,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Comma
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/comma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing your Comma
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/mounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mounting your Comma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1033,12 +1167,81 @@
   
   
     <li class="md-nav__item">
+      <a href="../../exclusive/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../exclusive/lane-centering/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Lane Centering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exclusive/speed-limit-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed Limit Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exclusive/sentry-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sentry Mode
     
   </span>
   
@@ -1152,18 +1355,28 @@
   
 
     
+    <li class="md-nav__item site-theme-menu">
+      <div class="site-theme-menu__inner">
+        <label for="theme-selector">Theme</label>
+        <select id="theme-selector" aria-label="Select site theme">
+          <option value="galaxy" selected>Galaxy</option>
+          <option value="material">Material</option>
+        </select>
+      </div>
+    </li>
   </ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        
 
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
@@ -1172,12 +1385,92 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comma-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comma 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comma-3x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comma 3X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comma-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comma 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-else-do-i-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      What else do I need?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buying-a-used-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buying a used device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-hardware-and-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional hardware and services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-one-should-i-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which one should I choose?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
+      </div>
+    </div>
+  </div>
+
+
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
@@ -1190,19 +1483,106 @@
   
 
 
-<h1 id="comma-4">Comma 4<a class="headerlink" href="#comma-4" title="Permanent link">&para;</a></h1>
-<p>Purchase from comma.ai: <a href="https://comma.ai/shop/comma-four">Comma 4</a></p>
-<h1 id="comma-3x-and-3">Comma 3X and 3<a class="headerlink" href="#comma-3x-and-3" title="Permanent link">&para;</a></h1>
-<p>Purchase used from the comma.ai community discord server.</p>
-<div class="admonition note">
-<p class="admonition-title">Comma 3 End of Life (and Continued Support)</p>
-<p>On 8/26/2025 Comma announced that they are dropping support for the Comma 3 to focus on 
-the Comma 3X. As such, if you are purchasing a new or used Comma, it's probably best to 
-go with a 3X/4 if possible. That being said - there are not currently any technical 
-limitations that prevent the 3 from running the current versions of OpenPilot, as it has 
-the same processor as the 3X/4. We expect to be able to support the 3 in StarPilot for the 
-foreseeable future.</p>
+<h1 id="comma-devices">Comma Devices<a class="headerlink" href="#comma-devices" title="Permanent link">&para;</a></h1>
+<p>StarPilot supports the Comma 3, Comma 3X, and Comma 4. All three devices provide the cameras, processing, driver monitoring, storage, and vehicle connection needed to run StarPilot. The correct choice mostly depends on what you already own, whether your car uses CAN FD, and whether you want to buy new or used hardware.</p>
+<div class="admonition tip">
+<p class="admonition-title">Check your car first</p>
+<p>A comma device does not connect directly to every car. Check the <a href="../../cars/support/">StarPilot car support page</a> and the <a href="https://comma.ai/vehicles">comma supported vehicles list</a> before buying anything. Your vehicle may require a specific harness, connector, pedal, or other hardware.</p>
 </div>
+<h2 id="quick-comparison">Quick comparison<a class="headerlink" href="#quick-comparison" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Best choice for</th>
+<th>CAN FD</th>
+<th>Availability</th>
+<th>Main difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comma 4</td>
+<td>Most new buyers</td>
+<td>Built in</td>
+<td>Available new from comma.ai</td>
+<td>Much smaller body, improved cooling, and a compact status display</td>
+</tr>
+<tr>
+<td>Comma 3X</td>
+<td>Buyers who find a good used unit</td>
+<td>Built in</td>
+<td>Usually purchased used</td>
+<td>Larger touchscreen and the same general performance and camera layout as the Comma 3</td>
+</tr>
+<tr>
+<td>Comma 3</td>
+<td>Existing owners using StarPilot or another supporting fork</td>
+<td>Requires a red panda on CAN FD cars</td>
+<td>End of life and used only</td>
+<td>No longer supported by stock openpilot</td>
+</tr>
+</tbody>
+</table>
+<p>The device does not determine how much steering torque, braking control, or acceleration control your car has. Those capabilities depend on the vehicle and its installed hardware.</p>
+<h2 id="comma-4">Comma 4<a class="headerlink" href="#comma-4" title="Permanent link">&para;</a></h2>
+<p>The Comma 4 is comma.ai's current device and is the recommended option for most people buying new hardware. It uses a Snapdragon 845 MAX, includes 128 GB of storage, supports CAN FD without an additional panda, and has LTE, Wi-Fi, GPS, night-vision driver monitoring, and three cameras.</p>
+<p>The Comma 4 provides the same general compute, sensor suite, and functionality as the Comma 3X in a body that comma.ai describes as one-fifth the size. Its cooling system is designed for sustained performance, and its small OLED display is used for status and driving information instead of the large touchscreen found on the Comma 3 and 3X.</p>
+<p>Purchase from comma.ai: <a href="https://comma.ai/shop/comma-four">Comma 4</a></p>
+<div class="admonition note">
+<p class="admonition-title">Mounts</p>
+<p>Comma 4 mounts are different from Comma 3 and 3X mounts. If you replace an older device with a Comma 4, install the mount supplied for the Comma 4.</p>
+</div>
+<h2 id="comma-3x">Comma 3X<a class="headerlink" href="#comma-3x" title="Permanent link">&para;</a></h2>
+<p>The Comma 3X uses a Snapdragon 845, three 1080p HDR cameras, a 2160 x 1080 OLED touchscreen, 128 GB of storage, LTE, Wi-Fi, GPS, and infrared lighting for driver monitoring. CAN FD support is built in, so it does not require a separate red panda for CAN FD vehicles.</p>
+<p>Comma.ai introduced the Comma 3X as a less complex replacement for the Comma 3 with the same general performance and triple-camera system. It remains a good StarPilot device if you already own one or find a used unit in good condition.</p>
+<p>Comma.ai now sells the Comma 4 as its current device. Comma 3X units are generally found through the used market or the comma.ai community Discord.</p>
+<h2 id="comma-3">Comma 3<a class="headerlink" href="#comma-3" title="Permanent link">&para;</a></h2>
+<p>The Comma 3 is the oldest of the three devices supported by StarPilot. It uses the same Snapdragon 845 family and triple-camera layout as the Comma 3X, so existing owners can still run current StarPilot releases.</p>
+<p>Comma.ai ended official Comma 3 software support on August 26, 2025 to focus on newer hardware. Stock openpilot no longer supports it. StarPilot and some other forks continue to support the Comma 3, but buying one is not advised. Existing owners can continue using it with a supporting fork.</p>
+<div class="admonition warning">
+<p class="admonition-title">CAN FD vehicles</p>
+<p>A Comma 3 requires a <a href="https://comma.ai/shop/red-panda">red panda</a> to communicate with a CAN FD vehicle. The Comma 3X and Comma 4 have CAN FD support built in. Existing Comma 3 owners should check their vehicle before purchasing a replacement panda.</p>
+</div>
+<h2 id="what-else-do-i-need">What else do I need?<a class="headerlink" href="#what-else-do-i-need" title="Permanent link">&para;</a></h2>
+<p>A typical installation requires:</p>
+<ul>
+<li>A supported comma device</li>
+<li>The correct car harness and harness connector</li>
+<li>A harness box</li>
+<li>An OBD-C cable</li>
+<li>A compatible windshield mount</li>
+</ul>
+<p>Some StarPilot-supported vehicles need additional hardware, such as a pedal, GM harness, ASCM or SDGM integration, or an OBD-C setup that differs from comma's stock installation. Follow the guide for your specific vehicle rather than ordering from the general list alone.</p>
+<p>See the following pages before installation:</p>
+<ul>
+<li><a href="../../cars/support/">Car support</a></li>
+<li><a href="../../install/comma/">Installing your Comma device</a></li>
+<li><a href="../../software/starpilot/">Installing StarPilot</a></li>
+<li><a href="../obd-c/">OBD-C cable</a></li>
+<li><a href="../comma-pedal/">Comma Pedal</a></li>
+</ul>
+<h2 id="buying-a-used-device">Buying a used device<a class="headerlink" href="#buying-a-used-device" title="Permanent link">&para;</a></h2>
+<p>Before buying a used Comma 3X, confirm that:</p>
+<ol>
+<li>The device boots and reaches its setup screen.</li>
+<li>The road and driver-monitoring cameras work and are unobstructed.</li>
+<li>The display, USB-C port, Wi-Fi, and GPS work correctly.</li>
+<li>The listing includes the correct mount and cable, or you have replacements available.</li>
+<li>You know whether your vehicle requires CAN FD.</li>
+<li>You can obtain the correct harness and any StarPilot-specific hardware for your car.</li>
+</ol>
+<p>Do not assume that a used device includes the correct harness for your vehicle or qualifies for comma.ai warranty service or trade-in credit. The Comma 3 is end-of-life hardware, so buying one is not advised even though StarPilot and some other community forks continue to support it.</p>
+<h2 id="optional-hardware-and-services">Optional hardware and services<a class="headerlink" href="#optional-hardware-and-services" title="Permanent link">&para;</a></h2>
+<p>StarPilot can pair a comma device with <a href="../../usage/galaxy/">Galaxy</a> for remote settings and device management. Comma Prime is optional and is not required to run StarPilot.</p>
+<p>StarPilot also supports <a href="../chestnut/">Chestnut</a> for users who want to run larger driving models with an external GPU. Most users do not need Chestnut.</p>
+<h2 id="which-one-should-i-choose">Which one should I choose?<a class="headerlink" href="#which-one-should-i-choose" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Buy a Comma 4 if you want new hardware, built-in CAN FD support, and the smallest current device.</li>
+<li>Keep using a Comma 3X if you already have one. There is no need to replace a working device solely to run StarPilot.</li>
+<li>Buying a Comma 3 is not advised. You can keep using one if you already own it and plan to remain on StarPilot or another fork that supports it.</li>
+</ul>
+<p>Regardless of the device, you must remain attentive and ready to take control. StarPilot and openpilot are driver-assistance systems, not self-driving systems.</p>
 
 
 
@@ -1225,7 +1605,7 @@ foreseeable future.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 5, 2026 06:32:50 UTC">April 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 28, 2026 01:02:03 UTC">August 28, 2026</span>
   </span>
 
     
@@ -1252,6 +1632,11 @@ foreseeable future.</p>
 
     
     <nav>
+      
+        <a href="https://github.com/L4M3573R" class="md-author" title="@L4M3573R">
+          
+          <img src="https://avatars.githubusercontent.com/u/87735573?v=4&size=72" alt="L4M3573R">
+        </a>
       
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
@@ -1281,8 +1666,12 @@ foreseeable future.</p>
 
 
                 
-  <script data-goatcounter="https://starpilot-docs.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+
+  <script
+    data-goatcounter="https://starpilot-docs.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js">
+  </script>
 
               </article>
             </div>
@@ -1377,8 +1766,11 @@ foreseeable future.</p>
       <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.footer", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
+  <div id="site-theme-assets" hidden></div>
+  
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
+
   </body>
 </html>

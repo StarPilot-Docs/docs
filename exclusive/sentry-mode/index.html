@@ -10,21 +10,25 @@
       
       
       
-        <link rel="canonical" href="https://wiki.firestar.link/hardware/embed/see-car-guide/">
+        <link rel="canonical" href="https://wiki.firestar.link/exclusive/sentry-mode/">
       
       
+        <link rel="prev" href="../speed-limit-controller/">
       
       
-      <link rel="icon" href="../../../assets/images/galaxy_frog.png">
+        <link rel="next" href="../../ticketsystem/">
+      
+      
+      <link rel="icon" href="../../assets/images/galaxy_frog.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>See car guide - StarPilot Docs</title>
+        <title>Sentry Mode - StarPilot Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -43,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -52,11 +56,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="See car guide - StarPilot Docs" >
+        <meta  property="og:title"  content="Sentry Mode - StarPilot Docs" >
       
         <meta  property="og:description"  content="Documentation for the install and usage of StarPilot" >
       
-        <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/hardware/embed/see-car-guide.png" >
+        <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/sentry-mode.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -64,21 +68,21 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://wiki.firestar.link/hardware/embed/see-car-guide/" >
+        <meta  property="og:url"  content="https://wiki.firestar.link/exclusive/sentry-mode/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="See car guide - StarPilot Docs" >
+        <meta  name="twitter:title"  content="Sentry Mode - StarPilot Docs" >
       
         <meta  name="twitter:description"  content="Documentation for the install and usage of StarPilot" >
       
-        <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/hardware/embed/see-car-guide.png" >
+        <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/sentry-mode.png" >
       
     
     
   
-  <link rel="stylesheet" href="../../../assets/theme-ui.css">
-  <script src="../../../assets/theme-loader.js"></script>
+  <link rel="stylesheet" href="../../assets/theme-ui.css">
+  <script src="../../assets/theme-loader.js"></script>
 
   </head>
   
@@ -90,6 +94,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#sentry-mode" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -103,9 +112,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="StarPilot Docs" class="md-header__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
+    <a href="../.." title="StarPilot Docs" class="md-header__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="../../../assets/images/galaxy_frog.png" alt="logo">
+  <img src="../../assets/images/galaxy_frog.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -122,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              See car guide
+              Sentry Mode
             
           </span>
         </div>
@@ -213,9 +222,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="StarPilot Docs" class="md-nav__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
+    <a href="../.." title="StarPilot Docs" class="md-nav__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="../../../assets/images/galaxy_frog.png" alt="logo">
+  <img src="../../assets/images/galaxy_frog.png" alt="logo">
 
     </a>
     StarPilot Docs
@@ -242,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -307,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cars/support/" class="md-nav__link">
+      <a href="../../cars/support/" class="md-nav__link">
         
   
   
@@ -330,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cars/bolt/" class="md-nav__link">
+      <a href="../../cars/bolt/" class="md-nav__link">
         
   
   
@@ -353,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cars/volt/" class="md-nav__link">
+      <a href="../../cars/volt/" class="md-nav__link">
         
   
   
@@ -426,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../comma/" class="md-nav__link">
+      <a href="../../hardware/comma/" class="md-nav__link">
         
   
   
@@ -449,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chestnut/" class="md-nav__link">
+      <a href="../../hardware/chestnut/" class="md-nav__link">
         
   
   
@@ -472,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../comma-pedal/" class="md-nav__link">
+      <a href="../../hardware/comma-pedal/" class="md-nav__link">
         
   
   
@@ -495,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gm-harness/" class="md-nav__link">
+      <a href="../../hardware/gm-harness/" class="md-nav__link">
         
   
   
@@ -518,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../obd-c/" class="md-nav__link">
+      <a href="../../hardware/obd-c/" class="md-nav__link">
         
   
   
@@ -541,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../obd-harness/" class="md-nav__link">
+      <a href="../../hardware/obd-harness/" class="md-nav__link">
         
   
   
@@ -654,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/comma/" class="md-nav__link">
+      <a href="../../install/comma/" class="md-nav__link">
         
   
   
@@ -677,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/mounting/" class="md-nav__link">
+      <a href="../../install/mounting/" class="md-nav__link">
         
   
   
@@ -708,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/pedal/" class="md-nav__link">
+      <a href="../../install/pedal/" class="md-nav__link">
         
   
   
@@ -731,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/car/" class="md-nav__link">
+      <a href="../../install/car/" class="md-nav__link">
         
   
   
@@ -804,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/starpilot/" class="md-nav__link">
+      <a href="../../software/starpilot/" class="md-nav__link">
         
   
   
@@ -827,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/pedal-firmware/" class="md-nav__link">
+      <a href="../../software/pedal-firmware/" class="md-nav__link">
         
   
   
@@ -900,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../usage/operation/" class="md-nav__link">
+      <a href="../../usage/operation/" class="md-nav__link">
         
   
   
@@ -923,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../usage/settings/" class="md-nav__link">
+      <a href="../../usage/settings/" class="md-nav__link">
         
   
   
@@ -946,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../usage/driving-model/" class="md-nav__link">
+      <a href="../../usage/driving-model/" class="md-nav__link">
         
   
   
@@ -969,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../usage/galaxy/" class="md-nav__link">
+      <a href="../../usage/galaxy/" class="md-nav__link">
         
   
   
@@ -996,8 +1005,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -1008,11 +1019,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
@@ -1028,7 +1039,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Starpilot Exclusive Features
@@ -1042,7 +1053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exclusive/navigation/" class="md-nav__link">
+      <a href="../navigation/" class="md-nav__link">
         
   
   
@@ -1065,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exclusive/lane-centering/" class="md-nav__link">
+      <a href="../lane-centering/" class="md-nav__link">
         
   
   
@@ -1088,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exclusive/speed-limit-controller/" class="md-nav__link">
+      <a href="../speed-limit-controller/" class="md-nav__link">
         
   
   
@@ -1108,10 +1119,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../exclusive/sentry-mode/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sentry Mode
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1122,6 +1155,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#galaxy-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Galaxy dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-gets-captured" class="md-nav__link">
+    <span class="md-ellipsis">
+      What gets captured
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1184,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ticketsystem/" class="md-nav__link">
+      <a href="../../ticketsystem/" class="md-nav__link">
         
   
   
@@ -1207,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   
@@ -1257,6 +1355,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#galaxy-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Galaxy dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-gets-captured" class="md-nav__link">
+    <span class="md-ellipsis">
+      What gets captured
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
       </div>
@@ -1276,11 +1429,78 @@
   
 
 
-  <h1>See car guide</h1>
-
+<h1 id="sentry-mode">Sentry Mode<a class="headerlink" href="#sentry-mode" title="Permanent link">&para;</a></h1>
+<p>When your car is parked, Sentry Mode watches for activity around your vehicle and automatically captures events, similar in spirit to Tesla's Sentry Mode, but built for your comma device and managed through <a href="../../usage/galaxy/">Galaxy</a>.</p>
+<p>The best part: it is not running the cameras all day and draining your battery. Sentry stays dormant until something actually happens.</p>
+<h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<p>Sentry uses your comma device's <strong>accelerometer</strong> to detect movement while the vehicle is parked. The system sleeps quietly in the background and only wakes up when sustained motion is detected — for example, someone bumping your car or rocking it.</p>
+<p>When that happens, Sentry captures camera images from the event and saves them for you to review later.</p>
+<h2 id="galaxy-dashboard">Galaxy dashboard<a class="headerlink" href="#galaxy-dashboard" title="Permanent link">&para;</a></h2>
+<p>Sentry is managed entirely through Galaxy. Open the <strong>Sentry</strong> page from the Galaxy sidebar to:</p>
+<ul>
+<li>Turn Sentry Mode on or off</li>
+<li>See the current status of the system</li>
+<li>Review your latest event (with camera captures)</li>
+<li>Browse past events and delete ones you no longer need</li>
+<li>Grab a live snapshot from both cameras while parked</li>
+<li>Send a test capture to confirm everything is working</li>
+</ul>
+<p>Events refresh automatically while you have the page open, so you can check in from your phone without touching the comma device.</p>
+<h2 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Permanent link">&para;</a></h2>
+<p>When Sentry detects something, you can get alerted through any combination of:</p>
+<ul>
+<li><strong>Browser push notifications</strong> — enable directly from the Sentry page in Galaxy</li>
+<li><strong>ntfy</strong> — paste your ntfy topic URL for phone notifications</li>
+<li><strong>Discord</strong> — paste a Discord webhook URL (or any compatible webhook)</li>
+</ul>
+<p>Use <strong>Send test notification</strong> in Galaxy to confirm your setup before you need it.</p>
 <div class="admonition tip">
-<p class="admonition-title">Important</p>
-<p>This hardware is only necessary if indicated by your <a href="../../../cars/all/">car setup guide</a></p>
+<p class="admonition-title">iPhone users</p>
+<p>Add Galaxy to your Home Screen as a web app before enabling browser notifications. iOS requires a Home Screen web app for web push to work.</p>
+</div>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p>All Sentry settings live on the Galaxy Sentry page — there is nothing extra to configure on the comma device itself.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Sentry Mode</strong></td>
+<td>Turn parked monitoring on or off</td>
+</tr>
+<tr>
+<td><strong>Motion sensitivity</strong></td>
+<td>How easily movement triggers Sentry. Lower values catch smaller bumps; higher values require stronger motion</td>
+</tr>
+<tr>
+<td><strong>Warning persistence</strong></td>
+<td>How long movement must continue before the first alert fires. Useful for filtering out brief vibrations (wind, passing trucks, etc.)</td>
+</tr>
+<tr>
+<td><strong>Webhook URL</strong></td>
+<td>Optional Discord or custom webhook for alerts</td>
+</tr>
+<tr>
+<td><strong>ntfy URL</strong></td>
+<td>Optional ntfy topic for phone alerts</td>
+</tr>
+</tbody>
+</table>
+<p>Start with the defaults and adjust sensitivity if you get too many false alerts or not enough real ones.</p>
+<h2 id="what-gets-captured">What gets captured<a class="headerlink" href="#what-gets-captured" title="Permanent link">&para;</a></h2>
+<p>When Sentry triggers, it saves camera images from the event along with a timestamp. You can view them in Galaxy immediately or come back to them later from the event history.</p>
+<p>Events stay on your device until you delete them.</p>
+<div class="admonition note">
+<p class="admonition-title">Power-off alerts</p>
+<p>If your comma device shuts down while Sentry is enabled, you may receive a power-off alert. These do not include camera images because the device is already shutting down.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Sentry is for when you are parked</p>
+<p>Sentry only runs while your vehicle is off-road (not actively driving). It is a parking security feature, not something that runs during normal openpilot operation.</p>
 </div>
 
 
@@ -1304,7 +1524,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2025 05:07:52 UTC">November 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 27, 2026 18:58:11 UTC">August 27, 2026</span>
   </span>
 
     
@@ -1314,7 +1534,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2025 05:07:52 UTC">November 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 27, 2026 18:58:11 UTC">August 27, 2026</span>
   </span>
 
     
@@ -1332,9 +1552,9 @@
     
     <nav>
       
-        <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
+        <a href="https://github.com/Sonnyhayka" class="md-author" title="@Sonnyhayka">
           
-          <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
+          <img src="https://avatars.githubusercontent.com/u/147892136?v=4&size=72" alt="Sonnyhayka">
         </a>
       
       
@@ -1368,6 +1588,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../speed-limit-controller/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Speed Limit Controller">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Speed Limit Controller
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../ticketsystem/" class="md-footer__link md-footer__link--next" aria-label="Next: Ticket System">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Ticket System
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1409,12 +1667,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.footer", "toc.follow"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.footer", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   <div id="site-theme-assets" hidden></div>
   
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
 

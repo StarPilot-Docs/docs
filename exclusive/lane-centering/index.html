@@ -13,13 +13,13 @@
         <link rel="canonical" href="https://wiki.firestar.link/exclusive/lane-centering/">
       
       
-        <link rel="prev" href="../../usage/galaxy/">
+        <link rel="prev" href="../navigation/">
       
       
-        <link rel="next" href="../../ticketsystem/">
+        <link rel="next" href="../speed-limit-controller/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/galaxy_frog.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
@@ -29,9 +29,6 @@
     
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -83,23 +80,25 @@
       
     
     
+  
+  <link rel="stylesheet" href="../../assets/theme-ui.css">
+  <script src="../../assets/theme-loader.js"></script>
+
   </head>
   
   
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#lane-centering" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -115,7 +114,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="StarPilot Docs" class="md-header__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="../../assets/images/starpilot_icon--small.png" alt="logo">
+  <img src="../../assets/images/galaxy_frog.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -138,42 +137,6 @@
         </div>
       </div>
     </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-</form>
-      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -247,12 +210,13 @@
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+  
+  
+  <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        
+
 
 
 
@@ -260,7 +224,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="StarPilot Docs" class="md-nav__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="../../assets/images/starpilot_icon--small.png" alt="logo">
+  <img src="../../assets/images/galaxy_frog.png" alt="logo">
 
     </a>
     StarPilot Docs
@@ -658,9 +622,22 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../install/comma/" class="md-nav__link">
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -669,7 +646,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Comma
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/comma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing your Comma
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/mounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mounting your Comma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1015,6 +1050,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1024,6 +1082,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lane Centering
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1037,6 +1110,116 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-lane-centering-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does Lane Centering Work?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-tell-which-direction-lane-centering-is-correcting" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Can I Tell Which Direction Lane Centering Is Correcting?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-enable-lane-centering" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Do I Enable Lane Centering?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-lane-center-offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Lane Center Offset?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-e2e-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is E2E Authority?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speed-limit-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed Limit Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sentry-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sentry Mode
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1145,30 +1328,95 @@
   
 
     
+    <li class="md-nav__item site-theme-menu">
+      <div class="site-theme-menu__inner">
+        <label for="theme-selector">Theme</label>
+        <select id="theme-selector" aria-label="Select site theme">
+          <option value="galaxy" selected>Galaxy</option>
+          <option value="material">Material</option>
+        </select>
+      </div>
+    </li>
   </ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        
 
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-lane-centering-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does Lane Centering Work?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-tell-which-direction-lane-centering-is-correcting" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Can I Tell Which Direction Lane Centering Is Correcting?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-enable-lane-centering" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Do I Enable Lane Centering?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-lane-center-offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Lane Center Offset?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-e2e-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is E2E Authority?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
+      </div>
+    </div>
+  </div>
+
+
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
@@ -1181,9 +1429,39 @@
   
 
 
-  <h1>Lane Centering</h1>
-
-
+<h1 id="lane-centering">Lane Centering<a class="headerlink" href="#lane-centering" title="Permanent link">&para;</a></h1>
+<p>Lane Centering is a StarPilot feature that helps keep your vehicle centered between detected lane lines while still allowing the End-to-End (E2E) model to control the driving path.</p>
+<p>Instead of replacing the E2E model, Lane Centering works alongside it.</p>
+<h2 id="how-does-lane-centering-work">How Does Lane Centering Work?<a class="headerlink" href="#how-does-lane-centering-work" title="Permanent link">&para;</a></h2>
+<p>When both lane lines are detected clearly and confidently, StarPilot compares the E2E model's predicted path with the center of the lane.</p>
+<p>If they differ, StarPilot applies a small, smooth correction toward the lane center while still allowing the E2E model to make driving decisions.</p>
+<p>If the lane lines become unreliable, the lane width appears abnormal, you're changing lanes, or other required conditions aren't met, StarPilot automatically falls back to the normal E2E path.</p>
+<h2 id="how-can-i-tell-which-direction-lane-centering-is-correcting">How Can I Tell Which Direction Lane Centering Is Correcting?<a class="headerlink" href="#how-can-i-tell-which-direction-lane-centering-is-correcting" title="Permanent link">&para;</a></h2>
+<p>When Lane Centering applies a correction, the lane line on the side it is pulling toward turns blue. This provides a visual indication of the direction Lane Centering is guiding the vehicle.</p>
+<h2 id="how-do-i-enable-lane-centering">How Do I Enable Lane Centering?<a class="headerlink" href="#how-do-i-enable-lane-centering" title="Permanent link">&para;</a></h2>
+<p>Lane Centering is enabled through StarPilot Galaxy.</p>
+<ol>
+<li>Open Galaxy in your browser. </li>
+<li>Open Toggles.</li>
+<li>Go to the Developer section.</li>
+<li>Find Lane Centering and enable it.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you're having trouble finding the setting, in Galaxy's Toggle page, use the Search bar and search for <code>Lane Centering</code>.</p>
+</div>
+<p>Once enabled, you can also configure how Lane Centering behaves.</p>
+<h2 id="what-is-lane-center-offset">What Is Lane Center Offset?<a class="headerlink" href="#what-is-lane-center-offset" title="Permanent link">&para;</a></h2>
+<p>Lane Center Offset allows you to fine-tune where the vehicle sits within the lane.</p>
+<p>For example, if you prefer the vehicle to drive slightly closer to the right side of the lane rather than directly in the center, you can adjust the offset to do so.</p>
+<h2 id="what-is-e2e-authority">What Is E2E Authority?<a class="headerlink" href="#what-is-e2e-authority" title="Permanent link">&para;</a></h2>
+<p>E2E Authority controls how much influence the E2E model has over Lane Centering.</p>
+<p>Giving E2E more authority allows the model to deviate further from the center when it believes it should, such as when navigating around potholes or cyclists.</p>
+<p>Increasing Lane Centering gives you a more traditional centered driving feel.</p>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p>Lane Centering does not prevent the E2E model from controlling the vehicle. It simply biases the predicted path toward the detected center of the lane when conditions allow.</p>
+</div>
 
 
 
@@ -1206,7 +1484,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 27, 2026 11:39:39 UTC">August 27, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 28, 2026 17:19:03 UTC">August 28, 2026</span>
   </span>
 
     
@@ -1257,8 +1535,12 @@
 
 
                 
-  <script data-goatcounter="https://starpilot-docs.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+
+  <script
+    data-goatcounter="https://starpilot-docs.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js">
+  </script>
 
               </article>
             </div>
@@ -1276,7 +1558,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../usage/galaxy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Galaxy">
+          <a href="../navigation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Navigation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1286,20 +1568,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Galaxy
+                Navigation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../ticketsystem/" class="md-footer__link md-footer__link--next" aria-label="Next: Ticket System">
+          <a href="../speed-limit-controller/" class="md-footer__link md-footer__link--next" aria-label="Next: Speed Limit Controller">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Ticket System
+                Speed Limit Controller
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1353,8 +1635,11 @@
       <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.footer", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
+  <div id="site-theme-assets" hidden></div>
+  
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
+
   </body>
 </html>
