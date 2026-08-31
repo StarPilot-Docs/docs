@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the install and usage of StarPilot">
+        <meta name="description" content="Bluetooth audio and controller support in StarPilot">
       
       
       
-        <link rel="canonical" href="https://wiki.firestar.link/software/pedal-firmware/">
+        <link rel="canonical" href="https://wiki.firestar.link/exclusive/bluetooth-controls/">
       
       
-        <link rel="prev" href="../starpilot/">
+        <link rel="prev" href="../sentry-mode/">
       
       
-        <link rel="next" href="../../usage/operation/">
+        <link rel="next" href="../../cars/bolt/">
       
       
       <link rel="icon" href="../../assets/images/galaxy_frog.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Pedal Firmware Flash - StarPilot Docs</title>
+        <title>Bluetooth Controls - StarPilot Docs</title>
       
     
     
@@ -56,11 +56,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Pedal Firmware Flash - StarPilot Docs" >
+        <meta  property="og:title"  content="Bluetooth Controls - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Documentation for the install and usage of StarPilot" >
+        <meta  property="og:description"  content="Bluetooth audio and controller support in StarPilot" >
       
-        <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/software/pedal-firmware.png" >
+        <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/bluetooth-controls.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -68,19 +68,20 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://wiki.firestar.link/software/pedal-firmware/" >
+        <meta  property="og:url"  content="https://wiki.firestar.link/exclusive/bluetooth-controls/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Pedal Firmware Flash - StarPilot Docs" >
+        <meta  name="twitter:title"  content="Bluetooth Controls - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Documentation for the install and usage of StarPilot" >
+        <meta  name="twitter:description"  content="Bluetooth audio and controller support in StarPilot" >
       
-        <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/software/pedal-firmware.png" >
+        <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/bluetooth-controls.png" >
       
     
     
   
+  <link rel="preload" href="../../assets/fonts/como-heavy.otf" as="font" type="font/otf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
   <script src="../../assets/theme-loader.js"></script>
 
@@ -96,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pedal-firmware-flashing" class="md-skip">
+        <a href="#bluetooth-controls" class="md-skip">
           Skip to content
         </a>
       
@@ -108,9 +109,10 @@
     
       
 
+
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="StarPilot Docs" class="md-header__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
@@ -121,22 +123,7 @@
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            StarPilot Docs
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Pedal Firmware Flash
-            
-          </span>
-        </div>
-      </div>
-    </div>
+    <a href="../.." class="starpilot-header-brand" aria-label="StarPilot home">StarPilot</a>
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -198,13 +185,124 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  General
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../navigation/" class="md-tabs__link">
+          
+  
+  
+  StarPilot Exclusive Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cars/bolt/" class="md-tabs__link">
+          
+  
+  
+  Vehicle Specific Information
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hardware/comma/" class="md-tabs__link">
+          
+  
+  
+  Comma Hardware Info
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -218,9 +316,11 @@
         
 
 
+  
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="StarPilot Docs" class="md-nav__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
@@ -250,13 +350,103 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            General
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Introduction
+    Welcome to StarPilot
     
   </span>
   
@@ -265,49 +455,30 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+              
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/starpilot/" class="md-nav__link">
+        
   
   
   <span class="md-ellipsis">
-    Car Hardware Guides
+    Installing StarPilot
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Car Hardware Guides
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -321,53 +492,7 @@
   
   
   <span class="md-ellipsis">
-    Car Support
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cars/bolt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Bolt EV
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cars/volt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Volt & Other ASCM/SDGM Cars
+    Vehicle Compatibility
     
   </span>
   
@@ -384,71 +509,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Openpilot Hardware Info
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Openpilot Hardware Info
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/comma/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Comma Devices
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -457,175 +517,13 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../hardware/chestnut/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Chestnut (External GPU)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/comma-pedal/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Comma Pedal
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/gm-harness/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    GM Harness
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/obd-c/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    OBD-C Cable
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/obd-harness/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    OBD Harness
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
     
     
       
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Hardware Installation
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Hardware Installation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
       
     
     
@@ -633,327 +531,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Comma
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1">
-            <span class="md-nav__icon md-icon"></span>
-            Comma
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/comma/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Installing your Comma
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/mounting/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Mounting your Comma
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/pedal/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Pedal
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/car/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Car Config
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Software Installation
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Software Installation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../starpilot/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Install StarPilot
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Pedal Firmware Flash
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Pedal Firmware Flash
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#required-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Required Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flashing-instructions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flashing Instructions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-firmwares" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other Firmwares
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
             
   
   
@@ -966,8 +549,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Usage
           </label>
@@ -1071,9 +654,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -1083,161 +667,21 @@
     
     
       
-        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Starpilot Exclusive Features
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Starpilot Exclusive Features
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../exclusive/navigation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Navigation
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../exclusive/lane-centering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lane Centering
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../exclusive/speed-limit-controller/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Speed Limit Controller
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../exclusive/sentry-mode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Sentry Mode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
             
   
   
@@ -1250,8 +694,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting & FAQ
           </label>
@@ -1309,6 +753,877 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    StarPilot Exclusive Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            StarPilot Exclusive Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lane-centering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lane Centering
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--experimental" title="Experimental feature">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speed-limit-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed Limit Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sentry-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sentry Mode
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--experimental" title="Experimental feature">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Bluetooth Controls
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--experimental" title="Experimental feature">
+    </span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bluetooth Controls
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--experimental" title="Experimental feature">
+    </span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pairing-and-audio-in-galaxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pairing and Audio in Galaxy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-controller-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth Controller Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-device-bluetooth-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      On-Device Bluetooth Management
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Vehicle Specific Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Vehicle Specific Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    GM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            GM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/bolt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bolt EV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/volt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Volt & Other ASCM/SDGM Cars
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hyundai / Kia
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hyundai / Kia
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/hkg-hda2-longitudinal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Long Setup for Some HDA2 Vehicles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Comma Hardware Info
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Comma Hardware Info
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/comma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comma Devices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Comma Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Comma Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/comma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing your Comma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/mounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mounting your Comma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/chestnut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chestnut (External GPU)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Comma Pedal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Comma Pedal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/comma-pedal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pedal Information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/pedal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pedal Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/gm-harness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GM Harness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/obd-c/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OBD-C Cable
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/obd-harness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OBD Harness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
     <li class="md-nav__item site-theme-menu">
       <div class="site-theme-menu__inner">
@@ -1347,27 +1662,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#required-resources" class="md-nav__link">
+  <a href="#pairing-and-audio-in-galaxy" class="md-nav__link">
     <span class="md-ellipsis">
-      Required Resources
+      Pairing and Audio in Galaxy
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#flashing-instructions" class="md-nav__link">
+  <a href="#bluetooth-controller-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Flashing Instructions
+      Bluetooth Controller Examples
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-firmwares" class="md-nav__link">
+  <a href="#on-device-bluetooth-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Other Firmwares
+      On-Device Bluetooth Management
     </span>
   </a>
   
@@ -1393,30 +1708,42 @@
   
 
 
-<h1 id="pedal-firmware-flashing">Pedal Firmware Flashing<a class="headerlink" href="#pedal-firmware-flashing" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Gen1 Bolts ONLY (2017-2021)</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If you purchased your pedal before June 2025 and have not updated the firmware, you will encounter issues with the current version of StarPilot.</p>
-</div>
-<p>The Gen1 Bolt firmware released in October 2024 ran at twice the speed it should have. This was corrected in June 2025. Firmware prior to October 2024 will run okay, but the newer firmware is better, so it is best to update.</p>
-<h2 id="required-resources">Required Resources<a class="headerlink" href="#required-resources" title="Permanent link">&para;</a></h2>
+<h1 id="bluetooth-controls">Bluetooth Controls<a class="headerlink" href="#bluetooth-controls" title="Permanent link">&para;</a></h1>
+<p>StarPilot has native kernel-level Bluetooth support across the Comma 3, Comma 3X, and
+Comma 4. It is wired into StarPilot's audio and controller paths.</p>
+<p>You can pair Bluetooth devices, use them for audio output, and map controller buttons to
+favorites. Cars with limited access to steering-wheel buttons can add a Bluetooth accessory
+and have it interact with StarPilot natively.</p>
+<p>This has been tested with:</p>
 <ul>
-<li><a href="https://shop.beartech.ca/products/dfu-key">DFU Key</a></li>
-<li><a download="bootstub.pedal.bin" href="../../assets/pedal-firmware/gen1-bolt/bootstub.pedal.bin">bootstub.pedal.bin</a></li>
-<li><a download="pedal.bin" href="../../assets/pedal-firmware/gen1-bolt/pedal.bin">pedal.bin</a></li>
+<li>PlayStation 5 controllers</li>
+<li>Xbox controllers</li>
+<li>Macropads</li>
+<li>Keyboards</li>
+<li>A mouse</li>
+<li>Several Bluetooth audio devices</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">USB cable requirement</p>
-<p>USB-C to USB-C does not work for DFU flashing. There must be a USB-A port somewhere in the chain (for example, USB-A to USB-C or USB-A to micro-USB).
-The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a C-to-C cable often will not provide VBUS or enumerate the device.</p>
-</div>
-<h2 id="flashing-instructions">Flashing Instructions<a class="headerlink" href="#flashing-instructions" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.youtube.com/watch?v=DNf0OGwXUUQ">Flash Comma Pedal in DFU Mode Tutorial from TinyBear</a></p>
-<h2 id="other-firmwares">Other Firmwares<a class="headerlink" href="#other-firmwares" title="Permanent link">&para;</a></h2>
-<p>The full list of available pedal firmwares for other cars is available at tinybear's GitHub repo <a href="https://github.com/fraserxiong/panda_firmware/tree/master">here.</a></p>
+<p>Devices like these can be found for around $20 on Amazon and should integrate natively.
+This should greatly improve the experience in cars like Teslas and Polestars.</p>
+<h2 id="pairing-and-audio-in-galaxy">Pairing and Audio in Galaxy<a class="headerlink" href="#pairing-and-audio-in-galaxy" title="Permanent link">&para;</a></h2>
+<p>Open Galaxy and select <code>Bluetooth</code> from the sidebar. From here, you can turn Bluetooth on,
+scan for devices, connect or disconnect a device, forget a pairing, select an audio device,
+and test its audio.</p>
+<p><a href="../../assets/images/bluetooth/galaxy_bluetooth_2.png"><img alt="Galaxy Bluetooth settings" loading="lazy" src="../../assets/images/bluetooth/galaxy_bluetooth_2.png" width="450" /></a></p>
+<p>The <code>Controllers</code> page lists connected input devices. You can test their buttons, map buttons
+to favorites, or select a gamepad for Joystick Mode.</p>
+<p><a href="../../assets/images/bluetooth/galaxy_bluetooth_1.png"><img alt="Galaxy controller settings" loading="lazy" src="../../assets/images/bluetooth/galaxy_bluetooth_1.png" width="450" /></a></p>
+<h2 id="bluetooth-controller-examples">Bluetooth Controller Examples<a class="headerlink" href="#bluetooth-controller-examples" title="Permanent link">&para;</a></h2>
+<p>Steering-wheel-mounted Bluetooth controls are one option for cars that do not give StarPilot
+access to enough factory wheel buttons.</p>
+<p><a href="../../assets/images/bluetooth/galaxy_bluetooth_3.png"><img alt="Round steering-wheel Bluetooth controller" loading="lazy" src="../../assets/images/bluetooth/galaxy_bluetooth_3.png" width="250" /></a></p>
+<p><a href="../../assets/images/bluetooth/galaxy_bluetooth_4.png"><img alt="Strap-mounted steering-wheel Bluetooth controller" loading="lazy" src="../../assets/images/bluetooth/galaxy_bluetooth_4.png" width="250" /></a></p>
+<h2 id="on-device-bluetooth-management">On-Device Bluetooth Management<a class="headerlink" href="#on-device-bluetooth-management" title="Permanent link">&para;</a></h2>
+<p>On-device Bluetooth management was also added to Big UI for the Comma 3 and Comma 3X.</p>
+<p>The Bluetooth icon appears along the bottom of the Big UI home screen:</p>
+<p><a href="../../assets/images/bluetooth/galaxy_bluetooth_5.png"><img alt="Bluetooth icon in Big UI" loading="lazy" src="../../assets/images/bluetooth/galaxy_bluetooth_5.png" width="450" /></a></p>
+<p>Connected devices and the selected audio device can be managed from the Bluetooth screen:</p>
+<p><a href="../../assets/images/bluetooth/galaxy_bluetooth_6.png"><img alt="Connected Bluetooth device in Big UI" loading="lazy" src="../../assets/images/bluetooth/galaxy_bluetooth_6.png" width="450" /></a></p>
 
 
 
@@ -1439,7 +1766,7 @@ The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 29, 2026 06:11:26 UTC">January 29, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 30, 2026 22:55:24 UTC">August 30, 2026</span>
   </span>
 
     
@@ -1449,7 +1776,7 @@ The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 24, 2025 01:28:52 UTC">July 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 30, 2026 22:55:24 UTC">August 30, 2026</span>
   </span>
 
     
@@ -1467,14 +1794,9 @@ The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a
     
     <nav>
       
-        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
+        <a href="https://github.com/L4M3573R" class="md-author" title="@L4M3573R">
           
-          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
-        </a>
-      
-        <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
-          
-          <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
+          <img src="https://avatars.githubusercontent.com/u/87735573?v=4&size=72" alt="L4M3573R">
         </a>
       
       
@@ -1513,7 +1835,7 @@ The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../starpilot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install StarPilot">
+          <a href="../sentry-mode/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sentry Mode">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1523,20 +1845,20 @@ The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a
                 Previous
               </span>
               <div class="md-ellipsis">
-                Install StarPilot
+                Sentry Mode
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../usage/operation/" class="md-footer__link md-footer__link--next" aria-label="Next: Operation">
+          <a href="../../cars/bolt/" class="md-footer__link md-footer__link--next" aria-label="Next: Bolt EV">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Operation
+                Bolt EV
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1587,7 +1909,7 @@ The DFU key/pedal is a USB 2.0 device and does not include USB-C circuitry, so a
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.footer", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   <div id="site-theme-assets" hidden></div>
