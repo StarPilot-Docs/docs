@@ -233,7 +233,8 @@ html[data-site-theme="galaxy"] .md-typeset table:not([class]) th {
 }
 
 /* Search */
-html[data-site-theme="galaxy"] .md-search__form {
+html[data-site-theme="galaxy"] .md-search__form,
+html[data-site-theme="galaxy"] [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
   background: var(--galaxy-surface-strong);
   color: var(--galaxy-text);
   border: 1px solid var(--galaxy-border);
@@ -297,12 +298,23 @@ html[data-site-theme="galaxy"] .md-search-result__teaser {
   color: var(--galaxy-muted);
 }
 
+html[data-site-theme="galaxy"] .md-search-result .md-typeset {
+  color: var(--galaxy-muted);
+}
+
+html[data-site-theme="galaxy"] .md-search-result .md-typeset h1,
+html[data-site-theme="galaxy"] .md-search-result .md-typeset h2,
+html[data-site-theme="galaxy"] .md-search-result__terms {
+  color: var(--galaxy-text);
+}
+
 html[data-site-theme="galaxy"] .md-search-result mark {
   background: rgba(199, 164, 255, 0.25);
   color: #fff;
 }
 
-html[data-site-theme="galaxy"] .md-search__overlay {
+html[data-site-theme="galaxy"] .md-search__overlay,
+html[data-site-theme="galaxy"] [data-md-toggle="search"]:checked ~ .md-header .md-search__overlay {
   background: rgba(3, 4, 10, 0.72);
 }
 
