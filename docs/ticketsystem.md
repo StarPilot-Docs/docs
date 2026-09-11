@@ -87,6 +87,7 @@ Each colored circle represents the current status of your ticket.
 | Color | Meaning | What you should do |
 | --- | --- | --- |
 | 🟠 | Your ticket is new and has been submitted. | Wait for Firestar to review it. |
+| ⚪ | Firestar has reviewed your ticket, but an update is not ready yet. The circle will turn purple when the update is ready to test. | Please be patient and wait for the circle to turn purple. |
 | 🟣 | Your ticket has been reviewed and a potential fix is ready. | Update Dom and test the fix. If the problem remains, submit a new route and updated logs. |
 | 🔴 | Your ticket was sent back for further investigation. | Wait for the ticket to return to purple status. |
 | 🟢 | You closed the ticket yourself. | No further action is required. |
