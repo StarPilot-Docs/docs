@@ -17,6 +17,8 @@ front matter. Describe the actual page content and keep device and vehicle claim
 sync with the project. Material uses these fields for search metadata and social cards.
 The homepage also supplies `WebSite` structured data identifying StarPilot Docs.
 
+Keep `docs/features.md` aligned with the detailed feature guides.
+
 MkDocs generates `sitemap.xml` using `site_url`; `docs/robots.txt` advertises that sitemap.
 Reusable files under `docs/hardware/embed/` are included in guides but excluded from
 standalone output. Keep existing guide URLs stable when updating titles or navigation.

@@ -12,6 +12,7 @@ nav:
   - General:
       - Getting Started:
           - Welcome to StarPilot: index.md
+          - StarPilot Features: features.md
           - Installing StarPilot: software/starpilot.md
           - Car Setup Guides: cars/all.md
           - Vehicle Compatibility: cars/support.md

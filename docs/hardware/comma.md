@@ -10,6 +10,11 @@ StarPilot supports the Comma 3, Comma 3X, and Comma 4. All three devices provide
 > [!IMPORTANT] Check your car first
 > A comma device does not connect directly to every car. Check the [StarPilot car support page](../cars/support.md) and the [comma supported vehicles list](https://comma.ai/vehicles) before buying anything. Your vehicle may require a specific harness, connector, pedal, or other hardware.
 
+!!! tip "Get $50 off a comma and support StarPilot"
+
+    Buying a comma? **You get $50 off** with [our comma referral link](https://refer.comma.ai/FK49A9V){ rel="sponsored" }.
+    **We also receive $50** when you purchase through the link, helping support StarPilot.
+
 ## Quick comparison
 
 | Device | Best choice for | CAN FD | Availability | Main difference |

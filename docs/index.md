@@ -11,6 +11,11 @@ who want more features, more control over their experience, and room to experime
 
 This is the official StarPilot wiki for installation, supported hardware, features, and troubleshooting.
 
+!!! tip "Get $50 off a comma and support StarPilot"
+
+    Buying a comma? **You get $50 off** with [our comma referral link](https://refer.comma.ai/FK49A9V){ rel="sponsored" }.
+    **We also receive $50** when you purchase through the link, helping support StarPilot.
+
 StarPilot includes a wide range of driving, tuning, interface, hardware, and developer features.
 It supports all three comma devices, Chestnut eGPU, Galaxy remote management, multiple
 driving models, and improved support for a growing list of vehicles. See
@@ -35,6 +40,9 @@ you can skip this step for now as extra accessories are optional.
 1. Read the [Operation Guide](./usage/operation.md).
 
 ## StarPilot features and hardware support
+
+Start with the [StarPilot features overview](./features.md) for capabilities, requirements,
+and setup links.
 
 Use these guides to see what each feature does, how to configure it, and its limitations.
 
