@@ -1,3 +1,8 @@
+---
+title: Chestnut External GPU Support
+description: Learn about StarPilot support for the Chestnut external GPU on comma 3, 3X, and 4, including when larger driving models need an eGPU.
+---
+
 # Chestnut (External GPU)
 
 **Chestnut** is comma.ai's external GPU (eGPU) dock. It connects a desktop graphics card to your comma device over USB4, giving openpilot far more compute than the built-in chip can provide on its own.

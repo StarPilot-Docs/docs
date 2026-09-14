@@ -1,5 +1,6 @@
 ---
-description: How to install StarPilot
+title: Install StarPilot on comma 3, 3X & 4
+description: Install StarPilot on comma 3, 3X, or 4 with the official stable and development installer values, device setup steps, and branch switching instructions.
 ---
 
 # Installing StarPilot

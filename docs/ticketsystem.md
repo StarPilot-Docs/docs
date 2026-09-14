@@ -1,3 +1,8 @@
+---
+title: Support Tickets & Bug Reports
+description: Report StarPilot bugs, vehicle tuning issues, and feature requests through Discord. Learn which ticket to open and how to test development fixes.
+---
+
 # Ticket System
 
 StarPilot thrives on the feedback and responsiveness of our community. If you are experiencing an issue, please open a ticket and share what you are seeing. The more people submitting feedback, the better your car (and everyone else's) can drive.

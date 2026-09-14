@@ -1,3 +1,8 @@
+---
+title: OBD-C Cable for comma Devices
+description: Find OBD-C cable information for StarPilot hardware setups, including connector specifications and links for additional cables.
+---
+
 # OBD-C Cable
 
 The Comma 4 comes with a short OBD-C cable. If you need another one for setups like 

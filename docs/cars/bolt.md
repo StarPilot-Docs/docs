@@ -1,6 +1,8 @@
 ---
-description: How to pick the correct hardware for running StarPilot on a Bolt EV
+title: Chevrolet Bolt EV Hardware & Setup
+description: Choose hardware for StarPilot on Chevrolet Bolt EV, including ACC and non-ACC setups, comma pedal requirements, limitations, and pedal firmware.
 ---
+
 # Bolt Hardware
 
 ## Vehicle Quirks

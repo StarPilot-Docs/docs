@@ -1,5 +1,6 @@
 ---
-description: Choosing and using a comma device with StarPilot
+title: comma 3, 3X & 4 Device Support
+description: Compare comma 3, 3X, and 4 for StarPilot, including device support, CAN FD considerations, and vehicle hardware requirements.
 ---
 
 # Comma Devices

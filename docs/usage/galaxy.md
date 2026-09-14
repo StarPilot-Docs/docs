@@ -1,3 +1,8 @@
+---
+title: Galaxy — Remote Settings & Device Management
+description: Use Galaxy, the StarPilot web interface, to pair your comma device, manage settings from your phone, debug issues, and view recordings.
+---
+
 # Galaxy
 
 Galaxy is StarPilot's web UI for configuring settings, debugging, and viewing recordings. 

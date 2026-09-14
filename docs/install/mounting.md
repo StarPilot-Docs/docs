@@ -1,5 +1,6 @@
 ---
-description: How to position and mount a Comma device on your windshield
+title: Mount Your comma Device
+description: Position and mount your comma device for clear road camera views and driver monitoring, with preparation and windshield mounting guidance.
 ---
 
 # Mounting your Comma

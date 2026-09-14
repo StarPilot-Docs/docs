@@ -1,3 +1,8 @@
+---
+title: OBD-II Harness Options
+description: Explore OBD-II harness and OBD2C connector options for StarPilot vehicle setups, with links to cable requirements and car hardware guides.
+---
+
 # OBD-II Harness
 
 {% include-markdown "./embed/see-car-guide.md" %}

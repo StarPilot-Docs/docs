@@ -1,3 +1,8 @@
+---
+title: Hyundai & Kia HDA2 Longitudinal Setup
+description: Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including fingerprint and vehicle settings.
+---
+
 # How to Set Up Long on Some HDA2 Vehicles
 
 This is how to set up long on:

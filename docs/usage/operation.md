@@ -1,3 +1,8 @@
+---
+title: Operation & Driver Assistance Guide
+description: Learn how to use StarPilot driver assistance, including engagement, steering, speed control, navigation, and operating limitations.
+---
+
 # Openpilot Operation
 
 ## Capabilities

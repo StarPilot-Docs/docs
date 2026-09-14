@@ -1,5 +1,6 @@
 ---
-description: How to pick the correct hardware for running StarPilot on a Volt
+title: Chevrolet Volt & GM ASCM/SDGM Hardware
+description: Explore StarPilot hardware configurations for Chevrolet Volt and other GM cars using ASCM or SDGM, with steering and speed control requirements.
 ---
 
 # Required Hardware - Volt & Other ASCM/SDGM Cars

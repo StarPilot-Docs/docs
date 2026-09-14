@@ -1,3 +1,8 @@
+---
+title: Navigation & Route Guidance
+description: Set a destination through Galaxy and use StarPilot route guidance with your driving model. Learn navigation setup, turn assistance, and limitations.
+---
+
 # Navigation
 
 Navigation is StarPilot's take on **Navigate on openpilot (NOO)** - a modern version built to work with **any driving model**.

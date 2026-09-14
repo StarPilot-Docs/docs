@@ -1,14 +1,19 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 site_name: StarPilot Docs
-site_url: https://wiki.firestar.link
-site_description: Documentation for the install and usage of StarPilot
+site_url: https://wiki.firestar.link/
+site_description: Official StarPilot documentation for comma 3, 3X, and 4. Installation, supported cars, features, Galaxy, and troubleshooting.
+
+# Reusable include fragments are not standalone documentation pages.
+exclude_docs: |
+  hardware/embed/
 
 nav:
   - General:
       - Getting Started:
           - Welcome to StarPilot: index.md
           - Installing StarPilot: software/starpilot.md
+          - Car Setup Guides: cars/all.md
           - Vehicle Compatibility: cars/support.md
       - Usage:
           - Operation: usage/operation.md

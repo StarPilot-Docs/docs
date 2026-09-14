@@ -2,6 +2,20 @@
 
 {% block extrahead %}
   {{ super() }}
+  <meta property="og:site_name" content="{{ config.site_name | e }}">
+  {# The homepage is nested in nav, so MkDocs' is_homepage flag is false. #}
+  {% if page and page.file.src_uri == 'index.md' %}
+    <script type="application/ld+json">
+      {{ {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": config.site_name,
+        "alternateName": ["StarPilot Wiki", "StarPilot"],
+        "url": config.site_url,
+        "description": page.meta.description | default(config.site_description)
+      } | tojson }}
+    </script>
+  {% endif %}
   <link rel="preload" href="{{ 'assets/fonts/como-heavy.otf' | url }}" as="font" type="font/otf" crossorigin>
   <link rel="stylesheet" href="{{ 'assets/theme-ui.css' | url }}">
   <script src="{{ 'assets/theme-loader.js' | url }}"></script>

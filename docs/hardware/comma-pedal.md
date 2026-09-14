@@ -1,3 +1,8 @@
+---
+title: Comma Pedal Requirements & Behavior
+description: Learn how the comma pedal works with StarPilot, including accelerator control, non-ACC regen braking, and vehicle-specific hardware requirements.
+---
+
 # Comma Pedal
 
 The Comma Pedal is an interceptor that sits between your throttle pedal and the car.  

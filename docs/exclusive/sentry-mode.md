@@ -1,4 +1,6 @@
 ---
+title: Sentry Mode — Parked Event Recording
+description: Learn how StarPilot Sentry Mode captures activity while parked, with Galaxy event viewing, notification options, and recording settings.
 status: experimental
 ---
 

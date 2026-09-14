@@ -1,5 +1,6 @@
 ---
-description: How to configure your settings for the best experience
+title: Settings & Configuration Guide
+description: Configure StarPilot settings, find toggles with Galaxy, and follow setup guidance for navigation and driving preferences.
 ---
 
 # Configure Settings

@@ -1,3 +1,8 @@
+---
+title: GM Harness & Harness Box
+description: Find GM harness and harness box information for StarPilot vehicle setups, with purchase links and links to car-specific hardware guides.
+---
+
 # GM Harness and Harness Box
 
 {% include-markdown "./embed/see-car-guide.md" %}

@@ -1,8 +1,9 @@
 ---
-description: Frequently asked questions
+title: FAQ & Troubleshooting
+description: Answers to StarPilot questions about comma device support, Galaxy, Chestnut, installation, boot issues, vehicle errors, and sharing troubleshooting logs.
 ---
 
-# Frequently Asked Questions
+# StarPilot FAQ and Troubleshooting
 
 Can't find an answer to your question? Post in 
 [Discord](https://firestar.link/discord) or [submit feedback through the ticket system](./ticketsystem.md).
@@ -16,9 +17,11 @@ Use the [StarPilot ticket system](./ticketsystem.md) to report bugs, share tunin
 
 ---
 
-# What is StarPilot?
+## What is StarPilot?
 
-StarPilot is a fork for the [Comma](https://comma.ai/) Device. It's basically the operating system of the device.
+StarPilot is a community-driven fork of openpilot that began as a FrogPilot fork.
+It runs on comma 3, 3X, and 4 and adds driving, device management, and customization features.
+See the [StarPilot overview](./index.md) and [installation guide](./software/starpilot.md).
 
 ---
 

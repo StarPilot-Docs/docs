@@ -1,3 +1,8 @@
+---
+title: Driving Models & Model Selection
+description: Learn about StarPilot driving models, model preferences, and Chestnut GPU requirements, with recommendations and previous community favorites.
+---
+
 # Driving Model
 
 The driving model is the core perception and planning system behind openpilot. 

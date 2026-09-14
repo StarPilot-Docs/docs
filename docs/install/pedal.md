@@ -1,3 +1,8 @@
+---
+title: Install a Comma Pedal Interceptor
+description: Install a comma pedal interceptor for your StarPilot setup, with cable routing steps and a firmware update note for 2017–2021 Chevrolet Bolt vehicles.
+---
+
 # Installing the Pedal Interceptor
 
 ??? warning "Gen1 Bolt ONLY - Pedal Firmware Update"

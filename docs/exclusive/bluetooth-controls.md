@@ -1,5 +1,6 @@
 ---
-description: Bluetooth audio and controller support in StarPilot
+title: Bluetooth Audio & Controller Setup
+description: Pair Bluetooth audio devices and controllers with StarPilot on comma 3, 3X, and 4, and map controller buttons to favorite actions.
 status: experimental
 ---
 

@@ -1,5 +1,6 @@
 ---
-description: How StarPilot's Speed Limit Controller works and how to configure it
+title: Speed Limit Controller (SLC)
+description: Configure StarPilot Speed Limit Controller sources, offsets, and behavior using map data, dashboard limits, and optional camera-based sign detection.
 ---
 
 # Speed Limit Controller

@@ -1,4 +1,6 @@
 ---
+title: Lane Centering
+description: Learn how StarPilot Lane Centering uses detected lane lines alongside the end-to-end driving model, including corrections and fallback behavior.
 status: experimental
 ---
 

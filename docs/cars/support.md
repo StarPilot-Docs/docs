@@ -1,5 +1,6 @@
 ---
-description: Cars StarPilot adds or tunes better than stock openpilot
+title: Supported Cars & Vehicle Compatibility
+description: Check the vehicles StarPilot adds or improves over stock openpilot, including GM, Honda, Hyundai, Kia, and more. Find car setup guides and support.
 ---
 
 # Vehicle Compatibility

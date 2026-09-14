@@ -1,8 +1,15 @@
-# Welcome to StarPilot
+---
+title: StarPilot — Official Wiki & Installation Guide
+description: Official StarPilot documentation for comma 3, 3X, and 4. Find installation instructions, supported cars, driving models, Galaxy, and feature guides.
+---
 
-StarPilot is a community-driven fork of [OpenPilot](https://github.com/commaai/openpilot).
+# StarPilot: Official Documentation
+
+StarPilot is a community-driven fork of [openpilot](https://github.com/commaai/openpilot).
 It runs on the Comma 3, 3X, and 4 by [comma.ai](https://comma.ai/) and is built for people
 who want more features, more control over their experience, and room to experiment.
+
+This is the official StarPilot wiki for installation, supported hardware, features, and troubleshooting.
 
 StarPilot includes a wide range of driving, tuning, interface, hardware, and developer features.
 It supports all three comma devices, Chestnut eGPU, Galaxy remote management, multiple
@@ -26,6 +33,46 @@ If you are already running with stock OpenPilot or FrogPilot,
 you can skip this step for now as extra accessories are optional.
 1. [Install StarPilot](./software/starpilot.md).
 1. Read the [Operation Guide](./usage/operation.md).
+
+## StarPilot features and hardware support
+
+Use these guides to see what each feature does, how to configure it, and its limitations.
+
+| Feature | Official guide |
+| --- | --- |
+| Supported devices | [StarPilot on comma 3, 3X, and 4](./hardware/comma.md) |
+| Remote settings and recordings | [Galaxy web interface](./usage/galaxy.md) |
+| Driving model selection | [Driving models](./usage/driving-model.md) and [Chestnut external GPU support](./hardware/chestnut.md) |
+| Route guidance | [Navigation with Galaxy](./exclusive/navigation.md) |
+| Lane position assistance | [Lane Centering](./exclusive/lane-centering.md) |
+| Speed limit sources and offsets | [Speed Limit Controller](./exclusive/speed-limit-controller.md) |
+| Parked event recording | [Sentry Mode](./exclusive/sentry-mode.md) |
+| Audio and controller pairing | [Bluetooth controls](./exclusive/bluetooth-controls.md) |
+
+Device support and vehicle compatibility are separate. Check the
+[vehicle compatibility page](./cars/support.md) and your car's hardware guide before installing.
+StarPilot is driver assistance; read the [operation guide](./usage/operation.md) for its limitations.
+
+## How do I install StarPilot?
+
+The stable installer value is `firestar5683/StarPilot`. Enter it on your comma device's
+custom software setup screen. Follow the [StarPilot installation guide](./software/starpilot.md)
+for comma 3, 3X, and 4 instructions, development builds, and branch switching.
+
+## How is StarPilot related to openpilot and FrogPilot?
+
+StarPilot builds on openpilot and began as a FrogPilot fork. It is a separate community
+project with its own development, hardware support, features, and vehicle improvements.
+For the implementation, see the [StarPilot source code](https://github.com/firestar5683/StarPilot).
+For specific capabilities, use the feature guides above and the [settings guide](./usage/settings.md).
+
+## Official StarPilot links
+
+- [StarPilot wiki](https://wiki.firestar.link/): installation, compatibility, and usage documentation.
+- [StarPilot on GitHub](https://github.com/firestar5683/StarPilot): source code and development.
+- [StarPilot Discord](https://firestar.link/discord): announcements, community help, and support.
+- [FAQ and troubleshooting](./faq.md): common questions and fixes.
+- [Support tickets](./ticketsystem.md): report an issue or request an investigation.
 
 ## Credits
 
