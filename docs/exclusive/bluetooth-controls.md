@@ -25,6 +25,9 @@ This has been tested with:
 Devices like these can be found for around $20 on Amazon and should integrate natively.
 This should greatly improve the experience in cars like Teslas and Polestars.
 
+A link to the one I've been using is [here](https://amzn.to/3V34MSu) (this is an affiliate
+link; I get a small kickback if you decide to get one).
+
 ## Pairing and Audio in Galaxy
 
 Open Galaxy and select `Bluetooth` from the sidebar. From here, you can turn Bluetooth on,
