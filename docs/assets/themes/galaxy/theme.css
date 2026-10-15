@@ -124,7 +124,7 @@ html[data-site-theme="galaxy"] .md-nav__icon {
   color: var(--galaxy-purple-bright);
 }
 
-/* Discord/Galaxy navigation banner */
+/* StarPilot navigation banner */
 @media screen and (min-width: 76.25em) {
   html[data-site-theme="galaxy"] .md-sidebar--primary .md-sidebar__scrollwrap::before {
     content: "";
@@ -135,7 +135,7 @@ html[data-site-theme="galaxy"] .md-nav__icon {
     margin: 0.4rem 0.4rem 1rem;
     background:
       linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
-      url("images/14e923da438d0c50e2fcd42e9eb174e5.png") center / 100% 100% no-repeat;
+      url("../../images/starpilot-banner.png") center / cover no-repeat;
     border: 1px solid var(--galaxy-border);
     border-radius: 0.6rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -158,7 +158,7 @@ html[data-site-theme="galaxy"] .md-nav__icon {
     padding: 0;
     background:
       linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
-      url("images/14e923da438d0c50e2fcd42e9eb174e5.png") center / 100% 100% no-repeat;
+      url("../../images/starpilot-banner.png") center / cover no-repeat;
     border-bottom: 1px solid var(--galaxy-border);
     box-shadow: none;
     color: transparent;

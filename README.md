@@ -1,6 +1,6 @@
 # Starpilot Docs
 
-Documentation for the StarPilot fork of FrogPilot
+Documentation for StarPilot, a standalone fork of openpilot.
 
 ## Local Development
 

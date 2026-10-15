@@ -6,8 +6,9 @@ description: Explore StarPilot features for comma 3, 3X, and 4, including Galaxy
 # StarPilot Features
 
 StarPilot combines openpilot driver assistance with driving model selection, vehicle tuning,
-and Galaxy device management. It supports **comma 3, comma 3X, and comma 4** and began as
-a FrogPilot fork. This overview links to the setup instructions and limitations for each feature.
+and Galaxy device management. It is a standalone openpilot fork supporting
+**comma 3, comma 3X, and comma 4**. This overview links to the setup instructions and
+limitations for each feature.
 
 For installation, use the [official StarPilot install guide](./software/starpilot.md).
 
@@ -106,11 +107,11 @@ improvements across multiple manufacturers, while the car guides explain specifi
 
 ## Shared work and project development
 
-StarPilot builds on openpilot and FrogPilot. Features such as Always On Lateral,
+StarPilot builds on openpilot and work from the wider community. Features such as Always On Lateral,
 Conditional Experimental Mode, themes, and Speed Limit Controller have shared project
 history; their presence alone does not make them exclusive to StarPilot. The
-[StarPilot project README](https://github.com/firestar5683/StarPilot#features) identifies
-inherited features.
+[StarPilot project README](https://github.com/firestar5683/StarPilot#features) describes
+the project's features.
 
 For questions about a feature on your car or software branch, use the
 [StarPilot support channels](./ticketsystem.md). StarPilot remains driver assistance and

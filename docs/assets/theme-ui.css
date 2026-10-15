@@ -8,11 +8,11 @@
 }
 
 @font-face {
-  font-family: "StarPilot Bubbly";
-  src: url("fonts/como-heavy.otf") format("opentype");
+  font-family: "Sora";
+  src: url("fonts/sora/Sora.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400;
-  font-display: block;
+  font-weight: 100 800;
+  font-display: swap;
 }
 
 :root {
@@ -35,9 +35,9 @@ html {
   min-width: 0;
   overflow: hidden;
   color: #fff;
-  font-family: "StarPilot Bubbly", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 2.4rem;
   text-overflow: ellipsis;
   white-space: nowrap;

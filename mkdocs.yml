@@ -53,8 +53,8 @@ theme:
   name: material
   custom_dir: overrides
 
-  logo: assets/images/galaxy_frog.png
-  favicon: assets/images/galaxy_frog.png
+  logo: assets/images/galaxy-icon.svg
+  favicon: assets/images/favicon.ico
 
   icon:
     repo: fontawesome/brands/github
@@ -84,7 +84,9 @@ markdown_extensions:
 
 plugins:
   - search
-  - social
+  - social:
+      # Start fresh so cached social cards cannot retain the previous logo.
+      cache_dir: .cache/plugin/social-starpilot
   - git-revision-date-localized:
       enable_creation_date: true
       type: date

@@ -34,12 +34,8 @@ Open Galaxy and select `Bluetooth` from the sidebar. From here, you can turn Blu
 scan for devices, connect or disconnect a device, forget a pairing, select an audio device,
 and test its audio.
 
-[![Galaxy Bluetooth settings](../assets/images/bluetooth/galaxy_bluetooth_2.png){ width="450" loading="lazy" }](../assets/images/bluetooth/galaxy_bluetooth_2.png)
-
 The `Controllers` page lists connected input devices. You can test their buttons, map buttons
 to favorites, or select a gamepad for Joystick Mode.
-
-[![Galaxy controller settings](../assets/images/bluetooth/galaxy_bluetooth_1.png){ width="450" loading="lazy" }](../assets/images/bluetooth/galaxy_bluetooth_1.png)
 
 ## Bluetooth Controller Examples
 
@@ -54,9 +50,7 @@ access to enough factory wheel buttons.
 
 On-device Bluetooth management was also added to Big UI for the Comma 3 and Comma 3X.
 
-The Bluetooth icon appears along the bottom of the Big UI home screen:
-
-[![Bluetooth icon in Big UI](../assets/images/bluetooth/galaxy_bluetooth_5.png){ width="450" loading="lazy" }](../assets/images/bluetooth/galaxy_bluetooth_5.png)
+The Bluetooth icon appears along the bottom of the Big UI home screen.
 
 Connected devices and the selected audio device can be managed from the Bluetooth screen:
 

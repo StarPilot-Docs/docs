@@ -19,7 +19,7 @@ Use the [StarPilot ticket system](./ticketsystem.md) to report bugs, share tunin
 
 ## What is StarPilot?
 
-StarPilot is a community-driven fork of openpilot that began as a FrogPilot fork.
+StarPilot is a standalone, community-driven fork of openpilot.
 It runs on comma 3, 3X, and 4 and adds driving, device management, and customization features.
 See the [StarPilot overview](./index.md) and [installation guide](./software/starpilot.md).
 
@@ -165,7 +165,7 @@ StarPilot has a unique, community-focused ticketing system that helps users and 
 
 ## I'm stuck on the boot logo screen. How do I fix it?
 
-This is usually caused by a sticky param, especially when coming from another FrogPilot-based fork.
+This is usually caused by a sticky param, especially when coming from another openpilot fork.
 
 1. Unplug the device
 2. Wait 60 seconds
@@ -193,19 +193,6 @@ Sometimes the device can get into a bad state due to a bad setting or conflicts 
 A "saveme" will reset all settings and return to near new state (without require a flash).
 
 Go to [Galaxy](./usage/galaxy.md), open "Backup and Restore" and click "SAVE ME".
-
----
-
-## How do I fix "Process Not Running dmonitoringmodeld"?
-
-This is seen on upstream FrogPilot builds on newer comma devices (post‑September 2025)
-due to upstream provisioning changes. A one‑time install of StarPilot resets the device
-state to a pre‑change baseline so FrogPilot can be reinstalled cleanly afterward.
-
-1. Install StarPilot by [following the install instructions](./software/starpilot.md)
-2. If you are staying on StarPilot, stop here. Otherwise, proceed.
-3. Uninstall StarPilot
-4. Reinstall FrogPilot
 
 ---
 

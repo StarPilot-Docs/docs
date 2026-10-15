@@ -9,8 +9,6 @@ Galaxy is StarPilot's web UI for configuring settings, debugging, and viewing re
 It can be used from your phone on the same local network or remotely.
 It is free and will remain free for as long as possible.
 
-![Galaxy preview](../assets/images/galaxy.png)
-
 ## Pairing
 
 Once your device is paired, your device will remain paired until unpaired.
