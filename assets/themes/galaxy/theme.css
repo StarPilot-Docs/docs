@@ -233,6 +233,12 @@ html[data-site-theme="galaxy"] .md-typeset table:not([class]) th {
 }
 
 /* Search */
+/* A backdrop filter contains fixed descendants inside the header. Release it
+   while search is open so the mobile dialog can fill the viewport. */
+html[data-site-theme="galaxy"] [data-md-toggle="search"]:checked ~ .md-header {
+  backdrop-filter: none;
+}
+
 html[data-site-theme="galaxy"] .md-search__form,
 html[data-site-theme="galaxy"] [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
   background: var(--galaxy-surface-strong);
