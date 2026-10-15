@@ -361,7 +361,10 @@
   }
 
   function themeAsset(theme, filename) {
-    return new URL(`${theme}/${filename}`, assetBase).href;
+    const assetUrl = new URL(`${theme}/${filename}`, assetBase);
+    // Keep theme packages on the same cache version as their loader.
+    assetUrl.search = loaderUrl.search;
+    return assetUrl.href;
   }
 
   function preserveAsset(asset) {
