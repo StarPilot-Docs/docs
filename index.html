@@ -17,7 +17,7 @@
         <link rel="next" href="features/">
       
       
-      <link rel="icon" href="assets/images/galaxy_frog.png">
+      <link rel="icon" href="assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
@@ -80,13 +80,14 @@
     
   
   <meta property="og:site_name" content="StarPilot Docs">
+  <link rel="icon" href="assets/images/galaxy-icon.svg" type="image/svg+xml">
   
   
     <script type="application/ld+json">
       {"@context": "https://schema.org", "@type": "WebSite", "alternateName": ["StarPilot Wiki", "StarPilot"], "description": "Official StarPilot documentation for comma 3, 3X, and 4. Find installation instructions, supported cars, driving models, Galaxy, and feature guides.", "name": "StarPilot Docs", "url": "https://wiki.firestar.link/"}
     </script>
   
-  <link rel="preload" href="assets/fonts/como-heavy.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="assets/theme-ui.css">
   <script src="assets/theme-loader.js"></script>
 
@@ -121,7 +122,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="StarPilot Docs" class="md-header__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="assets/images/galaxy_frog.png" alt="logo">
+  <img src="assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -331,7 +332,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="StarPilot Docs" class="md-nav__button md-logo" aria-label="StarPilot Docs" data-md-component="logo">
       
-  <img src="assets/images/galaxy_frog.png" alt="logo">
+  <img src="assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
     StarPilot Docs
@@ -531,9 +532,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-is-starpilot-related-to-openpilot-and-frogpilot" class="md-nav__link">
+  <a href="#how-is-starpilot-related-to-openpilot" class="md-nav__link">
     <span class="md-ellipsis">
-      How is StarPilot related to openpilot and FrogPilot?
+      How is StarPilot related to openpilot?
     </span>
   </a>
   
@@ -1788,9 +1789,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-is-starpilot-related-to-openpilot-and-frogpilot" class="md-nav__link">
+  <a href="#how-is-starpilot-related-to-openpilot" class="md-nav__link">
     <span class="md-ellipsis">
-      How is StarPilot related to openpilot and FrogPilot?
+      How is StarPilot related to openpilot?
     </span>
   </a>
   
@@ -1853,7 +1854,7 @@
 
 
 <h1 id="starpilot-official-documentation">StarPilot: Official Documentation<a class="headerlink" href="#starpilot-official-documentation" title="Permanent link">&para;</a></h1>
-<p>StarPilot is a community-driven fork of <a href="https://github.com/commaai/openpilot">openpilot</a>.
+<p>StarPilot is a standalone, community-driven fork of <a href="https://github.com/commaai/openpilot">openpilot</a>.
 It runs on the Comma 3, 3X, and 4 by <a href="https://comma.ai/">comma.ai</a> and is built for people
 who want more features, more control over their experience, and room to experiment.</p>
 <p>This is the official StarPilot wiki for installation, supported hardware, features, and troubleshooting.</p>
@@ -1866,9 +1867,6 @@ who want more features, more control over their experience, and room to experime
 It supports all three comma devices, Chestnut eGPU, Galaxy remote management, multiple
 driving models, and improved support for a growing list of vehicles. See
 <a href="cars/support/">Vehicle Compatibility</a> for the full list.</p>
-<p>StarPilot began as a fork of <a href="https://github.com/FrogAi/FrogPilot">FrogPilot</a>, and the project
-would not exist without FrogPilot and the work behind it. StarPilot has since grown in its own
-direction with different hardware support, features, tools, and vehicle improvements.</p>
 <p>The project is shaped by the people using it. Feedback, testing, feature ideas, and development
 from the community all play a part in where StarPilot goes next.</p>
 <div class="admonition tip">
@@ -1878,7 +1876,7 @@ from the community all play a part in where StarPilot goes next.</p>
 <h2 id="new-to-starpilot-start-here">New to StarPilot? Start Here.<a class="headerlink" href="#new-to-starpilot-start-here" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="cars/all/">Get necessary hardware for your car using our car guides</a>. 
-If you are already running with stock OpenPilot or FrogPilot, 
+If you are already running stock openpilot or another openpilot fork,
 you can skip this step for now as extra accessories are optional.</li>
 <li><a href="software/starpilot/">Install StarPilot</a>.</li>
 <li>Read the <a href="usage/operation/">Operation Guide</a>.</li>
@@ -1936,9 +1934,9 @@ StarPilot is driver assistance; read the <a href="usage/operation/">operation gu
 <p>The stable installer value is <code>firestar5683/StarPilot</code>. Enter it on your comma device's
 custom software setup screen. Follow the <a href="software/starpilot/">StarPilot installation guide</a>
 for comma 3, 3X, and 4 instructions, development builds, and branch switching.</p>
-<h2 id="how-is-starpilot-related-to-openpilot-and-frogpilot">How is StarPilot related to openpilot and FrogPilot?<a class="headerlink" href="#how-is-starpilot-related-to-openpilot-and-frogpilot" title="Permanent link">&para;</a></h2>
-<p>StarPilot builds on openpilot and began as a FrogPilot fork. It is a separate community
-project with its own development, hardware support, features, and vehicle improvements.
+<h2 id="how-is-starpilot-related-to-openpilot">How is StarPilot related to openpilot?<a class="headerlink" href="#how-is-starpilot-related-to-openpilot" title="Permanent link">&para;</a></h2>
+<p>StarPilot builds directly on openpilot as a standalone community project with its own
+development, hardware support, features, and vehicle improvements.
 For the implementation, see the <a href="https://github.com/firestar5683/StarPilot">StarPilot source code</a>.
 For specific capabilities, use the feature guides above and the <a href="usage/settings/">settings guide</a>.</p>
 <h2 id="official-starpilot-links">Official StarPilot links<a class="headerlink" href="#official-starpilot-links" title="Permanent link">&para;</a></h2>
@@ -1984,7 +1982,7 @@ join us in the <a href="https://firestar.link/discord">Discord</a>!</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 20:00:14 UTC">September 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 13:56:03 UTC">October 15, 2026</span>
   </span>
 
     
