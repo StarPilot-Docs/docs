@@ -42,14 +42,14 @@ For the tech savvy, galaxy is reachable locally at comma-ip:8082 if you wish to 
 
 The most notable features include:
 
-1. Home Page: View drive statistics.
-1. Toggles: You can change settings from your couch instead of being restricted to your device. 
-Settings are also searchable.
-1. Model Manager: Choose your desired model.
-1. Lateral Tuning: Use the Firestar Lateral Method (FLM) to tune your vehicle's lateral behavior.
-1. Troubleshoot: Check which settings are non-default and might be causing you issues.
-1. Navigation: Set destinations, compare routes, and manage turn-by-turn guidance. See the [Navigation guide](../exclusive/navigation.md).
-1. Error Logs and Tmux Log: To help us debug if you run into issues.
-1. Plots: Visualize what the model is trying to do or if your car isn't listening (bad tuning)
-1. Testing Ground: Test firestar's newest experimental tunes, designed to improve your comma's performance.
-1. Sentry Mode: Monitor your parked vehicle, review captures, and manage alerts. See the [Sentry Mode guide](../exclusive/sentry-mode.md).
+- **Home & Routes:** View drive statistics, recordings, and downloads.
+- **Toggles & Vehicle Controls:** Search and change settings, choose Auto or manual vehicle detection, and configure [Vision Speed Limit Detection](../exclusive/speed-limit-controller.md).
+- **Models:** Download and switch driving models, compose Model Laboratory pairs, and set up Jetlink.
+- **Colors & Layout:** Customize onroad layouts and themes.
+- **Tuning & Plots:** Tune lateral behavior with FLM and inspect live control plots.
+- **Navigation & Maps:** Set destinations and compare routes. See the [Navigation guide](../exclusive/navigation.md).
+- **Android Auto:** Show the driving view on your car’s screen. See the [Android Auto guide](./android-auto.md).
+- **Cameras & Monitoring:** Manage [Sentry Mode](../exclusive/sentry-mode.md) and V-ASM spot monitoring.
+- **Bluetooth:** Pair controllers, keyboards, and other accessories.
+- **Logs & Diagnostics:** Review non-default settings, error logs, tmux, temporary drive state, and help links.
+- **System Tools:** Check for and install StarPilot updates.

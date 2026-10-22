@@ -21,6 +21,7 @@ nav:
           - Settings: usage/settings.md
           - Driving Model: usage/driving-model.md
           - Galaxy: usage/galaxy.md
+          - Android Auto: usage/android-auto.md
       - Troubleshooting & FAQ:
           - Ticket System: ticketsystem.md
           - FAQ: faq.md
