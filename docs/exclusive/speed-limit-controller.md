@@ -38,6 +38,12 @@ Use `Primary Speed Limit Source` to select the first source SLC should trust. Us
 > [!WARNING] Vision speed limits
 > Vision Speed Limit Detection is experimental and can misread signs. Use confirmation for new limits and keep another source available until vision detection is reliable in your area.
 
+### Vision speed limits
+
+In Galaxy, open **Toggles → Longitudinal (Speed & Following) → Speed Limit Controller**. Set **Primary source** or **Secondary source** to **Vision**, with dashboard or maps as another available source. If Vision is absent from the source choices, camera sign detection is unavailable on this device or build. **Show speed limit signs** only changes the display; turn on **Speed Limit Controller** if you want accepted limits to affect cruise speed.
+
+Check camera-reported limits against road signs. **Automatic adoption** applies a new limit after a brief flash; turn it off to require confirmation. Start with conservative offsets while evaluating Vision. To help improve detection, follow the [route submission steps](../usage/operation.md#vision-speed-limit-detection).
+
 ## Configure speed offsets
 
 SLC supports a separate offset for each posted-speed range:

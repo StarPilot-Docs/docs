@@ -5,7 +5,7 @@ description: Show the StarPilot driving view on your car's screen with Android A
 
 # Android Auto
 
-Android Auto shows the StarPilot driving view on your car's screen. Set it up while parked in [Galaxy](./galaxy.md), StarPilot's web interface, using your phone or computer. Controls in this guide are on Galaxy's **Android Auto** page unless the car's screen or settings are named.
+Android Auto shows the StarPilot driving view on your car's screen. Set it up while parked in [Galaxy](../usage/galaxy.md), StarPilot's web interface, using your phone or computer. Controls in this guide are on Galaxy's **Android Auto** page unless the car's screen or settings are named.
 
 It is designed for cars with built-in **wireless Android Auto**. A wireless adapter may work in a wired-only car; a direct USB connection is also available but has been tested on fewer cars.
 

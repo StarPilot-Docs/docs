@@ -48,7 +48,7 @@ The most notable features include:
 - **Colors & Layout:** Customize onroad layouts and themes.
 - **Tuning & Plots:** Tune lateral behavior with FLM and inspect live control plots.
 - **Navigation & Maps:** Set destinations and compare routes. See the [Navigation guide](../exclusive/navigation.md).
-- **Android Auto:** Show the driving view on your car’s screen. See the [Android Auto guide](./android-auto.md).
+- **Android Auto:** Show the driving view on your car’s screen. See the [Android Auto guide](../exclusive/android-auto.md).
 - **Cameras & Monitoring:** Manage [Sentry Mode](../exclusive/sentry-mode.md) and V-ASM spot monitoring.
 - **Bluetooth:** Pair controllers, keyboards, and other accessories.
 - **Logs & Diagnostics:** Review non-default settings, error logs, tmux, temporary drive state, and help links.

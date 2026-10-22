@@ -21,16 +21,19 @@ nav:
           - Settings: usage/settings.md
           - Driving Model: usage/driving-model.md
           - Galaxy: usage/galaxy.md
-          - Android Auto: usage/android-auto.md
       - Troubleshooting & FAQ:
           - Ticket System: ticketsystem.md
           - FAQ: faq.md
   - StarPilot Exclusive Features:
-      - Navigation: exclusive/navigation.md
-      - Lane Centering: exclusive/lane-centering.md
-      - Speed Limit Controller: exclusive/speed-limit-controller.md
-      - Sentry Mode: exclusive/sentry-mode.md
-      - Bluetooth Controls: exclusive/bluetooth-controls.md
+      - Tools:
+          - Navigation: exclusive/navigation.md
+          - Android Auto: exclusive/android-auto.md
+          - Cameras & Monitoring: exclusive/cameras-and-monitoring.md
+          - Sentry Mode: exclusive/sentry-mode.md
+          - Bluetooth: exclusive/bluetooth-controls.md
+      - Toggles:
+          - Lane Centering: exclusive/lane-centering.md
+          - Speed Limit Controller: exclusive/speed-limit-controller.md
   - Vehicle Specific Information:
       - GM:
           - Bolt EV: cars/bolt.md

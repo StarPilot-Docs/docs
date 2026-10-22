@@ -99,19 +99,13 @@ Your openpilot speed limit data will update in about a week.
 
 ### Vision Speed Limit Detection
 
-In addition to OSM map data, StarPilot can read speed limit signs directly from the 
-camera to feed the Speed Limit Controller. It is enabled under 
-**Toggles -> Longitudinal -> Speed Limit Controller**.
-
-> [!WARNING] Accuracy is currently poor
-> Vision speed limit detection is early and its accuracy is currently quite bad.
+StarPilot can read speed limit signs with the road camera as an SLC source. See the [Vision speed limits guide](../exclusive/speed-limit-controller.md#vision-speed-limits) for setup and accuracy guidance.
 
 #### Help us improve it
 
 The model gets better with more real-world driving data. If you'd like to help:
 
-1. Enable **Vision Speed Limit Detection** and **Auto-Bookmark Vision Signs** 
-under **Toggles -> Longitudinal -> Speed Limit Controller**.
+1. Select **Vision** as a speed-limit source in **Toggles → Longitudinal (Speed & Following) → Speed Limit Controller**.
 2. Under **Maps**, select the regions you'll be driving in, 
 then **Save Selection** and **Download Maps**.
 3. Drive as normal.

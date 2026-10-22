@@ -18,7 +18,7 @@ When that happens, Sentry captures camera images from the event and saves them f
 
 ## Galaxy dashboard
 
-Sentry is managed entirely through Galaxy. Open the **Sentry** page from the Galaxy sidebar to:
+Sentry is managed entirely through Galaxy. Open **Cameras & Monitoring → Sentry** to:
 
 - Turn Sentry Mode on or off
 - See the current status of the system
