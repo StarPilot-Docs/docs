@@ -104,8 +104,6 @@ repo_url: https://github.com/firestar5683/StarPilot
 repo_name: firestar5683/StarPilot
 
 extra:
-  status:
-    experimental: Experimental feature
   social:
     - icon: fontawesome/brands/discord
       link: https://firestar.link/discord
