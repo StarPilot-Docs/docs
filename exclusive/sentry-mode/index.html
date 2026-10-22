@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://wiki.firestar.link/exclusive/sentry-mode/">
       
       
-        <link rel="prev" href="../speed-limit-controller/">
+        <link rel="prev" href="../cameras-and-monitoring/">
       
       
         <link rel="next" href="../bluetooth-controls/">
@@ -234,6 +234,15 @@
   
     
     
+      
+  
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../navigation/" class="md-tabs__link">
           
@@ -243,6 +252,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -698,29 +710,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../usage/android-auto/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Android Auto
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -887,6 +876,54 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -913,22 +950,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../lane-centering/" class="md-nav__link">
+      <a href="../android-auto/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Lane Centering
+    Android Auto
     
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--experimental" title="Experimental feature">
-    </span>
-  
-
   
 
       </a>
@@ -944,12 +973,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../speed-limit-controller/" class="md-nav__link">
+      <a href="../cameras-and-monitoring/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Speed Limit Controller
+    Cameras & Monitoring
     
   </span>
   
@@ -1098,7 +1127,7 @@
   
   
   <span class="md-ellipsis">
-    Bluetooth Controls
+    Bluetooth
     
   </span>
   
@@ -1112,6 +1141,124 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Toggles
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Toggles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lane-centering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lane Centering
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--experimental" title="Experimental feature">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speed-limit-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed Limit Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1824,7 +1971,7 @@
 <p>Sentry uses your comma device's <strong>accelerometer</strong> to detect movement while the vehicle is parked. The system sleeps quietly in the background and only wakes up when sustained motion is detected — for example, someone bumping your car or rocking it.</p>
 <p>When that happens, Sentry captures camera images from the event and saves them for you to review later.</p>
 <h2 id="galaxy-dashboard">Galaxy dashboard<a class="headerlink" href="#galaxy-dashboard" title="Permanent link">&para;</a></h2>
-<p>Sentry is managed entirely through Galaxy. Open the <strong>Sentry</strong> page from the Galaxy sidebar to:</p>
+<p>Sentry is managed entirely through Galaxy. Open <strong>Cameras &amp; Monitoring → Sentry</strong> to:</p>
 <ul>
 <li>Turn Sentry Mode on or off</li>
 <li>See the current status of the system</li>
@@ -1912,7 +2059,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 19:41:58 UTC">September 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2026 15:07:31 UTC">October 22, 2026</span>
   </span>
 
     
@@ -1939,6 +2086,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
+          
+          <img src="https://avatars.githubusercontent.com/u/143428353?v=4&size=72" alt="prabhaavp">
+        </a>
       
         <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
           
@@ -1991,7 +2143,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../speed-limit-controller/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Speed Limit Controller">
+          <a href="../cameras-and-monitoring/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cameras &amp; Monitoring">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2001,20 +2153,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Speed Limit Controller
+                Cameras & Monitoring
               </div>
             </div>
           </a>
         
         
           
-          <a href="../bluetooth-controls/" class="md-footer__link md-footer__link--next" aria-label="Next: Bluetooth Controls">
+          <a href="../bluetooth-controls/" class="md-footer__link md-footer__link--next" aria-label="Next: Bluetooth">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Bluetooth Controls
+                Bluetooth
               </div>
             </div>
             <div class="md-footer__button md-icon">

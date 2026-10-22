@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Show the StarPilot driving view on your car's screen with Android Auto, and fix common connection problems.">
+        <meta name="description" content="Configure visual spot monitoring, the blind spot camera preview, Sentry, and camera snapshots in Galaxy.">
       
       
       
-        <link rel="canonical" href="https://wiki.firestar.link/usage/android-auto/">
+        <link rel="canonical" href="https://wiki.firestar.link/exclusive/cameras-and-monitoring/">
       
       
-        <link rel="prev" href="../galaxy/">
+        <link rel="prev" href="../android-auto/">
       
       
-        <link rel="next" href="../../ticketsystem/">
+        <link rel="next" href="../sentry-mode/">
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Android Auto — Setup & Troubleshooting - StarPilot Docs</title>
+        <title>Cameras & Monitoring — V-ASM, PiP, Sentry, and Snapshots - StarPilot Docs</title>
       
     
     
@@ -56,11 +56,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Android Auto — Setup & Troubleshooting - StarPilot Docs" >
+        <meta  property="og:title"  content="Cameras & Monitoring — V-ASM, PiP, Sentry, and Snapshots - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Show the StarPilot driving view on your car's screen with Android Auto, and fix common connection problems." >
+        <meta  property="og:description"  content="Configure visual spot monitoring, the blind spot camera preview, Sentry, and camera snapshots in Galaxy." >
       
-        <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/usage/android-auto.png" >
+        <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/cameras-and-monitoring.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -68,15 +68,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://wiki.firestar.link/usage/android-auto/" >
+        <meta  property="og:url"  content="https://wiki.firestar.link/exclusive/cameras-and-monitoring/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Android Auto — Setup & Troubleshooting - StarPilot Docs" >
+        <meta  name="twitter:title"  content="Cameras & Monitoring — V-ASM, PiP, Sentry, and Snapshots - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Show the StarPilot driving view on your car's screen with Android Auto, and fix common connection problems." >
+        <meta  name="twitter:description"  content="Configure visual spot monitoring, the blind spot camera preview, Sentry, and camera snapshots in Galaxy." >
       
-        <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/usage/android-auto.png" >
+        <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/cameras-and-monitoring.png" >
       
     
     
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#android-auto" class="md-skip">
+        <a href="#cameras-monitoring" class="md-skip">
           Skip to content
         </a>
       
@@ -199,8 +199,6 @@
   
   
   
-    
-  
   
     
     
@@ -208,12 +206,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../.." class="md-tabs__link">
           
   
@@ -233,11 +229,22 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../exclusive/navigation/" class="md-tabs__link">
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../navigation/" class="md-tabs__link">
           
   
   
@@ -245,6 +252,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -354,31 +364,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -391,7 +398,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             General
@@ -411,13 +418,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -426,7 +430,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_1" >
         
           
-          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
             
   
   
@@ -573,31 +577,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
         
           
-          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
             
   
   
@@ -610,7 +611,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Usage
@@ -624,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operation/" class="md-nav__link">
+      <a href="../../usage/operation/" class="md-nav__link">
         
   
   
@@ -647,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/" class="md-nav__link">
+      <a href="../../usage/settings/" class="md-nav__link">
         
   
   
@@ -670,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../driving-model/" class="md-nav__link">
+      <a href="../../usage/driving-model/" class="md-nav__link">
         
   
   
@@ -693,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../galaxy/" class="md-nav__link">
+      <a href="../../usage/galaxy/" class="md-nav__link">
         
   
   
@@ -704,131 +705,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Android Auto
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Android Auto
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#set-up" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set up
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connection-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connection problems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Connection problems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#other-phones-and-audio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other phones and audio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wireless-adapters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wireless adapters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#settings-and-upkeep" class="md-nav__link">
-    <span class="md-ellipsis">
-      Settings and upkeep
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-over" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start over
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -855,13 +731,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -870,7 +743,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
         
           
-          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
             
   
   
@@ -955,28 +828,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -989,7 +865,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             StarPilot Exclusive Features
@@ -1000,10 +876,58 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../../exclusive/navigation/" class="md-nav__link">
+      <a href="../navigation/" class="md-nav__link">
         
   
   
@@ -1026,25 +950,118 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exclusive/lane-centering/" class="md-nav__link">
+      <a href="../android-auto/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Lane Centering
+    Android Auto
     
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
-    <span class="md-status md-status--experimental" title="Experimental feature">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Cameras & Monitoring
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cameras & Monitoring
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#camera-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera Snapshot
     </span>
+  </a>
   
-
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-asm-adjacent-spot-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      V-ASM: adjacent spot monitoring
+    </span>
+  </a>
   
-
-      </a>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pip-blind-spot-camera-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      PiP: blind spot camera preview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentry-parked-motion-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentry: parked motion events
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1057,30 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exclusive/speed-limit-controller/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Speed Limit Controller
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../exclusive/sentry-mode/" class="md-nav__link">
+      <a href="../sentry-mode/" class="md-nav__link">
         
   
   
@@ -1111,12 +1105,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exclusive/bluetooth-controls/" class="md-nav__link">
+      <a href="../bluetooth-controls/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Bluetooth Controls
+    Bluetooth
     
   </span>
   
@@ -1130,6 +1124,124 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Toggles
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Toggles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lane-centering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lane Centering
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--experimental" title="Experimental feature">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speed-limit-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed Limit Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1771,60 +1883,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#set-up" class="md-nav__link">
+  <a href="#camera-snapshot" class="md-nav__link">
     <span class="md-ellipsis">
-      Set up
+      Camera Snapshot
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#connection-problems" class="md-nav__link">
+  <a href="#v-asm-adjacent-spot-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
-      Connection problems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Connection problems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#other-phones-and-audio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other phones and audio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wireless-adapters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wireless adapters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#settings-and-upkeep" class="md-nav__link">
-    <span class="md-ellipsis">
-      Settings and upkeep
+      V-ASM: adjacent spot monitoring
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#start-over" class="md-nav__link">
+  <a href="#pip-blind-spot-camera-preview" class="md-nav__link">
     <span class="md-ellipsis">
-      Start over
+      PiP: blind spot camera preview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentry-parked-motion-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentry: parked motion events
     </span>
   </a>
   
@@ -1850,78 +1938,27 @@
   
 
 
-<h1 id="android-auto">Android Auto<a class="headerlink" href="#android-auto" title="Permanent link">&para;</a></h1>
-<p>Android Auto shows the StarPilot driving view on your car's screen. Set it up while parked in <a href="../galaxy/">Galaxy</a>, StarPilot's web interface, using your phone or computer. Controls in this guide are on Galaxy's <strong>Android Auto</strong> page unless the car's screen or settings are named.</p>
-<p>It is designed for cars with built-in <strong>wireless Android Auto</strong>. A wireless adapter may work in a wired-only car; a direct USB connection is also available but has been tested on fewer cars.</p>
-<h2 id="set-up">Set up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h2>
+<h1 id="cameras-monitoring">Cameras &amp; Monitoring<a class="headerlink" href="#cameras-monitoring" title="Permanent link">&para;</a></h1>
+<p>In <a href="../../usage/galaxy/">Galaxy</a>, <strong>Cameras &amp; Monitoring</strong> contains the blind spot camera preview (PiP), <a href="../sentry-mode/">Sentry</a>, V-ASM spot monitoring, and a camera snapshot tool. Configure them while parked. For road-camera speed sign detection, see <a href="../speed-limit-controller/#vision-speed-limits">Vision speed limits</a>.</p>
+<h2 id="camera-snapshot">Camera Snapshot<a class="headerlink" href="#camera-snapshot" title="Permanent link">&para;</a></h2>
+<p>On the main <strong>Cameras &amp; Monitoring</strong> page, turn off the vehicle, choose <strong>Cabin</strong>, <strong>Wide road</strong>, or <strong>Road</strong>, then tap <strong>Take snapshot</strong>. Use <strong>Clear</strong> to remove the preview. These snapshots are temporary and are not saved as Sentry events.</p>
+<h2 id="v-asm-adjacent-spot-monitoring">V-ASM: adjacent spot monitoring<a class="headerlink" href="#v-asm-adjacent-spot-monitoring" title="Permanent link">&para;</a></h2>
+<p>V-ASM adds visual spot warnings alongside factory blind spot monitoring, where available. It does not confirm that a lane is clear or change vehicle controls. Always check mirrors and look over your shoulder before changing lanes.</p>
+<p><strong>Why the window regions are required:</strong> The cabin camera also sees the driver, pillars, and interior. V-ASM uses each region to crop and mask the matching side-window view before checking it for a vehicle. This tells the model which side to inspect and keeps unrelated parts of the image out of its input. At least one side must be marked before monitoring can be enabled; mark both sides if you want warnings on both.</p>
 <ol>
-<li>In Galaxy, open <strong>Android Auto</strong>. Under <strong>Android Auto Support</strong>, turn it on and follow <strong>Install support</strong>. If Bluetooth is off, accept Galaxy’s prompt to turn it on too. You can also turn it on separately from Galaxy’s <strong>Bluetooth</strong> page under <strong>Tools</strong>. Download a current stable Android Auto package by Google LLC, then upload the downloaded file without unzipping it. Step 1 should show <strong>Ready</strong>.</li>
-<li>On the car's screen, open its phone pairing menu. In Galaxy step 2, <strong>Pair Your Car</strong>, tap <strong>Find car</strong>, choose the car, and confirm the pairing code in Galaxy and on the car's screen. Turn on wireless Android Auto in the car's settings if needed; it may be called <em>smartphone connection</em> or <em>phone projection</em>.</li>
-<li>In Galaxy step 3, <strong>Connect &amp; Drive</strong>, tap <strong>Connect</strong>. Keep the car's screen awake. The first picture can take about 30 seconds. Turn on <strong>Automatic Connection</strong> if you want StarPilot to connect when you start driving.</li>
+<li>In Galaxy, open <strong>Cameras &amp; Monitoring → V-ASM</strong> while parked. Tap <strong>Take new snapshot</strong> to load the cabin camera image.</li>
+<li>Select <strong>Left</strong> or <strong>Right</strong> for the <em>vehicle</em> side you want to mark. The preview is mirrored, so the vehicle's left appears on the left; Galaxy stores it as camera right. The vehicle's right appears on the right and is stored as camera left.</li>
+<li>Tap around the visible side glass for that side, then repeat for the other side. Include the front and rear side windows and as much visible glass as practical. Leave out pillars, door frames, and interior; include a side mirror if visible through the glass. A B-pillar can be inside a continuous region if needed. Use <strong>Undo</strong> or <strong>Clear</strong> to fix points. Each region needs at least three points.</li>
+<li>Tap <strong>Save</strong>, review the region, and confirm. Then turn on <strong>Use visual spot monitoring</strong> under the saved settings. A drawn region by itself does not enable warnings.</li>
 </ol>
-<p>For a direct cable connection, turn on <strong>Wired USB Connection</strong> on the Galaxy Android Auto page and connect the car's data USB port to the comma's USB-C port with a data-capable cable. Bluetooth pairing is not required for this mode.</p>
-<h2 id="connection-problems">Connection problems<a class="headerlink" href="#connection-problems" title="Permanent link">&para;</a></h2>
-<p>If tapping <strong>Connect</strong> in Galaxy step 3 does not start a connection, check that Galaxy step 1 says <strong>Ready</strong>, step 2 shows the selected car, the car is on, Bluetooth is enabled on Galaxy’s <strong>Bluetooth</strong> page under <strong>Tools</strong>, and wireless Android Auto is enabled in the car. Other paired phones may take the screen first.</p>
-<p>The status below <strong>Connect</strong> in Galaxy step 3 shows where to look:</p>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>What to check</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Connecting to car</strong> or <strong>Finding Android Auto</strong></td>
-<td>The car is on and paired in step 2.</td>
-</tr>
-<tr>
-<td><strong>Starting wireless setup</strong> or <strong>Waiting for car</strong></td>
-<td>Wireless Android Auto is enabled and a phone is not using it.</td>
-</tr>
-<tr>
-<td><strong>Getting car Wi-Fi</strong> or <strong>Joining car Wi-Fi</strong></td>
-<td>Restart the car if this repeatedly fails.</td>
-</tr>
-<tr>
-<td><strong>Authenticating</strong></td>
-<td>Update the Android Auto package in step 1 if authentication fails.</td>
-</tr>
-<tr>
-<td><strong>Projecting</strong></td>
-<td>The connection is working.</td>
-</tr>
-<tr>
-<td><strong>Car showing its own screen</strong></td>
-<td>Select Android Auto on the car's screen.</td>
-</tr>
-<tr>
-<td><strong>Retrying</strong></td>
-<td>Wait for the automatic reconnect.</td>
-</tr>
-</tbody>
-</table>
-<p>If the car screen stays black after 30 seconds or freezes, tap <strong>Disconnect</strong> in Galaxy step 3, wait a few seconds, then tap <strong>Connect</strong> there again. If that fails, turn the car off, wait for its screen to go dark, and start it again. Frequent drops may mean a paired phone is taking the screen back. Download <strong>Connection Logs</strong> from Galaxy's Android Auto page when asking for help.</p>
-<h3 id="other-phones-and-audio">Other phones and audio<a class="headerlink" href="#other-phones-and-audio" title="Permanent link">&para;</a></h3>
-<p>Most cars run Android Auto on one device at a time. Set the comma as the car's preferred device if that option exists. You can also disable wireless Android Auto for that car on other phones, or remove old Bluetooth pairings if the car has reached its device limit. For a wireless adapter, select the comma as its main device in the adapter's app.</p>
-<p>The comma does not handle phone calls or music. Some cars can keep your phone connected for <strong>media audio</strong> while the comma uses Android Auto. Selecting your phone for calls may move Android Auto to the phone and disconnect the comma; switch back to the comma afterward.</p>
-<h3 id="wireless-adapters">Wireless adapters<a class="headerlink" href="#wireless-adapters" title="Permanent link">&para;</a></h3>
-<p>Pair the comma with <strong>both</strong> the adapter and the car. In Galaxy's Android Auto step 2, select the adapter as the receiver and leave it selected. Then open Galaxy's <strong>Bluetooth</strong> page, pair the comma with the car's Bluetooth entry, and tap <strong>Connect</strong> there. Return to Galaxy's Android Auto page and tap <strong>Connect</strong> in step 3. The car's Bluetooth connection lets StarPilot recognize which car you are driving.</p>
-<h2 id="settings-and-upkeep">Settings and upkeep<a class="headerlink" href="#settings-and-upkeep" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Automatic Connection</strong> tries again each time you start driving. Disconnecting pauses it for the rest of that drive.</li>
-<li>Pair another car in Galaxy step 2 with <strong>Pair another</strong>. Disconnect first, then tap <strong>Use</strong> next to the car you want.</li>
-<li>Pairing, switching cars, and changing settings require Park or offroad mode. Connect, Disconnect, and package updates are available while driving.</li>
-<li>When wireless Android Auto connects, the comma uses its Wi-Fi for the car instead of its usual network. Use the Galaxy hotspot for local access. Remote Galaxy needs another Internet connection on the comma.</li>
-<li>If Galaxy step 1 says the certificate expires soon or has expired, use <strong>Update</strong> or <strong>Reinstall</strong> there. Your paired cars and settings remain saved.</li>
-<li>The extracted Android Auto identity stays on the comma. The uploaded package is deleted after import. Full connection logs stay there until downloaded; StarPilot may send connection errors while parked and disconnected.</li>
-</ul>
-<h2 id="start-over">Start over<a class="headerlink" href="#start-over" title="Permanent link">&para;</a></h2>
-<ol>
-<li>In Galaxy's <strong>Bluetooth</strong> page, forget the car; delete the comma from the car's Bluetooth list.</li>
-<li>Restart the car, or unplug a wireless adapter for five seconds.</li>
-<li>Open the car's pairing screen and pair again in Galaxy's Android Auto step 2.</li>
-</ol>
+<p><strong>Detection confidence</strong> sets how strong the model's evidence must be (0.80–1.00). Raising it may reduce false alerts but miss vehicles. <strong>Warning smoothing</strong> (0.01–0.50 seconds) controls how quickly warnings change; raising it reduces flicker but delays changes. Start with the defaults and adjust only if you notice a problem. Changes to these settings require the vehicle to be parked.</p>
+<p>The cabin snapshot stays in your browser and is not uploaded by the region editor. If a warning is missing or incorrect, you can <a href="https://github.com/prabhaavp/vasm-op">submit an edge case or read about the training data</a>.</p>
+<h2 id="pip-blind-spot-camera-preview">PiP: blind spot camera preview<a class="headerlink" href="#pip-blind-spot-camera-preview" title="Permanent link">&para;</a></h2>
+<p><strong>Blind Spot Camera and Preview</strong> shows a close-up of a cabin side window on the driving screen. It can appear when you signal, when the car reports a blind spot warning, or when V-ASM reports a visual spot warning. It is a view for the driver, not a second detection model.</p>
+<p>In Galaxy, open <strong>Cameras &amp; Monitoring → Blind Spot Camera and Preview</strong> while parked. Take a cabin snapshot, choose <strong>Left camera</strong> or <strong>Right camera</strong>, and place its circular crop over the matching side window. Adjust <strong>Crop size</strong>, then <strong>Save</strong> and confirm. Turn on <strong>Use blind spot camera</strong> and choose <strong>Show on turn signal</strong>, <strong>Show on blind spot warning</strong>, or both. The warning option responds to factory blind spot warnings and to V-ASM warnings when V-ASM is configured and enabled. You can position the onroad camera views with the layout editor.</p>
+<p>PiP's circular crop controls what appears on screen. V-ASM's window regions control what its model analyzes; configure them separately. PiP also needs a live cabin camera and a crop for the side being shown.</p>
+<h2 id="sentry-parked-motion-events">Sentry: parked motion events<a class="headerlink" href="#sentry-parked-motion-events" title="Permanent link">&para;</a></h2>
+<p>Open <strong>Cameras &amp; Monitoring → Sentry</strong> for parked motion monitoring, saved events, and notifications. See the <a href="../sentry-mode/">Sentry Mode guide</a> for setup and event details.</p>
 
 
 
@@ -1944,7 +1981,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2026 07:21:18 UTC">October 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2026 15:07:31 UTC">October 22, 2026</span>
   </span>
 
     
@@ -1954,7 +1991,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2026 07:21:18 UTC">October 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2026 15:07:31 UTC">October 22, 2026</span>
   </span>
 
     
@@ -1971,11 +2008,6 @@
 
     
     <nav>
-      
-        <a href="https://github.com/dirwin31" class="md-author" title="@dirwin31">
-          
-          <img src="https://avatars.githubusercontent.com/u/83434411?v=4&size=72" alt="dirwin31">
-        </a>
       
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
           
@@ -2018,7 +2050,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../galaxy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Galaxy">
+          <a href="../android-auto/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Android Auto">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2028,20 +2060,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Galaxy
+                Android Auto
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../ticketsystem/" class="md-footer__link md-footer__link--next" aria-label="Next: Ticket System">
+          <a href="../sentry-mode/" class="md-footer__link md-footer__link--next" aria-label="Next: Sentry Mode">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Ticket System
+                Sentry Mode
               </div>
             </div>
             <div class="md-footer__button md-icon">
